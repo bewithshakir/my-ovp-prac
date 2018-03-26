@@ -1,0 +1,8 @@
+<div class="settings-container" ng-click="$ctrl.onClick($event)" tabindex="-1" role="none">
+	<div>
+	    <div class="settings-tablist" ui-view="tablist"></div>
+	</div>
+	<div class="settings-tabpanel" ng-keydown="$ctrl.exit($event)">
+	    <ui-view></ui-view>
+	</div>
+</div>

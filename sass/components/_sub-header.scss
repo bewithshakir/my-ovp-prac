@@ -1,0 +1,152 @@
+
+$sub-header-height: 50px;
+
+.sub-header {
+    @extend %clearfix;
+    max-width: 1600px;
+    margin: auto;
+    display: block;
+    clear: both;
+    background-color: $dark-blue;
+    text-align: center;
+    position: relative;
+
+    /**
+     * Center container used for responsive layout
+     * when width is small to prevent float wrapping.
+     */
+
+    .sub-header-container{
+        max-width: 100%;
+        .sub-menu-center {
+            display: inline-block;
+            max-width: 100%;
+            margin: auto;
+            .sub-menu {
+                list-style-type: none;
+                width: 100%;
+                margin: 0px;
+                padding: 0;
+                &> li {
+                    position: relative;
+                    &> a {
+                        font-size: 18px;
+                        color: $white;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-weight: 500;
+                        &:hover,&:focus {
+                            color: $grey02;
+                            text-decoration: none;
+                        }
+                    }
+                    .badge-count {
+                      float: right;
+                      background: url("../images/rdvr_conflict_count_background.png?{{CACHE-VERSION}}") no-repeat center;
+                      background-size: contain;
+                      top: 0px;
+                      right: 12px;
+                      position: absolute;
+                      height: 25px;
+                      width: 25px;
+                      line-height: 25px;
+                    }
+                    &> a.selected {
+                        color: $blue05;
+                    }
+                    float: left;
+                    text-align: center;
+                }
+            }
+        }
+        .networkLogoSeparator {
+            background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") repeat-x 0 -638px;
+            height: 3px;
+            margin: 0 25px;
+        }
+        .carousel-container {
+            .carousel-layout {
+                margin: 0 24px;
+            }
+            .arrow-right {
+                right: 5px;
+                top: 22px;
+            }
+            .arrow-left {
+                left: 2px;
+                top: 22px;
+            }
+            .arrow-right.default-arrow-icon {
+                background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 180px -580px;
+            }
+            .default-arrow-icon {
+                height: 30px;
+                width: 12px;
+            }
+            .arrow-left.default-arrow-icon {
+                background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 170px -580px;
+            }
+            .carousel-menu-item {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                float: left;
+                text-align: center;
+                &> a {
+                    display: inline-block;
+                    padding: 0 20px;
+                    line-height: 45px;
+                    font-size: 18px;
+                    color: $white;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover,&:focus {
+                        color: $grey02;
+                        text-decoration: none;
+                    }
+                }
+                &> a.selected {
+                    color: $blue05;
+                }
+            }
+        }
+    }
+}
+
+grid-list-toggler {
+    float: right;
+}
+
+.view-toggle {
+    width: 100px;
+    cursor: default;
+    font-size: 16px;
+    color: $grey06;
+    margin-left: 10px;
+    line-height: 48px;
+
+    .list-btn, .grid-btn{
+        height: 13px;
+        width: 13px;
+        background: url('../images/ondemand-icons.png');
+        display: inline-block;
+        margin-right: 6px;
+        cursor: pointer;
+    }
+
+    .list-btn {
+        background-position: 0 0;
+        margin-right: 10px;
+        &:hover, &.selected {
+            background-position: -66px 0px;
+        }
+    }
+
+    .grid-btn {
+        background-position: 0 -23px;
+        &:hover, &.selected {
+            background-position: -66px -23px;
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+<div ng-if="$ctrl.hasRdvrVersion2()" class="priority">
+    <rdvr-toolbar></rdvr-toolbar>
+
+    <header ng-if="!$ctrl.loading">
+        <h5>
+            <p ng-if="!$ctrl.error && $ctrl.seriesPriorities.length === 0" class="empty-message text-center">
+                There are no scheduled series on this DVR.
+            </p>
+        </h5>
+    </header>
+
+    <p ng-if="!ctrl.error && $ctrl.seriesPriorities.length > 0" class="instructions">
+        Drag your favorite shows towards the top of the list to set their recording priority.
+    </p>
+
+    <ul ovp-sortable="$ctrl.seriesPriorities" class="rdvr-list">
+        <li ng-repeat="seriesPriority in $ctrl.seriesPriorities">
+            <div class="row-title">{{::seriesPriority.programMetadata.title}}</div>
+            <ovp-sortable-handle></ovp-sortable-handle>
+            <ovp-channel mystro-service-id="seriesPriority.mystroServiceId" channel-id="seriesPriority.displayChannel" display-type="list"></ovp-channel>
+        </li>
+    </ul>
+</div>

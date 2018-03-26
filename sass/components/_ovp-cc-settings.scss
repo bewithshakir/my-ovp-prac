@@ -1,0 +1,182 @@
+/************************ CC Settings **********************/
+.ovp-player-caption-settings {
+    .modal-content {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+.remote-cc-settings-container,
+.cc-settings-container {
+    width: 680px;
+    height: 475px;
+    border-radius: 4px;
+    padding: 52px 49px 48px 48px;
+    letter-spacing: 0.5px;
+    background-color: #002133 ;
+    box-shadow: 0 4px 12px 0 rgba(183, 206, 229, 0.3);
+    border: solid 1px #000000;
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+
+    .cc-settings-header {
+        @extend %clearfix;
+
+        width: 100%;
+        h5 {     
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: -1px;
+          line-height: 1em;
+        }
+    }
+    h5 {
+        margin: 0 0 2px 0;
+        font-size: 20px;
+    }
+    .restore-default-btn {
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        font-size: 13px;
+        background-color: $black;
+    }
+    .cc-background-option-container,
+    .cc-font-option-container,
+    .cc-source-option-container,
+    .cc-footer-container,
+    .cc-text-option-container-wrapper,
+    .cc-window-option-container {
+        position: relative;
+        width: 100%;
+        height: 55px;
+        float: left;
+        margin-top: 15px;
+        .color-options-container {
+            position: absolute;
+        }
+    }
+    .cc-text-option-container-wrapper {
+        @extend %clearfix;
+    }
+    .cc-font-option-container {
+        .font-container,
+        .font-edge-container,
+        .font-size-container {
+            position: absolute;
+            height: 100%;
+            width: auto;
+            .btn-group {
+                width: 100%;
+                right: 0;
+            }
+        }
+        .font-container {
+            left: 0;
+            width: 345px;
+        }
+        .font-size-container {
+            left: 355px;
+            width: 95px;
+        }
+        .font-edge-container {
+            left: 460px;
+            width: 115px;
+            .dropdown-list {
+                width: 150px;
+            }
+        }
+    }
+    .cc-source-option-container {
+        .digital-source-container,
+        .format-source-container {
+            position: absolute;
+            height: 100%;
+            width: auto;
+            .btn-group {
+                width: 100%;
+                right: 0;
+            }
+        }
+        .digital-source-container {
+            left: 0;
+            width: 150px;
+        }
+        .format-source-container {
+            left: 160px;
+            width: 250px;
+        }
+    }
+    .div-color {
+        position: relative;
+        float: left;
+        height: 30px;
+        width: 30px;
+        border: 1px solid whitesmoke;
+        margin: 0px 7px 0px 2px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .cc-icon {
+        width: 39px;
+        margin-right: 16px;
+    }
+    .selected-color {
+        border: 3px solid whitesmoke;
+        padding: 3px;
+        line-height: 20px;
+    }
+    .btn:focus {
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+    a.popupCloseClick {
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        font-size: 20px;
+        color: #f8f8f8;
+        position: relative;
+    }
+}
+
+.remote-cc-settings-container {
+    .cc-text-option-container {
+        .color-options-container {
+            left: 0px;
+        }
+        .ovp-dropdown-list-container {
+            width: 200px;
+        }
+    }
+    .cc-background-option-container {
+        .color-options-container {
+            left: 0px;
+        }
+        .ovp-dropdown-list-container {
+            width: 200px;
+        }
+    }
+    .cc-font-option-container {
+        .font-container {
+            width: 310px;
+        }
+        .font-size-container {
+            left: 376px;
+            width: 200px;
+        }
+    }
+    .cc-source-option-container {
+        .digital-source-container {
+            width: 310px;
+        }
+        .format-source-container {
+            left: 376px;
+            width: 200px;
+        }
+    }
+    .cc-footer-container {
+        .restore-default-btn {
+            width: 200px;
+        }
+    }
+}

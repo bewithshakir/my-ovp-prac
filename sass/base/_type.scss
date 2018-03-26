@@ -1,0 +1,49 @@
+
+
+//
+// Typography
+// --------------------------------------------------------------------------------
+
+// Headings
+// -------------------------
+
+h1,
+.h1 {
+    color: $text-color-strong;
+    font-weight: $light;
+}
+
+h6,
+.h6 {
+    color: $text-color-weak;
+}
+
+// Misc
+// -------------------------
+
+// The `.truncate` class truncates single-line block elements,
+// by adding an ellipsis (...)
+.truncate {
+    @include dot-dot-dot;
+    white-space: nowrap;
+}
+
+// Apply the `.crawl` class to single-line text fields to cause them to scroll.
+// Parent element usually must have `overflow: hidden;` to work properly.
+.crawl {
+    animation: crawl 15s linear infinite;
+    display: inline-block;
+    min-width: 100%;
+    padding-left: 100%;
+    white-space: nowrap;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes crawl {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+

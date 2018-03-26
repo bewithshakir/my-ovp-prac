@@ -1,0 +1,13 @@
+<form class="search-form navbar-form" role="search" ng-submit="$ctrl.search($ctrl.query)">
+    <div class="form-group">
+        <div class="sr-only" aria-live="polite">
+            {{$ctrl.searchResultsTitle}}
+        </div>
+        <label class="sr-only label" for="query">
+            <span class="search-icon search"></span>
+        </label>
+        <input id="query" class="form-control search-input" name="query" type="search" autocomplete="off" placeholder="{{$ctrl.placeholder}}" ng-model="$ctrl.query" ng-keyup="$ctrl.onKey($event)" ng-focus="$ctrl.resetInputAria()" focus-when="$ctrl.shouldFocusInput" aria-label="{{$ctrl.inputLabel}}" focus-once/>
+        <a class="exit-search" ng-click="$ctrl.exitSearch()" ng-keydown="$ctrl.onKey($event)" tabindex="0" aria-label="close" href="#" role="button"><span class="twcicon twcicon-remove"></span></a>
+        <hr/> 
+    </div>
+</form>

@@ -1,0 +1,30 @@
+{
+  "name": "splunk-js",
+  "authors": [
+    "Mayank Khandelwal <C-Mayank.Khandelwal@charter.com>"
+  ],
+  "description": "Javascript helper library to send messages to splunk",
+  "main": "splunk.dist.js",
+  "keywords": [
+    "splunk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.7",
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.7",
+    "commit": "74208c11576c3d5f39837979303d4bc2dd9a153e"
+  },
+  "_source": "git@gitlab.spectrumxg.com:ip-client/splunk-js.git",
+  "_target": "~0.0.5",
+  "_originalSource": "git@gitlab.spectrumxg.com:ip-client/splunk-js.git"
+}

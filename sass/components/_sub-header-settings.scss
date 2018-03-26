@@ -1,0 +1,42 @@
+
+$sub-header-height: 50px;
+
+.sub-header {
+
+    /**
+     * Center container used for responsive layout
+     * when width is small to prevent float wrapping.
+     */
+    .sub-menu-center {
+        margin: auto;
+        .sub-menu {
+
+            &> li {
+                position: relative;
+                &> a {
+                    font-size: 18px;
+                    color: $white;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover,&:focus {
+                        color: $grey128;
+                        text-decoration: none;
+                    }
+                }
+                &> a.selected {
+                    color: $blue01;
+                    cursor: default;
+                }
+                &> a.disabled {
+                    color: $grey06;
+                    cursor: default;
+                    pointer-events: none;
+                }
+                float: left;
+                text-align: center;
+                padding: 4px 24px 0 24px;
+                line-height: 2.67;
+            }
+        }
+    }
+}

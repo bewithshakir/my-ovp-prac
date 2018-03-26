@@ -1,0 +1,33 @@
+<div id="stbContent" ng-controller="DevicesController as vm" role="tabpanel">
+        <h1 class="settings-h1 kite-h3">Global Devices</h1>
+        <p class="title">
+            <span class="stb-connect">Connect with your set top boxes at home.</span>
+            <span>Click on the name of the device below to give your set top box a new name.</span>
+        </p>
+        <ul class="devices-container" role="application">
+            <li ng-repeat="stb in vm.stbs" class="stbClass" role="listitem">
+                <div class="{{stb.dvr ? 'isDvr' : 'isStb'}} dvrWrapper">
+                    <span ng-click="vm.beginEdit(stb)" class="stbName {{vm.isActive(stb) ? 'active' : 'off'}}" title="Click to rename" ng-hide="stb.isEditing">
+                        {{stb.name || stb.macAddress}}
+                    </span>
+
+                    <form class='stbRenameForm' ng-hide="!stb.isEditing">
+                        <input class="stbRenameTextInput" name="stbRenameTextInput" id="stbRenameTextInput" type="text" ng-model="stb.name" ng-change="vm.inputChanged(stb)" focus-when="stb.isEditing"/>
+                        <a class="stbRenameSave" ng-click="vm.saveEdit(stb)">Save</a>
+                        <a class="stbRenameCancel" ng-click="vm.cancelEdit(stb)">Cancel</a>
+                        <input class="inputConnect" type="hidden" name="id" value="{{stb.macAddress}}"/>
+                        <input type="hidden" name="isDvr" value="{{stb.dvr}}"/>
+                    </form>
+                    <div class="connectClick" ng-click="vm.connect(stb)">
+                    <div class="stbSelectWrap">
+                        <span ng-if="vm.isActive(stb)" class="stbConnected">Connected</span>
+                        <form ng-if="!vm.isActive(stb)">
+                            <input type="hidden" name="stbSelectedId" value="{{stb.macAddress}}" />
+                            <input type="button" class="stbDisConnected" value="Connect"/>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</div>

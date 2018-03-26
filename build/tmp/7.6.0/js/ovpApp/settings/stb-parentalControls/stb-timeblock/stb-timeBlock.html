@@ -1,0 +1,16 @@
+<div class="row stb-time-block-container">
+    <h2 class="setting-label col-xs-16">Time Block</h2>
+    <span class="sr-only" aria-live="polite" ng-bind="$ctrl.srText"></span>
+    <div class="row">
+        <div class="col-xs-16" role="application" arrow-nav="time-block-tile" ng-model="$ctrl.timeBlocks">
+            <div class="time-block-tile" ng-repeat="block in $ctrl.timeBlocks" aria-label="blocking {{block.day}} from {{block.startTime.format('LT')}} to {{block.endTime.format('LT')}}">
+                <div class="label-content">{{block.day}}</div>
+                <div class="label-content">{{block.startTime.format('LT')}} - {{block.endTime.format('LT')}}</div>
+            </div>
+        </div>
+        <p class="col-xs-16">
+            <button class="btn btn-default" ng-click="$ctrl.deleteTimeBlock()">Delete Time Block</button>
+            <button class="btn btn-default" ng-click="$ctrl.createTimeBlock()">Create a New Time Block</button>
+        <p>
+    </div>
+</div>

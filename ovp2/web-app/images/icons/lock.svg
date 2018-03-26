@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="lock-icon-title lock-icon-desc">
+  <title id="lock-icon-title">lock</title>
+  <desc id="lock-icon-desc">an icon representing a padlock</desc>
+  <path fill="#fff" d="M49,28H41V18a9,9,0,0,0-18,0V28H15a2,2,0,0,0-2,2V51a4,4,0,0,0,4,4H47a4,4,0,0,0,4-4V30A2,2,0,0,0,49,28ZM35,28H29V18a3,3,0,0,1,3-2.9,3,3,0,0,1,3,3.1Z"/>
+</svg>

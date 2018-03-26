@@ -1,0 +1,12 @@
+<div class="row" role="application">
+    <div class='col-xs-8'>
+        <div role="heading" aria-level="2" id="parental-controls-label" class="odn-setting-label setting-label">Share In Progress List</div>
+        <p class="help-block">Display watched On Demand shows on all boxes in your home.</p>
+    </div>
+
+    <div class="col-xs-8 text-right">
+        <ovp-switch id="pc_enabled" role="button" aria-label="Share In Progress List is {{$ctrl.shareInProgressListEnabledForClient ? 'on' : 'off'}}"
+            ng-click="$ctrl.toggleShareInProgressList($event);" button-enabled="{{$ctrl.shareInProgressListEnabledForClient}}" prevent-default>
+        </ovp-switch>
+    </div>
+</div>

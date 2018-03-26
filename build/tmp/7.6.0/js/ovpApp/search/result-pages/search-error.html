@@ -1,0 +1,5 @@
+<div>
+    <h3 class="errorCaption">Sorry, an error occurred with the search.</h3>
+    <h4 ng-if="$ctrl.error.status" class="errorCode">{{$ctrl.error.status}}: {{$ctrl.error.statusText}}</h4>
+    <div ng-if="$ctrl.error.message" class="errorDetail">{{$ctrl.error.message}}</div>
+</div>

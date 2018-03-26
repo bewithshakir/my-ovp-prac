@@ -1,0 +1,77 @@
+
+
+//
+// Connectivity alert
+// --------------------------------------------------
+
+.connectivity-alert {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.connectivity-alert-label {
+    float: left;
+    font-weight: $bold;
+    padding: 0 ($grid-gutter-width / 2);
+    text-align: right;
+
+    .svg-icon {
+        margin-top: -0.25em;
+    }
+}
+
+.connectivity-alert-message {
+    color: $text-color;
+    text-align: center;
+    overflow: hidden;
+    width: 70%;
+}
+
+.connectivity-alert-box {
+    position: fixed;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1em rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 1em rgba(0, 0, 0, 0.3);
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 14px;
+    padding: 1em;
+    width: 38em;
+    max-width: 100%;
+    background: #f6f6f6;
+    color: #444444;
+    overflow: hidden;
+    margin: auto;
+    z-index:1000;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.connectivity-alert-box .connectivity-alert-message {
+    color: #444444;
+    display: inline;
+    text-align: center;
+}
+
+.connectivity-alert-box button {
+    display: inline;
+    float: right;
+}
+
+
+.connectivity-alert-box.offline-ui-content:after {
+  background: #ec8787;
+}
+
+.connectivity-alert-overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 170; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}

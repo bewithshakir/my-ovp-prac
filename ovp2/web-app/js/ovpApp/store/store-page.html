@@ -1,0 +1,26 @@
+<h1 class="sr-only">Video Store</h1>
+<section ng-if="$ctrl.categories">
+    <ovp-carousel ng-repeat="category in $ctrl.categories" items="category.media" options="category.carouselConfig" on-limit-changed="$ctrl.onCarouselLimitChanged(limit)">
+        <ovp-product ng-repeat="asset in category.media | limitTo: $ctrl.carouselLimit" asset="asset" options="$ctrl.itemOptions"></ovp-product>
+    </ovp-carousel>
+</section>
+<section ng-if="$ctrl.category">
+    <a
+    class="back-to"
+    ui-sref="ovp.store({category:null,page:null})"
+    focus-next=".list-btn"
+    focus-when="true"><span class="icon"
+    ></span>Back to {{$ctrl.storeTitle}}</a>
+    <grid-list-toggler id="'vodMinorCategoryViewMode'"></grid-list-toggler>
+    <ovp-grid-list items="$ctrl.results" options="$ctrl.gridConfig" on-page-changed="$ctrl.onPageChanged(page)">
+        <grid-items>
+            <ovp-product dir-paginate="asset in $ctrl.results | itemsPerPage: $ctrl.gridLimit" current-page="$ctrl.page" total-items="$ctrl.totalItems" pagination-id="vodMinorCategoryViewMode" asset="asset" options="$ctrl.itemOptions" template='boxart'></ovp-product>
+        </grid-items>
+        <list-items>
+            <ovp-product dir-paginate="asset in $ctrl.results | itemsPerPage: $ctrl.gridLimit" current-page="$ctrl.page" total-items="$ctrl.totalItems" pagination-id="vodMinorCategoryViewMode" asset="asset" options="$ctrl.itemOptions" template='list'></ovp-product>
+        </list-items>
+    </ovp-grid-list>
+</section>
+<section class="text-center" ng-if="$ctrl.errorMessage!=false">
+    <h4>{{$ctrl.errorMessage}}</h4>
+</section>

@@ -1,0 +1,8 @@
+<div ng-show="$ctrl.setTopBox != null">
+    <div ng-if="!$ctrl.hasDvr()" class="not-dvr">
+        <span error-codes='WCM-1007'></span>
+    </div>
+    <div ng-if="$ctrl.hasDvr()">
+        <div ui-view></div>
+    </div>
+</div>

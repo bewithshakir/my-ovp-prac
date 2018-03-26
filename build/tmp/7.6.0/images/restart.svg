@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title desc">
+  <title id="title">restart</title>
+  <desc id="desc">an arrow looping back to the left</desc>
+  <path fill="none" stroke="#FFF" stroke-width="2" d="M14 18h22a14 14 0 0 1 0 28H24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path fill="none" stroke="#FFF" stroke-width="2" d="M22 27l-8-9 8-9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

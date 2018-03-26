@@ -1,0 +1,10 @@
+<div id="purchasePin" class="" role="tabpanel">
+    <h1 class="settings-h1 kite-h3">Website Purchase PIN</h1>
+    <div class="row">
+        <div id="purchase-pin-label" class="setting-label col-xs-8">Purchase PIN</div>
+        <div class="col-xs-8 text-right">
+            <ovp-switch id="purchase_pin_enabled" role="button" aria-label="Purchase Pin is {{purchasePinEnabledForClient ? 'on' : 'off'}}"
+                ng-click="togglePinEnabled($event);" button-enabled="{{purchasePinEnabledForClient}}" prevent-default></ovp-switch>
+        </div>
+    </div>
+</div>

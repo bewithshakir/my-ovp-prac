@@ -1,0 +1,23 @@
+<div class="wrapper" role="document">
+    <span class="sr-only" id="picker-label">{{$ctrl.title}}</span>
+    <span class="sr-only" id="picker-description">{{$ctrl.ariaDescription}}</span>
+    <div class='status-dialog processing-status' ng-show='$ctrl.loadingTracker.active()'>
+        <div class="spinner"></div>
+    </div>
+    <div ng-click="$ctrl.modalInstance.dismiss()" aria-label="close" role="button" class="close-icon-container" ng-mouseover="$ctrl.activeCloseIcon=true" ng-mouseleave="$ctrl.activeCloseIcon=false">
+        <img class="close-icon" ng-src="{{$ctrl.closeIcon()}}"></img>
+    </div>
+    <div class="header text-center">
+        <h1>{{$ctrl.title}}</h1>
+    </div>
+    <ul class="devices-list-container" role="list">
+        <li focus-when="$first" ng-repeat="stb in $ctrl.stbs" class="device focus-outline" role="listitem" aria-label="{{stb.name || stb.macAddress}}" ng-click="$ctrl.onSelect(stb)">
+            <img ovp-src="/images/watch-on-tv.svg">
+            <a class="device-name truncate">
+                {{stb.name || stb.macAddress}}
+            </a>
+        </li>
+    </ul>
+    <button class="kite-btn kite-btn-primary kite-btn-xl" aria-label="close" aria-describedby="close without connecting to a new DVR device" ng-click="$ctrl.modalInstance.dismiss()">Close</button>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+<div tabindex="0" ovp-click="$ctrl.toggle();" accesskey="k" ng-mouseenter="$ctrl.playHover=true;" ng-mouseleave="$ctrl.playHover=false;" prevent-default aria-label="{{$ctrl.playing ? 'Pause'  : 'Play'}}" ng-focus="$ctrl.enlargeIcon = true" ng-blur="$ctrl.enlargeIcon = false">
+    <img alt="pause play" ng-src="{{$ctrl.image()}}">
+</div>
+<span class='sr-only' aria-live='polite' aria-atomic='true' ng-bind='$ctrl.statusText'></span>

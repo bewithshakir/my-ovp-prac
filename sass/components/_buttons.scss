@@ -1,0 +1,95 @@
+
+
+//
+// Buttons
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+
+.btn {
+    border: 0;
+    text-shadow: none;
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+        .spinner {
+            border-color: rgba($gray-lighter, 0.25);
+            border-top-color: $gray-lighter;
+        }
+    }
+
+    .spinner {
+        border-width: 2px;
+        display: block; //Must use span because div is not allowed inside a button
+        width: 1em;
+        height: 1em;
+    }
+}
+
+.btn-inverse {
+    &.btn-default {
+        background-color: $gray-light;
+        color: $btn-default-bg;
+
+        &:focus,
+        &.focus,
+        &:hover,
+        &.hover {
+            background-color: $btn-default-bg;
+            color: $gray-light;
+        }
+    }
+}
+
+
+// Left aligned buttons
+// -------------------------
+
+// Buttons that have the label left-aligned, usually
+// with an icon on the right.
+
+.btn-left {
+    text-align: left;
+
+    .spinner,
+    .svg-icon {
+        float: right;
+    }
+
+    .svg-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+}
+
+// Square buttons
+// -------------------------
+
+// These are the large square(ish) action buttons used
+// on the product pages.
+
+.btn-square {
+    white-space: normal;
+    width: 120px;
+    height: 96px;
+
+    .icon {
+        color: inherit;
+        cursor: inherit;
+        display: block;
+    }
+
+    .spinner {
+        margin: 6px auto;
+        width: 2.25em;
+        height: 2.25em;
+    }
+
+    .svg-icon {
+        width: 3em;
+        height: 3em;
+    }
+}

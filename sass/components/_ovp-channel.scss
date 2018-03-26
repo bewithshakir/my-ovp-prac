@@ -1,0 +1,34 @@
+.ovp-channel {
+
+  $image-width: 35px;
+  $image-height: 35px;
+  $image-margin-right: 10px;
+
+  float: right;
+  overflow: hidden;
+
+  img {
+    float: left;
+    width: $image-width;
+    height: $image-height;
+  }
+
+  .divider {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .channelIDs {
+    line-height: 20px;
+    float: left;
+    font-size: 14px;
+    &:first-child {
+        margin-left: #{$image-width + $image-margin-right};
+    }
+  }
+
+  &.list {
+    width: 138px;
+    text-align: right;
+  }
+}

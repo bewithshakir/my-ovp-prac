@@ -1,0 +1,10 @@
+<section class="row cast" ng-if="$ctrl.asset.actorsAndDirectors.length > 0">
+    <div class="col-md-16">
+        <h2>Cast and crew</h2>
+        <div class="row">
+            <ovp-carousel items="$ctrl.asset.actorsAndDirectors" options="$ctrl.carouselConfig" class="col-md-16">
+                <ovp-person ng-repeat="person in $ctrl.asset.actorsAndDirectors" person="person"></ovp-person>
+            </ovp-carousel>
+        </div>
+    </div>
+</section>

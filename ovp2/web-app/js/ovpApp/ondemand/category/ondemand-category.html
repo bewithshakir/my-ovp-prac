@@ -1,0 +1,55 @@
+<ovp-grid-list
+    ng-if="$ctrl.category && $ctrl.clientSidePaging"
+    items="$ctrl.category.media"
+    options="$ctrl.gridListConfig"
+    on-page-changed="$ctrl.onPageChanged(page)">
+    <grid-items>
+        <ovp-product
+            dir-paginate="asset in $ctrl.category.media | itemsPerPage: $ctrl.pageSize"
+            pagination-id="vodMinorCategoryViewMode"
+            current-page="$ctrl.page"
+            asset="asset"
+            options="{hideNWLogo: $ctrl.hideLogo}"
+            template='boxart'>
+        </ovp-product>
+    </grid-items>
+    <list-items>
+        <ovp-product
+            dir-paginate="asset in $ctrl.category.media |  itemsPerPage: $ctrl.pageSize"
+            pagination-id="vodMinorCategoryViewMode"
+            current-page="$ctrl.page"
+            asset="asset"
+            options="{hideNWLogo: $ctrl.hideLogo}"
+            template='list'>
+        </ovp-product>
+    </list-items>
+</ovp-grid-list>
+
+<ovp-grid-list
+    ng-if="$ctrl.category && !$ctrl.clientSidePaging"
+    items="$ctrl.category.media"
+    options="$ctrl.gridListConfig"
+    on-page-changed="$ctrl.onPageChanged(page)">
+    <grid-items>
+        <ovp-product
+            dir-paginate="asset in $ctrl.category.media | itemsPerPage: $ctrl.pageSize"
+            current-page="$ctrl.page"
+            total-items="$ctrl.category.totalResults"
+            pagination-id="vodMinorCategoryViewMode"
+            asset="asset"
+            options="{hideNWLogo: $ctrl.hideLogo}"
+            template='boxart'>
+        </ovp-product>
+    </grid-items>
+    <list-items>
+        <ovp-product
+            dir-paginate="asset in $ctrl.category.media |  itemsPerPage: $ctrl.pageSize"
+            current-page="$ctrl.page"
+            total-items="$ctrl.category.totalResults"
+            pagination-id="vodMinorCategoryViewMode"
+            asset="asset"
+            options="{hideNWLogo: $ctrl.hideLogo}"
+            template='list'>
+        </ovp-product>
+    </list-items>
+</ovp-grid-list>

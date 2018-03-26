@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="19px" viewBox="0 0 31 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>F768E488-D419-4889-81B5-AB9C11499A89</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="30.265 15.2666 30.265 1.6596 9.92951795 1.6596 9.92951795 15.2666"></polygon>
+    </defs>
+    <g id="OVP-NAV" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280_Nav-Watch-TV-Auth-OOH-OFF" transform="translate(-1065.000000, -26.000000)">
+            <g id="Group-4" transform="translate(1065.000000, 26.000000)">
+                <polygon id="Fill-1" fill="#FFFFFF" points="4.4937 -0.0004 3.7867 0.7066 8.1627 5.0826 8.8707 4.3766"></polygon>
+                <polygon id="Fill-2" fill="#FFFFFF" points="13.4361 -0.0004 9.0601 4.3766 9.7671 5.0826 14.1431 0.7066"></polygon>
+                <path d="M17.311,3.8046 C15.475,4.2166 13.734,4.8826 12.347,5.8396 L2,5.8046 L2,16.8896 L16.453,16.8896 L16.453,13.2616 L18.453,13.2616 L18.453,18.8896 L0,18.8896 L0,3.8046 L17.311,3.8046 Z" id="Fill-3" fill="#FFFFFF"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <path d="M21.1411,15.2666 L21.1361,11.3936 C20.4971,11.3936 12.4381,9.9796 9.9441,14.2046 C9.5861,9.4086 15.8901,5.5066 21.1291,5.5066 L21.1251,1.6596 L30.2651,8.4526 L21.1411,15.2666 Z" id="Fill-5" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

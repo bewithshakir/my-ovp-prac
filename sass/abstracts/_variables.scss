@@ -1,0 +1,200 @@
+//
+// Colors
+// -------------------------
+
+$sky:                               #0088ce !default;
+$steel:                             #8b8d8e !default;
+$steel-light:                       #adafaf !default;
+$steel-dark:                        #4d4f53 !default;
+$help-color:                        #FFD400 !default;
+
+$red04:                             rgba(255,0,0,0.3);
+$red05:                             rgba(255,0,0,0.5);
+$red06:                             rgba(255,0,0,0.2);
+
+$blue01:                            #00b3ef;
+$blue02:                            #0064a4;
+$blue05:                            #008cff;
+$blue07:                            #00a9e0;
+$blue08:                            #039fd6;
+$blue09:                            #1366a2;
+$blue10:                            #175a96;
+$blue11:                            #a4b9d6;
+$blue12:                            #657a97;
+$blue13:                            #7f9fc9;
+$blue14:                            #3c5a83;
+$blue15:                            #6a7f9c;
+$blue16:                            #8faace;
+$blue17:                            #4a6992;
+$blue18:                            #0098d6;
+
+$green02:                           #91d900;
+$green03:                           #4e7500;
+$green13:                           #88c523;
+$green14:                           #7db81e;
+$green15:                           #558b08;
+$green16:                           #497d02;
+$green18:                           #00ff00;
+
+$white:                             #fff;
+$white02:                           rgba(255, 255, 255, 0.75);
+$white03:                           #fefefe;
+$white06:                           rgba(255,255,255,0.5);
+
+$grey02:                            #ccc;
+$grey03:                            #adafaf;
+$grey04:                            #999;
+$grey06:                            #a6adb4;
+$grey07:                            #81848a;
+$grey08:                            #787878;
+$grey10:                            #545454;
+$grey11:                            #515151;
+$grey13:                            #333;
+$grey15:                            #161616;
+$grey22:                            #242425;
+$grey23:                            #292a2d;
+$grey24:                            #0a0a0a;
+$grey32:                            #555;
+$grey33:                            #494949;
+$grey34:                            #797979;
+$grey39:                            #c0c0c0;
+$grey43:                            #efefef;
+$grey46:                            #868686;
+$grey47:                            #cecece;
+$grey50:                            #c4c3c3;
+$grey53:                            #d1dae6;
+$grey54:                            #111;
+$grey55:                            #444;
+$grey56:                            #20252c;
+$grey58:                            #28292a;
+$grey59:                            #F7F3F7;
+$grey60:                            #F7F3F7;
+$grey62:                            #C3C3C3;
+$grey63:                            #C0C0C0;
+$grey64:                            #C5C6C5;
+$grey65:                            #666;
+$grey66:                            #222;
+$grey68:                            rgba(0, 0, 0, 0.4);
+$grey69:                            rgba(0, 0, 0, 0.5);
+$grey82:                            rgba(0,0,0,0.7);
+$grey83:                            rgba(57,57,57, 0.6);
+$grey84:                            rgba(156, 156, 156, 0.6);
+$grey86:                            #757575;
+$grey92:                            #525252;
+$grey93:                            #f7f3f7;
+$grey94:                            #ebe8eb;
+$grey96:                            #c5c6c4;
+$grey97:                            #8f8f8f;
+$grey98:                            #8b8b8b;
+$grey99:                            #818283;
+$grey100:                           #5e5f62;
+$grey101:                           #4e5054;
+$grey104:                           #18191C;
+$grey107:                           #9EA1A7;
+$grey108:                           rgba( 125, 125, 125, 0.2 );
+$grey109:                           #333233;
+$grey110:                           #38393a;
+$grey115:                           #888888;
+$grey117:                           #555;
+$grey118:                           #1d1d1d;
+$grey119:                           #9e9e9e;
+$grey120:                           #ddd;
+$grey121:                           #b7b7b7;
+$grey122:                           #9b9b9b;
+$grey128:                           #9ea1a7;
+$grey131:                           #171717;
+$grey132:                           #717171;
+$grey133:                           #dae0e0;
+
+$spec-black:				        #000;
+$spec-gray-base:                    #000;
+$spec-gray-darker:                  darken($steel-dark, 20%);
+$spec-gray-dark:                    $steel-dark;
+$spec-gray:                         $steel;
+$spec-gray-light:                   $steel-light;
+$spec-gray-lighter:                 #fff;
+$spec-brand-primary:                $blue07;
+$spec-brand-danger:                 #d91c1c;
+
+$inverse-color:                     $spec-gray-base !default;
+$strong-color:                      $spec-brand-primary !default;
+$weak-color:                        $spec-gray !default;
+$muted-color:                       $spec-gray-dark !default;
+$quiet-color:                       $spec-gray-darker !default;
+
+$text-color-inverse:                $inverse-color !default;
+$text-color-strong:                 $strong-color !default;
+$text-color-weak:                   $weak-color !default;
+$text-color-grey:                   #f8f8f8;
+$text-color-yellow:                 #feb533;
+
+$modal-lightbox-bg:                 #002133;
+$border-color:                      #70829c;
+$dark-blue:                         #001019;
+$selected-blue:                     #0d92ff;
+$panel-border-color:                #7f8288;
+$sky-blue1:                         #0073d1;
+
+//
+// Shadows and Gradients
+// -------------------------
+
+$umbra:                             $spec-gray-base !default;
+$penumbra:                          rgba($spec-gray-base, 0.65) !default;
+$antumbra:                          rgba($spec-gray-base, 0) !default;
+
+//
+// Typography
+// -------------------------
+
+$font-family-icons:  "TWC Icons V2";
+$kite-font-path: "https://hls-vod-4.timewarnercable.com/charter-fonts/rutledge/";
+
+// Font-weights
+$light:        300 !default;
+$normal:       400 !default;
+$bold:         500 !default;
+
+//
+// Animation
+// -------------------------
+
+$fast: 1s !default;
+$faster: 500ms !default;
+$fastest: 250ms !default;
+
+$cubic-bezier: cubic-bezier(0.17, 0.84, 0.44, 1) !default;
+
+//
+// Media query
+// -------------------------
+
+$screen-xl-min: 1600px !default; // Max width of site content
+
+//
+// Container sizes
+// -------------------------
+
+$container-xl-desktop:      $screen-xl-min !default;
+$container-xl:              $container-xl-desktop !default;
+
+//
+// Z-indexes
+// -------------------------
+
+$zIndexFront:2;
+$zIndexOverlay:3;
+$zIndexSearch:141;
+$zIndexPopup:999;
+$zIndexProcessing:20;
+
+$zindex-subheader: 130;
+$zindex-product: 140;
+$zindex-header: 160;
+$zindex-nav-drawer: 1010;
+
+// Footer
+// -----------------------
+
+$footer-height: 110px;
+$footer-border: 2px;

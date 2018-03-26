@@ -1,0 +1,79 @@
+$video-player-header-height: 50px;
+
+/* TODO: merge with the css that has been done for the store */
+.backTo {
+  height: 45px;
+  line-height: 48px;
+  cursor: pointer;
+
+  span {
+    display:block;
+    background:url('../images/ondemand-icons.png') 0 -78px;
+    height:23px;
+    width:23px;
+    margin-right:10px;
+    float:left;
+    position:relative;
+    top:12px;
+  }
+}
+
+.network-2-tier-padding {
+  height:13px;
+}
+
+.network-3-tier-padding {
+  height:80px;
+}
+
+.ondemand-back {
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+.ondemand-toggle {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+#video-player-header {
+    height: $video-player-header-height;
+    padding: 0 16px;
+
+    #back-to-browsing {
+        cursor: pointer;
+        float: right;
+        width: 45px;
+        height: 15px;
+        line-height: 15px;
+        display: block;
+        font-size: 14px;
+        color: $grey08;
+        margin-top: 16px;
+
+        div {
+            float: right;
+            height: 11px;
+            width: 11px;
+            margin-top: 2px;
+            background: url('../images/ondemand-icons.png?{{CACHE-VERSION}}') 0 -319px;
+        }
+    }
+}
+#video-player-container {
+    position: absolute;
+    bottom: 1%;
+    top: 0;
+    width: 100%;
+}
+
+.network-folder-icon {
+  height:14px;
+  width:19px;
+  background:url('../images/ondemand-icons.png?{{CACHE-VERSION}}') no-repeat 0 -469px;
+  margin-top:15px;
+  margin-left:8px;
+  float:left;
+}

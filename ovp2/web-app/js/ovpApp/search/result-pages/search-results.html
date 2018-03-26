@@ -1,0 +1,24 @@
+<div class="searchResults" fadein-immediate>
+    <div>
+        {{$ctrl.searchResultsTitle}}
+    </div>
+    <div ng-repeat="category in $ctrl.layout.categories">
+        <ovp-grid-list ng-if="category.numResults > 0 && category.title !== 'Person'" items="category.results" options="{showToggle: $index == 0, showFilter: $index == 0, focusFilter: $ctrl.focusFilter, filters: $ctrl.filters, filterStartingIndex: $ctrl.filterIndex, title: $ctrl.getCategoryTitle(category), showPagination: false, id: 'search'}">
+            <grid-items>
+                <ovp-product ng-repeat="asset in category.results | limitTo: $ctrl.limit" options="{index: $index, parentIndex: $parent.$index, focusOnLoad: ($first && $parent.$first && $ctrl.focusOnLoad) || ($index === $ctrl.focusIndex.index && $parent.$index === $ctrl.focusIndex.parentIndex)}" asset="asset" category="$first ? $ctrl.getCategoryTitle(category) : ''"></ovp-product>
+            </grid-items>
+            <list-items>
+                <result-list-item ng-repeat="asset in category.results | limitTo: $ctrl.limit" options="{index: $index, parentIndex: $parent.$index, focusOnLoad: ($first && $parent.$first && $ctrl.focusOnLoad) || ($index === $ctrl.focusIndex.index && $parent.$index === $ctrl.focusIndex.parentIndex)}" item="asset" category="$first ? $ctrl.getCategoryTitle(category) : ''" index="$index"></result-list-item>
+            </list-items>
+        </ovp-grid-list>
+
+        <ovp-grid-list ng-if="category.numResults > 0 && category.title === 'Person'" items="category.results" options="{showToggle: $index == 0, showFilter: $index == 0, focusFilter: $ctrl.focusFilter, filters: $ctrl.filters, filterStartingIndex: $ctrl.filterIndex, title: $ctrl.getCategoryTitle(category), showPagination: false, id: 'search'}">
+            <grid-items>
+                <ovp-person ng-repeat="person in category.results | limitTo: $ctrl.limit" person="person" options="{index: $index, parentIndex: $parent.$index, focusOnLoad: ($first && $parent.$first && $ctrl.focusOnLoad) || ($index === $ctrl.focusIndex.index && $parent.$index === $ctrl.focusIndex.parentIndex)}" category="$first ? $ctrl.getCategoryTitle(category) : ''"></ovp-person>
+            </grid-items>
+            <list-items>
+                <result-list-item ng-repeat="person in category.results | limitTo: $ctrl.limit" item="person" options="{index: $index, parentIndex: $parent.$index, focusOnLoad: ($first && $parent.$first && $ctrl.focusOnLoad) || ($index === $ctrl.focusIndex.index && $parent.$index === $ctrl.focusIndex.parentIndex)}" category="$first ? $ctrl.getCategoryTitle(category) : ''" index="$index"></result-list-item>
+            </list-items>
+        </ovp-grid-list>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="btn-group ovp-dropdown-list-container" ng-keydown="vm.onKeydown($event)" ng-keyup="vm.onKeyup($event)">
+    <label class="showLabel">{{vm.config.showLabel ? (vm.config.buttonLabel + ': ') : ''}}</label>
+    <input ng-attr-aria-label="{{vm.config.buttonLabel}}, {{vm.items[vm.config.activeIndex].label || vm.items[vm.config.activeIndex].text}}" ng-attr-aria-labelledby="{{vm.config.buttonLabelledBy}}" aria-expanded="{{vm.showDropdown}}" role="combobox" ng-focus="vm.focusButton=false" ng-blur="vm.onButtonBlur($event)" ng-click="vm.toggleDropdown($event)" ng-keydown="vm.onButtonKeydown($event)" focus-when="vm.focusButton" type="button" class="btn btn-primary btn-lg round" ng-class="{'btn-caret': (vm.items.length > 1)}"
+    value="{{vm.getTitle()}}">
+    <ul style="list-style: none;" class="dropdown-list" ng-show="vm.showDropdown" role="listbox" arrow-nav="listitem" arrow-nav-options="{noShiftTabExit: true}" ng-keydown="vm.onDropdownListKeydown($event)">
+        <li ng-blur="vm.onListItemBlur($event)" role="option" ng-repeat="item in vm.items" class="listitem" ng-class="{selected: (vm.config.activeIndex === item.index)}" ovp-click="vm.click($index);vm.focusButton=true;vm.showDropdown=false" tabindex="-1">
+            {{item.text || item.label}}
+        </li>
+    </ul>
+</div>

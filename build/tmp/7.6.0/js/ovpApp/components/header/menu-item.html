@@ -1,0 +1,15 @@
+<li ng-hide="vm.item.hidden" ng-class="{'active': vm.item.isSelected(), 'disabled': !vm.item.enabled}">
+
+    <a id="{{vm.item.id}}-link"
+    	class="{{vm.item.id}}"
+    	ng-click="vm.itemClicked($event);"
+      ng-mouseup="vm.itemMouseUp($event)"
+    	ui-sref="{{vm.item.link}}"
+    	ui-sref-active="{{vm.item.enabled}}"
+      aria-label="{{vm.item.label}}{{vm.item.isSelected() ? ', selected' : '' }}">
+
+    	{{vm.item.title}}
+    	<span class="sr-only" ng-if="isSelected(vm.item)">(current)</span>
+	</a>
+
+</li>

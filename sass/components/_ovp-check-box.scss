@@ -1,0 +1,10 @@
+.ovp-check-box {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background: $grey94 url("../images/rdvr_checkBoxes_justbox.png?{{CACHE-VERSION}}");
+    background-size: 100% 100%;
+    &.checked {
+        background-image: url("../images/rdvr_checkBoxes_check.png?{{CACHE-VERSION}}");
+    }
+}

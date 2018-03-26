@@ -1,0 +1,8 @@
+<ul class="nav ooh-nav dropdown-container">
+    <li tabindex="0" class="dropdown-hover" ng-class="{'invisible': !$ctrl.isOoh}" uib-dropdown>
+        <a title="away from home" class="divider"><span class="ooh-icon slide-out" ng-class="{'slide-out': !$ctrl.isOoh}"></span></a>
+        <ul class="dropdown-menu tooltip-box top" uib-dropdown-menu>
+            <li class="caption" ng-bind-html="$ctrl.tooltip | toTrusted"></li>
+        </ul>
+    </li>
+</ul>

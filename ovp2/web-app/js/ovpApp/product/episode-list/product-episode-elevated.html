@@ -1,0 +1,32 @@
+<a href="#"
+    class="row list-group-item list-item-episode elevated"
+    ng-class="{active:$ctrl.selected}"
+    ng-click="$ctrl.onSelected({episode: $ctrl.episode})"
+    ng-focus="$ctrl.onSelected({episode: $ctrl.episode})" role="listitem">
+    <span class="sr-only">Use arrows to cycle through actions for this program. {{$ctrl.episode.allRatings[0] + ' ' + $ctrl.episode.longDescription}}</span>
+    <div class="col-md-16">
+        <h6 role="heading" aria-level="2">
+            {{::$ctrl.description}}
+            <span class="sr-only">, season {{$ctrl.episode.seasonNumber}}, episode {{$ctrl.episode.episodeNumber}}, {{$ctrl.episode.title}}, {{$ctrl.$filter('date')($ctrl.episode.originalAirDate)}}</span>
+        </h6>
+    </div>
+    <div class="col-md-16 title-group">
+        <span aria-hidden="true" class="ep" ng-if="$ctrl.episode.seasonNumber && $ctrl.episode.episodeNumber">
+            S{{::$ctrl.episode.seasonNumber}} Ep{{::$ctrl.episode.episodeNumber}}
+        </span>
+        <span aria-hidden="true" class="title" ng-bind="::$ctrl.episode.title" data-ellipsis></span>
+        <span class="twcicon-svg twcicon-svg-recording" aria-label="Scheduled to record" ng-if="!$ctrl.episode.parentSeries.isSeriesRecording && $ctrl.episode.cdvrHasNotCompleted"></span>
+        <span class="twcicon-svg twcicon-svg-recording-series" aria-label="Scheduled to record" ng-if="$ctrl.episode.parentSeries.isSeriesRecording && $ctrl.episode.cdvrHasNotCompleted"></span>
+        <span ng-switch="$ctrl.episodeStatus()">
+            <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="parental block" ng-switch-when="blocked"></span>
+            <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" aria-label="key icon" ng-switch-when="unentitled"></span>
+            <span class="ooh-icon" aria-hidden="true" aria-label="away from home icon" ng-class="{'weak':!$ctrl.selected}" ng-switch-when="availableOutOfHome"></span>
+        </span>
+    </div>
+    <div class="col-md-16" ng-if="$ctrl.episode.playedPct">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{$ctrl.episode.playedPct}}" aria-valuetext="{{$ctrl.episode.playedPct}}% Complete" ng-style="{width: $ctrl.episode.playedPct + '%'}">
+            </div>
+        </div>
+    </div>
+</a>

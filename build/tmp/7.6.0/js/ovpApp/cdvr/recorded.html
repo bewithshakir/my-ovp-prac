@@ -1,0 +1,12 @@
+<div class='cdvr my-recordings'>
+    <h1 class="sr-only">DVR, My Recordings</h1>
+    <p ng-show='$ctrl.cdvrRecordings.length==0'>{{$ctrl.message}}</p>
+    <ovp-grid-list items='$ctrl.cdvrRecordings' options='$ctrl.gridConfig'>
+        <grid-items>
+            <ovp-product ng-repeat="recording in $ctrl.cdvrRecordings" asset="recording" template='boxart'></ovp-product>
+        </grid-items>
+        <list-items>
+            <cdvr-list-item ng-repeat="recording in $ctrl.cdvrRecordings" asset="recording"></cdvr-list-item>
+        </list-items>
+    </ovp-grid-list>
+</div>

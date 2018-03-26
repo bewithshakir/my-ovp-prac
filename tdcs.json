@@ -1,0 +1,130 @@
+{
+  "adBlockerDetection": {
+    "enabled": true,
+    "blockPlaybackIfAdsBlocked": false,
+    "blockPlaybackOnlyIfDaiStream": false
+  },
+  "ajaxAnalyticsEnabled": "false",
+  "cdvrEnabled": true,
+  "drmLAUri": "http://twc.live.ott.irdeto.com/playready/rightsmanager.asmx",
+  "easEnabled": "true",
+  "featureTourSlides":[
+    {
+        "index": 0,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-livetv",
+        "headerText": "",
+        "subHeaderText": "Live TV almost anywhere",
+        "description": "Watch all of your favorite channels at home and many top-rated networks from any WiFi connection."
+    },
+    {
+        "index": 1,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-channel-sort",
+        "headerText": "",
+        "subHeaderText": "Channels A - Z or 1, 2, 3",
+        "description": "Click anywhere on live video to sort the live TV guide by channel name or channel number. It's your choice!",
+        "class": "pull-image-left"
+    },
+    {
+        "index": 2,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-search",
+        "headerText": "",
+        "subHeaderText": "Search for anything, from anywhere",
+        "description": "Search by title, person or sports team to easily find live TV, On Demand and recorded DVR content.",
+        "class": "pull-image-right"
+    },
+    {
+        "index": 3,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-every-way",
+        "headerText": "",
+        "subHeaderText": "Every way to watch",
+        "description": "Live TV, On Demand or on your DVR - it's all in one place. Spend less time searching and more time watching.",
+        "class": "pull-image-left"
+    },
+    {
+        "index": 4,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-ondemand",
+        "headerText": "",
+        "subHeaderText": "Thousands of <u>FREE</u> On Demand shows",
+        "description": "Browse by category or network, then add your favorites to Watch Later to keep them all in one place.",
+        "class": "pull-image-right"
+    },
+    {
+        "index": 5,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-in-progress",
+        "headerText": "",
+        "subHeaderText": "Finish where you left off",
+        "description": "Find your in progress On Demand shows in the Watch Later menu. Tap the show, then Resume to continue watching.",
+        "class": "pull-image-left"
+    },
+    {
+        "index": 6,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-set-dvr",
+        "headerText": "",
+        "subHeaderText": "Set your DVR",
+        "description": "To record a show, select the episode from the episode list, then choose Record. Select a series or single recording, choose your options and you're good to go!",
+        "class": "pull-image-right"
+    },
+    {
+        "index": 7,
+        "imageUrl": "/imageserver/supporting?image=ovp-6-0-parental-controls",
+        "headerText": "",
+        "subHeaderText": "You're in charge",
+        "description": "Set a PIN and block by rating or channel. Blocks apply to all devices signed in with the same user name. To remove the block, just enter the PIN.",
+        "class": "pull-image-left"
+    }
+  ],
+  "intervalForChannelBrowserUpdateInMinutes": "2",
+  "intervalForOnNowOnNextUpdateInMinutes": "15",
+  "messages": {
+      "liveTvUnavailableBST":"Live TV streaming is not currently offered in your area on this device. Please tap \"On Demand\" to browse available programming.",
+      "guideUnavailableNoSTB":"A compatible set-top box or DVR is required to view the interactive program guide.",
+      "dvrUnavailable":"A compatible DVR is required to use this feature."
+  },
+  "playDrmOnlyStreams": true,
+  "playerBitrateControlParameters": {
+    "overrideDefaults": false,
+    "bitrateControlPolicy": "aggressivePolicy",
+    "initialBitrateInBitsPerSec": 0,
+    "minimumBitrateInBitsPerSec": 0,
+    "maximumBitrateInBitsPerSec": 0
+  },
+  "playerBufferControlParameters":{
+    "overrideDefaults": true,
+    "initialBufferLengthInMilliSec": 1500,
+    "defaultPlaybackBufferLengthInMilliSec": 30000,
+    "vodPlaybackBufferLengthInMilliSec": 60000
+  },
+  "playerChannelBrowserDefaultSortByType": "networkAToZ",
+  "playerInitializeTimeout": 600000,
+  "playerParameters": {
+    "miniGuideTimeoutMs": 15000,
+    "infoPopupTimeoutMs": 3000
+  },
+  "recentlyViewedListMaxItems": "30",
+  "showPlayerChannelBrowserFiltersOutOfHome": false,
+  "splunkControlParameters": {
+    "splunkHeartbeatEnabled": "true",
+    "splunkLoggingEnabled": "true",
+    "maxBufferSizeRecords": "50",
+    "reportFrequencyMs": "30000",
+    "splunkPlayerStatusEnabled": "true",
+    "heartbeatFrequencyMs": "120000"
+  },
+  "stbSettingsEnabled": false,
+  "stbSettingsParentalControls": {
+    "timeBlockEnabled": false,
+    "channelBlockEnabled": false
+  },
+  "thresholdForOnNextTitleUpdateInMinutes": "5",
+  "tvodRent": "true",
+  "tvodWatch": "true",
+  "useAlternateDAIScheme": false,
+  "useDAIforLIVE": true,
+  "useDAIforVOD": true,
+  "useDRMforLIVE": true,
+  "useDRMforVOD": true,
+  "streamPlus": {
+    "enabled": false,
+    "buyFlowEnabled": false
+  }
+}

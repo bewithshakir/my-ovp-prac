@@ -1,0 +1,57 @@
+{
+  "name": "ovp",
+  "description": "TWCTV.com Online Video Portal",
+  "main": "sass/main.scss",
+  "authors": [
+    {
+      "name": "Christohper Dura",
+      "email": "chris.dura@twcable.com"
+    },
+    {
+      "name": "John Ipson",
+      "email": "john.ipson@twcable.com"
+    },
+    {
+      "name": "Nick Tower",
+      "email": "nick.tower@twcable.com"
+    },
+    {
+      "name": "Scott Fennell",
+      "email": "scott.fennell@twc-contractor.com"
+    },
+    {
+      "name": "Mehul Shah",
+      "email": "mehul.shah@twcable.com"
+    }
+  ],
+  "keywords": [
+    "ovp",
+    "twctv.com",
+    "video",
+    "portal"
+  ],
+  "moduleType": [],
+  "homepage": "http://twctv.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.webapps.rr.com/ovp/ovp2.git"
+  },
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "dependencies": {
+    "angular-aria": "^1.5.8",
+    "angular-messages": "^1.5.8",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#^1.7.0",
+    "venona-js-client": "git@gitlab.spectrumxg.com:product-intelligence/venona-js-client.git#^5.9.0",
+    "angular-ellipsis": "^0.1.7",
+    "splunk-js": "git@gitlab.spectrumxg.com:ip-client/splunk-js.git#~0.0.5",
+    "platform.js": "platform#^1.3.4"
+  }
+}

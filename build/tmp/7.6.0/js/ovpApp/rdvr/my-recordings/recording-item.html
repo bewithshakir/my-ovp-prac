@@ -1,0 +1,27 @@
+<div class='my-recordings-item' ng-mouseover="hovered=true" ng-mouseleave="hovered=false" ng-click="$ctrl.click()">
+    <div class="item-frame row-item">
+        <div class="row-title">
+            <span class="program-title">{{::$ctrl.recording.episodes[0].title}}</span>
+            <span class="episode-title">{{::$ctrl.episodeTitleDescription()}}</span>
+            <ovp-rating ng-if="$ctrl.isMovie(recording.episodes[0])" rating="$ctrl.recording.episodes[0].rating"></ovp-rating>
+        </div>
+
+        <div class="row-series-episode" ng-if="!$ctrl.recording.episodes[0].isMovie"><span ng-if="$ctrl.recording.episodes[0].seasonNumber">{{::('Season ' + $ctrl.recording.episodes[0].seasonNumber + ' Episode ' + $ctrl.recording.episodes[0].episodeNumber)}}</span>
+        </div>
+
+        <div class="row-series-episode" ng-if="$ctrl.recording.episodes[0].isMovie">{{::$ctrl.recording.episodes[0].releaseYear}}</div>
+
+        <div class="row-genre">{{::$ctrl.recording.episodes[0].genreString}}</div>
+
+        <div class="row-channel">
+            <ovp-channel display-type="list" mystro-service-id="$ctrl.recording.episodes[0].mystroServiceId" channel-id="$ctrl.recording.episodes[0].displayChannel"></ovp-channel>
+        </div>
+
+        <div class="twcicon-svg twcicon-svg-lock" ng-if="$ctrl.recording.isBlockedByParentalControls === true"></div>
+
+        <div class="row-play-on-tv" ng-click="$ctrl.watchRecording();$event.stopPropagation()" ng-if="hovered===true && $ctrl.recording.isParentallyBlocked !== true">
+            <div class="row-play-on-tv-icon"></div>
+            <div class="row-play-on-tv-text">Play On TV</div>
+        </div>
+    </div>
+</div>

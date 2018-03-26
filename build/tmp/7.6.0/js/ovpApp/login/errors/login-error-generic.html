@@ -1,0 +1,27 @@
+<div class="login-error" id="login-error">
+    <div class="error-icon">
+        <span class="si si-caution-f"></span>
+    </div>
+    <div class="error-message">
+        <p aria-hidden="true" error-codes="WLI-1010"></p>
+
+        <p aria-hidden="true">
+            Did you forget your
+            <a ng-click="forgotUsername()"
+                class="alert-link"
+                href="{{config.forgotHost + config.registration.forgot}}"
+                aria-label="Forgot your username?"
+                role="link"
+                target="_forgotuser"
+                tabindex="0">username</a>
+                or
+            <a ng-click="forgotPassword()"
+                class="alert-link"
+                href="{{config.forgotHost + config.registration.forgot}}"
+                aria-label="Reset your password"
+                role="link"
+                target="_forgotpass"
+                tabindex="0">password?</a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+
+
+//
+// Layout
+// --------------------------------------------------
+
+// Styles generally relating to high-level site-wide layout,
+// like the header, main content and footer.
+
+// Styles applied to the `body` to adjust padding based
+// on the height of the fixed header and subnav.
+// Also needs to account for any borders on the elements.
+
+html,
+body {
+    height: 100%;
+    background-color: $kite-dark-blue-3 !important;
+}
+
+// Style any `<a>` tag missing an `href` with a pointer.
+a:not([href]) {
+    cursor: pointer;
+}
+
+a:focus {
+    outline: 3px solid $brand-primary;
+}
+
+// Container element chiefly used to constrain the content of the
+// site, for example, setting the max-width of the site.
+.wrap {
+    background-color: $kite-dark-blue-3;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 100%;
+    position: relative;
+
+    // @include breakpoint("sm") {
+    //     // background-color: green;
+    // }
+
+    // @include breakpoint("md") {
+    //     // background-color: blue;
+    // }
+
+    // @include breakpoint("lg") {
+    //     // background-color: purple;
+    // }
+
+    // @include breakpoint("xl") {
+    //     // background-color: orange;
+    // }
+
+
+    // The `.main-container` holds the `.main-content` of the site
+    // between the header and footer.
+    .main-container {
+        padding:0 ($grid-gutter-width / 2) + 15 ($grid-gutter-width / 2) + 15;
+        @media(max-width: 450px) {
+            padding: 0.5rem;
+        }
+
+        .main-content {
+
+            &:focus {
+                outline: none; // wipe out focus outline
+            }
+
+            > .contents {
+                box-sizing: content-box;
+                padding: 5%;
+            }
+        }
+    }
+}
+
+body {
+    overflow-x: auto;
+}
+
+.footer-padding {
+    // as height of class="wrap" is 100% and footer is just underneath. Hence added padding-bottom as the value of 
+    // height and border of footer. So that footer could stick in bottom if content is less than device height.
+    padding-bottom: $footer-height + $footer-border;
+}

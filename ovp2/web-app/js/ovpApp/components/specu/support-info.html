@@ -1,0 +1,35 @@
+<div class="specu-support-info-container" role="document">
+    <div class="sr-only">
+        <span id="spec-support-info-title">Need Help or Have Questions?</span>
+        <span id="spec-support-info-description">
+            {{$ctrl.universityInfo.name}},
+            {{$ctrl.universityInfo.helpdesk}},
+            Email {{$ctrl.universityInfo.email.split('?')[0]}},
+            Phone {{$ctrl.universityInfo.phone}}
+        </span>
+    </div>
+    <div ng-click="$ctrl.modalInstance.dismiss()" focus-once aria-label="close" role="button" class="close-icon-container" ng-mouseover="$ctrl.activeCloseIcon=true" ng-mouseleave="$ctrl.activeCloseIcon=false">
+        <img class="close-icon" ng-src="{{$ctrl.closeIcon()}}"></img>
+    </div>
+    <div class="info-icon-container">
+        <img alt="Information" ovp-src="/images/question.svg"/>
+    </div>
+    <h1>Need Help or Have Questions?</h1>
+    <ul class="specu-university-info-container">
+        <li class="info" ng-if="$ctrl.universityInfo.name">
+            {{$ctrl.universityInfo.name}}
+        </li>
+        <li class="info" ng-if="$ctrl.universityInfo.helpdesk">
+            {{$ctrl.universityInfo.helpdesk}}
+        </li>
+        <li class="info kite-btn-link" ng-if="$ctrl.universityInfo.email">
+            <a ng-click='$ctrl.clickEmail($event)' ng-href="mailto:{{$ctrl.universityInfo.email}}" target="_top" aria-label="Email {{$ctrl.universityInfo.email.split('?')[0]}} with subject line {{$ctrl.universityInfo.emailSubject}}">{{$ctrl.universityInfo.email.split('?')[0]}}</a>
+        </li>
+        <li class="info" ng-if="$ctrl.universityInfo.phone">
+            <a ng-click='$ctrl.clickPhone($event)' ng-href="tel:{{$ctrl.universityInfo.phone}}" target="_top" aria-label="Phone {{$ctrl.universityInfo.phone}}">{{$ctrl.universityInfo.phone}}</a>
+        </li>
+    </ul>
+    <div class="buttonHolder">
+        <button class="ok-button" ng-click="$ctrl.modalInstance.dismiss()">OK</button>
+    </div>
+</div>

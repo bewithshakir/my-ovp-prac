@@ -1,0 +1,18 @@
+<div class="scheduled">
+	<rdvr-toolbar options="$ctrl.subheaderOptions" on-button-clicked="$ctrl.onButtonClicked(button)"></rdvr-toolbar>
+
+	<div ng-if="!$ctrl.loadingFirstBatch && !$ctrl.error && $ctrl.recordings && $ctrl.recordings.length === 0">There are no scheduled recordings on this DVR. Schedule recordings from Guide or Search.</div>
+
+	<div class='rdvr-list'>
+		<section ng-repeat='day in $ctrl.recordings' role="region" aria-labelledby="scheduled-header-{{$index}}" >
+        	<ul role="list">
+            	<h2 id='scheduled-header-{{$index}}' aria-level='2' class='day-item day-label'>{{day.label}}  <small>{{day.date}}</small></h2>
+            	<rdvr-schedule-list-item role="listitem" ng-repeat="recording in day.recordings track by $index" recording="recording" state="recording.cancelScheduledSelection" on-state-changed="$ctrl.onCheckboxStateChanged(recording, state)" cancel-call-back="$ctrl.cancelRecordings()" day="day"></rdvr-schedule-list-item>
+			</ul>
+		</section>
+	</div>
+
+	<div class="rdvr-loading text-center" ng-if="$ctrl.loadingRemainingBatches">
+		<quiet-loading-tracker track='$ctrl.loadingRemainingBatches.promise' message='Loading your scheduled recordings ...'></quiet-loading-tracker>
+	</div>
+</div>

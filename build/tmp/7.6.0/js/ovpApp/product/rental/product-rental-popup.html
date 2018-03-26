@@ -1,0 +1,135 @@
+<div class='rental-dialog'>
+    <div ng-switch="$ctrl.step">
+        <section id="rental-options" ng-switch-when="options" class='step options'>
+            <span id="product-rental-title" class="sr-only">{{$ctrl.asset.title}} multiple offerings</span>
+            <span id="product-rental-description" class="sr-only">{{$ctrl.RENT_COMPLEX_OPTION_TITLE}}</span>
+            <div class="row"><h2 id="rentalDialogTitle" class='col-md-16 text-center'>{{::$ctrl.RENT_COMPLEX_OPTION_TITLE}}</h2></div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class="thumbnail thumbnail-static thumbnail-responsive">
+                        <img ng-src="{{$ctrl.asset.imageUri({width:210})}}" fadein-onload></img>
+                    </div>
+                </div>
+                <div class='col-md-10'>
+                    <ul class="format-list" role="listbox">
+                        <li class='row format-option' ng-repeat='option in $ctrl.streamOptions' role="option">
+                            <div class="col-sm-11 col-xs-10">
+                                <h4 class='format-title' id="rentalDetails{{$index}}">{{option.title}}<span aria-hidden="true" class='twcicon twcicon-{{option.type}}'></span></h4>
+                                <div class='format-edition greytext'>{{option.edition}}</div>
+                                <div class='format-details'>
+                                    <ovp-rating rating="option.rating" ></ovp-rating>
+                                    <span class='bluetext'>{{option.year}}</span>
+                                    <span class='length greytext'>{{option.length}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-xs-6 format-select">
+                                <button ng-click='$ctrl.selectOption(option)' class="btn btn-default stream-option-button pull-right" focus-when="$index === 0" aria-labelledby="srIntro rentalPrice{{$index}}" aria-describedby="rentalDetails{{$index}}">{{option.price | currency}}</button>
+                            </div>
+                            <p class="hidden" id="rentalPrice{{$index}}">{{option.price | currency}}</p>
+                        </li>
+                    </ul>
+                    <p class="hidden" id="srIntro">rent for</p>
+                    <div ng-if="!$ctrl.asset.tvodAvailableOutOfHome" class='row format-option ooh-warning-message'>
+                        <div class="col-sm-16 col-xs-16 text-center">
+                            <h4 class="unavailable-message"><small>{{$ctrl.oohWarningMessage}}</small></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rental-options" ng-switch-when="confirm" class='rent-confirm'>
+            <span id="product-rental-title" class="sr-only">confirm rental</span>
+            <span id="product-rental-description" class="sr-only">{{$ctrl.RENT_SINGLE_OPTION_TITLE}} {{$ctrl.selectedOption.title}} {{$ctrl.selectedOption.price | currency}}</span>
+            <div class="row vertical-wrapper">
+                <div class='col-md-6'>
+                    <div class="thumbnail thumbnail-static thumbnail-responsive">
+                        <img ng-src="{{$ctrl.asset.imageUri({width:210})}}" fadein-onload></img>
+                    </div>
+                </div>
+                <div class='col-md-10 vertical-expander'>
+
+                    <h2 id="rentalDialogTitle" class='text-center' >{{::$ctrl.RENT_SINGLE_OPTION_TITLE}}</h2>
+                    <div class="format-list" role="list" tabindex="-1">
+                        <div class='row format-option' role="listitem">
+                            <div class="col-sm-11 col-xs-10">
+                                <h4 class='format-title'>{{$ctrl.selectedOption.title}}<span aria-hidden="true" class='twcicon twcicon-{{$ctrl.selectedOption.type}}'></span></h4>
+                                <div class='format-edition greytext'>{{$ctrl.selectedOption.edition}}</div>
+                                <div class='format-details'>
+                                    <ovp-rating rating="$ctrl.selectedOption.rating" ></ovp-rating>
+                                    <span class='bluetext'>{{$ctrl.selectedOption.year}}</span>
+                                    <span class='length greytext'>{{$ctrl.selectedOption.length}}</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-xs-6 format-price text-right" id="rentalPrice">
+                                {{$ctrl.selectedOption.price | currency}}
+                            </div>
+                        </div>
+                        <div ng-if="!$ctrl.selectedStream.availableOutOfHome" class='row format-option ooh-warning-message'>
+                            <div class="col-sm-16 col-xs-16 text-center">
+                                <h4 class="unavailable-message"><small>{{$ctrl.oohWarningMessage}}</small></h4>
+                            </div>
+                        </div>
+                        <p class="hidden" id="srIntro">rent for</p>
+                    </div>
+
+                    <div class="form-group text-right bottom-sticky">
+                        <button class="btn btn-primary" ng-click="$ctrl.confirm(false)" role="button" focus-once aria-labelledby="srIntro rentalPrice">Rent</button>
+                        <button class="btn btn-default" ng-click="$ctrl.cancel('cancel rental');" role="button" aria-label="cancel rental">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section ng-switch-when="renting" class="step" role="alert" aria-labelledby="rental-status-label">
+            <div class="row vertical-wrapper">
+                <div class='col-md-6'>
+                    <div class="thumbnail thumbnail-static thumbnail-responsive">
+                        <img ng-src="{{$ctrl.asset.imageUri({width:210})}}" fadein-onload></img>
+                    </div>
+                </div>
+                <div class='col-md-10 vertical-expander'>
+                    <div class='row'>
+                        <h2 id="rental-status-label" class='text-center'><em>{{$ctrl.rentLoadingMessage}}</em></h2>
+                        <div class='col-md-16 text-center lead'>{{$ctrl.asset.title}}</div>
+                    </div>
+
+                    <div class='vcenter'>
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section ng-switch-when="pin" class="step pin">
+            <div class="row vertical-wrapper">
+                <div class='col-md-6'>
+                    <div class="thumbnail thumbnail-static thumbnail-responsive">
+                        <img ng-src="{{$ctrl.asset.imageUri({width:210})}}" fadein-onload></img>
+                    </div>
+                </div>
+                <div class='col-md-10 vertical-expander'>
+                    <div class='vcenter'>
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section ng-switch-when="error" class="step" role="alert">
+            <div class="row vertical-wrapper">
+                <div class='col-md-6'>
+                    <div class="thumbnail thumbnail-static thumbnail-responsive">
+                        <img ng-src="{{$ctrl.asset.imageUri({width:210})}}" fadein-onload></img>
+                    </div>
+                </div>
+                <div class='col-md-10 vertical-expander' aria-live="polite">
+                    <h3>Failed to rent {{$ctrl.asset.title}}</h3>
+                    <p>{{$ctrl.error.message}}</p>
+                    <p ng-show='$ctrl.error.code' class="error-code"><span class="text-danger">Error:</span> {{$ctrl.error.code}}</p>
+                    <p ng-show='$ctrl.error.details' class="error-code"><span class="text-danger">Details:</span> {{$ctrl.error.details}}</p>
+                    <div class="form-group text-right bottom-sticky">
+                        <button class="btn btn-primary" ng-click="$ctrl.modalInstance.close('error');" focus-once>Ok</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>

@@ -1,0 +1,45 @@
+<div class="player-debug-window-wrapper">
+    <button ng-click="$ctrl.status.hidden=!$ctrl.status.hidden">Toggle</button>
+    <div class="player-debug-window-container" ng-hide="$ctrl.status.hidden">
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Playback position : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.playbackPosition}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Status : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.playbackStatus}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Ad playing : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.adPlaying}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Ad info : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.adInfo}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">EPTBookmark : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.eptBookmark}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Buffer Status : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.bufferStatus}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Bitrate : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.bitRateStatus}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Dropped frames count : </div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.droppedFramesCount}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Buffer length:</div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.bufferLength}}</span>
+        </div>
+        <div class="row cast-wrapper">
+            <div class="label col-md-7 col-sm-7">Buffer time:</div>
+            <span class="val col-md-9 col-sm-9">{{$ctrl.status.bufferTime}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<h1 class="sr-only">On Demand, Featured</h1>
+<div ng-repeat="category in $ctrl.data.categories">
+    <ovp-carousel items="category.media" options="{title: category.name, viewAllUri: $ctrl.viewAllUris[$index]}" on-limit-changed="$ctrl.updateLimit(limit)">
+        <ovp-product ng-repeat="asset in category.media | limitTo: $ctrl.itemLimit" asset="asset"></ovp-product>
+    </ovp-carousel>
+</div>

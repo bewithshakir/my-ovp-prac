@@ -1,0 +1,11 @@
+<div class="player-install-flash">
+    <h1>{{$ctrl.flashNotEnabledMessage.title}}</h1>
+    <h2>{{$ctrl.flashNotEnabledMessage.subTitle}}</h2>
+    <ul class="message">
+        <li class="item" ng-repeat="message in $ctrl.flashNotEnabledMessage.messages">
+            {{message}}
+        </li>
+    </ul>
+    <span id="flash-warning-sr-message" class="sr-only">{{$ctrl.flashNotEnabledMessage.srButtonText}}</span>
+    <a class="download-plug-in" target="_blank" ng-click="$ctrl.continue('continue')" href="https://get.adobe.com/flashplayer/" role="button" aria-label="Continue" aria-describedby="flash-warning-sr-message"><span class="link-text">Continue</span></a>
+</div>

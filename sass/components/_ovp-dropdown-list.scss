@@ -1,0 +1,48 @@
+.ovp-dropdown-list-container {
+    .dropdown-list {
+        width: 100%;
+        min-width: 50px;
+        padding: 2px;
+        background-color: #333;
+        z-index: 1000;
+        position: absolute;
+        top: 30px;
+        li {
+            padding-left: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #ddd;
+        }
+        li.selected {
+            background-color: #4d4f53;
+        }
+        li:focus,
+        li:hover {
+            background-color: black;
+        }
+    }
+}
+
+.ovp-dropdown-list-container.btn-group {
+    position: absolute;
+    right: 5px;
+    width: 150px;
+    margin-top: 2px;
+    .btn {
+        width: 100%;
+        text-align: left;
+        padding: 3px 15px 3px 7px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        height: 30px;
+        color: #ddd;
+        font-weight: 500;
+        background-color: black;
+    }
+    .btn-caret {
+        background: url(../images/icons.png?) no-repeat scroll right -950px #000;
+    }
+}

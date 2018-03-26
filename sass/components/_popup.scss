@@ -1,0 +1,298 @@
+/*
+   As we migrate over to using the new modals, this file will cease to be relevant. 
+   See _modals.scss, modal.js, and the deprecated popup.js
+ */
+
+/*------------------POPUP---------------------*/
+
+#growlpopup, #ondemand-page, .alertBox {
+
+  .productPopup-temp .popup{
+     top: 140px;
+     background-color:$black;
+     background-image:url('../images/radial-bg2.jpg?{{CACHE-VERSION}}');
+     background-position:0 -285px;
+     /* min-width: 400px; */
+     /* width:670px; */
+     border:2px solid $grey13;
+     top:140px;
+     position:absolute;
+     opacity:1;
+     filter:alpha(opacity=100);
+  }
+
+  .holder{height:60px;}
+
+
+  /*****************************************************
+   * Popup close: there are some other styles relating to this in common.scss because they need to be update along with popup.background
+   *****************************************************/
+
+    a.popupCloseClick {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: block;
+        cursor: pointer;
+        background: transparent url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0 -291px;
+        z-index: 10;
+    }
+
+    .popup.background {
+        background-color: $black;
+        background-image: url("../images/radial-bg2.jpg?{{CACHE-VERSION}}");
+        background-position: 40% 40%;
+    }
+}
+
+/*---------------- Popup Styles------------------- */
+
+.popupHolder {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: $zIndexPopup;
+    line-height: 1em;
+
+    .cancelRecord {
+        .base-button {
+            text-align: left;
+        }
+    }
+}
+
+.popup{
+  position:absolute;
+}
+
+.popup.background{
+  border:1px solid $grey34;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 4px 10px $black;
+  -moz-box-shadow: 1px 4px 10px $black;
+  box-shadow: 1px 4px 10px $black;
+  background-color:$black;
+  background-image: url("../images/radial-bg2.jpg?{{CACHE-VERSION}}");
+  background-position: 40% 40%;
+}
+
+.popup .content{
+  @extend %clearfix;
+  padding: 16px;
+  font-size: 14px;
+  margin:0;
+
+  .error-message{
+    text-align: center;
+    color:$grey50;
+    a{
+      clear:both;
+      margin:20px auto 10px;
+      cursor:pointer;
+      b{
+        background-image: none;
+        text-indent: 0;
+      }
+    }
+    a.msg-popup-link{
+      color:#00B3EF !important;
+    }
+  }
+
+  h2 {
+    color:$white;
+    margin-top:0;
+    font-size:125%;
+
+    &.alertBox {
+     text-align:center;
+    }
+  }
+
+  .ooh-warning-message {
+    margin-top: 1em;
+  }
+}
+
+.RPopup {
+    display: none;
+    text-align: center;
+
+    &.Open {
+        display: block !important;
+    }
+
+    &.Acknowledgeable {
+        .popupHolder {
+            // Must appear above legacy twc.ui.popup
+            z-index: #{$zIndexPopup + 1};
+        }
+    }
+
+    .popupCloseClick {
+        display: none !important;
+    }
+
+    &.Closeable .popupCloseClick {
+        display: block;
+    }
+
+    .Title {
+        display: none;
+    }
+
+    &.HasTitle .Title {
+        display: block;
+    }
+}
+
+.popupHolder .screenOverlay{
+  width:100%;
+  height:100%;
+  background:$black;
+  background:$grey82;
+  -pie-background:$grey82;
+}
+
+/*
+* Product page product template styles
+*/
+.productPopup-temp .popup{
+  background: url("../images/radial-bg.jpg?{{CACHE-VERSION}}") no-repeat scroll center top transparent;
+  min-width: 400px;
+  border: 2px solid $grey13;
+}
+
+
+/* Conflict Template Styles */
+.popupHolder .conflict{
+  .message{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 342px;
+    p:first-child{
+      font-weight:bold;
+      font-size:21px;
+      text-align: center;
+    }
+    p:last-of-type{
+      font-size: 16px;
+    }
+  }
+  .divider{
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $grey58;
+    margin-top: 20px;
+  }
+  .show{
+    border-top: 1px solid $grey58;
+    border-bottom: 1px solid $black;
+    cursor: pointer;
+    overflow:hidden;
+    .recordIcon{
+      background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll 0 -440px transparent;
+      float: left;
+      height: 30px;
+      width: 50px;
+      position:relative;
+      &.record{
+        background-position: 0 -471px;
+      }
+    }
+
+    &:first-child{
+      border-top: none;
+    }
+    &:last-child{
+      border-bottom: 1px solid $grey58;
+    }
+    .details{
+      float: left;
+      padding: 15px;
+      width: 360px;
+
+      .title{ color:$grey43 !important; }
+      .time{ font-size: 12px !important; }
+      .shortDescription{ color:$blue05 !important; }
+      p{ padding: 0 !important;}
+    }
+  }
+  .confirm{
+    padding: 10px 0;
+    text-align: center;
+    width: 470px;
+
+    a{
+      margin: 10px auto auto;
+      width: 150px;
+      text-decoration: none;
+      color:$grey54;
+    }
+    .disable{
+      opacity:.2;
+      filter: alpha(opacity=20);
+      &:hover{
+        background: -moz-linear-gradient(center top , $grey59 0%, $grey60 24%, $grey62 88%, $grey63 96%, $grey64 100%) repeat scroll 0 0 transparent;
+        color: $grey54;
+      }
+    }
+  }
+
+  .channelInfo{
+    float:left !important;
+    padding-right: 10px;
+  }
+}
+
+/*---------------- alertBox Styling------------------- */
+
+.window-splash {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $grey82;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.background-frame {
+  position: fixed;
+  background-color: $black;
+}
+
+.default {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}
+
+.defaultPosition {
+  position: relative;
+}
+
+/* Error Popup Styles*/
+#error-popup,#popup{
+  .content{
+    padding:20px;
+    font-size:16px;
+    line-height: 1.3em;
+  }
+}
+
+#growlpopup .popup.background {
+    transition: opacity 250ms cubic-bezier(0.17, 0.84, 0.44, 1);
+    opacity: 0;
+}

@@ -1,0 +1,22 @@
+<div class="canvas-menu-wrapper" role="region" aria-label="Spectrum Main Menu">
+  <div class="grey-texture">
+        <div ng-click="$ctrl.modalInstance.dismiss()" aria-label="close" role="button" class="close-icon-container" ng-mouseover="$ctrl.activeCloseIcon=true" ng-mouseleave="$ctrl.activeCloseIcon=false">
+            <img class="close-icon" ng-src="{{$ctrl.closeIcon()}}"></img>
+        </div>
+		<ul class="list-unstyled nav">
+			<li>
+				<a focus-once ng-href="{{$ctrl.config.offCanvasMenu.manageAccountLink}}">Manage Account</a>
+			</li>
+			<li>
+				<a ng-href="{{$ctrl.config.offCanvasMenu.getSupportLink}}">Get Support</a>
+			</li>
+			<li>
+				<a href="/" ng-click="$ctrl.modalInstance.dismiss()">Watch TV</a>
+			</li>
+		</ul>
+		<div ng-if="$ctrl.loggedIn" class="btn-wrapper">
+			<button class="btn btn-primary" role="button" aria-label="Sign Out" ng-click="$ctrl.signOut()">Sign Out</button>
+			<p class="user-name" tabindex="0" role="alert">{{$ctrl.userName}}</p>
+		</div>
+  </div>
+</div>

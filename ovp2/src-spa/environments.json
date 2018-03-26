@@ -1,0 +1,186 @@
+[
+    {
+        "name": "staging",
+        "label": "production (Analytics Staging)",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-gen.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xx29827d9818234bca85d33efe0641dec8",
+            "s" : "WXpFME1URmpaV0kxWlRZd05EUmhZbUkxTlRsalpEZzNZVGN3Tm1SbU9EQT0="
+        }
+    },
+    {
+        "name": "eft",
+        "label": "eft (Venona Prod)",
+        "analytics": {
+            "endpoint": "https://v-collector.dp.aws.charter.com/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-gen.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xx29827d9818234bca85d33efe0641dec8",
+            "s" : "WXpFME1URmpaV0kxWlRZd05EUmhZbUkxTlRsalpEZzNZVGN3Tm1SbU9EQT0="
+        }
+    },
+    {
+        "name": "prod",
+        "label": "production",
+        "splunk": {
+            "domain": " https://splunk.ngclogging.cloud.twc.net/"
+        },
+        "analytics": {
+            "endpoint": "https://v-collector.dp.aws.charter.com/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-gen.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xx66025f7d4f4646b0b1cdf24a846ce1a8",
+            "s" : "WTJKaU0yVXdOR0l6TW1JM05EWTVNV0kzTXpneE9ERm1aR001TkRRMFpUWT0="
+        },
+        "displayRawRentError": false
+    },
+    {
+        "name" : "sita",
+        "label": "sit-a (pi.engprod-spectrum.net)",
+        "piHost" : "https://pi.engprod-spectrum.net",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-sys.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s" : "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0="
+        }
+    },
+    {
+        "name" : "sitb",
+        "label": "sit-b (pi.engnew-spectrum.net)",
+        "piHost" : "https://pi.engnew-spectrum.net",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-sys.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s" : "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0:"
+        }
+    },
+    {
+        "name": "pidev",
+        "label": "pi-dev (pi.dev-spectrum.net)",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "piHost": "https://pi.dev-spectrum.net",
+        "image_api": "https://pi.dev-spectrum.net/imageserver",
+        "oAuth": {
+            "consumerKey": "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s": "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0="
+        }
+    },
+    {
+        "name": "pistaging",
+        "label": "pi-staging",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "piHost": "https://pi-staging.timewarnercable.com",
+        "image_api": "https://pi-staging.timewarnercable.com/imageserver",
+        "oAuth":
+        {
+            "consumerKey" : "l7xx66025f7d4f4646b0b1cdf24a846ce1a8",
+            "s" : "WTJKaU0yVXdOR0l6TW1JM05EWTVNV0kzTXpneE9ERm1aR001TkRRMFpUWT0="
+        }
+    },
+    {
+        "name": "proxy",
+        "label": "Proxy",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "piHost": "https://ovp.timewarnercable.com",
+        "oAuth": {
+            "consumerKey": "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s": "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0="
+        }
+    },
+    {
+        "name": "FedAuthMiddle",
+        "label": "FedAuthMiddle",
+        "eventgatewayV4": {
+            "log_level": 0,
+            "server": "STG_HTTPS",
+            "targetDataConsumers": "STG"
+        },
+        "piHost": "https://pi-staging.timewarnercable.com",
+        "image_api": "https://pi-staging.timewarnercable.com/imageserver",
+        "oAuth":
+        {
+            "consumerKey" : "l7xx29827d9818234bca85d33efe0641dec8",
+            "s" : "c1411ceb5e6044abb559cd87a706df80"
+        }
+    },
+    {
+        "name": "figaro-prod",
+        "label": "figaro-production",
+        "piHost" : "https://stva.figaro.spectrumtoolbox.com",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-gen.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xx66025f7d4f4646b0b1cdf24a846ce1a8",
+            "s" : "WTJKaU0yVXdOR0l6TW1JM05EWTVNV0kzTXpneE9ERm1aR001TkRRMFpUWT0="
+        }
+    },
+    {
+        "name": "figaro-sit-b",
+        "label": "figaro-sit-b",
+        "piHost" : "https://stva.figaro.spectrumtoolbox.com",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-sys.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s" : "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0:"
+        }
+    },
+    {
+        "name": "figaro-dev",
+        "label": "figaro-dev",
+        "piHost" : "https://stva-dev.figaro.spectrumtoolbox.com",
+        "analytics": {
+            "endpoint": "https://v-collector.dp-bkp.prd-aws.charter.net/api/collector"
+        },
+        "vpns": {
+            "baseUri": "https://vpns-sys.timewarnercable.com"
+        },
+        "oAuth" :
+        {
+            "consumerKey" : "l7xxdfeed6950d0743768c3b18d1bc76ebc3",
+            "s" : "TTJSbE56RmhPRFl6TnpBd05HRXpObUl5T1dRM1pURmlNREZtTnprd05EUT0:"
+        }
+    }
+]

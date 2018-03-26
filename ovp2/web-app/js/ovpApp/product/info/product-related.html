@@ -1,0 +1,10 @@
+<section class="row related" ng-if="$ctrl.related.length > 0">
+    <div class="col-md-16">
+        <h2>Related to <i>{{::$ctrl.asset.title}}</i></h2>
+        <div class="row">
+            <ovp-carousel items="$ctrl.related" options="$ctrl.relatedCarouselConfig" class="col-md-16">
+                <ovp-product ng-repeat="asset in $ctrl.related" asset="asset"></ovp-product>
+            </ovp-carousel>
+        </div>
+    </div>
+</section>

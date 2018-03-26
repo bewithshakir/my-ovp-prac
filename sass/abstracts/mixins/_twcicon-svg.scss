@@ -1,0 +1,41 @@
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @author Christopher Dura [@dura](https://github.webapps.rr.com/dura)
+////
+
+/// Outputs an icon class selector with a URL to the appropriate icon image.
+/// Generally used to change colors (state) of icons when hovering or focusing a parent element, etc.
+///
+/// @param {String} $icon - The root icon name of SVG, e.g. `'lock'` will resolve to `../path/to/icons/lock.svg`
+/// @param {String} $state [null] - A semantic state (color) descriptor, e.g. `'danger'` will resolve to `../path/to/icons/lock-danger.svg`
+///
+/// @example scss - Basic Usage Sass
+///     .widget {
+///         @include twcicon-svg('key');
+///         color: red;
+///
+///         &:hover {
+///             @include twcicon-svg('key', 'danger');
+///         }
+///     }
+///
+/// @example css - Basic Usage CSS Output
+///     .widget {
+///         color: red;
+///     }
+///
+///     .widget .twcicon-svg-key {
+///         background-image: url("../images/icons/twcicon-key.svg");
+///     }
+///
+///     .widget:hover .twcicon-svg-key {
+///         background-image: url("../images/icons/twcicon-key-danger.svg");
+///     }
+@mixin twcicon-svg($icon, $state: null) {
+    .twcicon-svg-#{$icon} {
+        @if $state { $state: "-#{$state}"; }
+        background-image: url("../images/icons/#{$icon}#{$state}.svg");
+    }
+}

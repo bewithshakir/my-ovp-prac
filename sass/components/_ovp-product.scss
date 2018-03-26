@@ -1,0 +1,264 @@
+// TODO(@dura): This should be refactored into a `.thumbnail`
+
+$boxart_height: 288px;
+$boxart_width: 192px;
+
+a.ovp-product {
+    text-align: left;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    padding: 2px; // 2px image border
+    vertical-align: top;
+
+    .imageContainer{
+        background:$grey24;
+        height: $boxart_height;
+        width: $boxart_width;
+        margin: 0 auto;
+
+        box-shadow:0px 0px 10px $grey13;
+        border:solid 2px $grey23;
+        z-index:8;
+
+        .box-art {
+            max-height: $boxart_height;
+            max-width: $boxart_width;
+            &.fade-in {
+                opacity: 0;
+                transition: opacity 200ms linear;
+            }
+        }
+    }
+
+    &:focus {
+        .imageContainer {
+            box-shadow: none;
+        }
+    }
+
+    .productInnerWrapper {
+        overflow: visible; // To show X icon
+        position:relative;
+    }
+    
+    .caption {
+        width: $boxart_width;
+        height: 4rem;
+        overflow: hidden;
+        padding: 0.5rem;
+        position: relative;
+
+        .program-title-status {
+            width: 78%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            line-height: normal;
+        }
+
+        .program-title-status.full-width {
+            width: 100%;
+        }
+
+        > img {
+            width: 15%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0.5rem;
+        }
+    }
+
+    &:link, &:visited {
+        color:$grey07;
+        font-size:12px;
+        position:relative;
+    }
+
+    &:hover, &:active {
+        color:$blue01;
+    }
+
+    .badge {
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        z-index: 9; // +1 above `.imageContainer`
+    }
+
+    .remove {
+        cursor: pointer;
+        display: none;
+        // min-width: 10px;
+        padding: 4px;
+        font-size: 12px;
+        // font-weight: bolder;
+        color: #fff;
+        line-height: 1;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+        background-color: #000;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -0.5rem;
+        left: -0.5rem;
+        z-index: 10; // +1 above `.badge`
+
+        &:hover {
+            color: #00a9e0;
+        }
+    }
+
+    &:hover {
+        .remove {
+            display: inline-block;
+        }
+    }
+
+    .twcicon-svg-lock,
+    .twcicon-svg-key {
+        background-color: rgba(0, 0, 0, 0.85);
+        background-size: 25%;
+        display: block;
+        opacity: 0.75;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        transition: opacity 250ms cubic-bezier(0.17, 0.84, 0.44, 1);
+        width: 100%;
+        height: 100%;
+    }
+
+    .out-of-window-overlay {
+        background-color: rgba(0, 0, 0, 0.65);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        .twcicon-svg-lock ,
+        .twcicon-svg-key  {
+            opacity: 0.25;
+        }
+
+        .remove-asset {
+            display: block;
+        }
+
+        .prod_info p {
+            color:$blue01;
+        }
+    }
+
+    .playStatus {
+        display: block;
+        left: 2px; // 2px image border
+        top:0px;
+        height:$boxart_height;
+        width: $boxart_width - 2px; // 2px image border
+        overflow: hidden;
+        position:absolute;
+        z-index:9;
+
+        &.outOfWindow, &.outOfHome {
+            .out-of-window-overlay {
+                display: block;
+            }
+        }
+
+        &.blocked.parentLock {
+            .badge {
+                display: none;
+            }
+        }
+
+        .played{
+            position:absolute;
+            bottom:1px;
+            left: 0;
+            display:block;
+            height:5px;
+            width:0px;
+            z-index:10;
+
+            background: $blue01; /* Old browsers */
+            // background: -moz-linear-gradient(top, $blue01 0%, $blue02 100%); /* FF3.6+ */
+            // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$blue01), color-stop(100%,$blue02)); /* Chrome,Safari4+ */
+            // background: -webkit-linear-gradient(top, $blue01 0%,$blue02 100%); /* Chrome10+,Safari5.1+ */
+            // background: -o-linear-gradient(top, $blue01 0%,$blue02 100%); /* Opera 11.10+ */
+            // background: -ms-linear-gradient(top  $blue01 0%,$blue02 100%); /* IE10+ */
+            background: linear-gradient(to bottom, $blue01 0%,$blue02 100%); /* W3C */
+            // -pie-background: linear-gradient(top, $blue01, $blue02);
+
+            -webkit-box-shadow:1px 1px 10px 2px $black;
+            -moz-box-shadow:1px 1px 10px 2px $black;
+            box-shadow:1px 1px 10px 2px $black;
+        }
+
+        .flag {
+            display:none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: block;
+            text-align: center;
+            color: $grey02;
+            font-size: 0.85em;
+            background:  rgba(0,0,0,0.5);
+        }
+    }
+
+
+    a.hideAsset {
+        width:21px;
+        height:21px;
+        display:none;
+        cursor:pointer;
+        position:absolute;
+        margin-left:-5px;
+        margin-top:-5px;
+        background:transparent url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0 -291px;z-index:10;
+    }
+
+}
+
+a.ovp-product:hover .playStatus {
+    display: block;
+
+    &.blocked.notEntitled.both {
+
+        img.networkLogo {
+            display:none;
+        }
+
+        span.status {
+            margin-top:-48%
+        }
+    }
+
+    &.blocked.notEntitled {
+        span.status{
+            background-position:0 -419px;
+        }
+    }
+}
+
+.list-template.outOfWindow {
+    color: $grey07;
+}
+
+.list-template:hover {
+    background-color: $black;
+    .title {
+        color: $blue01;
+    }
+}

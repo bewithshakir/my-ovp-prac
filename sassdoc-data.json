@@ -1,0 +1,42 @@
+[
+  {
+    "description": "Horizontally center a block element\n\n",
+    "commentRange": {
+      "start": 10,
+      "end": 21
+    },
+    "context": {
+      "type": "function",
+      "name": "strip-unit",
+      "code": "\n    @return $number / ($number * 0 + 1);\n",
+      "line": {
+        "start": 22,
+        "end": 24
+      }
+    },
+    "example": [
+      {
+        "type": "scss",
+        "code": ".center-my-block-thingie {\n    @include margin-auto();\n}",
+        "description": "Basic Usage Sass"
+      },
+      {
+        "type": "scss",
+        "code": ".center-my-block-thingie {\n    margin-left: auto;\n    margin-right: auto;\n}",
+        "description": "Basic Usage CSS Output"
+      }
+    ],
+    "author": [
+      "Damon Cook"
+    ],
+    "group": [
+      "wds"
+    ],
+    "access": "public",
+    "require": [],
+    "file": {
+      "path": "_strip-unit.scss",
+      "name": "_strip-unit.scss"
+    }
+  }
+]

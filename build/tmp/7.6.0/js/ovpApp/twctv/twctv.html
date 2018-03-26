@@ -1,0 +1,17 @@
+<connectivity-alert></connectivity-alert>
+
+<site-header class="site-header-container"></site-header>
+<img class="tour-collage" alt="" ovp-src="/images/tour-collage.jpg" width="1600" height="900" ng-if="$state.current.name==='ovp.specuwelcome'"/>
+<main class="main-container kite-cell kite-cell-12" role="main" ng-hide="$state.includes('product') || $state.includes('search')" smooth-focus>
+    <div id="content" class="main-content" ui-view="appView"></div>
+</main>
+<h1 class="sr-only" ng-if="$state.includes('ovp.livetv')">Live TV</h1>
+<h1 class="sr-only" ng-if="$state.current.name.startsWith('ovp.ondemand.play')">Video Player</h1>
+<player></player>
+<remote-player></remote-player>
+
+<mobile-nav></mobile-nav>
+
+<loading-tracker></loading-tracker>
+<growl-tracker></growl-tracker>
+<div id="modal"></div>

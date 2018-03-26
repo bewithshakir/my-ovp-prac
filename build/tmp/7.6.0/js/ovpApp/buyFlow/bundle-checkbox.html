@@ -1,0 +1,16 @@
+<div class="bundle-checkbox panel panel-top" ng-class="{selected: $ctrl.checked}" ng-click="$ctrl.toggle($event)" role="checkbox" aria-checked="$ctrl.checked">
+  <div class="panel-heading border-bottom">
+  	<input tabindex="-1" type="checkbox" class="circle-checkbox" name="" id="{{'bundle' + $ctrl.bundle.id}}" ng-checked="$ctrl.checked">
+  	<label for="{{'bundle' + $ctrl.bundle.id}}">{{$ctrl.bundle.name}}</label>
+  	<div class="info">
+  		{{$ctrl.bundle.price | currency}} / <span class="date">month</span>
+  	</div>
+  </div>
+	<div class="panel-body">
+		<div ng-if="$ctrl.bundle.description" class="description">
+			{{$ctrl.bundle.description}}
+		</div>
+		<div ng-if="$ctrl.bundle.channels" ng-repeat="channel in $ctrl.bundle.channels" class="bundle-network-logo logo">
+			<img alt="{{channel.name}}" ng-src="{{$ctrl.getChannelImage(channel)}}"/>
+		</div>
+</div>

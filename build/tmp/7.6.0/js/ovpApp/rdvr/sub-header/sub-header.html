@@ -1,0 +1,14 @@
+<div class="sub-header" role="navigation" aria-label="DVR">
+    <div class="sub-header-container">
+        <div class="sub-menu-center">
+            <ul class="sub-menu">
+                <li ng-repeat="menuItem in menuItems" ng-if="menuItem.enabled()" class='{{menuItem.class}}'>
+                    <div ng-if="menuItem.badges && menuItem.badges() !== 0" ng-bind="menuItem.badges()" class="badge-count"></div>
+                    <a aria-label="{{menuItem.title}}{{state.is(menuItem.state) ? ', current page':''}}" ui-sref="{{menuItem.state}}" ui-sref-active="selected">
+                        {{menuItem.title}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+
+
+//
+// Browser warning
+// --------------------------------------------------
+
+// Workarounds or other "hacks" should be stored here for future refactor and removal.
+
+// TODO(@dura): The `.browser-warning` on the login page utilizes the Bootstrap,
+// `.alert` classes. However, since the Live TV page and Player pages are not a bootstrap'd page,
+// we need to replicate those styles here. These rules can be removed when the
+// Live TV/Player pages are bootstrap'd (e.g. when they import `bootstrap.min.css`).
+
+$browser-link-width: 124px;
+
+.browser-warning {
+    background-color: #f2dede;
+    // background-image: -webkit-linear-gradient(top, #f2dede 0, #e7c3c3 100%);
+    // background-image: -o-linear-gradient(top, #f2dede 0, #e7c3c3 100%);
+    // background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f2dede), to(#e7c3c3));
+    background-image: linear-gradient(to bottom, #f2dede 0, #e7c3c3 100%);
+    background-repeat: repeat-x;
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+    border: 1px solid transparent;
+    border-color: #dca7a7;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25),0 1px 2px rgba(0,0,0,0.05);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #a94442;
+    margin-bottom: 20px;
+    padding: 16px;
+    padding-right: 36px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+
+    h1 {
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .list-inline {
+        list-style: none;
+        margin-bottom: 0;
+        margin-left: -5px;
+        padding-left: 0;
+
+        > li {
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .browser-link {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-image: url('../images/browsers.png?{{CACHE-VERSION}}');
+        background-repeat: no-repeat;
+        display: inline-block;
+        padding-top: 170px;
+        width: $browser-link-width;
+        height: 192px;
+        vertical-align: bottom;
+    }
+
+    .alert-link {
+        color: #843534;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .chrome-link    { background-position: -($browser-link-width) 0; }
+    .firefox-link   { background-position: -($browser-link-width * 2) 0; }
+    .opera-link     { background-position: -($browser-link-width * 3) 0; }
+    .ie-link        { background-position: -($browser-link-width * 4) 0; }
+}

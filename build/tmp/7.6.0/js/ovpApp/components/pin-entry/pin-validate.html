@@ -1,0 +1,53 @@
+<form
+  class="pin-form text-center"
+  ng-model="$ctrl.form"
+  name="$ctrl.form"
+  role="form"
+  ng-submit="$ctrl.validatePIN()"
+  aria-label="{{$ctrl.pinInstructions.toLowerCase().replace($ctrl.tagRegex,' ')}}"
+  >
+    <div class="alert alert-danger" ng-show="$ctrl.form.$submitted && $ctrl.form.$invalid" role="alert" ng-messages="$ctrl.form.$error">
+        <p ng-message="pinValidated"></p>
+        <p ng-bind-html="$ctrl.errorMessage"></p>
+        <p><a ng-if="$ctrl.enableForgotPin" class="alert-link" aria-hidden="true" href ng-click="$ctrl.forgotPIN()" target="_forgotuser">Did you forget your PIN?</a></p>
+    </div>
+    <div class="form-group text-center">
+      <p id="pinInstructions" ng-if="$ctrl.pinInstructions" ng-bind-html="$ctrl.pinInstructions"></p>
+    </div>
+    <div class="form-group" ng-class="{'has-error': $ctrl.isValidationError || $ctrl.form.currentPIN.$error.pattern}">
+        <label for="pin">{{$ctrl.pleaseEnterPin}}</label>
+        <input id="pin"
+        class="form-control input-lg pin-input text-security"
+        name="currentPIN"
+        type="text"
+        placeholder="&ndash;&ndash;&ndash;&ndash;"
+        autocomplete="off"
+        minlength="{{$ctrl.minLength}}"
+        maxlength="{{$ctrl.maxLength}}"
+        required
+        aria-invalid="{{$ctrl.isValidationError ? 'true' : 'false'}}"
+        ng-minlength="{{$ctrl.minLength}}"
+        ng-maxlength="{{$ctrl.maxLength}}"
+        ng-model="$ctrl.currentPIN"
+        ng-pattern="/^(\d)+$/"
+        ng-change="$ctrl.onInputChange()"
+        ng-model-options="{allowInvalid: true}"
+        focus-once
+        aria-label="{{$ctrl.pleaseEnterPin.replace($ctrl.tagRegex,' ')}}" />
+        <p class="help-block" role="alert" ng-class="{'invisible': !$ctrl.showNumbersOnlyErrorMessage}" aria-label="pin must contain only numbers"><span aria-hidden="true">PIN must contain only numbers</span></p>
+
+        <h4 ng-if="$ctrl.showOOHWarningMessage" class="unavailable-message"><small error-codes='WLC-1012'></small></h4>
+    </div>
+    <div class="form-group">
+        <div class="spinner" ng-if="$ctrl.loadingTracker.active()"></div>
+        <input class="btn btn-lg btn-block btn-primary"
+               id="pin-submit-button"
+               type="submit" value="Submit" disabled
+               ng-disabled="$ctrl.form.$invalid"
+               ng-if="!$ctrl.loadingTracker.active()"
+               aria-labledby="pinInstructions"/>
+    </div>
+    <div class="form-group">
+        <a ng-if="$ctrl.enableForgotPin" class="help-link pull-right" href="" ng-click="$ctrl.forgotPIN()" focus-next=".popupCloseClick" aria-label="forgot your pin?">Forgot your PIN?</a>
+    </div>
+</form>

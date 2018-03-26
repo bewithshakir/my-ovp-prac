@@ -1,0 +1,26 @@
+<div class="auth-form-container">
+    <div class="auth-form">
+        <div class="alert alert-danger" role="alert" ng-if="$ctrl.isValidationError">
+            <p>{{$ctrl.errorMessage}}</p>
+            <p><a class="alert-link" aria-hidden="true" href="{{$ctrl.config.forgotHost + $ctrl.config.registration.forgot}}" target="_forgotpass">Did you forget your password?</a></p>
+        </div>
+
+        <form name="password-verify-form" role="form" aria-labelledby="formInstructions" ng-submit="$ctrl.authenticate()">
+            <div class="form-group text-left" id="formInstructions">
+                <p ng-if="$ctrl.headerMessage">{{$ctrl.headerMessage}}</p>
+                <p>If you have trouble resetting your PIN, please call <a href="{{$ctrl.ivrNumberTelUri}}">{{$ctrl.ivrNumber}}</a>.</p>
+            </div>
+            <div class="form-group" ng-class="{'has-error': $ctrl.isValidationError}">
+                <label for="password" class="sr-only">Password</label>
+                <input id="password" class="form-control input-lg" type="password" placeholder="Password" required aria-invalid="{{$ctrl.isValidationError ? 'true' : 'false'}}" ng-model="$ctrl.user.password" focus-once/>
+            </div>
+            <div class="form-group">
+                <div class="spinner" ng-if="$ctrl.loadingTracker.active() || success"></div>
+                <input class="submit-login btn btn-lg btn-block btn-primary login-submit" type="submit" value="Submit" ng-disabled="loginForm.$invalid" ng-if="!$ctrl.loadingTracker.active() && !success" />
+            </div>
+            <div class="form-group">
+                <a class="help-link pull-right" href="{{$ctrl.config.forgotHost + $ctrl.config.registration.forgot}}" target="_forgotpass" focus-next=".popupCloseClick">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+</div>

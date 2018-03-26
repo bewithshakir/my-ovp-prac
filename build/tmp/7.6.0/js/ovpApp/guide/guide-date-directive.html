@@ -1,0 +1,46 @@
+<div class="date-times">
+    <div class='guide-date' ng-class='{small: !showDate}'>
+        <div class='day-box-container'>
+            <div class="day-box-wrapper">
+                <div class="day-box-holder" ng-class="{expanded: showDate}">
+                    <p id="dateSelectionDetails" hidden>Open date picker</p>
+                    <p id="datePickerLabel" hidden ng-bind-html="currentDate.ariaLabel"></p>
+                    <a class='current-date date-picker-button' tabindex="0" aria-labelledby="datePickerLabel" aria-expanded='{{showDate}}' aria-describedby='dateSelectionDetails' href ng-click="toggleDate()" role="button">
+                        <div class='date'>
+                            <div class='day'>{{currentDate.dow}}</div>
+                            <div class='day dom'>{{currentDate.day}}</div>
+                        </div>
+                        <div class='calendar'></div>
+                    </a>
+                    <ovp-carousel class='date-carousel' ng-show='showDate' items="dates" options="dateCarouselConfig">
+                        <li role="listitem"  class="carousel-item" ng-repeat="date in dates" >
+                            <a class="day-box carousel-selectable" href="#" start='{{date.start}}' tabindex="0" ng-click="handleDateClick(date, $event);focusDayBox()" aria-label="{{date.ariaLabel}}">
+                                <div class='day'>{{date.dow}}</div>
+                                <div class='day' ng-class="{icon: date.dow === 'Today'}">{{date.dow === 'Today' ? '' : date.day}}</div>
+                            </a>
+                        </li>
+                    </ovp-carousel>
+                </div>
+            </div>
+        </div>
+        <h2 class="sr-only">Select date to view in Guide</h2>
+        <div id="datePicker"></div>
+    </div>
+    <div ng-show='!showDate' class=" times">
+        <button class='time-nav prev' tabindex="0" ng-hide='timeIndex == 0' title="Previous" aria-label='Go back in time' ng-click="prevTimeBlock();">Previous</button>
+        <div class='time-scroll-container'>
+            <div class='time-container'>
+                <div class='col'>
+                    <!-- Repeating in directive -->
+                    <div class='time-position' time="{{time}}" title="{{time | date: 'shortTime'}}" aria-hidden="{{!visible}}">
+                        {{::time | date:'shortTime'}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class='time-nav next' tabindex="0" title="Next" aria-label='Go forward in time' ng-click="nextTimeBlock();">Next</button>
+    </div>
+    <div id='date-time-alert' class='sr-only' role='status' aria-live='polite' aria-atomic='true'>
+        <!-- hidden alert used for aria messages -->
+    </div>
+</div>

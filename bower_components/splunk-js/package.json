@@ -1,0 +1,21 @@
+{
+  "name": "splunk-js",
+  "version": "1.0.0",
+  "description": "A easy to plug in JS library to help HTML/JS based IP clients to send out logging information to splunk.",
+  "main": "splunk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.spectrumxg.com:ip-client/splunk-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^2.4.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+   "conflictingRecordings" : [
+      {
+         "tmsProgramId" : "EP016984930025",
+         "programMetadata" : {
+            "imageUrl" : "/imageserver/program/EP016984930025",
+            "tmsSeriesId" : "9784264",
+            "tmsProgramId" : "EP016984930025",
+            "title" : "XXII Winter Olympics",
+            "description" : "From Sochi, Russia. Short track: women's 1500m gold medal final; cross-country skiing; skeleton.",
+            "episodeTitle" : "Short Track, Cross-Country Skiing, Skeleton",
+            "actors" : []
+         },
+         "displayChannel" : "1465",
+         "startUnixTimestampSeconds" : 1392494400,
+         "mystroServiceId" : "5"
+      },
+      {
+         "tmsProgramId" : "SP002892280000",
+         "programMetadata" : {
+            "imageUrl" : "/imageserver/program/SP002892280000",
+            "tmsProgramId" : "SP002892280000",
+            "title" : "College Basketball",
+            "episodeTitle" : "Xavier at Marquette",
+            "actors" : []
+         },
+         "displayChannel" : "1146",
+         "startUnixTimestampSeconds" : 1392498000,
+         "mystroServiceId" : "8"
+      }
+   ]
+}

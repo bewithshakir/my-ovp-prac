@@ -1,0 +1,12 @@
+<div class="set-top-connection-container" ng-class="{visible: $ctrl.canShow()}">
+    <span class="sr-only" aria-live="assertive" aria-atomic="true" ng-bind="$ctrl.ariaLiveMessage"></span>
+	<div class="container-fluid" role="link" href="#" ng-click="$ctrl.reconnect()">
+        <div class="left-col">
+            <img class="watch-on-tv-icon icon-device" ovp-src="/images/watch-on-tv.svg">
+            <p class="program-title"><span class="thin-font">Watching: </span> {{$ctrl.programTitle}} <span class="thin-font">on </span> {{$ctrl.stbTitle}} </p>
+        </div>
+        <div class="right-col">
+            <a tabindex="-1" class="reconnect"> Reconnect <span><img class="reconnect-icon" ovp-src="images/chevron-right.svg"></span></a>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+{
+  "name": "venona-js-client",
+  "version": "5.11.0",
+  "_release": "5.11.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "5.11.0",
+    "commit": "af440bef69aef08a305ee24c9017fff9d92f7a67"
+  },
+  "_source": "git@gitlab.spectrumxg.com:product-intelligence/venona-js-client.git",
+  "_target": "^5.9.0",
+  "_originalSource": "git@gitlab.spectrumxg.com:product-intelligence/venona-js-client.git"
+}

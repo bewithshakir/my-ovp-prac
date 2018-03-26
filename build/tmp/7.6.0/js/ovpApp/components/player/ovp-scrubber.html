@@ -1,0 +1,48 @@
+<div class="slider"
+     ng-class="{'slider-focus': $ctrl.sliderFocused}"
+     ng-keyup="$ctrl.onKeyUp($event)"
+     ng-focus="$ctrl.sliderFocused = true; $ctrl.enlargeIcon = true"
+     ng-blur="$ctrl.sliderFocused = false; $ctrl.mousePosition = null; $ctrl.enlargeIcon = false"
+     tabindex="0"
+     role="slider"
+     aria-label="Video slider"
+     aria-describedby="scrubber-described"
+     aria-valuemin="0"
+     aria-valuemax="{{$ctrl.valueMax()}}"
+     aria-valuenow="{{$ctrl.valueNow()}}"
+     aria-valuetext="{{$ctrl.value | hhmm}} / {{$ctrl.max | hhmm}}"
+     >
+    <div class="slider-container"
+         ng-mouseenter="$ctrl.onMouseEnter($event)"
+         ng-mousemove="$ctrl.onMouseMove($event)"
+         ng-mouseleave="$ctrl.onMouseLeave($event)">
+        <div ng-click="$ctrl.onSliderClick($event)" tabindex="-1" ng-class="{'slider-disabled': $ctrl.seeking}">
+            <div class="slider-track">
+                <div class="slider-track-low" style="left: 0px; width: 0%;"></div>
+                <div class="slider-selection" ng-style="$ctrl.calcSliderSelectionStyle()"></div>
+                <div class="slider-track-high" ng-style="$ctrl.calcSliderHighStyle()" ng-class="{'has-buffer': $ctrl.showBuffer}"></div>
+                <div ng-if="$ctrl.showBuffer" class="slider-track-buffer" ng-style="$ctrl.calcSliderBufferStyle()"></div>
+            </div>
+            <div class="ad-track">
+                <div class="ad-break" ng-repeat="adBreak in $ctrl.adBreaks" ng-style="$ctrl.calcAdBreakStyle(adBreak)"></div>
+            </div>
+        </div>
+        <div class="slider-handle" ng-style="$ctrl.calcSliderHandlePosition()"
+             draggable ng-disabled="{{$ctrl.seeking}}"></div>
+    </div>
+    <p id="scrubber-described" class="sr-only"> {{$ctrl.calcStartTime() | hhmmss}} / {{$ctrl.max | hhmmss}} use arrow keys to go forward or back in time"></p>
+    <div class="slider-tooltip" ng-class="{'slider-tooltip-focus': $ctrl.sliderFocused,
+        'ff-disabled': ($ctrl.ffDisabled && (!$ctrl.mousePosition || !$ctrl.isMouseOnSelectedSlider))}"
+         role="presentation" ng-style="$ctrl.calcTooltipPosition().tooltip">
+        <div class="slider-tooltip-arrow-border" ng-style="$ctrl.calcTooltipPosition().tooltipArrow"></div>
+        <div class="slider-tooltip-arrow" ng-style="$ctrl.calcTooltipPosition().tooltipArrow"></div>
+        <div class="slider-tooltip-content">
+            <div>
+                {{$ctrl.getTooltipMessage()}}
+            </div>
+            <div>
+                {{$ctrl.calcStartTime() | hhmmss}} / {{$ctrl.max | hhmmss}}
+            </div>
+        </div>
+    </div>
+</div>

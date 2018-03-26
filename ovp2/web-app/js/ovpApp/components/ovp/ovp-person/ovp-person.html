@@ -1,0 +1,10 @@
+<div class="card person-card">
+    <a href="#" class="thumbnail thumbnail-cover" focus-when="$ctrl.focusOnLoad" ng-click="$ctrl.click()" aria-label="{{::$ctrl.category + ' ' + $ctrl.person.name + ' ' + $ctrl.person.roleText}}" ng-attr-role="{{$ctrl.accessibilityEnabled ? undefined : 'link'}}">
+        <img alt="" ng-src="{{::$ctrl.person.imageUri({width:$ctrl.options.imageWidth})}}" fadein-onload>
+        <div class="overlay"></div>
+    </a>
+    <div class="caption truncate" aria-hidden="true">
+        <span class="name" ng-click="$ctrl.click()" tabindex="-1">{{::$ctrl.person.name}}</span>
+        <div class="role truncate"><small>{{::$ctrl.person.roleText}}</small></div>
+    </div>
+</div>

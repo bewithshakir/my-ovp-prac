@@ -1,0 +1,15 @@
+<div class="delete-time-block-container">
+    <div class="delete-time-block-title">
+        <h4>Delete a Timeblock</h4>
+    </div>
+    <div>
+        <div class="form-item">
+            <h5>Choose Timeblock to Delete:</h5>
+            <ovp-dropdown-list items="$ctrl.timeBlocks" config="$ctrl.timeBlockDropdownConfig" autofocus></ovp-dropdown-list>
+        </div>
+    </div>
+    <div class="delete-time-block-footer">
+        <ovp-button label="Close" on-click="$ctrl.onClose()"></ovp-button>
+        <ovp-button label="Delete" on-click="$ctrl.onDelete()"></ovp-button>
+    </div>
+</div>

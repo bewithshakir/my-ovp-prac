@@ -1,0 +1,38 @@
+<div id="watch-later" class="wrapper watch-later">
+    <h1 class="sr-only">My Library</h1>
+    <header ng-if="$ctrl.hasNoContent()">
+        <h5>
+            <div class="empty-message">
+                Save your shows here and watch them later. You can save any show that has a Watch Later Button. Enjoy!
+            </div>
+        </h5>
+    </header>
+
+    <section ng-repeat="cat in $ctrl.categories" class="category" ng-class="{hidden:$ctrl.getItems(cat)==0, list:cat.uiHint=='list'}" >
+        <h2 id='watch-later-list-{{$index}}' class="category-title">{{cat.name}}</h2>
+        <input type="button" class="clearall"
+            ng-if="cat.enableRemove"
+            focus-when="$ctrl.focusClearListLink && $ctrl.getItems(cat)!==0"
+            ng-focus="$ctrl.focusClearListLink = false"
+            ng-click="cat.onClear()"
+            aria-label="Clear {{cat.name}} list"
+            value="Clear List"/>
+            <ovp-carousel ng-if="cat.uiHint=='boxArtList'" items="$ctrl.getItems(cat)">
+                <ovp-product ng-repeat="asset in $ctrl.getItems(cat)"
+                    asset="asset"
+                    options="{enableRemove: cat.enableRemove, enableOOW: cat.enableOOW, mylibCatName: cat.name}"
+                    on-remove="cat.onRemove(asset)"></ovp-product>
+            </ovp-carousel>
+
+            <ul ng-if="cat.uiHint=='list'" class='category-list' aria-labelledby='watch-later-list-{{$index}}'>
+                <li ng-repeat="asset in $ctrl.getItems(cat)">
+                    <ovp-product asset="asset"
+                        template="list"
+                        options="{enableRemove: cat.enableRemove, enableOOW: cat.enableOOW, mylibCatName: cat.name}"
+                        on-remove="cat.onRemove(asset)"></ovp-product>
+                </li>
+            </ul>
+    </section>
+
+    <span class="sr-only" aria-live="polite" aria-atomic='true'>{{$ctrl.alert}}</span>
+</div>

@@ -1,0 +1,60 @@
+<div class="cc-settings-container">
+    <p id="labelText" class="sr-only">Closed captioning settings</p>
+    <p id="descriptionBlockText" class="sr-only">Closed Captioning settings go into effect as soon as user input is made.</p>
+    <div ovp-click="$ctrl.hide()" aria-label="close" role="button" tabindex="-1" style="float: right">
+        <a class="popupCloseClick" tabindex="0" aria-label="close">
+            <span class="twcicon twcicon-remove"></span>
+        </a>
+    </div>
+    <div class="cc-settings-header">
+        <img class="cc-icon" style="float: left" ng-src="{{$ctrl.appVersion}}/images/icon-cc.png" />
+        <h5>Settings</h5>
+    </div>
+
+    <div> 
+        <div class="cc-text-option-container-wrapper">
+            <h5 id="cc-text-label">Text</h5>
+            <div class="cc-text-option-container" role="application">
+                <div role="radiogroup" aria-label="Text Color" class="color-options-container" arrow-nav="div-color" arrow-nav-options="{noShiftTabExit: true}">
+                    <div role="radio" aria-checked="{{$ctrl.ccSettings.textColorSelectedIndex === color.index}}" ng-repeat="color in $ctrl.colorOptions"
+                     aria-label="{{color.name}} " class="div-color" focus-when="$first" ng-class="{'selected-color': $ctrl.ccSettings.textColorSelectedIndex === color.index}"
+                        ng-click="$ctrl.setTextColor(color)" focus-previous=".popupCloseClick" ng-style="{'background-color': color.color}">
+                        {{color.name === 'Default' ? 'D': ''}}
+                    </div>
+                </div>
+                <ovp-dropdown-list items="$ctrl.textOpacityOptions" config="{activeIndex: $ctrl.ccSettings.textOpacitySelectedIndex, onSelect: $ctrl.setTextOpacity, buttonLabel: 'text'}" class="cc-text-dropdown"></ovp-dropdown-list>
+            </div>
+        </div>
+        <div class="cc-font-option-container">
+            <div class="font-container">
+                <h5 id="cc-font-label">Font</h5>
+                <ovp-dropdown-list items="$ctrl.fontOptions" config="{activeIndex: $ctrl.ccSettings.fontSelectedIndex, onSelect: $ctrl.setFont, buttonLabel: 'font'}"></ovp-dropdown-list>
+            </div>
+            <div class="font-size-container">
+                <h5 id="cc-font-size-label">Size</h5>
+                <ovp-dropdown-list items="$ctrl.fontSizeOptions" config="{activeIndex: $ctrl.ccSettings.fontSizeSelectedIndex, onSelect: $ctrl.setFontSize, buttonLabel: 'font size'}"></ovp-dropdown-list>
+            </div>
+            <div class="font-edge-container">
+                <h5 id="cc-font-edge-label">Edge</h5>
+                <ovp-dropdown-list items="$ctrl.fontEdgeOptions" config="{activeIndex: $ctrl.ccSettings.edgeSelectedIndex, onSelect: $ctrl.setFontEdge, buttonLabel: 'font edge'}"></ovp-dropdown-list>
+            </div>
+        </div>
+        <div class="cc-background-option-container" role="application">
+            <h5 id="cc-background-label">Background</h5>
+            <div role="radiogroup" aria-label="Background Color" arrow-nav="div-color" arrow-nav-options="{noShiftTabExit: true}">
+                <div role="radio" aria-checked="{{$ctrl.ccSettings.backgroundColorSelectedIndex === color.index}}" aria-label="{{color.name}}" class="div-color" ng-class="{'selected-color': $ctrl.ccSettings.backgroundColorSelectedIndex === color.index}" ng-repeat="color in $ctrl.colorOptions" ng-click="$ctrl.setBackgroundColor(color)" ng-style="{'background-color': color.color}">{{color.name === 'Default' ? 'D': ''}}</div>
+            </div>
+            <ovp-dropdown-list items="$ctrl.backgroundOpacityOptions" config="{activeIndex: $ctrl.ccSettings.backgroundOpacitySelectedIndex, onSelect: $ctrl.setBackgroundOpacity, buttonLabel: 'background'}" class="cc-text-dropdown"></ovp-dropdown-list>
+        </div>
+        <div class="cc-window-option-container" role="application">
+            <h5 id="cc-window-label">Window</h5>
+            <div role="radiogroup" aria-label="Window Color" arrow-nav="div-color" arrow-nav-options="{noShiftTabExit: true}">
+                <div role="radio" aria-checked="{{$ctrl.ccSettings.windowColorSelectedIndex === color.index}}" aria-label="{{color.name}}" class="div-color" ng-class="{'selected-color': $ctrl.ccSettings.windowColorSelectedIndex === color.index}" ng-repeat="color in $ctrl.colorOptions" ng-click="$ctrl.setWindowColor(color)" ng-style="{'background-color': color.color}">{{color.name === 'Default' ? 'D': ''}}</div>
+            </div>
+            <ovp-dropdown-list items="$ctrl.windowOpacityOptions" config="{activeIndex: $ctrl.ccSettings.windowOpacitySelectedIndex, onSelect: $ctrl.setWindowOpacity, buttonLabel: 'window'}" class="cc-text-dropdown"></ovp-dropdown-list>
+        </div>
+        <div class="cc-footer-container">
+            <button tabindex="0" type="button" class="btn btn-default restore-default-btn" ng-click="$ctrl.restoreDefault()">Restore Defaults</button>
+        </div>
+  </div>
+</div>

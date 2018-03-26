@@ -1,0 +1,9 @@
+<div uib-dropdown on-toggle="vm.toggled(open)" is-open="vm.status.isOpen" class="dropdown-menu-container">
+    <a href="#" uib-dropdown-toggle role="presentation" focus-when="vm.focusButton" ng-focus="vm.onFocus()" ng-blur="vm.onBlur()">{{vm.getTitle()}}</a>
+    <ul class="dropdown-menu" ng-class="{'right-align': vm.config.rightAlign}" uib-dropdown-menu role="menu">
+        <li ng-if="vm.config.description" class="description">{{vm.config.description}}</li>
+        <li ng-repeat="item in vm.items" ng-class='item.class' role="presentation">
+            <a role="menuitem" ng-blur="vm.onDropDownMenuItemBlur($last)" ng-click="vm.click(item)" href="#">{{item.text}}</a>
+        </li>
+    </ul>
+</div>

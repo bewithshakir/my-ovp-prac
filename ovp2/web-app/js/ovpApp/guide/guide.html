@@ -1,0 +1,52 @@
+<div class='guide container' ng-keydown='vm.keypress($event)' role="application">
+    <section class='guide-listings'>
+        <h2 class="sr-only">Guide table</h2>
+        <ul class='channel-heading' aria-label='Guide channels, use arrow keys to navigate, enter to select or unselect your favorite network, tab to exit' tabindex="0" role="listbox">
+            <li class='channel-header-row' aria-label="{{channelAria}}" channel-index="{{channel.globalIndex}}" tabindex="-1" role="option">
+                <div class='channel-header'>
+                    <div role='button' class='favorite {{favOn}}'></div>
+                    <div class='logo-box'>
+                        <img src="{{::channel.fullLogoUrl}}" class='channel-logo' />
+                    </div>
+                    <div class='details {{noChannelNumber}}'>
+                        <p class='channel-number'>{{::channel.channelNumber}}</p>
+                        <p class='callsign'>{{::channel.callSign}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class='channel-content-list-container'
+            tabindex="-1"
+            guide-time-container>
+            <!-- role changed from grid to table to alleviate win/chrome/nvda issues -->
+            <div id='guide-channels-body'
+                class='channel-content-list'
+                aria-describedby='gridInstructions'
+                aria-activedecendent=''
+                aria-readonly='true'
+                ng-focus='vm.gridFocused($event)'
+                tabindex='0'
+                >
+                <p id='gridInstructions' style="display: none;">
+                    To move between channels, use the up and down arrow keys.
+                    To view future listings, use the right arrow; to view previous
+                    listings, use the left arrow. Use the enter key to select a listing.
+                </p>
+                <!-- Hidden row to hint the columns for screen readers, uses manual repeat -->
+                <div id='hidden-time-row' class='colheaderwrapper'>
+                    <div id='timecol_{{index}}'
+                        class='accessibilityhidden'
+                        >, starting at {{time}}</div>
+                </div>
+                <div class='channel-content-list-body'>
+                    <guide-channel-row channel='channel' zone='zone'></guide-channel-row>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class='guide-loading'>
+        <quiet-loading-tracker track='vm.rdvrPromise' message='Loading Recordings ...'></quiet-loading-tracker>
+        <quiet-loading-tracker track='vm.fetchPromise' message='Loading Guide Data...'></quiet-loading-tracker>
+    </div>
+    <div id='guideAlert' class='sr-only' role='status' aria-live='polite' aria-atomic='true'></div>
+</div>

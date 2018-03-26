@@ -1,0 +1,26 @@
+<fieldset>
+    <legend class="sr-only">Layout View</legend>
+        <div class="view-toggle">
+                <span aria-hidden="true">View:&nbsp;&nbsp;</span>
+            <div
+                title="List view"
+                aria-label="List view"
+                class="list-btn"
+                ng-click="vm.toggle('list')"
+                ng-class="{selected: vm.state === 'list'}"
+                role='button'
+                aria-pressed="{{(vm.state === 'list') ? 'true' : 'false'}}"
+                >
+            </div>
+            <div
+                title="Grid view"
+                aria-label="Grid view"
+                class="grid-btn"
+                ng-click="vm.toggle('grid')"
+                ng-class="{selected: vm.state === 'grid'}"
+                role='button'
+                aria-pressed="{{(vm.state === 'grid') ? 'true' : 'false'}}"
+                >
+            </div>
+        </div>
+</fieldset>

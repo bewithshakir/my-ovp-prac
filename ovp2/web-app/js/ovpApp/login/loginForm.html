@@ -1,0 +1,121 @@
+<form name="loginForm"
+    ng-submit="onSubmit()"
+    ng-model="loginForm"
+    novalidate
+    >
+
+    <div class="kite-form-group create-username">
+        <a class="kite-btn kite-btn-link kite-btn-standalone-link" role="link" ng-click='createUsername()' href="{{config.registrationHost + config.registration.createUsername}}" target="_createUsername">Create a Username</a>
+    </div>
+
+    <div class="sr-only" ng-if="loginForm.$submitted && loginForm.$invalid && login.subView != 'fatal' && isValidationError" role="alert">
+        <div ng-messages="loginForm.loginForm.$error">
+            <div ng-message="error-generic">
+                Wrong username or password. Please enter your password.
+            </div>
+            <div ng-message="error-locked">
+                You've exceeded the maximum number of sign-in attempts.
+            </div>
+            <div ng-message="error-connectivity">
+                You are not connected to the internet.
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-danger" ng-if="loginForm.$submitted && loginForm.$invalid && login.subView != 'fatal' && isValidationError" ng-class="{'empty-alert': !(loginForm.$submitted && loginForm.$invalid)}">
+        <div ng-messages="loginForm.loginForm.$error">
+            <div ng-message="error-generic">
+                <ng-include src="'/js/ovpApp/login/errors/login-error-generic.html'"></ng-include>
+            </div>
+            <div ng-message="error-locked">
+                <ng-include src="'/js/ovpApp/login/errors/login-error-lockout.html'"></ng-include>
+            </div>
+            <div ng-message="error-connectivity">
+                <ng-include src="'/js/ovpApp/login/errors/login-error-not-online.html'"></ng-include>
+            </div>
+        </div>
+    </div>
+
+    <div class="kite-form-group">
+        <label aria-hidden="true" for="username">Username</label>
+        <input 
+            id="username" 
+            name="username"
+            class="kite-form-control"
+            type="text"
+            role="textbox"
+            ng-model="user.username"
+            ng-class="{'kite-form-control-danger': !loginForm.username.$pristine && !loginForm.username.$valid}"
+            tabindex="0"
+            focus-once
+            required
+        >
+        <div aria-hidden="true" ng-show="!loginForm.username.$pristine && !loginForm.username.$valid"> 
+            <div ng-show="loginForm.username.$error.required" class="kite-form-control-feedback">Please enter your username.</div>
+        </div>
+    </div>
+
+    <div class="kite-form-group">
+        <label aria-hidden="true" for="password">Password</label>
+        <input 
+            id="password"
+            name="password"
+            class="kite-form-control"
+            type="password"
+            role="textbox"
+            ng-model="user.password"
+            ng-class="{'kite-form-control-danger': !loginForm.password.$pristine && !loginForm.password.$valid}"
+            tabindex="0"
+            required
+        >
+        <div aria-hidden="true" ng-show="!loginForm.password.$pristine && !loginForm.password.$valid"> 
+            <div class="kite-form-control-feedback">Please enter your password.</div>
+        </div>
+    </div>
+
+    <div class="kite-form-group">
+        <label class="kite-custom-control kite-custom-checkbox" for="remember-me">
+            <input 
+                id="remember-me"
+                name="remember-me"
+                class="kite-custom-control-input"
+                type="checkbox"
+                ng-model="user.rememberme"
+                ng-change="onRememberMeChange()"
+                aria-label="check to remember your username"
+                tabindex="0"
+            >
+            <span class="kite-custom-control-indicator"></span>
+            <span class="kite-custom-control-description">Remember Me</span>
+        </label>
+    </div>
+
+    <div class="kite-form-group">
+        By clicking the "Sign In" button, you agree to the <a class="kite-btn-link" aria-label="Spectrum TV Terms and Conditions" role="link" ng-click="viewTOS()" href="{{termsAndConditionsLink}}" tabindex="0" target="_blank">Terms and Conditions</a>
+        and <a class="kite-btn-link" aria-label="Spectrum TV Privacy Policy" role="link" ng-click="viewPrivacy()" href="{{privacyPolicyLink}}" tabindex="0" target="_blank">Privacy Policy</a>.
+    </div>
+
+    <div class="spinner" ng-if="loadingTracker.active() || success"></div>
+    <input
+        class="kite-btn kite-btn-primary kite-btn-block"
+        type="submit"
+        role="button"
+        aria-label="Sign In"
+        value="Sign In"
+        ng-if="!loadingTracker.active() && !success" 
+    />
+    
+    <div class="kite-form-group forgot-username-password">
+        <a class="kite-btn kite-btn-link kite-btn-standalone-link"
+           role="link"
+           ng-click="forgotUsernameOrPassword()"
+           href="{{config.forgotHost + config.registration.forgot}}"
+           aria-label="Forgot your username or password?"
+           target="_forgotuser"
+        >Forgot Username or Password?</a>
+    </div>
+
+    <p class="specu-login" ng-if="isSpecUError">University student? <a href="#" class="kite-btn-link" ng-click="retryAutoOauth()" aria-label="University student? Go to SpectrumU">Go to SpectrumU</a></p>
+
+    <p class="specu-login" ng-if="isStreamPlusError">At home? <a href="#" role="link" class="kite-btn-link" ng-click="retryAutoOauth()" aria-label="Sign in behind your Spectrum Modem without entering your username or password">Sign in automatically</a></p>
+</form>

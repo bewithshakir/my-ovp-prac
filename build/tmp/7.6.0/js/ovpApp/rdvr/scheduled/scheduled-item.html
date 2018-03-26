@@ -1,0 +1,35 @@
+<div class="clearfix">
+    <div class="recording-item col-md-15" ng-click="$ctrl.click()" ng-class="{conflict: $ctrl.recording.conflicted}">
+
+        <div ng-if="$ctrl.recording.conflicted" class="conflict-header">
+            <span class="conflict-message" error-codes='MSG-9098'></span>
+        </div>
+
+        <div class="row-title">
+            <span class="program-title">{{::$ctrl.recording.title}}</span>
+            <span class="episode-title" ng-if="$ctrl.recording.episodeTitle">{{::$ctrl.recording.episodeTitle}}</span>
+            <ovp-rating ng-if="$ctrl.recording.isMovie" rating="$ctrl.recording.rating"></ovp-rating>
+        </div>
+
+        <div class="row-series-episode">
+            <span ng-if="$ctrl.recording.releaseInformation">{{::$ctrl.recording.releaseInformation}}</span>
+        </div>
+
+        <div class="row-genre">{{::$ctrl.recording.genres[0]}}</div>
+
+        <div class="row-channel">
+            <ovp-channel display-type="list" mystro-service-id="$ctrl.recording.mystroServiceId" channel-id="$ctrl.recording.displayChannel"></ovp-channel>
+        </div>
+
+        <div class="row-start-time">{{::$ctrl.startTime}}</div>
+    </div>
+    <div  class="col-md-1 recording-item cancel-btn" role="button" aria-labeledby="cancel-label" ng-click="$ctrl.productActionClicked()">
+        <div id="cancel-label" class="sr-only">Cancel the recording of {{::$ctrl.recording.title}} on {{$ctrl.day.label}} {{$ctrl.day.date}} at {{::$ctrl.startTime}} {{$ctrl.recording.displayChannel}}</div>
+        <svg focusable="false" class="svg-icon" ng-show="!productLoading" aria-hidden="true">
+            <use xlink:href="#remove-icon" svg-path />
+        </svg>
+        <span>
+            Cancel
+        </span>
+    </div>
+</div>

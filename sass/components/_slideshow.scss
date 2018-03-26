@@ -1,0 +1,96 @@
+
+
+//
+// Slideshow
+// --------------------------------------------------
+
+// Tour slides on the login page.
+
+.slides {
+    overflow: hidden;
+}
+
+.slide {
+    @include viewport-units(min-height, 75vh);
+    background-color: $muted-color;
+    background-image: url("../images/slide-bg.jpg?{{CACHE-VERSION}}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: ($grid-gutter-width / 2) 0;
+    position: relative;
+
+    @include breakpoint("md") {
+        min-height: 0;
+        height: 540px;
+    }
+
+    &.row {
+        overflow: visible;
+    }
+
+    &:nth-child(odd) {
+        background-color: $brand-primary;
+        background-image: linear-gradient(to bottom, rgba($gray-lighter, 0.25), rgba($gray-lighter, 0));
+        z-index: 1;
+    }
+
+    .col-md-8 {
+        @include breakpoint("md") {
+            height: 100%;
+        }
+    }
+
+    .slide-copy {
+        padding: $grid-gutter-width / 2;
+
+        @include breakpoint("md") {
+            font-size: $font-size-base * 1.5; // 24px // TODO(@dura): Create font-size mixin.
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 2em;
+            font-weight: $light;
+            line-height: 1;
+            margin-top: 0;
+
+            @include breakpoint("md") {
+                font-size: $font-size-base * 4; // 64px // TODO(@dura): Create font-size mixin.
+            }
+        }
+    }
+
+    .slide-image {
+        margin-bottom: $line-height-computed;
+        width: 100%;
+
+        @include breakpoint("md") {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+//added to slide from activity config
+.pull-image-left {
+    .slide-image {
+        float: left;
+        margin-left: -($grid-gutter-width / 2);
+    }
+}
+
+.pull-image-right {
+    .slide-image {
+        float: right;
+        margin-right: -$grid-gutter-width / 2;
+    }
+}

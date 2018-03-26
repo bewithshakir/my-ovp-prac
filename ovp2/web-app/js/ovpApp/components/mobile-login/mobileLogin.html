@@ -1,0 +1,14 @@
+<section class="mobile-login kite-grid">
+	<div class="kite-card kite-card-active">
+		<header>
+			<img ng-if="$ctrl.logo" ng-src="{{$ctrl.logo.url}}" alt="{{$ctrl.logo.alt}}" aria-hidden="true">
+			<span ng-if="$ctrl.iconClass" class="{{$ctrl.iconClass}}" aria-hidden="true"></span>
+			<h1 ng-bind="$ctrl.heading"></h1>
+		</header>
+		<p ng-bind="$ctrl.message"></p>
+		<div class="store-links">
+			<a class="link" aria-label="{{$ctrl.store.ariaLabel}}" role="link" target="_self" href="{{$ctrl.store.link}}" ng-click="$ctrl.downloadApp()"><img alt="{{$ctrl.store.alt}}" ng-src="{{$ctrl.store.imageUrl}}" /></a>
+		</div>
+		<a class="kite-btn-link kite-btn" aria-label="Continue to the desktop version" role="link" ng-click="$ctrl.next()" ng-bind="$ctrl.buttonText" tabindex="0"></a>
+	</div>
+</section>

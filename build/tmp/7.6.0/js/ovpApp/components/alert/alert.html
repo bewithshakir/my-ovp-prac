@@ -1,0 +1,7 @@
+<div>
+  <h2 id="alert-title" class="alertBox Title" ng-bind-html="$ctrl.title"></h2>
+  <div id="alert-error-message" class="alertPopup error-message message" ng-bind-html="$ctrl.message"></div>
+  <div class="error-message">
+      <ovp-button id="popup-button" class="base-button" on-click="$ctrl.close()" ng-show="$ctrl.buttonText" label={{$ctrl.buttonText}} focus="true"></ovp-button>
+  </div>
+</div>

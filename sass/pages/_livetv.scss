@@ -1,0 +1,54 @@
+
+#authError{
+text-align:center;
+margin:0 22px;
+}
+
+#authError{
+min-height:300px;
+}
+
+#authError h2 {
+    margin-top:100px;
+}
+
+.headwrapper{
+	position: static;
+}
+
+#infoPanel{
+	width:850px;
+	margin:30px auto 0;
+	ul{
+		margin-top:20px;
+		li{
+			list-style-type:none;
+			margin-top:3px;
+			span{
+				color:$grey65;
+			}
+		}
+	}
+}
+
+#playerWrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    > object {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 101px); // Player controls
+   }
+
+   &.fullscreen {
+       > object {
+           height: 100%;
+       }
+   }
+}

@@ -1,0 +1,22 @@
+<div class="network-checkbox panel panel-left" ng-class="{selected: $ctrl.checked}" ng-click="$ctrl.toggle($event)" role="checkbox" aria-checked="$ctrl.checked">
+  <div class="panel-body flex">
+    <div class="left border-right">
+      <input tabindex="-1" type="checkbox" class="circle-checkbox" name="" id="networkCheck" ng-checked="$ctrl.checked">
+      <label for="networkCheck">&nbsp;</label>
+    </div>
+  	<div class="right">
+      <div class="network-info">
+        <div ng-if="$ctrl.network.channels" ng-repeat="channel in $ctrl.network.channels" class="logo">
+  				<img alt="{{channel.name}}" ng-src="{{$ctrl.getChannelImage(channel)}}"/>
+  			</div>
+
+        <div class="network-price">
+          <div ng-if="$ctrl.inBundle" class="in-bundle">Included in Bundle</div>
+          <div ng-if="!$ctrl.inBundle">
+            {{$ctrl.network.price | currency}} / <span class="date">Month</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

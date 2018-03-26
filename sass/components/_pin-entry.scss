@@ -1,0 +1,50 @@
+.pin-form {
+    max-width: 400px;
+    min-width: 350px;
+    
+    .help-block {
+        color: $help-color;
+    }
+}
+
+.pin-input {
+    font-family: "password";
+    font-size: 24px;
+    margin: 0 auto;
+    width: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Must use this vendor prefix to enable the mock password field */
+/* stylelint-disable selector-no-venor-prefix */
+.pin-input::-webkit-input-placeholder {
+    font-family: "TWC Round WS";
+    font-size: 30px;
+    letter-spacing: 14px;
+}
+
+.pin-input:-moz-placeholder {
+    font-family: "TWC Round WS";
+    font-size: 30px;
+    letter-spacing: 14px;
+}
+
+.pin-input::-moz-placeholder {
+    font-family: "TWC Round WS";
+    font-size: 30px;
+    letter-spacing: 14px;
+}
+
+.pin-input:-ms-input-placeholder {
+    font-family: "TWC Round WS";
+    font-size: 30px;
+    letter-spacing: 14px;
+}
+
+.pin-input:-ms-input-placeholder {
+    font-family: "TWC Round WS";
+    font-size: 30px;
+    letter-spacing: 14px;
+}
+/* stylint-enable */

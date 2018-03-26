@@ -1,0 +1,254 @@
+//
+// Parental controls
+// --------------------------------------------------
+
+.parental-controls {
+    padding-right: 16px;
+    // An invisible element used to capture click events.
+    .pc-locked {
+        position: absolute;
+        z-index: 2;
+        // sibling inner div is of height 29px
+        height: calc(100% - 29px);
+        width: 80%;
+    }
+
+    .help-block {
+        @include twcicon-svg("lock", "weak");
+
+        .twcicon-svg {
+            vertical-align: bottom;
+        }
+    }
+
+    .row {
+        margin-bottom: 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }    
+
+    .channel-card {
+        margin-bottom: 16px;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+    .network-name {
+        float: left;
+        overflow: hidden;
+        padding: 0.5rem;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100px;
+    }
+
+    .channel-number {
+        float: right;
+        overflow: hidden;
+        padding: 0.5rem;
+        text-align: right;
+        white-space: nowrap;
+        width: 44px;
+    }
+
+    .blocks-container {
+        &.disabled {
+            opacity: 0.35;
+            pointer-events: none;
+        }
+    }
+
+    .unavailable {
+        color: $text-color-weak;
+    }
+
+    h3.odn-setting-label {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.setting-label {
+    font-size: 1.25em;
+}
+
+.auth-form-container {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+// Time block
+
+
+
+//
+// Rating Slider
+// --------------------------------------------------------------------------------
+
+// A custom range-slider-ish control in Parental Controls,
+// used to block various content ratings.
+
+.time-block-tile {
+    background-color: $muted-color;
+    color: inherit;
+    display: inline-block;
+    margin: 1%;
+    padding: 1%;
+    text-align: left;
+    width: 22%;
+
+    &:hover, &:focus {
+        background-color: darken($link-color, 10%);
+        border-color: $link-color;
+        color: inherit;
+    }
+
+    .label-content {
+        height: 40px;
+    }
+}
+
+.delete-time-block-container {
+    width: 500px;
+    height: 175px;
+    .form-item {
+        position: relative;
+        display: inline-block;
+        height: 100px;
+        width: 100%;
+        margin: 10px;
+        ovp-dropdown-list {
+            width: 100%;
+
+            .ovp-dropdown-list-container.btn-group {
+                width: 100%
+            }
+
+            .dropdown-list {
+                top: 35px;
+                height: 125px;
+                overflow-x: hidden;
+                overflow-y: auto;
+
+                li {
+                    padding-top: 15px;
+                    font-size: 15px;
+                    height: 35px;
+                    padding: 8px;
+                }
+            }
+
+            .btn {
+                font-size: 15px;
+                height: 35px;
+            }
+        }
+    }
+
+    .delete-time-block-footer {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        .btn {
+            position: relative;
+            float: left;
+            width: 150px;
+            margin: 10px;
+        }
+    }
+}
+
+
+
+
+.create-time-block-container {
+    // width: 500px;
+    // height: 250px;
+
+    .create-time-block-title {
+        //height: 50px;
+    }
+
+    .create-time-block-form {
+        text-align: justify;
+        margin-bottom: 10px;
+        .form-item {
+            position: relative;
+            display: inline-block;
+            height: 100px;
+            width: 175px;
+            margin: 10px;
+
+            h4 {
+                margin: 10px;
+            }
+
+            h5 {
+                position: relative;
+                left: 0px;
+                width: 100%;
+            }
+
+            ovp-dropdown-list {
+                position: absolute;
+                left: 10px;
+                width: 100%;
+
+                .dropdown-list {
+                    top: 36px;
+                    height: 125px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+
+                    li {
+                        padding-top: 15px;
+                        font-size: 15px;
+                        height: 35px;
+                        padding: 8px;
+                    }
+                }
+
+                .btn-group {
+                    width: 100%;
+                    left: -10px;
+                }
+
+                .btn {
+                    font-size: 15px;
+                    height: 35px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .create-time-block-footer {
+        position: absolute;
+        bottom: 18px;
+        right: 22px;
+        .btn {
+            position: relative;
+            float: left;
+            width: 150px;
+            margin: 10px;
+        }
+        button {
+            float: right;
+        }
+    }
+}
+
+.delete-time-block-container, .create-time-block-container, .stb-time-block-container {
+    .buttons {
+        padding: 2%;
+    }
+
+    .btn {
+        margin: 1%;
+        width: 22%;
+    }
+}

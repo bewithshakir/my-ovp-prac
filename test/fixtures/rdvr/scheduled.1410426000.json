@@ -1,0 +1,631 @@
+{
+   "recordings": [
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "shortDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "longDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "imageUrl": "/imageserver/program/EP003915550398",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550398",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unholy Alliance",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410426000,
+         "tmsProgramId": "EP003915550398",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 05:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "shortDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "longDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed, killing his father.",
+            "imageUrl": "/imageserver/program/EP003915550399",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550399",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Signed, Sealed, Delivered",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410427800,
+         "tmsProgramId": "EP003915550399",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 05:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "1222",
+         "recordSeries": true,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Telly trains with a coach so he can win at the Pogo Games.",
+            "shortDescription": "Telly trains with a coach so he can win at the Pogo Games.",
+            "longDescription": "Telly trains with a coach so he can win at the Pogo Games.",
+            "imageUrl": "/imageserver/program/EP019707190009",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190009",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Pogo Games",
+            "tmsSeriesId": "184032"
+         },
+         "startUnixTimestampSeconds": 1410458400,
+         "tmsProgramId": "EP019707190009",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": true,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 14:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Topanga goes back to a black-and-white 1940s world where she cannot remember her past.",
+            "shortDescription": "Topanga goes back to a black-and-white 1940s world where she cannot remember her past.",
+            "longDescription": "A stressed-out Topanga goes back to a black-and-white 1940s world where she cannot remember her past.",
+            "imageUrl": "/imageserver/program/EP000838770158",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770158",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "As Time Goes By",
+            "episodeNumber": 20,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410465600,
+         "tmsProgramId": "EP000838770158",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 16:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Angela's father wants to take her to Europe; Eric, Jack and Rachel determine their postgrad plans.",
+            "shortDescription": "Angela's father wants to take her to Europe; Eric, Jack and Rachel determine their postgrad plans.",
+            "longDescription": "Angela's father wants to take her to Europe for a year; Eric, Jack and Rachel determine their postgraduation plans.",
+            "imageUrl": "/imageserver/program/EP000838770159",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770159",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Angela's Ashes",
+            "episodeNumber": 21,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410467400,
+         "tmsProgramId": "EP000838770159",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 16:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "shortDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "longDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "imageUrl": "/imageserver/program/EP003915550591",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550591",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Elemental Clue",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410469200,
+         "tmsProgramId": "EP003915550591",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "The friends reminisce as Cory and Topanga prepare to move to New York.",
+            "shortDescription": "The friends reminisce as Cory and Topanga prepare to move to New York.",
+            "longDescription": "The friends reminisce as Cory and Topanga prepare to move to New York.",
+            "imageUrl": "/imageserver/program/EP000838770164",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770164",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Brave New World",
+            "episodeNumber": 22,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410469200,
+         "tmsProgramId": "EP000838770164",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman claims her husband was gunned down by intruders.",
+            "shortDescription": "A woman claims her husband was gunned down by intruders.",
+            "longDescription": "Investigators unravel a twisted tale of lust, greed and deception after a woman claims her husband was gunned down by intruders.",
+            "imageUrl": "/imageserver/program/EP003915550410",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550410",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Sunday School Ambush",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410471000,
+         "tmsProgramId": "EP003915550410",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 17:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "The friends reminisce as Cory and Topanga prepare to move to New York.",
+            "shortDescription": "The friends reminisce as Cory and Topanga prepare to move to New York.",
+            "longDescription": "Cory and Topanga say goodbye to family and friends as they prepare to begin their new lives in New York.",
+            "imageUrl": "/imageserver/program/EP000838770165",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770165",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Brave New World",
+            "episodeNumber": 23,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410471000,
+         "tmsProgramId": "EP000838770165",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 17:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": true,
+         "displayChannel": "258",
+         "recordSeries": true,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Freddie reveals that he is not a fan of an internet sensation.",
+            "shortDescription": "Freddie reveals that he is not a fan of an internet sensation.",
+            "longDescription": "While on the air, Freddie reveals that he is not a fan of an internet sensation; Spencer lets a magic meatball make his decisions for him.",
+            "imageUrl": "/imageserver/program/EP009556790037",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790037",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Jennette McCurdy",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iMeet Fred",
+            "episodeNumber": 13,
+            "seasonNumber": 2,
+            "tmsSeriesId": "185707"
+         },
+         "startUnixTimestampSeconds": 1410472800,
+         "tmsProgramId": "EP009556790037",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A mother of two young children was found dead in her bedroom.",
+            "shortDescription": "A mother of two young children was found dead in her bedroom.",
+            "longDescription": "A mother of two young children was found dead in her bedroom.",
+            "imageUrl": "/imageserver/program/EP003915550589",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550589",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Army of Evidence",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410472800,
+         "tmsProgramId": "EP003915550589",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "When Eric takes a date to a Phillies game instead of him, Cory moves into his tree house.",
+            "shortDescription": "When Eric takes a date to a Phillies game instead of him, Cory moves into his tree house.",
+            "longDescription": "When Eric takes a date to a Phillies game instead of him, Cory moves into his tree house.",
+            "imageUrl": "/imageserver/program/EP000838770001",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770001",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Ben Savage",
+               "William Daniels",
+               "William Russ",
+               "Betsy Randle"
+            ],
+            "episodeTitle": "Pilot",
+            "episodeNumber": 1,
+            "seasonNumber": 1,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410472800,
+         "tmsProgramId": "EP000838770001",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "shortDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "longDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "imageUrl": "/imageserver/program/EP003915550380",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550380",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Shear Luck",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410474600,
+         "tmsProgramId": "EP003915550380",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 18:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "1222",
+         "recordSeries": true,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Snuffy takes orders while helping out at Hooper's Store.",
+            "shortDescription": "Snuffy takes orders while helping out at Hooper's Store.",
+            "longDescription": "Snuffy takes orders while helping out at Hooper's Store.",
+            "imageUrl": "/imageserver/program/EP019707190010",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190010",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Wild Brunch",
+            "tmsSeriesId": "184032"
+         },
+         "startUnixTimestampSeconds": 1410544800,
+         "tmsProgramId": "EP019707190010",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": true,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140912 14:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory builds up debt with his father and must pay it off with a distasteful job.",
+            "shortDescription": "Cory builds up debt with his father and must pay it off with a distasteful job.",
+            "longDescription": "Cory builds up debt with his father and must pay it off with a distasteful job.",
+            "imageUrl": "/imageserver/program/EP000838770002",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770002",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Ben Savage",
+               "William Daniels",
+               "William Russ",
+               "Betsy Randle"
+            ],
+            "episodeTitle": "On the Fence",
+            "episodeNumber": 2,
+            "seasonNumber": 1,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410552000,
+         "tmsProgramId": "EP000838770002",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140912 16:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "258",
+         "recordSeries": true,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Carly's teacher breaks up with her boyfriend and becomes interested in Spencer.",
+            "shortDescription": "Carly's teacher breaks up with her boyfriend and becomes interested in Spencer.",
+            "longDescription": "Carly's teacher breaks up with her boyfriend and becomes interested in Spencer.",
+            "imageUrl": "/imageserver/program/EP009556790025",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790025",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Jennette McCurdy",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iHave a Love Sick Teacher",
+            "episodeNumber": 25,
+            "seasonNumber": 1,
+            "tmsSeriesId": "185707"
+         },
+         "startUnixTimestampSeconds": 1410559200,
+         "tmsProgramId": "EP009556790025",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140912 18:00:00 -0400"
+         }
+      }
+   ],
+   "lastStartTime": 1410559200
+}

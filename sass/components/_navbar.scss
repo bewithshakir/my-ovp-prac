@@ -1,0 +1,387 @@
+
+
+//
+// Navbars
+// --------------------------------------------------------------------------------
+.rectangle-border {
+    height: 4px;
+    background-color: #0073d1;
+    width: 100%;
+    left: 0;
+}
+.navbar {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+    &.sub-navigation {
+        display: flex;
+        justify-content: center;
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-left: 15px;
+            margin-right: 65px; // Space between main menu last item and search
+            @media (max-width: 900px) {
+                margin-right: 15px; // Search is part of main menu
+            }
+
+            li[item="menuItem"] {
+                margin: 0 12px;
+            }
+            @media (min-width: 960px) {
+                li[item="menuItem"] {
+                    margin: 0 20px;
+                }
+            }
+
+            li {
+                a {
+                    &:not(.search) {
+                        padding: 15px 5px 15px 5px;
+                        &:hover {
+                            background-color: $dark-blue;
+                            &:after {
+                                opacity: 1;
+                             }
+                        }
+                        &:focus {
+                            background-color: $dark-blue;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            @extend .rectangle-border;
+                            transition: all 0.3s;
+                            opacity: 0;
+                         }
+                    }
+                }
+            }
+            li:last-child {
+                position: absolute;
+                right: 16px;
+                top: 2px;
+
+                @media (max-width: 900px) {
+                    position: inherit;
+                    right: inherit;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    border: 0;
+    font-size: 1.125em;
+    margin-bottom: 0;
+    background-color: $dark-blue;    
+    // Keep ux happy
+    /* stylelint-disable max-nesting-depth, selector-max-compound-selectors */
+    .navbar-nav {
+        min-height: 1px; /* prevent it from collapsing while waiting for menu items to load */
+        max-width: 1000px;
+        margin: 0 auto;
+        .active {
+            > a {                
+                &:after {
+                    left: 0 !important;
+                    opacity: 1 !important;
+                }
+            }
+        }
+        li {
+            a {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    /* stylelint-enable max-nesting-depth, selector-max-compound-selectors */
+
+    .disabled {
+        .search {
+            background: url("../images/search-icon-disabled.svg?{{CACHE-VERSION}}") center center / 30px 30px no-repeat;
+        }
+    }
+
+    .search {
+        background: url("../images/search-icon.svg?{{CACHE-VERSION}}") center center / 30px 30px no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+        @media (max-width: 900px) {
+            margin-top: 0px;
+        }
+    }
+
+    .search-form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-shadow: none;
+
+        .form-group {
+            width: 100%;
+            padding: 0 24px;
+            font-weight: normal;
+            position: relative;
+
+            hr {
+                margin-top: 0px;
+                border-color: #70829c;
+                box-shadow: 0 4px 6px 0 rgba(112, 130, 156, 0.6);
+            }
+
+            .label {
+                clip: inherit;
+                height: auto;
+                width: auto;
+                font-size: 1.333em;
+                font-weight: normal;
+            }
+            .search-icon {
+                display: inline-block;
+                position: relative;
+                padding: 0;
+            }
+        }
+
+        .form-control {
+            min-width: 370px;
+            width: 50%;
+            &.search-input {
+                width: 100%;
+                font-size: 1.333em;
+                height: 45px;
+                padding-left: 48px;
+                padding-right: 48px;
+                border-bottom-width: 0px;
+            }
+
+        }
+    }
+
+    .form-control {
+        background-color: transparent;
+        border-color: $text-color;
+        border-width: 0 0 2px;
+        color: $text-color;
+        font-size: inherit;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .exit-search {
+        color: $text-color;
+        cursor: pointer; // no `href`
+        font-size: 1.25em;
+        position: absolute;
+        right: 24px;
+        top: 0;
+
+        &:hover,
+        &:focus {
+            color: $link-color;
+        }
+    }
+
+    .container-fluid {
+        @media (min-width: $screen-xl-min) {
+            width: $container-xl;
+        }
+    }
+}
+
+.ooh-icon {
+    /*background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1627px;*/
+    background: url("../images/ooh-icon.svg?{{CACHE-VERSION}}") top left no-repeat;
+    display: inline-block;
+    margin-top: -5px; // hack because icon is too tall.
+    transition: width $faster $cubic-bezier;
+    width: 32px;
+    height: 21px;
+    &.slide-out {
+        width: 0;
+    }
+}
+
+// Legacy
+// stylelint-disable selector-max-compound-selectors
+.navbar-default {
+    .navbar-nav {
+        > .open {
+            > a {
+                background-color: $navbar-default-link-hover-bg;
+            }
+
+            > a:hover,
+            > a:focus {
+                background-color: $navbar-default-link-hover-bg;
+            }
+        }
+        
+    }
+    &.top-navbar {
+        .navbar-nav {
+            a:hover,
+            a:focus {
+                background-color: $dark-blue;
+                text-decoration: underline;
+            }
+        }
+    }
+    .small {
+        > li {
+            > a {
+                color: $text-color-weak;
+            }
+        }
+    }
+}
+// stylelint-enable selector-max-compound-selectors
+
+// Navbar nav links
+
+.navbar-nav {    
+    &.text-center {
+        float: none;
+
+        > li {
+            display: inline-block;
+            float: none;
+        }
+    }
+
+    // Tighten up the spacing so that the nav will not
+    // wrap in the desktop breakpoint.
+    > li {
+        > a {
+            color: #ffffff;
+        }
+    }
+}
+
+// Navbar form
+
+.navbar-form {
+    border: 0;
+}
+
+// Dropdowns in navbar
+//
+// A specialized dropdown style for dropdowns
+// appearing in a `.navbar`
+
+@mixin dropdown-callout-caret {
+    &::after {
+        border-right: 8px solid transparent;
+        border-bottom: 6px solid $dropdown-border;
+        border-left: 8px solid transparent;
+        content: "";
+        margin-left: -8px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+}
+
+.dropdown {
+    &.open {
+        > a {
+            @include dropdown-callout-caret;
+        }
+    }
+}
+
+// Nav Drawer
+// -------------------------
+
+// The `.nav-drawer` is a sliding drawer containing top level navigation
+// that is displayed on small screens instead of the default navbar.
+
+.nav-drawer-container {
+    position: fixed;
+    top: 0;
+    z-index: $zindex-nav-drawer;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+
+    .backplate {
+        background-color: $penumbra;
+        position: absolute;
+        transition: opacity $fastest linear, visibility $fastest linear;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.slide-out {
+        .backplate {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .nav-drawer {
+            transform: translateX(-100%);
+        }
+    }
+
+    .caption {
+        margin: 0;
+        padding: $nav-link-padding;
+    }
+}
+
+.nav-drawer {
+    background-color: $navbar-default-bg;
+    max-width: $screen-xs;
+    overflow-y: auto;
+    position: relative;
+    transition: transform $fastest $cubic-bezier;
+    visibility: visible;
+    width: 98%;
+    height: 100%;
+
+    header {
+        margin-bottom: $grid-gutter-width / 2;
+        overflow: hidden; // child floats
+    }
+
+    // Legacy
+    // stylelint-disable selector-max-compound-selectors
+    .navbar-nav {
+        margin: 0;
+
+        .open {
+            .dropdown-menu > li > a {
+                color: $dropdown-link-color;
+            }
+        }
+    }
+    // stylelint-enable selector-max-compound-selectors
+
+    .divider {
+        background-color: $gray-darker;
+        margin: (($line-height-computed / 2) - 1) 0;
+        overflow: hidden;
+        height: 1px;
+    }
+}
+
+.close-nav-drawer {
+    color: $navbar-default-link-color;
+    float: right;
+    font-size: 1.125em;
+    margin: 7px;
+}

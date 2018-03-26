@@ -1,0 +1,3116 @@
+{"channels": [
+    {
+        "callSign": "SPIKPHD",
+        "channelNumber": "1",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SPIKPHD",
+        "mystroServiceId": "18969",
+        "streamTmsGuideId": "64593",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "VH1CLP",
+        "channelNumber": "10",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VH1CLP",
+        "mystroServiceId": "19168",
+        "streamTmsGuideId": "59054",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MTVJAMS",
+        "channelNumber": "11",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MTVJAMS",
+        "mystroServiceId": "19058",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MTVHIT",
+        "channelNumber": "20",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MTVHIT",
+        "mystroServiceId": "19059",
+        "streamTmsGuideId": "30418",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "VH1SOUL",
+        "channelNumber": "21",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VH1SOUL",
+        "mystroServiceId": "19062",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "OUTHD",
+        "channelNumber": "22",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/OUTHD",
+        "mystroServiceId": "19103",
+        "streamTmsGuideId": "46737",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "PTIMEDM",
+        "channelNumber": "100",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/PTIMEDM",
+        "mystroServiceId": "7513",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ABCFHD",
+        "channelNumber": "111",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ABCFHD",
+        "mystroServiceId": "24349",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "WGNHD",
+        "channelNumber": "112",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/WGNHD",
+        "mystroServiceId": "18855",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "AETVHD",
+        "channelNumber": "114",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/AETVHD",
+        "mystroServiceId": "18857",
+        "streamTmsGuideId": "51529",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HSTRYHD",
+        "channelNumber": "116",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HSTRYHD",
+        "mystroServiceId": "18888",
+        "streamTmsGuideId": "57708",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "NGCHD",
+        "channelNumber": "117",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/NGCHD",
+        "mystroServiceId": "18948",
+        "streamTmsGuideId": "49438",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "APLHD",
+        "channelNumber": "118",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/APLHD",
+        "mystroServiceId": "18950",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NGWIHD",
+        "channelNumber": "119",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/NGWIHD",
+        "mystroServiceId": "18951",
+        "streamTmsGuideId": "67331",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SMTHHD",
+        "channelNumber": "120",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SMTHHD",
+        "mystroServiceId": "18952",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "H2HD",
+        "channelNumber": "121",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/H2HD",
+        "mystroServiceId": "18954",
+        "streamTmsGuideId": "65732",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FYIHD",
+        "channelNumber": "122",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FYIHD",
+        "mystroServiceId": "18955",
+        "streamTmsGuideId": "58988",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "DESTHD",
+        "channelNumber": "123",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/DESTHD",
+        "mystroServiceId": "18956",
+        "streamTmsGuideId": "60468",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SCIHD",
+        "channelNumber": "124",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SCIHD",
+        "mystroServiceId": "18957",
+        "streamTmsGuideId": "57390",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CINHD",
+        "channelNumber": "125",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CINHD",
+        "mystroServiceId": "18958",
+        "streamTmsGuideId": "61469",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "IDHD",
+        "channelNumber": "126",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/IDHD",
+        "mystroServiceId": "18959",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "AHC",
+        "channelNumber": "127",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/AHC",
+        "mystroServiceId": "18960",
+        "streamTmsGuideId": "18284",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MILH",
+        "channelNumber": "128",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MILH",
+        "mystroServiceId": "18961",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DODNWS",
+        "channelNumber": "129",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DODNWS",
+        "mystroServiceId": "18962",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BBCAHD",
+        "channelNumber": "138",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/BBCAHD",
+        "mystroServiceId": "25268",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TRUTVHD",
+        "channelNumber": "141",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TRUTVHD",
+        "mystroServiceId": "18975",
+        "streamTmsGuideId": "64490",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CHILLER",
+        "channelNumber": "142",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CHILLER",
+        "mystroServiceId": "18976",
+        "streamTmsGuideId": "55205",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CLOO",
+        "channelNumber": "143",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CLOO",
+        "mystroServiceId": "18977",
+        "streamTmsGuideId": "48969",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "G4HD",
+        "channelNumber": "144",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/G4HD",
+        "mystroServiceId": "18978",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DIYHD",
+        "channelNumber": "151",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/DIYHD",
+        "mystroServiceId": "18980",
+        "streamTmsGuideId": "67375",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "COOKHD",
+        "channelNumber": "153",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/COOKHD",
+        "mystroServiceId": "18982",
+        "streamTmsGuideId": "68065",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "EHD",
+        "channelNumber": "158",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/EHD",
+        "mystroServiceId": "18986",
+        "streamTmsGuideId": "61812",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "WEHD",
+        "channelNumber": "162",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/WEHD",
+        "mystroServiceId": "18990",
+        "streamTmsGuideId": "59296",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "OWNHD",
+        "channelNumber": "163",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/OWNHD",
+        "mystroServiceId": "18991",
+        "streamTmsGuideId": "70388",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "LRW",
+        "channelNumber": "164",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/LRW",
+        "mystroServiceId": "18992",
+        "streamTmsGuideId": "29612",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "GSNHD",
+        "channelNumber": "168",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/GSNHD",
+        "mystroServiceId": "18996",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "THIS",
+        "channelNumber": "173",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/THIS",
+        "mystroServiceId": "19000",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BETHD",
+        "channelNumber": "175",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/BETHD",
+        "mystroServiceId": "19002",
+        "streamTmsGuideId": "63236",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CTRC",
+        "channelNumber": "176",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CTRC",
+        "mystroServiceId": "19003",
+        "streamTmsGuideId": "14897",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TVONEHD",
+        "channelNumber": "178",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TVONEHD",
+        "mystroServiceId": "19005",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "QVCHD",
+        "channelNumber": "185",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/QVCHD",
+        "mystroServiceId": "19006",
+        "streamTmsGuideId": "60222",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SZEAL1",
+        "channelNumber": "186",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SZEAL1",
+        "mystroServiceId": "19007",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HSNHD",
+        "channelNumber": "187",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HSNHD",
+        "mystroServiceId": "19008",
+        "streamTmsGuideId": "62077",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SZEAL3",
+        "channelNumber": "188",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SZEAL3",
+        "mystroServiceId": "19009",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SZEAL4",
+        "channelNumber": "189",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SZEAL4",
+        "mystroServiceId": "19010",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SHOPHQ",
+        "channelNumber": "190",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SHOPHQ",
+        "mystroServiceId": "19011",
+        "streamTmsGuideId": "14948",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SZEAL5",
+        "channelNumber": "191",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SZEAL5",
+        "mystroServiceId": "19012",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SZEAL2",
+        "channelNumber": "192",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SZEAL2",
+        "mystroServiceId": "19013",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "JTV",
+        "channelNumber": "199",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/JTV",
+        "mystroServiceId": "19014",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CNNHD",
+        "channelNumber": "201",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CNNHD",
+        "mystroServiceId": "19015",
+        "streamTmsGuideId": "58646",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FNCHD",
+        "channelNumber": "202",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FNCHD",
+        "mystroServiceId": "19016",
+        "streamTmsGuideId": "60179",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MNBCHD",
+        "channelNumber": "203",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MNBCHD",
+        "mystroServiceId": "19017",
+        "streamTmsGuideId": "64241",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HLNHD",
+        "channelNumber": "204",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HLNHD",
+        "mystroServiceId": "19018",
+        "streamTmsGuideId": "64549",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CNBCHD",
+        "channelNumber": "205",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CNBCHD",
+        "mystroServiceId": "19019",
+        "streamTmsGuideId": "58780",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FBNHD",
+        "channelNumber": "206",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FBNHD",
+        "mystroServiceId": "19020",
+        "streamTmsGuideId": "58718",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "BLOOMHD",
+        "channelNumber": "207",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/BLOOMHD",
+        "mystroServiceId": "19021",
+        "streamTmsGuideId": "71799",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CNBCWLD",
+        "channelNumber": "208",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CNBCWLD",
+        "mystroServiceId": "19022",
+        "streamTmsGuideId": "26849",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "AJAM",
+        "channelNumber": "209",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/AJAM",
+        "mystroServiceId": "19023",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BBCWLD",
+        "channelNumber": "219",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BBCWLD",
+        "mystroServiceId": "19025",
+        "streamTmsGuideId": "36844",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CNNI",
+        "channelNumber": "220",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CNNI",
+        "mystroServiceId": "19026",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RTTV",
+        "channelNumber": "222",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RTTV",
+        "mystroServiceId": "19027",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CNC",
+        "channelNumber": "224",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CNC",
+        "mystroServiceId": "19029",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BONTV",
+        "channelNumber": "226",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BONTV",
+        "mystroServiceId": "19031",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CSPANHD",
+        "channelNumber": "228",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CSPANHD",
+        "mystroServiceId": "19033",
+        "streamTmsGuideId": "68344",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CSPN2HD",
+        "channelNumber": "229",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CSPN2HD",
+        "mystroServiceId": "19034",
+        "streamTmsGuideId": "68334",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CSPN3HD",
+        "channelNumber": "230",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CSPN3HD",
+        "mystroServiceId": "19035",
+        "streamTmsGuideId": "68332",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "UNTV",
+        "channelNumber": "231",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/UNTV",
+        "mystroServiceId": "19036",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "EWTNHD",
+        "channelNumber": "234",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/EWTNHD",
+        "mystroServiceId": "19037",
+        "streamTmsGuideId": "67164",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "INSP",
+        "channelNumber": "235",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/INSP",
+        "mystroServiceId": "19038",
+        "streamTmsGuideId": "11066",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "WORD",
+        "channelNumber": "236",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/WORD",
+        "mystroServiceId": "19039",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DYSTR",
+        "channelNumber": "237",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DYSTR",
+        "mystroServiceId": "19040",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "UPHD",
+        "channelNumber": "239",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/UPHD",
+        "mystroServiceId": "19042",
+        "streamTmsGuideId": "66143",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "PIVOTHD",
+        "channelNumber": "240",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/PIVOTHD",
+        "mystroServiceId": "19043",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "JLTV",
+        "channelNumber": "246",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/JLTV",
+        "mystroServiceId": "19046",
+        "streamTmsGuideId": "60165",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "NJT",
+        "channelNumber": "247",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NJT",
+        "mystroServiceId": "19047",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MOVHDDM",
+        "channelNumber": "251",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MOVHDDM",
+        "mystroServiceId": "153",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DISNHDP",
+        "channelNumber": "302",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/DISNHDP",
+        "mystroServiceId": "19048",
+        "streamTmsGuideId": "63320",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "BOOM",
+        "channelNumber": "304",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BOOM",
+        "mystroServiceId": "19169",
+        "streamTmsGuideId": "21883",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SPROUT",
+        "channelNumber": "306",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SPROUT",
+        "mystroServiceId": "19050",
+        "streamTmsGuideId": "47540",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "NIKHD",
+        "channelNumber": "310",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/NIKHD",
+        "mystroServiceId": "19052",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NICKTOO",
+        "channelNumber": "311",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NICKTOO",
+        "mystroServiceId": "19053",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NIKTON",
+        "channelNumber": "312",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NIKTON",
+        "mystroServiceId": "19170",
+        "streamTmsGuideId": "30420",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TNCK",
+        "channelNumber": "313",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TNCK",
+        "mystroServiceId": "19054",
+        "streamTmsGuideId": "59036",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TOONHD",
+        "channelNumber": "314",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TOONHD",
+        "mystroServiceId": "19055",
+        "streamTmsGuideId": "60048",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "DXDHD",
+        "channelNumber": "315",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/DXDHD",
+        "mystroServiceId": "24351",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DISFMDM",
+        "channelNumber": "320",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DISFMDM",
+        "mystroServiceId": "7628",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MSCDM",
+        "channelNumber": "325",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MSCDM",
+        "mystroServiceId": "166",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MUSCDM",
+        "channelNumber": "326",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MUSCDM",
+        "mystroServiceId": "7508",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MTVJAMS",
+        "channelNumber": "329",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MTVJAMS",
+        "mystroServiceId": "19058",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MTVHIT",
+        "channelNumber": "330",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MTVHIT",
+        "mystroServiceId": "19059",
+        "streamTmsGuideId": "30418",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MTVU",
+        "channelNumber": "331",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MTVU",
+        "mystroServiceId": "19060",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "PLDHD",
+        "channelNumber": "332",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/PLDHD",
+        "mystroServiceId": "19061",
+        "streamTmsGuideId": "49141",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "VH1SOUL",
+        "channelNumber": "333",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VH1SOUL",
+        "mystroServiceId": "19062",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FUSEHD",
+        "channelNumber": "334",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FUSEHD",
+        "mystroServiceId": "19063",
+        "streamTmsGuideId": "59116",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "CMTPURE",
+        "channelNumber": "337",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CMTPURE",
+        "mystroServiceId": "19065",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "GAC",
+        "channelNumber": "338",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/GAC",
+        "mystroServiceId": "19066",
+        "streamTmsGuideId": "16062",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "BLUHWYS",
+        "channelNumber": "339",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BLUHWYS",
+        "mystroServiceId": "19067",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RFDHD",
+        "channelNumber": "340",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RFDHD",
+        "mystroServiceId": "19068",
+        "streamTmsGuideId": "63717",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "ESPNHD",
+        "channelNumber": "350",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ESPNHD",
+        "mystroServiceId": "19171",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ESPNWHD",
+        "channelNumber": "352",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ESPNWHD",
+        "mystroServiceId": "19089",
+        "streamTmsGuideId": "59976",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "ESPNCL",
+        "channelNumber": "353",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ESPNCL",
+        "mystroServiceId": "19090",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CBSSNHD",
+        "channelNumber": "362",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/CBSSNHD",
+        "mystroServiceId": "19095",
+        "streamTmsGuideId": "59250",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FS2HD",
+        "channelNumber": "365",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FS2HD",
+        "mystroServiceId": "19098",
+        "streamTmsGuideId": "59305",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MAVTVHD",
+        "channelNumber": "366",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MAVTVHD",
+        "mystroServiceId": "19099",
+        "streamTmsGuideId": "61036",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "VEL",
+        "channelNumber": "367",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VEL",
+        "mystroServiceId": "19100",
+        "streamTmsGuideId": "31046",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "GOLFHD",
+        "channelNumber": "369",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/GOLFHD",
+        "mystroServiceId": "19101",
+        "streamTmsGuideId": "61854",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TENISHD",
+        "channelNumber": "370",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TENISHD",
+        "mystroServiceId": "19102",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "OUTHD",
+        "channelNumber": "373",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/OUTHD",
+        "mystroServiceId": "19103",
+        "streamTmsGuideId": "46737",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SPMNHD",
+        "channelNumber": "374",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SPMNHD",
+        "mystroServiceId": "19104",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HRTV",
+        "channelNumber": "377",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/HRTV",
+        "mystroServiceId": "19105",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CRIC",
+        "channelNumber": "380",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CRIC",
+        "mystroServiceId": "19106",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSW",
+        "channelNumber": "405",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FSW",
+        "mystroServiceId": "19107",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "PRIMHD",
+        "channelNumber": "406",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/PRIMHD",
+        "mystroServiceId": "19108",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "YESHDNY",
+        "channelNumber": "414",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/YESHDNY",
+        "mystroServiceId": "19110",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MSG",
+        "channelNumber": "415",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MSG",
+        "mystroServiceId": "19418",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MSGPLHD",
+        "channelNumber": "416",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MSGPLHD",
+        "mystroServiceId": "19112",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CSNDC",
+        "channelNumber": "419",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CSNDC",
+        "mystroServiceId": "19115",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSNOH",
+        "channelNumber": "422",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FSNOH",
+        "mystroServiceId": "19117",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSN3OMH",
+        "channelNumber": "426",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FSN3OMH",
+        "mystroServiceId": "19120",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CSNCH1",
+        "channelNumber": "428",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CSNCH1",
+        "mystroServiceId": "19121",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSSO",
+        "channelNumber": "433",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FSSO",
+        "mystroServiceId": "19123",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSNFL",
+        "channelNumber": "435",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FSNFL",
+        "mystroServiceId": "19124",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSS",
+        "channelNumber": "438",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FSS",
+        "mystroServiceId": "19125",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ESPNUHD",
+        "channelNumber": "450",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ESPNUHD",
+        "mystroServiceId": "19128",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FCSP",
+        "channelNumber": "452",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FCSP",
+        "mystroServiceId": "19129",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FCSC",
+        "channelNumber": "453",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FCSC",
+        "mystroServiceId": "19130",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FCSA",
+        "channelNumber": "454",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FCSA",
+        "mystroServiceId": "19131",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FSCPLHD",
+        "channelNumber": "483",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FSCPLHD",
+        "mystroServiceId": "19135",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "GOLTV",
+        "channelNumber": "485",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/GOLTV",
+        "mystroServiceId": "19137",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MOVHDDM",
+        "channelNumber": "500",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MOVHDDM",
+        "mystroServiceId": "153",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FRMVDM",
+        "channelNumber": "508",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FRMVDM",
+        "mystroServiceId": "7426",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HBODM",
+        "channelNumber": "515",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/HBODM",
+        "mystroServiceId": "20099",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HBO2PHD",
+        "channelNumber": "524",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBO2PHD",
+        "mystroServiceId": "20051",
+        "streamTmsGuideId": "59355",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HBOSPHD",
+        "channelNumber": "525",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBOSPHD",
+        "mystroServiceId": "20052",
+        "streamTmsGuideId": "59366",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HBOFPHD",
+        "channelNumber": "526",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBOFPHD",
+        "mystroServiceId": "20053",
+        "streamTmsGuideId": "59362",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HBOCPHD",
+        "channelNumber": "527",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBOCPHD",
+        "mystroServiceId": "20054",
+        "streamTmsGuideId": "59841",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HBOZPHD",
+        "channelNumber": "528",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBOZPHD",
+        "mystroServiceId": "20055",
+        "streamTmsGuideId": "59847",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HBOLPHD",
+        "channelNumber": "529",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HBOLPHD",
+        "mystroServiceId": "20056",
+        "streamTmsGuideId": "59849",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MAXDM",
+        "channelNumber": "530",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MAXDM",
+        "mystroServiceId": "165",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "OMAXHD",
+        "channelNumber": "535",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/OMAXHD",
+        "mystroServiceId": "20068",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MAXHDP",
+        "channelNumber": "539",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MAXHDP",
+        "mystroServiceId": "20064",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MMAXPHD",
+        "channelNumber": "540",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MMAXPHD",
+        "mystroServiceId": "20065",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ACMXHDP",
+        "channelNumber": "541",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ACMXHDP",
+        "mystroServiceId": "20066",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "THMXHDP",
+        "channelNumber": "542",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/THMXHDP",
+        "mystroServiceId": "20067",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SHOWDM",
+        "channelNumber": "550",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SHOWDM",
+        "mystroServiceId": "20100",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SHOWHDP",
+        "channelNumber": "559",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SHOWHDP",
+        "mystroServiceId": "20088",
+        "streamTmsGuideId": "22532",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SHO2PHD",
+        "channelNumber": "560",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SHO2PHD",
+        "mystroServiceId": "20089",
+        "streamTmsGuideId": "60953",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SHOCPHD",
+        "channelNumber": "561",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SHOCPHD",
+        "mystroServiceId": "20090",
+        "streamTmsGuideId": "61064",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SHWXPHD",
+        "channelNumber": "562",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SHWXPHD",
+        "mystroServiceId": "20091",
+        "streamTmsGuideId": "60945",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "SHWBPHD",
+        "channelNumber": "563",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SHWBPHD",
+        "mystroServiceId": "20092",
+        "streamTmsGuideId": "69156",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "NEXTPHD",
+        "channelNumber": "564",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/NEXTPHD",
+        "mystroServiceId": "20093",
+        "streamTmsGuideId": "69109",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "WOMNPHD",
+        "channelNumber": "565",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/WOMNPHD",
+        "mystroServiceId": "20094",
+        "streamTmsGuideId": "69116",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FAMZP",
+        "channelNumber": "566",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FAMZP",
+        "mystroServiceId": "20087",
+        "streamTmsGuideId": "25275",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TMCDM",
+        "channelNumber": "567",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TMCDM",
+        "mystroServiceId": "161",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TMCHD",
+        "channelNumber": "568",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TMCHD",
+        "mystroServiceId": "20095",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TMCXHD",
+        "channelNumber": "569",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TMCXHD",
+        "mystroServiceId": "20096",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STARZDM",
+        "channelNumber": "572",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/STARZDM",
+        "mystroServiceId": "18908",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STZEHD",
+        "channelNumber": "574",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STZEHD",
+        "mystroServiceId": "20102",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STRZIBH",
+        "channelNumber": "575",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STRZIBH",
+        "mystroServiceId": "20103",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STZCHD",
+        "channelNumber": "578",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STZCHD",
+        "mystroServiceId": "20106",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STZHDP",
+        "channelNumber": "579",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STZHDP",
+        "mystroServiceId": "20101",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STZKHP",
+        "channelNumber": "582",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STZKHP",
+        "mystroServiceId": "20104",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "STRCHP",
+        "channelNumber": "583",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/STRCHP",
+        "mystroServiceId": "20105",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENCRHDP",
+        "channelNumber": "593",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/ENCRHDP",
+        "mystroServiceId": "19202",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENCAP",
+        "channelNumber": "594",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ENCAP",
+        "mystroServiceId": "19465",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENCRBLP",
+        "channelNumber": "595",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ENCRBLP",
+        "mystroServiceId": "19466",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENCRCLP",
+        "channelNumber": "596",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ENCRCLP",
+        "mystroServiceId": "19467",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENCWSP",
+        "channelNumber": "598",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ENCWSP",
+        "mystroServiceId": "19468",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MPLEX",
+        "channelNumber": "603",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MPLEX",
+        "mystroServiceId": "19207",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FLIXP",
+        "channelNumber": "607",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FLIXP",
+        "mystroServiceId": "19210",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SUNDHD",
+        "channelNumber": "608",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/SUNDHD",
+        "mystroServiceId": "19211",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "IFCHD",
+        "channelNumber": "610",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/IFCHD",
+        "mystroServiceId": "19212",
+        "streamTmsGuideId": "59444",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "HMMHD",
+        "channelNumber": "611",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HMMHD",
+        "mystroServiceId": "19213",
+        "streamTmsGuideId": "46710",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "LMNHD",
+        "channelNumber": "612",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/LMNHD",
+        "mystroServiceId": "19214",
+        "streamTmsGuideId": "55887",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TCMHD",
+        "channelNumber": "613",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/TCMHD",
+        "mystroServiceId": "19215",
+        "streamTmsGuideId": "64312",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "FXMHD",
+        "channelNumber": "614",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/FXMHD",
+        "mystroServiceId": "19216",
+        "streamTmsGuideId": "70253",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MGMHD",
+        "channelNumber": "615",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/MGMHD",
+        "mystroServiceId": "19217",
+        "streamTmsGuideId": "58530",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "UHD",
+        "channelNumber": "616",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/UHD",
+        "mystroServiceId": "19218",
+        "streamTmsGuideId": "34763",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "REELZHD",
+        "channelNumber": "617",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/REELZHD",
+        "mystroServiceId": "19219",
+        "streamTmsGuideId": "68385",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "TEAM1",
+        "channelNumber": "700",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM1",
+        "mystroServiceId": "19222",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM2",
+        "channelNumber": "701",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM2",
+        "mystroServiceId": "19223",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM3",
+        "channelNumber": "702",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM3",
+        "mystroServiceId": "19224",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM4",
+        "channelNumber": "703",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM4",
+        "mystroServiceId": "19225",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM5",
+        "channelNumber": "704",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM5",
+        "mystroServiceId": "19226",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM6",
+        "channelNumber": "705",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM6",
+        "mystroServiceId": "19227",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM7",
+        "channelNumber": "706",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM7",
+        "mystroServiceId": "19228",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM8",
+        "channelNumber": "707",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM8",
+        "mystroServiceId": "19229",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEAM9",
+        "channelNumber": "708",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEAM9",
+        "mystroServiceId": "19230",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TEA10",
+        "channelNumber": "709",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TEA10",
+        "mystroServiceId": "19231",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MEJORDM",
+        "channelNumber": "800",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MEJORDM",
+        "mystroServiceId": "7467",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TXESP",
+        "channelNumber": "825",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TXESP",
+        "mystroServiceId": "19238",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CNNLM",
+        "channelNumber": "834",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CNNLM",
+        "mystroServiceId": "19240",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "INFOMAS",
+        "channelNumber": "835",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/INFOMAS",
+        "mystroServiceId": "19241",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CAN24",
+        "channelNumber": "836",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CAN24",
+        "mystroServiceId": "19242",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MULTV2",
+        "channelNumber": "843",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MULTV2",
+        "mystroServiceId": "19245",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TFORM",
+        "channelNumber": "845",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TFORM",
+        "mystroServiceId": "19246",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SUR",
+        "channelNumber": "850",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SUR",
+        "mystroServiceId": "19247",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "LAT",
+        "channelNumber": "852",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/LAT",
+        "mystroServiceId": "19248",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SURPERU",
+        "channelNumber": "853",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SURPERU",
+        "mystroServiceId": "19249",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVNI",
+        "channelNumber": "855",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVNI",
+        "mystroServiceId": "19250",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CARAI",
+        "channelNumber": "856",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CARAI",
+        "mystroServiceId": "19251",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NUESTRT",
+        "channelNumber": "857",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NUESTRT",
+        "mystroServiceId": "19252",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ECUAVI",
+        "channelNumber": "865",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ECUAVI",
+        "mystroServiceId": "19253",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVVEN",
+        "channelNumber": "867",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVVEN",
+        "mystroServiceId": "19254",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SUPCAN",
+        "channelNumber": "870",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SUPCAN",
+        "mystroServiceId": "19255",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TMICRO",
+        "channelNumber": "871",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TMICRO",
+        "mystroServiceId": "19256",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DOMIN",
+        "channelNumber": "872",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DOMIN",
+        "mystroServiceId": "19257",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "WAPAUS",
+        "channelNumber": "874",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/WAPAUS",
+        "mystroServiceId": "19258",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVEINTE",
+        "channelNumber": "878",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVEINTE",
+        "mystroServiceId": "19288",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "VME",
+        "channelNumber": "881",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VME",
+        "mystroServiceId": "19259",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "LN",
+        "channelNumber": "890",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/LN",
+        "mystroServiceId": "19260",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "LATV",
+        "channelNumber": "892",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/LATV",
+        "mystroServiceId": "19262",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "52MX",
+        "channelNumber": "893",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/52MX",
+        "mystroServiceId": "19263",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MUN2",
+        "channelNumber": "898",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MUN2",
+        "mystroServiceId": "19264",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BANDAUS",
+        "channelNumber": "910",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BANDAUS",
+        "mystroServiceId": "19267",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "VROLA",
+        "channelNumber": "913",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VROLA",
+        "mystroServiceId": "19268",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HIPTV",
+        "channelNumber": "914",
+        "hd": true,
+        "logoUrl": "/imageserver/guide/HIPTV",
+        "mystroServiceId": "19269",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BOOMSP",
+        "channelNumber": "920",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BOOMSP",
+        "mystroServiceId": "19270",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TOONL",
+        "channelNumber": "921",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TOONL",
+        "mystroServiceId": "19271",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SORPRESA",
+        "channelNumber": "923",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SORPRESA",
+        "mystroServiceId": "19272",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DFAM",
+        "channelNumber": "924",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DFAM",
+        "mystroServiceId": "19273",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DXDS",
+        "channelNumber": "925",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DXDS",
+        "mystroServiceId": "19274",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "KLIA",
+        "channelNumber": "926",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/KLIA",
+        "mystroServiceId": "19275",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DSCE",
+        "channelNumber": "930",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DSCE",
+        "mystroServiceId": "19276",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HISTE",
+        "channelNumber": "932",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/HISTE",
+        "mystroServiceId": "19277",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HITN",
+        "channelNumber": "933",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/HITN",
+        "mystroServiceId": "19278",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "INFIUS",
+        "channelNumber": "934",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/INFIUS",
+        "mystroServiceId": "19279",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "EWTNES",
+        "channelNumber": "945",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/EWTNES",
+        "mystroServiceId": "19280",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ENLUSA",
+        "channelNumber": "946",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ENLUSA",
+        "mystroServiceId": "19281",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "GOLTV",
+        "channelNumber": "960",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/GOLTV",
+        "mystroServiceId": "19137",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "AYM",
+        "channelNumber": "962",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/AYM",
+        "mystroServiceId": "19282",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ESPNLDM",
+        "channelNumber": "980",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ESPNLDM",
+        "mystroServiceId": "19616",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CINLUS",
+        "channelNumber": "981",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CINLUS",
+        "mystroServiceId": "19283",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CMEX",
+        "channelNumber": "982",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CMEX",
+        "mystroServiceId": "19284",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DEPELC",
+        "channelNumber": "989",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DEPELC",
+        "mystroServiceId": "19285",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "DEPELUS",
+        "channelNumber": "990",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/DEPELUS",
+        "mystroServiceId": "19286",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "VMOV",
+        "channelNumber": "992",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/VMOV",
+        "mystroServiceId": "19287",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CEDGDM",
+        "channelNumber": "1002",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CEDGDM",
+        "mystroServiceId": "19615",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "KIDSDM",
+        "channelNumber": "1003",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/KIDSDM",
+        "mystroServiceId": "7636",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MSCDM",
+        "channelNumber": "1004",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MSCDM",
+        "mystroServiceId": "166",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MUSCDM",
+        "channelNumber": "1005",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MUSCDM",
+        "mystroServiceId": "7508",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "LIFESDM",
+        "channelNumber": "1006",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/LIFESDM",
+        "mystroServiceId": "7637",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SPFTDM",
+        "channelNumber": "1008",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SPFTDM",
+        "mystroServiceId": "7646",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FINDDM",
+        "channelNumber": "1016",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FINDDM",
+        "mystroServiceId": "7630",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "HELTHDM",
+        "channelNumber": "1018",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/HELTHDM",
+        "mystroServiceId": "19612",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "AUTOMDM",
+        "channelNumber": "1019",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/AUTOMDM",
+        "mystroServiceId": "7627",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CTIZTC",
+        "channelNumber": "1629",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CTIZTC",
+        "mystroServiceId": "19479",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CCTV4",
+        "channelNumber": "1630",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CCTV4",
+        "mystroServiceId": "19480",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "PHNIN",
+        "channelNumber": "1633",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/PHNIN",
+        "mystroServiceId": "19481",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ETTVAM",
+        "channelNumber": "1635",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ETTVAM",
+        "mystroServiceId": "19482",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ETNEW",
+        "channelNumber": "1637",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ETNEW",
+        "mystroServiceId": "19483",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ETFINWS",
+        "channelNumber": "1638",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ETFINWS",
+        "mystroServiceId": "19484",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ETDRA",
+        "channelNumber": "1639",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ETDRA",
+        "mystroServiceId": "19485",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ETCHI",
+        "channelNumber": "1641",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ETCHI",
+        "mystroServiceId": "19486",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NEWTANG",
+        "channelNumber": "1643",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NEWTANG",
+        "mystroServiceId": "19487",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SKYLINK",
+        "channelNumber": "1644",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SKYLINK",
+        "mystroServiceId": "19488",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BONTV",
+        "channelNumber": "1645",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BONTV",
+        "mystroServiceId": "19031",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVB1",
+        "channelNumber": "1651",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVB1",
+        "mystroServiceId": "19489",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "FILIPDM",
+        "channelNumber": "1681",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/FILIPDM",
+        "mystroServiceId": "19629",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "GMAPNY",
+        "channelNumber": "1682",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/GMAPNY",
+        "mystroServiceId": "19491",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "GMALIFE",
+        "channelNumber": "1683",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/GMALIFE",
+        "mystroServiceId": "19492",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MYX",
+        "channelNumber": "1684",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MYX",
+        "mystroServiceId": "19493",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MBCKOR",
+        "channelNumber": "1691",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MBCKOR",
+        "mystroServiceId": "19496",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SBS",
+        "channelNumber": "1700",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SBS",
+        "mystroServiceId": "19509",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVKOREA",
+        "channelNumber": "1703",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVKOREA",
+        "mystroServiceId": "19510",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVK2",
+        "channelNumber": "1704",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVK2",
+        "mystroServiceId": "19511",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TKC",
+        "channelNumber": "1708",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TKC",
+        "mystroServiceId": "19512",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MNET",
+        "channelNumber": "1710",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MNET",
+        "mystroServiceId": "19513",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "KBN",
+        "channelNumber": "1713",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/KBN",
+        "mystroServiceId": "19514",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVJPN",
+        "channelNumber": "1718",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVJPN",
+        "mystroServiceId": "19515",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NGN",
+        "channelNumber": "1719",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NGN",
+        "mystroServiceId": "19516",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SBN",
+        "channelNumber": "1730",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SBN",
+        "mystroServiceId": "19517",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CROSSTV",
+        "channelNumber": "1734",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CROSSTV",
+        "mystroServiceId": "19518",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "UTVM",
+        "channelNumber": "1737",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/UTVM",
+        "mystroServiceId": "19519",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "BOLLYDM",
+        "channelNumber": "1738",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/BOLLYDM",
+        "mystroServiceId": "7388",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ZEETV",
+        "channelNumber": "1740",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ZEETV",
+        "mystroServiceId": "19520",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ITVG",
+        "channelNumber": "1746",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ITVG",
+        "mystroServiceId": "19521",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "SETH",
+        "channelNumber": "1748",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/SETH",
+        "mystroServiceId": "19522",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ASIA",
+        "channelNumber": "1749",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ASIA",
+        "mystroServiceId": "19523",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "CRIC",
+        "channelNumber": "1754",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/CRIC",
+        "mystroServiceId": "19106",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ITVG",
+        "channelNumber": "1756",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ITVG",
+        "mystroServiceId": "19521",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "JUSPUNJ",
+        "channelNumber": "1760",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/JUSPUNJ",
+        "mystroServiceId": "19526",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TV5MOND",
+        "channelNumber": "1775",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TV5MOND",
+        "mystroServiceId": "19527",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RTPI",
+        "channelNumber": "1777",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RTPI",
+        "mystroServiceId": "19528",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RGTI",
+        "channelNumber": "1778",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RGTI",
+        "mystroServiceId": "19529",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "PFC",
+        "channelNumber": "1780",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/PFC",
+        "mystroServiceId": "19530",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RAII",
+        "channelNumber": "1781",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RAII",
+        "mystroServiceId": "19531",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MITALIA",
+        "channelNumber": "1784",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MITALIA",
+        "mystroServiceId": "19532",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TVPOL",
+        "channelNumber": "1792",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TVPOL",
+        "mystroServiceId": "19534",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ANTENNA",
+        "channelNumber": "1801",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ANTENNA",
+        "mystroServiceId": "19536",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RTN",
+        "channelNumber": "1805",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RTN",
+        "mystroServiceId": "19537",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "C1RWN",
+        "channelNumber": "1807",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/C1RWN",
+        "mystroServiceId": "19539",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "NTVA",
+        "channelNumber": "1812",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/NTVA",
+        "mystroServiceId": "19540",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "RUSKINO",
+        "channelNumber": "1816",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/RUSKINO",
+        "mystroServiceId": "19541",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ARTL",
+        "channelNumber": "1827",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ARTL",
+        "mystroServiceId": "19542",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ARABCH",
+        "channelNumber": "1828",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ARABCH",
+        "mystroServiceId": "19543",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TAPSHTV",
+        "channelNumber": "1829",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TAPSHTV",
+        "mystroServiceId": "19544",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "JEWISH",
+        "channelNumber": "1840",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/JEWISH",
+        "mystroServiceId": "7635",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "PLAYESP",
+        "channelNumber": "1857",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/PLAYESP",
+        "mystroServiceId": "19549",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "XREAL2",
+        "channelNumber": "1866",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/XREAL2",
+        "mystroServiceId": "19553",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TENDM",
+        "channelNumber": "1867",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TENDM",
+        "mystroServiceId": "7532",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "ADLTDM",
+        "channelNumber": "1871",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/ADLTDM",
+        "mystroServiceId": "171",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "TMFTVDM",
+        "channelNumber": "1890",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/TMFTVDM",
+        "mystroServiceId": "7651",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MUSCDM",
+        "channelNumber": "1900",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MUSCDM",
+        "mystroServiceId": "7508",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MC01",
+        "channelNumber": "1901",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC01",
+        "mystroServiceId": "19556",
+        "streamTmsGuideId": "19313",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC02",
+        "channelNumber": "1902",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC02",
+        "mystroServiceId": "19568",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MC04",
+        "channelNumber": "1904",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC04",
+        "mystroServiceId": "19570",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MC05",
+        "channelNumber": "1905",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC05",
+        "mystroServiceId": "19571",
+        "streamTmsGuideId": "26230",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC06",
+        "channelNumber": "1906",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC06",
+        "mystroServiceId": "19572",
+        "streamTmsGuideId": "24378",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC07",
+        "channelNumber": "1907",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC07",
+        "mystroServiceId": "19573",
+        "streamTmsGuideId": "19339",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC08",
+        "channelNumber": "1908",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC08",
+        "mystroServiceId": "19574",
+        "streamTmsGuideId": "26232",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC09",
+        "channelNumber": "1909",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC09",
+        "mystroServiceId": "19575",
+        "streamTmsGuideId": "19344",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC11",
+        "channelNumber": "1911",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC11",
+        "mystroServiceId": "19576",
+        "streamTmsGuideId": "26229",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC18",
+        "channelNumber": "1912",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC18",
+        "mystroServiceId": "19583",
+        "streamTmsGuideId": "19311",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC13",
+        "channelNumber": "1913",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC13",
+        "mystroServiceId": "19578",
+        "streamTmsGuideId": "19312",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC14",
+        "channelNumber": "1914",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC14",
+        "mystroServiceId": "19579",
+        "streamTmsGuideId": "31030",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC15",
+        "channelNumber": "1915",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC15",
+        "mystroServiceId": "19580",
+        "streamTmsGuideId": "19310",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC16",
+        "channelNumber": "1916",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC16",
+        "mystroServiceId": "19581",
+        "streamTmsGuideId": "19142",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC17",
+        "channelNumber": "1917",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC17",
+        "mystroServiceId": "19582",
+        "streamTmsGuideId": "31029",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC18",
+        "channelNumber": "1918",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC18",
+        "mystroServiceId": "19583",
+        "streamTmsGuideId": "19311",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC19",
+        "channelNumber": "1919",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC19",
+        "mystroServiceId": "19584",
+        "streamTmsGuideId": "19315",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC21",
+        "channelNumber": "1920",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC21",
+        "mystroServiceId": "19586",
+        "streamTmsGuideId": "43335",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC27",
+        "channelNumber": "1921",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC27",
+        "mystroServiceId": "19592",
+        "streamTmsGuideId": "19336",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC28",
+        "channelNumber": "1922",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC28",
+        "mystroServiceId": "19593",
+        "streamTmsGuideId": "24405",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC24",
+        "channelNumber": "1924",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC24",
+        "mystroServiceId": "19589",
+        "streamTmsGuideId": "19330",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC25",
+        "channelNumber": "1925",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC25",
+        "mystroServiceId": "19590",
+        "streamTmsGuideId": "19329",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC26",
+        "channelNumber": "1926",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC26",
+        "mystroServiceId": "19591",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MC27",
+        "channelNumber": "1927",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC27",
+        "mystroServiceId": "19592",
+        "streamTmsGuideId": "19336",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC28",
+        "channelNumber": "1928",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC28",
+        "mystroServiceId": "19593",
+        "streamTmsGuideId": "24405",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC30",
+        "channelNumber": "1930",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC30",
+        "mystroServiceId": "19594",
+        "streamTmsGuideId": "44059",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC31",
+        "channelNumber": "1931",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC31",
+        "mystroServiceId": "19595",
+        "streamTmsGuideId": "",
+        "twcTvEntitled": false
+    },
+    {
+        "callSign": "MC32",
+        "channelNumber": "1932",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC32",
+        "mystroServiceId": "19596",
+        "streamTmsGuideId": "26248",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC33",
+        "channelNumber": "1933",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC33",
+        "mystroServiceId": "19597",
+        "streamTmsGuideId": "19342",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC34",
+        "channelNumber": "1934",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC34",
+        "mystroServiceId": "19598",
+        "streamTmsGuideId": "19319",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC35",
+        "channelNumber": "1935",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC35",
+        "mystroServiceId": "19599",
+        "streamTmsGuideId": "19324",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC36",
+        "channelNumber": "1936",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC36",
+        "mystroServiceId": "19600",
+        "streamTmsGuideId": "24380",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC37",
+        "channelNumber": "1937",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC37",
+        "mystroServiceId": "19601",
+        "streamTmsGuideId": "24382",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC38",
+        "channelNumber": "1938",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC38",
+        "mystroServiceId": "19603",
+        "streamTmsGuideId": "19320",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC39",
+        "channelNumber": "1939",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC39",
+        "mystroServiceId": "19604",
+        "streamTmsGuideId": "19335",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC40",
+        "channelNumber": "1940",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC40",
+        "mystroServiceId": "19605",
+        "streamTmsGuideId": "19316",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC41",
+        "channelNumber": "1941",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC41",
+        "mystroServiceId": "19606",
+        "streamTmsGuideId": "19317",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC42",
+        "channelNumber": "1942",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC42",
+        "mystroServiceId": "19607",
+        "streamTmsGuideId": "19358",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC43",
+        "channelNumber": "1943",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC43",
+        "mystroServiceId": "19608",
+        "streamTmsGuideId": "31028",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC44",
+        "channelNumber": "1944",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC44",
+        "mystroServiceId": "19609",
+        "streamTmsGuideId": "19362",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC45",
+        "channelNumber": "1945",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC45",
+        "mystroServiceId": "19610",
+        "streamTmsGuideId": "19357",
+        "twcTvEntitled": true
+    },
+    {
+        "callSign": "MC46",
+        "channelNumber": "1946",
+        "hd": false,
+        "logoUrl": "/imageserver/guide/MC46",
+        "mystroServiceId": "19611",
+        "streamTmsGuideId": "19341",
+        "twcTvEntitled": true
+    }
+]}

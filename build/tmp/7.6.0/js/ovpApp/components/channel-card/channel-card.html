@@ -1,0 +1,8 @@
+<div class="card channel-card" tabindex="0" ng-click="$ctrl.click()">
+    <div class="thumbnail thumbnail-channel" ng-class="{blocked: $ctrl.isBlocked()}">
+        <img alt="{{$ctrl.channel.callSign}}" ng-src="{{$ctrl.channel.imageUri({width:144})}}"/>
+        <div class="overlay"></div>
+        <span class="twcicon-svg twcicon-svg-key" aria-label="Unentitled" ng-show="$ctrl.channel.isEntitled === false"></span>
+    </div>
+    <div class="channel-name" ng-if="$ctrl.options.showChannelName"><p class="caption truncate">{{$ctrl.channel.name}}</p></div>
+</div>

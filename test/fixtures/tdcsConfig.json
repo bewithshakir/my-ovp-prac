@@ -1,0 +1,26 @@
+{
+    "app-name": "twc-ovp",
+    "version": "3.2.x",
+    "config": {
+        "ajaxAnalyticsEnabled": "false",
+        "bstCapable": "true",
+        "defaultLandingPage": {"liveTv":"livetv","guide":"guide","ondemand":"ondemand","dvr":"dvr","rdvr":"dvr","DVR":"dvr","settings/favorites":"guide","settings/parentalControls":"ondemand","settings/devices":"guide","search":"guide"},
+        "drmLAUri": "http://twc.live.ott.irdeto.com/playready/rightsmanager.asmx",
+        "featureTourSlides": [{"index":"0","imageUrl":"/imageserver/supporting?image=ovp-livetv","headerText":"Live TV","subHeaderText":"TV anywhere in your home","description":"Watch a ton of live TV from anywhere in your house, right here on your PC or Mac."},{"index":"1","imageUrl":"/imageserver/supporting?image=ovp-ondemand","headerText":"On Demand","subHeaderText":"All your <b>FREE</b> On Demand shows","description":"Browse over 10,000 Free and Subscription On Demand movies and shows, with more coming every day.","class":"pull-image-left"},{"index":"2","imageUrl":"/imageserver/supporting?image=ovp-guide","headerText":"Guide","subHeaderText":"All your channels","description":"See what's coming up on your TV. If you're not going to be around, you can schedule a recording right from the app.","class":"pull-image-right"},{"index":"3","imageUrl":"/imageserver/supporting?image=ovp-companion","headerText":"Companion","subHeaderText":"Interact with your TV","description":"Take control of your television. Just pick the TV and you can change channels, start On Demand, and manage your compatible DVR."}],
+        "intervalForChannelBrowserUpdateInMinutes": "2",
+        "intervalForOnNowOnNextUpdateInMinutes": "15",
+        "messages": {"liveTvUnavailableBST":"Live TV streaming is not currently offered in your area on this device. Please tap \"On Demand\" to browse available programming.","guideUnavailableNoSTB":"A compatible set-top box or DVR is required to view the interactive program guide.","dvrUnavailable":"A compatible DVR is required to use this feature."},
+        "playDrmOnlyStreams": "true",
+        "playerBitrateControlParameters": {"overrideDefaults":false,"bitrateControlPolicy":"aggressivePolicy","initialBitrateInBitsPerSec":0,"minimumBitrateInBitsPerSec":0,"maximumBitrateInBitsPerSec":0},
+        "playerBufferControlParameters": {"overrideDefaults":true,"initialBufferLengthInMilliSec":"1500","defaultPlaybackBufferLengthInMilliSec":"30000","vodPlaybackBufferLengthInMilliSec":"60000"},
+        "playerChannelBrowserDefaultSortByType": "networkAToZ",
+        "thresholdForOnNextTitleUpdateInMinutes": "5",
+        "useAlternateDAIScheme": "true",
+        "useDAIforLIVE": "true",
+        "useDAIforVOD": "true",
+        "useDRMforLIVE": "true",
+        "useDRMforVOD": "true",
+        "testOverride": "true",
+        "activityConfigStatus": "loaded"
+    }
+}

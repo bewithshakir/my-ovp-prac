@@ -1,0 +1,29 @@
+<div class="col-md-3 source">{{item.label}} <span class="sr-only">,</span></div>
+<div class="col-md-5 item-label-group">
+    <span class="item-label truncate">{{item.timeAvailability}}</span>
+    <span class="twcicon-svg twcicon-svg-recording" aria-label="Scheduled to record" ng-if="!item.isSeriesRecording && item.cdvrNotCompleted"></span>
+    <span class="twcicon-svg twcicon-svg-recording-series" aria-label="Scheduled to record" ng-if="item.isSeriesRecording && item.cdvrNotCompleted"></span>
+    <span class="sr-only">,</span>
+</div>
+<div class="col-md-2">
+    <div class="row">
+        <span class="lang">{{item.lang}}</span>
+        <span>{{item.streamProps.formats.join(', ')}} </span>
+        <span><ovp-rating rating="item.streamProps.rating"></ovp-rating></span>
+    </div>
+</div>
+<div class="col-md-3">
+    <channel-identifier item="item"></channel-identifier>
+</div>
+<div class="col-md-3 status" ng-if="item.statusIcon">
+    <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" aria-label="key icon"></span>
+</div>
+<div class="col-md-3 ooh" ng-if="item.ooh && !item.statusIcon">
+    <span class="ooh-icon" aria-hidden="true" aria-label="away from home"></span>
+</div>
+<div class="col-md-3 action" ng-if="!item.statusIcon" product-button-action>
+    <span class="action-label">{{actionTypeToOtherWaysLabel(item)}}</span>
+    <svg class="svg-icon" aria-hidden='true' focusable="false">
+        <use xlink:href="{{actionTypeToButtonGraphic(item)}}" svg-path/>
+    </svg>
+</div>

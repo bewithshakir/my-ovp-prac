@@ -1,0 +1,32 @@
+<div class="pagination" ng-if="1 < pages.length || !autoHide">
+    <h2 class="sr-only">Pagination links, {{position}} of page</h2>
+    <div ng-if="directionLinks"
+        aria-label="Previous Page"
+        class="leftArrow"
+        ng-attr-focus-when="{{pageNumber != '...' && focusedElement == position + 'leftArrow'}}"
+        ng-class="{deactive: pagination.current == 1}"
+        ng-click="setCurrent(pagination.current - 1); setPosition('leftArrow', 'top')"
+        ng-disabled="{{pagination.current == 1}}"
+        focus-previous=".grid-btn"
+        tabindex="{{pagination.current == 1 ? '-1' : '0'}}">
+    </div>
+    <div ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)"
+        aria-label="Page {{pageNumber}}"
+        class="page"
+        ng-class="{active: pagination.current == pageNumber, deactive: pageNumber == '...'}"
+        ng-click="setCurrent(pageNumber); setPosition(pageNumber, 'top');"
+        ng-attr-focus-when="{{pageNumber != '...' && focusedElement == position + pageNumber}}"
+        ng-disabled="{{pageNumber == '...'}}"
+        ng-attr-focus-previous="{{$first || (pageNumber == 2 && pagination.current == 1) && '.grid-btn' || undefined}}"
+        tabindex="{{pageNumber == '...' || pagination.current == pageNumber ? '-1' : 0}}">{{pageNumber}}
+    </div>
+    <div ng-if="directionLinks"
+        aria-label="Next Page"
+        class="rightArrow"
+        ng-attr-focus-when="{{pageNumber != '...' && focusedElement == position + 'rightArrow'}}"
+        ng-class="{deactive : pagination.current == pagination.last}"
+        ng-click="setCurrent(pagination.current + 1); setPosition('rightArrow', 'top')"
+        ng-disabled="{{pagination.current == pagination.last}}"
+        tabindex="{{pagination.current == pagination.last ? '-1' : 0}}">
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="edit-conflict-content" stopbodyscrolling>
+    <div class='status-dialog processing-status' ng-show='$ctrl.dvrTracker.active()'>
+        <div class="spinner"></div>
+    </div>
+    <div class="conflict-date">
+        <span class="conflict-date-display">{{$ctrl.dayDisplay}}</span>
+    </div>
+    <div class="header-conflict" ng-class="{resolved: $ctrl.readyToSubmit() || $ctrl.done || $ctrl.alreadyResolved}"><span class="header-conflict-message">{{$ctrl.headerMessage()}}</span></div>
+    <ul class="conflict-recording-list" freezeheightuponfirstload>
+        <li ng-if="$ctrl.alreadyResolved" class="already-resolved">
+            It looks like this conflict has already been resolved.
+        </li>
+        <conflict-item ng-if="!$ctrl.alreadyResolved" ng-repeat="rec in $ctrl.recordings" recording="rec" state="$ctrl.selections[$index]" on-state-changed="$ctrl.recordingSelected($index, state)"></conflict-item>
+    </ul>
+
+    <div class="button-menu">
+        <ovp-button on-click="$ctrl.modalInstance.close()" label="{{$ctrl.cancelLabel()}}"></ovp-button>
+        <ovp-button ng-if="!$ctrl.done && !$ctrl.alreadyResolved" disabled="{{!$ctrl.readyToSubmit()}}" on-click="$ctrl.confirm()" label="{{$ctrl.confirmLabel}}"></ovp-button>
+        <ovp-button ng-if="$ctrl.done || $ctrl.alreadyResolved" on-click="$ctrl.resolveNextConflict()" disabled="{{$ctrl.resolveNextDisabled}}" wide="true" label="{{$ctrl.resolveNextLabel}}"></ovp-button>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+@import "product-list-row";
+
+$delete-icon-width: 30px;
+$delete-text-width: 45px;
+
+// The width of a grid item column
+$grid-item-frame-width: 196;
+
+.my-recordings, .recorded-list {
+
+    margin-bottom: 3px;
+    padding: 0px;
+    list-style-type: none;
+
+    .day-item {
+      @include day-item;
+    }
+
+    $rowDeleteTextWidth: 90px;
+    $rowDeleteIconWidth: 30px;
+    $rowInfoFontSize: 14px;
+    margin-right: 0px;
+    .my-recordings-item:first-of-type {
+        .row-item {
+          border-top: 1px solid $grey13;
+        }
+    }
+    .my-recordings-item {
+        .row-item {
+          @include row-item;
+        }
+        &:last-child {
+            border-bottom-width: 0px;
+        }
+        .ovp-check-box {
+            @include row-check-box;
+
+        }
+        .row-title {
+          @include row-title;
+        }
+        .row-series-episode {
+          @include row-series-episode;
+        }
+        .row-genre {
+          @include row-genre;
+          margin-left: 1%;
+        }
+        .row-channel {
+            @include row-channel;
+            margin-left: 1%;
+            width: 12%;
+            text-align: left;
+        }
+        .ovp-channel.list { // TODO(@dura): No reason to hardcode width from what I can tell.
+            width: auto;
+        }
+        .row-play-on-tv {
+            min-height: 1px; /* to display empty cells */
+            float: right;
+            margin-left: 1%;
+            width: 14%;
+        }
+        .row-rating {
+          @include row-rating;
+        }
+        .twcicon-svg-lock {
+            position: relative;
+            left: 30px;
+            top: 5px;
+        }
+        .row-play-on-tv-icon {
+          cursor: pointer;
+          width: 30px;
+          float: right;
+          margin-top: 11px;
+          background: url('../images/ondemand-icons.png?{{CACHE-VERSION}}') no-repeat -58px -46px;
+          height: 21px;
+        }
+        .row-play-on-tv-text {
+          @include dot-dot-dot;
+          white-space: nowrap;
+          cursor: pointer;
+          float: right;
+          color: #00b3ef;
+          font-size: 14px;
+          line-height: 44px;
+          height: 44px;
+          margin-right: 10px;
+          max-width: 60%;
+        }
+    }
+}

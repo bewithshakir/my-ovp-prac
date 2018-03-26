@@ -1,0 +1,434 @@
+
+@import "components/sub-header-settings";
+
+form.favOn .favBtn{
+background-color:$green18;
+}
+
+form.favOff .favBtn{
+background-color:$grey117;
+}
+
+.stbName {
+    cursor: pointer;
+}
+
+.stbRenameForm{
+    position: relative;
+    z-index: $zIndexOverlay;
+}
+
+.stbSelectWrap{
+  float: right;
+}
+
+h2#stbLoadingHeader{
+position:relative;
+float:left;
+clear:both;
+padding-right:40px;
+}
+
+#requestLoader{
+position:absolute;
+right:0;
+top:-5px
+}
+
+#settingsSubnavWrapper {
+    position: relative;
+    top: 0;
+    margin-left: 1%;
+}
+
+#settingsSubnav {
+    @extend %clearfix;
+
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-top:1px solid $grey54;
+    border-bottom:1px solid $grey118;
+    background-image:none;
+    background-color: rgba(0, 0, 0, 0.30);
+    text-align:center;
+    @include shadow($vOffset:4px);
+    ul {padding:0;margin:0;text-align:center;display:table;width:100%;}
+    li { display:inline-table;text-align:center;list-style:none;margin:2px 30px 0 30px;font-size:18px; text-shadow: 1px 1px 3px $black;
+        a { color:$grey06;}
+        a:hover { color:$blue18; text-shadow: none; }
+        a.active { color:$blue18; }
+        }
+    li a.current { color:$blue01;cursor:default;}
+    li a.disabled { color:$grey06;cursor:default;pointer-events: none;}
+
+    }
+
+
+    /*
+     * CHANNEL SEARCH STYLES COPIED FROM SCHEDULE.SCSS
+     */
+
+    .settingsHeaderContainer {
+        height: 63px;
+        float:left;
+        width:100%;
+        margin:0 auto;
+        padding-left: 1%;
+    }
+
+    p.settingsHeader {
+        padding-left: 1%;
+        color: $grey107;
+        margin:0;
+    }
+
+    .filters {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 20px;
+        margin: 0;
+        height: 40px;
+
+        .channelFilter {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            color:$grey128;
+
+            span { color: $white; font-weight:bold; }
+
+            a {
+                color:$grey128;
+                &:hover { color: $white; }
+                &.selected { color: $blue18; }
+            }
+        }
+    }
+    #parentalSearch {
+        .filters {
+            left:10px;
+        }
+        .searchField {
+            width: 224px;
+        }
+    }
+
+/*FAV LIST*/
+
+
+#favoritesListContent{
+    @extend %clearfix;
+
+    margin-left: 1%;
+    width: auto;
+    margin: auto;
+    position: relative;
+    left: 0;
+    .group {
+      position: absolute;
+    }
+    .channel {
+        border-bottom: 1px solid black;
+        border-top: 1px solid $grey66;
+        float: left;
+        height: 70px;
+        line-height: 70px;
+        margin: 0;
+        position: relative;
+        width: 300px;
+        overflow: hidden;
+        cursor:pointer;
+
+        &:hover {
+            background: $grey104;
+            }
+        &.first-col,
+        &:nth-child(3n-2) {
+            border-right: 1px solid $grey66;
+            border-left: 1px solid $grey66;
+        }
+        &.mid-col,
+        &:nth-child(3n-1) {
+            border-right: 1px solid $grey66;
+        }
+        &.last-col,
+        &:nth-child(3n) {
+            border-left: 1px solid $black;
+        }
+        &:last-child {
+           margin-bottom:3px;
+        }
+      img{
+            width:45px;
+            height:45px;
+            margin-left:15px;
+        }
+
+        &.favOff #heart {
+            -webkit-box-shadow: none; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          -moz-box-shadow: none; /* FF3.5 - 3.6 */
+          box-shadow: none; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+            background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1443px; height: 14px; width: 16px;
+        }
+        &.favOn #heart {
+            -webkit-box-shadow: none; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          -moz-box-shadow: none; /* FF3.5 - 3.6 */
+          box-shadow: none; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+            background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1463px; height: 14px; width: 16px;
+             }
+        .fav-span { margin:0;padding:0;text-align: right; width: 40%; position:relative; top:15px; display:inline-block; line-height:22px;}
+        .favIsSpec { top: 0;}
+        .favChanId { font-size:22px;font-weight:bold;color:#9ea1a7; }
+        .favCallSign {display:block;color:$white;}
+        #heart {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            opacity:1;
+            border-radius:0;
+            border:none;
+            cursor:pointer;
+        }
+    }
+}
+
+
+
+/*DEVICES*/
+#stbContent {
+    @extend %clearfix;
+
+    margin-left:1%;
+    margin:0 auto;
+    ul {padding:0;}
+    li {
+        list-style:none;
+        line-height:40px;
+        padding: 20px 0;
+        border-bottom: 1px solid $black;
+        border-top: 1px solid $grey66;
+        opacity:0.85;
+        position:relative;
+
+        .connectClick{
+            position:absolute;
+            top: 20px;
+            right:0;
+            height:40px;
+            z-index: $zIndexOverlay;
+            filter: alpha(opacity = 0);
+        }
+
+        div {padding-left: 15px;}
+        &:hover {
+            cursor:pointer;
+            opacity:1;
+            background-color: $kite-black;
+            -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+            -moz-transition: all 0.3s ease-out;  /* FF4+ */
+            -ms-transition: all 0.3s ease-out;  /* IE10? */
+            -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+             transition: all 0.3s ease-out;
+        }
+    }
+    .title{
+        padding-left:20px
+    }
+}
+
+.stbRenameTextInput {
+    margin-right:5px;
+    color: $grey66
+}
+
+#stbContent {
+  .stb-connect {
+    padding-right: 10px;
+  }
+}
+
+#stbContent .stbName {
+    display:inline-block;
+    height:40px;
+    cursor:pointer;
+    padding-left:90px;
+    background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat left -595px; }
+
+#stbContent div.isDvr .active { color:$white; background-position: left -555px; }
+
+#stbContent div.isDvr .off { background-position: left -515px; }
+
+#stbContent div.isStb .active { color:$white; background-position: left -635px; }
+
+
+#stbContent .stbSelectWrap span, #stbContent .stbSelectWrap input  {
+    height: 40px;
+    display:inline-block;
+    cursor:pointer;
+    width:150px;
+    padding-right:55px;
+    text-align:right;
+    background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 140px -440px;
+    border:0 !important;
+    @include rounded(0);
+    @include shadow(0,0,0,transparent);
+    color:$grey55;
+    &.stbConnected { background-position:85px -471px; color:$white; }
+    &.stbDisConnected { background-position:85px -440px; color:$grey55; }
+}
+
+
+#stbContent .stbRenameSave {
+    @include gradLightGrey;
+    -webkit-box-shadow: none; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: none; /* FF3.5 - 3.6 */
+    box-shadow: none; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+    color: $black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 8px 12px;
+    text-align: center;
+    text-shadow: -1px 1px 0 $white06;
+    width:90px;
+    text-indent:0;
+    margin-right: 5px;
+    border:medium none;
+    -webkit-border-radius: 6px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+    -moz-border-radius: 6px; /* FF1-3.6 */
+    border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+}
+
+#stbContent .stbRenameSave:hover {
+  @include gradLighterGrey;
+}
+
+#stbContent .stbRenameCancel {
+    @include gradLightGrey;
+    border:medium none;
+    -webkit-border-radius: 6px; /* Saf3-4, iOS 1-3.2, Android <1.6 */
+    -moz-border-radius: 6px; /* FF1-3.6 */
+    border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    -webkit-box-shadow: none; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: none; /* FF3.5 - 3.6 */
+    box-shadow: none; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+    color: $black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 8px 12px;
+    text-align: center;
+    text-shadow: -1px 1px 0 $white06;
+    width:90px;
+    text-indent:0;
+}
+
+
+#stbContent .stbRenameCancel:hover {
+    @include gradLighterGrey;
+}
+
+#stbContent p.title {
+  color: $grey107;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 1em; // Bootstrap sets to `0`, which causes IE and FF to wrap funny.
+}
+
+label {
+    &.pc_enabled  {
+        &.switch {
+            top: 5px;
+        }
+    }
+}
+
+// New Setting css
+.settings-tablist {
+  position: fixed;
+  height: 100%;
+  padding-bottom: 80px;
+}
+
+#sidebar-wrapper-settings {
+  height: 100%;
+  overflow-y: auto;
+  background: $kite-dark-blue-3;
+  border-right: 1px ridge grey;
+}
+
+.settings-tablist-h3 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+.settings-h1 {
+  color: $white;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Sidebar Styles */
+
+ul.sidebar-nav-settings {
+  width: 250px;
+  padding-left: 40px;
+  list-style: none;
+  margin-bottom: 10px;
+
+  li {
+    padding-left: 0;
+    text-indent: 20px;
+    line-height: 40px;
+    margin-bottom: 0;
+
+    a.list-item-anchor {
+      display: block;
+      text-decoration: none;
+      color: #999999;
+      &:focus, &:hover, &.active {
+        color: #00a9e0;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.settings-tabpanel {
+    position: relative;
+    margin-left: 300px;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.navbar-default {
+    .small {
+        .settings-header-menu {
+            > a {
+                &.active {
+                    color: #00a9e0 ;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+.parental-controls {
+    .help-block {
+        font-size: 16px;
+    }
+}

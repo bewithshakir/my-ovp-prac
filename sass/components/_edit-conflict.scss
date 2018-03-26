@@ -1,0 +1,121 @@
+@import "product-list-row";
+
+.edit-conflict-content {
+  width: 900px;
+  min-height: 300px;
+
+  .already-resolved {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+  }
+
+  .conflict-recording-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    min-height: 200px;
+    overflow-y: auto;
+  }
+
+  .conflict-date {
+    background-color: $grey07;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    .conflict-date-label {
+      color: $white;
+      font-size: 16px;
+      margin-right: 4px;
+    }
+    .conflict-date-display {
+      color: $white;
+      font-size: 12px;
+    }
+  }
+
+  .header-conflict {
+    background: $red05;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    .header-conflict-message {
+      color: $white;
+    }
+  }
+
+  .resolved {
+    background-image: url('../images/dvr_conflic_headerBG_green.png?{{CACHE-VERSION}}');
+  }
+
+  .conflict {
+    background-color: $red06;
+  }
+
+  .recording-item {
+    @extend %clearfix;
+    color: #81848a;
+    border-bottom: 1px solid $black;
+    border-top: 1px solid $grey66;
+    opacity: 0.85;
+    height: 62px;
+    line-height: 40px;
+    padding: 10px;
+    position: relative;
+
+    .conflict-checkbox {
+      float: left;
+      margin-right: 15px;
+
+      .checkbox-image {
+        background-color: $grey94;
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .row-title {
+        @include row-title;
+        width: 30%;
+        line-height: normal;
+    }
+    .row-series-episode {
+        @include row-series-episode;
+        width: 150px;
+    }
+    .row-genre {
+        @include row-genre;
+    }
+    .row-start-time {
+        font-size: $rowInfoFontSize;
+        text-align: left;
+        float: left;
+        width: 100px;
+        margin-right: 20px;
+    }
+    .row-channel {
+        @include row-channel;
+        float: right;
+    }
+  }
+
+  .button-menu {
+    @include btn-menu-left-align;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 10px;
+    .ovp-button:first-child {
+        margin-right: 10px;
+    }
+    .ovp-button a {
+      max-width: 193px;
+    }
+  }
+}
+
+.body-stop-scrolling {
+  overflow: hidden;
+}

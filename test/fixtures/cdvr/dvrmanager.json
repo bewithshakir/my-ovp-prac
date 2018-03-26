@@ -1,0 +1,1637 @@
+{
+    "uiHint": "previewMenuPage",
+    "availableOutOfHome": true,
+    "vodOutOfWindow": true,
+    "name": "My Shows",
+    "uri": "/nationalnavigation/V1/symphoni/dvrmanager/frontdoor?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34",
+    "twcTvNetworkDisplayMode": "default",
+    "results": [{
+        "type": "media_list",
+        "uiHint": "boxArtList",
+        "context": "recorded",
+        "availableOutOfHome": true,
+        "vodOutOfWindow": true,
+        "name": "Recorded",
+        "uri": "",
+        "twcTvNetworkDisplayMode": "default",
+        "num_categories": 0,
+        "total_results": 8,
+        "media": [{
+            "type": "episode_list",
+            "alphaSortOn": "General Hospital",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": false,
+            "details": {
+                "num_assets": 11,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Drama"
+                        }, {
+                            "name": "Soap"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP000018073575"],
+                    "providerAssetIds": ["abc.com::MOVE0000000000245501"],
+                    "tmsGuideServiceIds": [],
+                    "ipTmsGuideServiceIds": [],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP000018073575",
+                    "network": {
+                        "callsign": "ABC",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "ABC",
+                        "product_provider": "PTOD:ABC_HD",
+                        "product_providers": ["PTOD:ABC_HD"],
+                        "networkImageQueryParams": "providerId=ABC_HD&productId=PTOD"
+                    },
+                    "streamList": [{
+                        "type": "ONLINE_ONDEMAND",
+                        "streamProperties": {
+                            "rating": "TV-PG",
+                            "startTime": "1473181200000",
+                            "endTime": "1474415999000",
+                            "price": 0.0,
+                            "providerAssetID": "abc.com::MOVE0000000000245501",
+                            "tmsProviderProgramID": "EP000018073575",
+                            "mediaUrl": "/ipvs/api/smarttv/stream/vod/v1/abc.com::MOVE0000000000245501"
+                        },
+                        "network": {
+                            "callsign": "ABC",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "ABC",
+                            "product_provider": "PTOD:ABC_HD",
+                            "networkImageQueryParams": "providerId=ABC_HD&productId=PTOD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "General Hospital",
+                    "seriesTitle": "General Hospital",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP000018073575?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-PG"],
+                "allVPPs": ["PTOD:ABC_HD"],
+                "allIpVPPs": ["PTOD:ABC_HD"]
+            },
+            "tmsSeriesId": 183893,
+            "tmsSeriesIdStr": "183893",
+            "tmsGuideServiceIds": [],
+            "ipTmsGuideServiceIds": [],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/183893",
+            "network": {
+                "callsign": "ABC",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "ABC",
+                "product_provider": "PTOD:ABC_HD",
+                "product_providers": ["PTOD:ABC_HD"],
+                "networkImageQueryParams": "providerId=ABC_HD&productId=PTOD"
+            },
+            "title": "General Hospital",
+            "titleWithoutArticles": "General Hospital",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/183893?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "Rio Olympics",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "num_assets": 2,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Sports- Misc"
+                        }, {
+                            "name": "Sports- Bicycle racing"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP024344400369"],
+                    "providerAssetIds": [],
+                    "tmsGuideServiceIds": [],
+                    "ipTmsGuideServiceIds": [],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP024344400369",
+                    "network": {
+                        "callsign": "WNBCDT",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "NBC",
+                        "networkImageQueryParams": "network=NBC"
+                    },
+                    "streamList": [{
+                        "type": "CDVR",
+                        "streamProperties": {
+                            "startTime": "1471547400000",
+                            "endTime": "1471547400000",
+                            "cdvrRecording": {
+                                "cdvrState": "completed",
+                                "recordingId": "20459_1471547387_1471548600-EP024344400369",
+                                "tmsProgramId": "EP024344400369",
+                                "tmsSeriesId": "12913621",
+                                "tmsGuideId": "20459",
+                                "startTimeSec": 1471547400,
+                                "stopTimeSec": 1471548600,
+                                "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/20459_1471547387_1471548600-EP024344400369",
+                                "availableOOH": false
+                            }
+                        },
+                        "network": {
+                            "callsign": "WNBCDT",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "NBC",
+                            "networkImageQueryParams": "network=NBC"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Diving, Cycling",
+                    "seriesTitle": "Rio Olympics",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP024344400369?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": [],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsSeriesId": 12913621,
+            "tmsSeriesIdStr": "12913621",
+            "tmsGuideServiceIds": [],
+            "ipTmsGuideServiceIds": [],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/12913621",
+            "network": {
+                "callsign": "WNBCDT",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "NBC",
+                "networkImageQueryParams": "network=NBC"
+            },
+            "title": "Rio Olympics",
+            "titleWithoutArticles": "Rio Olympics",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/12913621?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "Pawn Stars",
+            "availableOutOfHome": true,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": true,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": false,
+            "details": {
+                "num_assets": 69,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Reality"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP011594940514"],
+                    "providerAssetIds": ["historychannel.com::HSHM1689141609230001"],
+                    "tmsGuideServiceIds": [],
+                    "ipTmsGuideServiceIds": [],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP011594940514",
+                    "network": {
+                        "callsign": "HISTRYHD",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "History",
+                        "product_provider": "ENTOD:HISTORYHD_IP",
+                        "product_providers": ["ENTOD:HISTORYHD_IP"],
+                        "networkImageQueryParams": "providerId=HISTORYHD_IP&productId=ENTOD"
+                    },
+                    "streamList": [{
+                        "type": "ONLINE_ONDEMAND",
+                        "streamProperties": {
+                            "rating": "TV-PG",
+                            "startTime": "1472947200000",
+                            "endTime": "1475798399000",
+                            "price": 0.0,
+                            "providerAssetID": "historychannel.com::HSHM1689141609230001",
+                            "tmsProviderProgramID": "EP011594940514",
+                            "mediaUrl": "/ipvs/api/smarttv/stream/vod/v1/historychannel.com::HSHM1689141609230001"
+                        },
+                        "network": {
+                            "callsign": "HISTRYHD",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "History",
+                            "product_provider": "ENTOD:HISTORYHD_IP",
+                            "networkImageQueryParams": "providerId=HISTORYHD_IP&productId=ENTOD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Triple Axel Pawn",
+                    "seriesTitle": "Pawn Stars",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP011594940514?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-PG"],
+                "allVPPs": ["ENTOD:HISTORYHD_IP"],
+                "allIpVPPs": ["ENTOD:HISTORYHD_IP"]
+            },
+            "tmsSeriesId": 3565439,
+            "tmsSeriesIdStr": "3565439",
+            "tmsGuideServiceIds": [43362, 57708],
+            "ipTmsGuideServiceIds": [43362, 57708],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/3565439",
+            "network": {
+                "callsign": "HISTRYHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "History",
+                "product_provider": "ENTOD:HISTORYHD_IP",
+                "product_providers": ["ENTOD:HISTORYHD_IP"],
+                "networkImageQueryParams": "providerId=HISTORYHD_IP&productId=ENTOD"
+            },
+            "title": "Pawn Stars",
+            "titleWithoutArticles": "Pawn Stars",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/3565439?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "PJs",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "num_assets": 30,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Animated"
+                        }, {
+                            "name": "Animation"
+                        }, {
+                            "name": "Comedy"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP002971100023"],
+                    "providerAssetIds": [],
+                    "tmsGuideServiceIds": [59116],
+                    "ipTmsGuideServiceIds": [59116],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP002971100023",
+                    "network": {
+                        "callsign": "FUSEHD",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "FUSEHD",
+                        "networkImageQueryParams": "network=FUSEHD"
+                    },
+                    "streamList": [{
+                        "type": "LINEAR",
+                        "streamProperties": {
+                            "rating": "TV-14",
+                            "startTime": "1474095600000",
+                            "endTime": "1474097400000",
+                            "tmsProviderProgramID": "EP002971100023",
+                            "tmsGuideServiceId": 59116
+                        },
+                        "network": {
+                            "callsign": "FUSEHD",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "FUSEHD",
+                            "networkImageQueryParams": "network=FUSEHD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Clip Show",
+                    "seriesTitle": "The PJs",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP002971100023?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-14", "TV-PG"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsSeriesId": 184481,
+            "tmsSeriesIdStr": "184481",
+            "tmsGuideServiceIds": [59116],
+            "ipTmsGuideServiceIds": [59116],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/184481",
+            "network": {
+                "callsign": "FUSEHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "FUSEHD",
+                "networkImageQueryParams": "network=FUSEHD"
+            },
+            "title": "The PJs",
+            "titleWithoutArticles": "PJs",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/184481?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "LA Ink",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "num_assets": 12,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Documentary"
+                        }, {
+                            "name": "Life & Style"
+                        }, {
+                            "name": "Reality"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP009442260044"],
+                    "providerAssetIds": [],
+                    "tmsGuideServiceIds": [59116],
+                    "ipTmsGuideServiceIds": [59116],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP009442260044",
+                    "network": {
+                        "callsign": "FUSEHD",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "FUSEHD",
+                        "networkImageQueryParams": "network=FUSEHD"
+                    },
+                    "streamList": [{
+                        "type": "LINEAR",
+                        "streamProperties": {
+                            "rating": "TV-14",
+                            "startTime": "1473876000000",
+                            "endTime": "1473879600000",
+                            "tmsProviderProgramID": "EP009442260044",
+                            "tmsGuideServiceId": 59116
+                        },
+                        "network": {
+                            "callsign": "FUSEHD",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "FUSEHD",
+                            "networkImageQueryParams": "network=FUSEHD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Kat Bares It All",
+                    "seriesTitle": "LA Ink",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP009442260044?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsSeriesId": 185679,
+            "tmsSeriesIdStr": "185679",
+            "tmsGuideServiceIds": [59116],
+            "ipTmsGuideServiceIds": [59116],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/185679",
+            "network": {
+                "callsign": "FUSEHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "FUSEHD",
+                "networkImageQueryParams": "network=FUSEHD"
+            },
+            "title": "LA Ink",
+            "titleWithoutArticles": "LA Ink",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/185679?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "Supernatural",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": false,
+            "details": {
+                "num_assets": 46,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Drama"
+                        }, {
+                            "name": "Horror"
+                        }, {
+                            "name": "Fantasy"
+                        }, {
+                            "name": "Sci-Fi/Fantasy"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP007542310175"],
+                    "providerAssetIds": ["tntdrama.com::TVNC0000000000732059"],
+                    "tmsGuideServiceIds": [],
+                    "ipTmsGuideServiceIds": [],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP007542310175",
+                    "network": {
+                        "callsign": "TNT",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "TNT",
+                        "product_provider": "ENTOD:TNT_HD",
+                        "product_providers": ["ENTOD:TNT_HD"],
+                        "networkImageQueryParams": "providerId=TNT_HD&productId=ENTOD"
+                    },
+                    "streamList": [{
+                        "type": "ONLINE_ONDEMAND",
+                        "streamProperties": {
+                            "rating": "TV-14",
+                            "startTime": "1472875200000",
+                            "endTime": "1473479999000",
+                            "price": 0.0,
+                            "providerAssetID": "tntdrama.com::TVNC0000000000732059",
+                            "tmsProviderProgramID": "EP007542310175",
+                            "mediaUrl": "/ipvs/api/smarttv/stream/vod/v1/tntdrama.com::TVNC0000000000732059"
+                        },
+                        "network": {
+                            "callsign": "TNT",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "TNT",
+                            "product_provider": "ENTOD:TNT_HD",
+                            "networkImageQueryParams": "providerId=TNT_HD&productId=ENTOD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Goodbye Stranger",
+                    "seriesTitle": "Supernatural",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP007542310175?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-14"],
+                "allVPPs": ["ENTOD:TNT_HD"],
+                "allIpVPPs": ["ENTOD:TNT_HD"]
+            },
+            "tmsSeriesId": 185113,
+            "tmsSeriesIdStr": "185113",
+            "tmsGuideServiceIds": [61340],
+            "ipTmsGuideServiceIds": [61340],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/185113",
+            "network": {
+                "callsign": "TNT",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "TNT",
+                "product_provider": "ENTOD:TNT_HD",
+                "product_providers": ["ENTOD:TNT_HD"],
+                "networkImageQueryParams": "providerId=TNT_HD&productId=ENTOD"
+            },
+            "title": "Supernatural",
+            "titleWithoutArticles": "Supernatural",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/185113?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "Air Disasters",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "num_assets": 16,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Documentary"
+                        }, {
+                            "name": "Nature & Science"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP014673830071"],
+                    "providerAssetIds": [],
+                    "tmsGuideServiceIds": [58532],
+                    "ipTmsGuideServiceIds": [58532],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830071",
+                    "network": {
+                        "callsign": "SMTHHD",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "Smithsonian Network",
+                        "networkImageQueryParams": "network=Smithsonian Network"
+                    },
+                    "streamList": [{
+                        "type": "CDVR",
+                        "streamProperties": {
+                            "startTime": "1473285600000",
+                            "endTime": "1473285600000",
+                            "cdvrRecording": {
+                                "cdvrState": "completed",
+                                "recordingId": "AUTO_58532EP01467383007114732856000001472300387322",
+                                "tmsProgramId": "EP014673830071",
+                                "tmsSeriesId": "8811659",
+                                "tmsGuideId": "58532",
+                                "startTimeSec": 1473285600,
+                                "stopTimeSec": 1473289200,
+                                "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383007114732856000001472300387322",
+                                "availableOOH": false
+                            }
+                        },
+                        "network": {
+                            "callsign": "SMTHHD",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "Smithsonian Network",
+                            "networkImageQueryParams": "network=Smithsonian Network"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Panic Over the Pacific",
+                    "seriesTitle": "Air Disasters",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830071?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsSeriesId": 8811659,
+            "tmsSeriesIdStr": "8811659",
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/8811659",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "Smithsonian Network",
+                "networkImageQueryParams": "network=Smithsonian Network"
+            },
+            "title": "Air Disasters",
+            "titleWithoutArticles": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/8811659?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "episode_list",
+            "alphaSortOn": "Everybody Hates Chris",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "num_assets": 74,
+                "latest_episode": {
+                    "type": "event",
+                    "details": {
+                        "genres": [{
+                            "name": "Comedy"
+                        }]
+                    },
+                    "tmsProgramIds": ["EP007542250084"],
+                    "providerAssetIds": [],
+                    "tmsGuideServiceIds": [66143],
+                    "ipTmsGuideServiceIds": [66143],
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP007542250084",
+                    "network": {
+                        "callsign": "UPHD",
+                        "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                        "name": "UPHD",
+                        "networkImageQueryParams": "network=UPHD"
+                    },
+                    "streamList": [{
+                        "type": "LINEAR",
+                        "streamProperties": {
+                            "rating": "TV-PG",
+                            "startTime": "1474353000000",
+                            "endTime": "1474354800000",
+                            "tmsProviderProgramID": "EP007542250084",
+                            "tmsGuideServiceId": 66143
+                        },
+                        "network": {
+                            "callsign": "UPHD",
+                            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                            "name": "UPHD",
+                            "networkImageQueryParams": "network=UPHD"
+                        },
+                        "defaultStream": true
+                    }],
+                    "title": "Everybody Hates Spring Break",
+                    "seriesTitle": "Everybody Hates Chris",
+                    "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP007542250084?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+                },
+                "allRatings": ["TV-PG"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsSeriesId": 185137,
+            "tmsSeriesIdStr": "185137",
+            "tmsGuideServiceIds": [59116, 66143],
+            "ipTmsGuideServiceIds": [59116, 66143],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/series/185137",
+            "network": {
+                "callsign": "UPHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "UPHD",
+                "networkImageQueryParams": "network=UPHD"
+            },
+            "title": "Everybody Hates Chris",
+            "titleWithoutArticles": "Everybody Hates Chris",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/185137?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }]
+    }, {
+        "type": "media_list",
+        "uiHint": "boxArtList",
+        "context": "scheduled",
+        "availableOutOfHome": true,
+        "vodOutOfWindow": true,
+        "name": "Upcoming",
+        "uri": "",
+        "twcTvNetworkDisplayMode": "default",
+        "num_categories": 0,
+        "total_results": 16,
+        "media": [{
+            "type": "event",
+            "alphaSortOn": "Cruel Skies",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 3,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-07-01",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830013"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830013",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473314400000",
+                    "endTime": "1473318000000",
+                    "tmsProviderProgramID": "EP014673830013",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383001314733144000001472300387322",
+                        "tmsProgramId": "EP014673830013",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473314400,
+                        "stopTimeSec": 1473318000,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383001314733144000001472300387322",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Cruel Skies",
+            "titleWithoutArticles": "Cruel Skies",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830013?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Panic on the Runway",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 4,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-07-08",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830014"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830014",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473318000000",
+                    "endTime": "1473321600000",
+                    "tmsProviderProgramID": "EP014673830014",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383001414733180000001472300387322",
+                        "tmsProgramId": "EP014673830014",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473318000,
+                        "stopTimeSec": 1473321600,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383001414733180000001472300387322",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Panic on the Runway",
+            "titleWithoutArticles": "Panic on the Runway",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830014?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Terror in Paradise",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 10,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2015-04-12",
+                "season_number": 5,
+                "year": 2015,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830056"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830056",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473357600000",
+                    "endTime": "1473361200000",
+                    "tmsProviderProgramID": "EP014673830056",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383005614733576000001472300387322",
+                        "tmsProgramId": "EP014673830056",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473357600,
+                        "stopTimeSec": 1473361200,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383005614733576000001472300387322",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Terror in Paradise",
+            "titleWithoutArticles": "Terror in Paradise",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830056?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Getting Out Alive",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 9,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2015-04-05",
+                "season_number": 5,
+                "year": 2015,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830055"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830055",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473361200000",
+                    "endTime": "1473364800000",
+                    "tmsProviderProgramID": "EP014673830055",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383005514733612000001472386845611",
+                        "tmsProgramId": "EP014673830055",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473361200,
+                        "stopTimeSec": 1473364800,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383005514733612000001472386845611",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Getting Out Alive",
+            "titleWithoutArticles": "Getting Out Alive",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830055?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Turning Point",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 5,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2013-03-31",
+                "season_number": 3,
+                "year": 2013,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830027"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830027",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473487200000",
+                    "endTime": "1473490800000",
+                    "tmsProviderProgramID": "EP014673830027",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383002714734872000001472386845611",
+                        "tmsProgramId": "EP014673830027",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473487200,
+                        "stopTimeSec": 1473490800,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383002714734872000001472386845611",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Turning Point",
+            "titleWithoutArticles": "Turning Point",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830027?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Cracks in the System",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 1,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-06-17",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830011"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830011",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473685200000",
+                    "endTime": "1473688800000",
+                    "tmsProviderProgramID": "EP014673830011",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383001114736852000001472559583146",
+                        "tmsProgramId": "EP014673830011",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473685200,
+                        "stopTimeSec": 1473688800,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383001114736852000001472559583146",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Cracks in the System",
+            "titleWithoutArticles": "Cracks in the System",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830011?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Break up Over Texas",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 6,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2013-04-07",
+                "season_number": 3,
+                "year": 2013,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830028"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830028",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473688800000",
+                    "endTime": "1473692400000",
+                    "tmsProviderProgramID": "EP014673830028",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383002814736888000001472559583146",
+                        "tmsProgramId": "EP014673830028",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473688800,
+                        "stopTimeSec": 1473692400,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383002814736888000001472559583146",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Break up Over Texas",
+            "titleWithoutArticles": "Break up Over Texas",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830028?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Stairway to Heaven",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 22,
+                "genres": [{
+                    "name": "Drama"
+                }, {
+                    "name": "Horror"
+                }, {
+                    "name": "Fantasy"
+                }, {
+                    "name": "Sci-Fi/Fantasy"
+                }],
+                "original_air_date": "2014-05-13",
+                "season_number": 9,
+                "year": 2014,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP007542310205"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [61340],
+            "ipTmsGuideServiceIds": [61340],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP007542310205",
+            "title": "Stairway to Heaven",
+            "titleWithoutArticles": "Stairway to Heaven",
+            "seriesTitle": "Supernatural",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP007542310205?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Alarming Silence",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 5,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-07-15",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830015"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830015",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473919200000",
+                    "endTime": "1473922800000",
+                    "tmsProviderProgramID": "EP014673830015",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383001514739192000001472991463281",
+                        "tmsProgramId": "EP014673830015",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473919200,
+                        "stopTimeSec": 1473922800,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383001514739192000001472991463281",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Alarming Silence",
+            "titleWithoutArticles": "Alarming Silence",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830015?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Cold Case",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 6,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-07-22",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830016"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830016",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1473922800000",
+                    "endTime": "1473926400000",
+                    "tmsProviderProgramID": "EP014673830016",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383001614739228000001472991463281",
+                        "tmsProgramId": "EP014673830016",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1473922800,
+                        "stopTimeSec": 1473926400,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383001614739228000001472991463281",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Cold Case",
+            "titleWithoutArticles": "Cold Case",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830016?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Plane That Flew Too High",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 11,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2012-08-26",
+                "season_number": 2,
+                "year": 2012,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830021"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830021",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474146000000",
+                    "endTime": "1474149600000",
+                    "tmsProviderProgramID": "EP014673830021",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383002114741460000001472991463281",
+                        "tmsProgramId": "EP014673830021",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474146000,
+                        "stopTimeSec": 1474149600,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383002114741460000001472991463281",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "The Plane That Flew Too High",
+            "titleWithoutArticles": "Plane That Flew Too High",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830021?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Blind Landing",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 5,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2014-06-01",
+                "season_number": 4,
+                "year": 2014,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830038"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830038",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474149600000",
+                    "endTime": "1474153200000",
+                    "tmsProviderProgramID": "EP014673830038",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383003814741496000001472991463281",
+                        "tmsProgramId": "EP014673830038",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474149600,
+                        "stopTimeSec": 1474153200,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383003814741496000001472991463281",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Blind Landing",
+            "titleWithoutArticles": "Blind Landing",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830038?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Subtle Incapacitation",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 11,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2014-08-17",
+                "season_number": 4,
+                "year": 2014,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830044"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830044",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474153200000",
+                    "endTime": "1474156800000",
+                    "tmsProviderProgramID": "EP014673830044",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383004414741532000001472991463281",
+                        "tmsProgramId": "EP014673830044",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474153200,
+                        "stopTimeSec": 1474156800,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383004414741532000001472991463281",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Subtle Incapacitation",
+            "titleWithoutArticles": "Subtle Incapacitation",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830044?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Caution to the Wind",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 3,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2014-05-11",
+                "season_number": 4,
+                "year": 2014,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830036"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830036",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474156800000",
+                    "endTime": "1474160400000",
+                    "tmsProviderProgramID": "EP014673830036",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383003614741568000001473077866037",
+                        "tmsProgramId": "EP014673830036",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474156800,
+                        "stopTimeSec": 1474160400,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383003614741568000001473077866037",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Caution to the Wind",
+            "titleWithoutArticles": "Caution to the Wind",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830036?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Vanished",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 13,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2014-08-31",
+                "season_number": 4,
+                "year": 2014,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830046"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830046",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474160400000",
+                    "endTime": "1474164000000",
+                    "tmsProviderProgramID": "EP014673830046",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383004614741604000001473077866037",
+                        "tmsProgramId": "EP014673830046",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474160400,
+                        "stopTimeSec": 1474164000,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383004614741604000001473077866037",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Vanished",
+            "titleWithoutArticles": "Vanished",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830046?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }, {
+            "type": "event",
+            "alphaSortOn": "Under Pressure",
+            "availableOutOfHome": false,
+            "linearAvailableOutOfHome": false,
+            "vodAvailableOutOfHome": false,
+            "tvodAvailableOutOfHome": false,
+            "vodOutOfWindow": true,
+            "details": {
+                "episode_number": 7,
+                "genres": [{
+                    "name": "Documentary"
+                }, {
+                    "name": "Nature & Science"
+                }],
+                "original_air_date": "2013-04-14",
+                "season_number": 3,
+                "year": 2013,
+                "allRatings": ["TV-14"],
+                "allVPPs": [],
+                "allIpVPPs": []
+            },
+            "tmsProgramIds": ["EP014673830029"],
+            "providerAssetIds": [],
+            "tmsGuideServiceIds": [58532],
+            "ipTmsGuideServiceIds": [58532],
+            "image_uri": "https://pi-dev.timewarnercable.com/imageserver/program/EP014673830029",
+            "network": {
+                "callsign": "SMTHHD",
+                "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                "name": "SMTHHD",
+                "networkImageQueryParams": "network=SMTHHD"
+            },
+            "streamList": [{
+                "type": "LINEAR",
+                "streamProperties": {
+                    "rating": "TV-14",
+                    "startTime": "1474293600000",
+                    "endTime": "1474297200000",
+                    "tmsProviderProgramID": "EP014673830029",
+                    "tmsGuideServiceId": 58532,
+                    "cdvrRecording": {
+                        "cdvrState": "scheduled",
+                        "recordingId": "AUTO_58532EP01467383002914742936000001473250542668",
+                        "tmsProgramId": "EP014673830029",
+                        "tmsSeriesId": "8811659",
+                        "tmsGuideId": "58532",
+                        "startTimeSec": 1474293600,
+                        "stopTimeSec": 1474297200,
+                        "playUrl": "/ipvs/api/smarttv/stream/cdvr/v1/AUTO_58532EP01467383002914742936000001473250542668",
+                        "availableOOH": false
+                    }
+                },
+                "network": {
+                    "callsign": "SMTHHD",
+                    "image_uri": "https://pi-dev.timewarnercable.com/imageserver/image/default",
+                    "name": "SMTHHD",
+                    "networkImageQueryParams": "network=SMTHHD"
+                },
+                "defaultStream": true
+            }],
+            "title": "Under Pressure",
+            "titleWithoutArticles": "Under Pressure",
+            "seriesTitle": "Air Disasters",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/EP014673830029?division=ATGW-SIT03&lineup=8294&application=DVR_MANAGER&profile=ovp_acc_v1&cacheID=34"
+        }]
+    }],
+    "num_categories ":2
+}

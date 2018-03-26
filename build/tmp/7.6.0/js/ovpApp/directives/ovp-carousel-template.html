@@ -1,0 +1,17 @@
+<div class="carousel-wrapper ovp-carousel" ng-if="$ctrl.items.length > 0">
+    <h2 class='carousel-title' ng-if='$ctrl.options.title && $ctrl.options.showTitle'>{{$ctrl.options.title}}</h2>
+    <a class='carousel-all'
+        ng-if='$ctrl.options.viewAllUri'
+        ui-sref="{{$ctrl.options.viewAllUri}}"
+        aria-label="{{$ctrl.options.title + ' view all'}}">View All <span class='twcicon twcicon-chevron-right'></span></a>
+    <div class="carousel-container">
+
+        <div class="control-arrow" ng-class="$ctrl.leftArrowClass()" aria-hidden="true" ng-click="$ctrl.leftClick($event)" tabindex="-1"></div>
+        <div class="carousel-layout" ng-attr-role="{{$ctrl.options.useArrows && 'application' || 'presentation'}}" tabindex="-1">
+            <ul class="carousel-items" aria-label="{{$ctrl.options.ariaLabel}}" ng-style="$ctrl.transformation" ng-keydown="$ctrl.onKeydown($event)" ng-transclude>
+            </ul>
+        </div>
+        <div class="default-gradient right-gradient" ng-if="$ctrl.options.showGradient"></div>
+        <div class="control-arrow" ng-class="$ctrl.rightArrowClass()" aria-hidden="true" ng-click="$ctrl.rightClick($event)" tabindex="-1"></div>
+    </div>
+</div>

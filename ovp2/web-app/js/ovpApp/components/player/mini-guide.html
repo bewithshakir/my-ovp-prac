@@ -1,0 +1,136 @@
+<div class="mini-guide"
+     role="application"
+     aria-label="mini guide"
+     ng-keydown="$ctrl.showMiniGuide($event)"
+     ng-class="{'slide-out': $ctrl.miniGuideVisible===false,'slide-in': $ctrl.miniGuideVisible===true}">
+    <span class="sr-only" id="aria-announcements" aria-live="polite">{{$ctrl.ariaAnnouncement}}</span>
+    <!---space or enter to alter filter -->
+    <div ng-mouseleave="$ctrl.filterSelection=false"
+           ng-mouseover="$ctrl.filterSelection=true"
+           class="filter-selection"
+           role="link"
+           tabindex="0"
+           ng-click="$ctrl.filtersVisible = !$ctrl.filtersVisible"
+           ng-focus="$ctrl.showMiniGuide($event);"
+           ng-keydown="$ctrl.miniGuideVisible===true ? $ctrl.filterLabelKeyDown($event) : $ctrl.showMiniGuide($event)"
+           aria-expanded="{{$ctrl.filtersVisible}}"
+           aria-haspopup="true"
+           aria-controls="filters-menu"
+           aria-labelledby="filter-label">
+           
+          <span id="filter-label" class="sr-only">
+              Filter {{$ctrl.currentAppliedFilter.name === 'All Channels' ? 'off' : 'on ' + $ctrl.getFilterNameForAria($ctrl.currentAppliedFilter)}}, {{!$ctrl.filtersVisible ? 'Open Filter Menu' : 'Close Filter Menu'}}
+          </span>
+          <span aria-hidden="true">{{$ctrl.getFilterName($ctrl.currentAppliedFilter)}}</span>
+          <div class="arrow-down-icon" aria-hidden="true">
+              <img ng-show="$ctrl.filterSelection" ovp-src="images/chevron-down-hover.svg">
+              <img ng-show="!$ctrl.filterSelection" ovp-src="images/chevron-down-weak.svg">
+          </div>
+    </div>
+
+    <div id="filters-menu" class="filters" ng-if="$ctrl.filtersVisible">
+      <div ng-if="$ctrl.sortVisible">
+        <section aria-label="Sort">
+            <div class="filter-header">Sort</div>
+            <label class="filter-sort-item" ng-repeat="sort in $ctrl.sorts">
+                <input type="radio"
+                       id="sort-{{$index}}"
+                       name="sortRadio"
+                       ng-model="$ctrl.selectedSort"
+                       ng-value="sort"
+                       ng-change="$ctrl.onSortChanged()"
+                       ng-keydown="$ctrl.miniGuideVisible===true ? $ctrl.sortOnKeyDown($event, sort) : $ctrl.showMiniGuide($event)"
+                       ng-focus="$ctrl.onSortFocus(sort)"
+                       focus-when="sort.id === $ctrl.selectedSort.id"
+                       aria-label="Sort by {{$ctrl.sortAria}}">
+
+                  <span aria-hidden="true">{{sort.name}}</span>
+            </label>
+        </section>
+        <div class="button-wrapper" ng-if="$ctrl.isAccessibilityEnabled">
+            <button class="btn btn-primary" ng-click="$ctrl.onApply()" aria-label="Apply">Apply</button>
+            <button class="btn btn-default" ng-click="$ctrl.onCancel()" aria-label="Cancel">Cancel</button>
+        </div>
+      </div>
+      <div ng-class="{'filter-wrapper accessibilityUser': $ctrl.isAccessibilityEnabled, 'adjustFilter': !$ctrl.sortVisible}">        
+        <section aria-label="Filters" class="filter" >
+            <div class="filter-header">Filters</div>
+            <div tabindex="-1" class="filter-items-header" ng-class="{'accessibilityUser': $ctrl.isAccessibilityEnabled, 'no-sort': !$ctrl.sortVisible}"> <!-- firefox bug, overflow y makes it focusable, needs tabindex -1 -->
+                <label class="filter-item" ng-repeat="filter in $ctrl.filters">
+                    <input type="radio"
+                           id="filter-{{$index}}"
+                           name="filterRadio"
+                           ng-model="$ctrl.selectedFilter"
+                           ng-value="filter"
+                           ng-change="$ctrl.onFilterChanged()"
+                           ng-keydown="$ctrl.miniGuideVisible===true ? $ctrl.filterOnKeyDown($event, filter) : $ctrl.showMiniGuide($event)"
+                           ng-focus="$ctrl.onFilterFocus(filter)"
+                           aria-label="Filter by {{$ctrl.getFilterName(filter)}}">
+
+                    <span aria-hidden="true">{{$ctrl.getFilterName(filter)}}</span>
+                </label>
+            </div>
+        </section>
+        <div class="button-wrapper" ng-if="$ctrl.isAccessibilityEnabled">
+            <button class="btn btn-primary" ng-click="$ctrl.onApply($event)" aria-label="Apply">Apply</button>
+            <button class="btn btn-default" ng-click="$ctrl.onCancel()" aria-label="Cancel" ng-keydown="$ctrl.filterCancelKeyDown($event)">Cancel</button>
+        </div>
+      </div>
+       <!--  <ul>
+            <li ng-repeat="filter in $ctrl.filters" ng-click="$ctrl.selectFilter(filter)" class="filter-item" ng-class="{selected: filter === $ctrl.selectedFilter)}">
+                <a role="menuitem" href="#">{{$ctrl.getFilterName(filter)}}</a>
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="top-gradient-css">
+    </div>
+
+    <div class="spinner" ng-if="$ctrl.loadingTracker.active()"></div>
+
+    <ul id="channel-browser"
+        ng-show="!$ctrl.filtersVisible"
+        class="channel-list"
+        tabindex="-1"
+        role="presentation"
+        ng-keydown="$ctrl.miniGuideVisible===true ? $ctrl.channelBrowserKeyDown($event) : $ctrl.showMiniGuide($event)"
+        vs-repeat>
+        <li class="channel channel-list-item"
+            id="channel-list-item-{{channel.localChannelNumber + '-' + channel.channelId}}"
+            ng-mousedown="$ctrl.selectChannel(channel, $event)"
+            tabindex="{{(channel.available && $ctrl.selectedChannel === channel) ? 0 : -1}}"
+            selectable
+            ng-focus="$ctrl.onChannelFocussed(channel);"
+            ng-describedby="{{$ctrl.firstFocusedChannel === $ctrl.focusedChannel ? 'channel-list-instructions' : ''"
+            ng-role="{{(channel.available && $ctrl.focusedChannel === channel) && 'button' || ''}}"
+            ng-class="{tuned: channel.available && $ctrl.selectedChannel === channel, selected: channel.available && $ctrl.focusedChannel === channel, transparency: channel.available === false}"
+            ng-repeat="channel in $ctrl.filteredChannels">
+            <span id="channel-list-instructions" class="sr-only" ng-if="$ctrl.firstFocusedChannel === $ctrl.focusedChannel">To move through the channel listings use the up and down arrows.  Press Enter To Tune.  {{$ctrl.parentalControlsEnabled ? 'Press Tab to Unblock' : ''}}</span>
+            <div class="channel-block"
+                 ng-class="{'channel-block-tuned': channel.available && $ctrl.selectedChannel === channel,
+                                                  'channel-block-focused': channel.available && $ctrl.focusedChannel === channel }">
+                <div class="logo">
+                    <img aria-hidden="true" class="logo-url" ng-src="{{channel.networkLogoUri}}">
+                </div>
+                <div class="channel-number-callsign">
+                    <div class="chan-call-group">
+                        <div ng-if="$ctrl.showChannelNumber" class="channel-number" ng-class="{'text-highlight': channel.available && $ctrl.selectedChannel === channel}">{{channel.localChannelNumber}}</div>
+                        <div aria-label="{{channel.networkName}}" class="callsign" ng-class="{'text-highlight': channel.available && $ctrl.selectedChannel === channel}">{{channel.callSign}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="program-title">
+                <div class="title-episode">
+                    <div class="truncate title" ng-class="{'product-title': !channel.episodeTitle}">{{channel.channelTitle}}<span ng-if='!channel.channelTitle' error-codes='WGU-1009' ng-if=''></span></div>
+                    <div class="truncate episode" ng-class="{'text-highlight': channel.available && $ctrl.selectedChannel === channel}" ng-if="channel.episodeTitle">{{channel.episodeTitle}}</div>
+                </div>
+            </div>
+            <div aria-label="blocked" class="status-icon" ng-if="channel.asset.isBlockedByParentalControls">
+              <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="lock icon"></span>
+            </div>
+            <button ng-disabled="{{channel.available === false}}" aria-label="{{channel.hasLinkedVODAsset ? 'Also Available On Demand' : ''}}" class="action-icon" ng-click="$ctrl.startOver(channel)" tabindex="-1">
+                <img class="mini-guide-start-over" tabindex="-1" ng-if="channel.hasLinkedVODAsset" ng-src="{{(channel.available && $ctrl.selectedChannel === channel) && ('/' + $ctrl.version + '/images/channelbrowser_startover_black.png') || ('/' + $ctrl.version + '/images/channelbrowser_startover_blue.png')}}" ng-class="{'no-pointer': !channel.available}">
+            </button>
+        </li>
+    </ul>
+</div>

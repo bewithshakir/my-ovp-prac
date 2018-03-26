@@ -1,0 +1,50 @@
+<div class="buyflow-step" ng-class="{collapsed: $ctrl.collapsed}">
+    <collapsed-step ng-if="$ctrl.collapsed"
+        step-number="$ctrl.stepNumber"
+        step-number-class="'base-step-number'"
+        item-body-class="'base-item-body'"
+        step-title="$ctrl.title"
+        regular-caption="'25 major networks and thousands of top On Demand shows and movies.'"
+        on-title-click="$ctrl.onTitleClick()"
+        price="$ctrl.bundle.price">
+    </collapsed-step>
+
+    <div ng-if="!$ctrl.collapsed">
+        <h2 class="title"><span class="base-step-number">{{$ctrl.stepNumber}}.</span>{{$ctrl.title}}</h2>
+        <div class="item-body base-item-body">
+            <div class="panel base-panel selected">
+                <div class="panel-heading">
+                    <label>{{$ctrl.bundle.name}}</label>
+                    <span class="required">Required</span>
+                    <div class="info base-price">
+                        <span class="dollar-sign">$</span>
+                        <span class="price">{{$ctrl.bundle.price | currency : '': 2}} </span>
+                        <span class="slash">/</span>
+                        <span class="date">month</span>
+                    </div>
+                    <div class="description">
+                        Includes over 5,000 titles On Demand
+                        <!-- {{$ctrl.bundle.description}} -->
+                    </div>
+                </div>
+            </div>
+            <div ng-click="$ctrl.showNetworkList = !$ctrl.showNetworkList" class="details-toggle">
+                View full network list
+                <img ng-if="$ctrl.showNetworkList" src="{{$ctrl.iconPath('icon-24-x-24-chevron-up')}}" class="icon-24-x-24 network-chevron">
+                <img ng-if="!$ctrl.showNetworkList" src="{{$ctrl.iconPath('icon-24-x-24-chevron-down')}}" class="icon-24-x-24 network-chevron">
+
+            </div>
+            <div ng-show="$ctrl.showNetworkList" class="flex-network-list">
+                <div ng-if="$ctrl.bundle.channels" ng-repeat="channel in $ctrl.bundle.channels" class="network-logo">
+                    <img alt="{{channel.name}}" ng-src="{{$ctrl.getChannelImage(channel)}}"/>
+                </div>
+            </div>
+            <div class="buttons">
+                <button ng-click="$ctrl.onCancel()" class="btn btn-cancel">Cancel</button>
+                <div class="pull-right">
+                    <button ng-click="$ctrl.onContinue()" class="btn btn-primary btn-continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    <div>
+</div>

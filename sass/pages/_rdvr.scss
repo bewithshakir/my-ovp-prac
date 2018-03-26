@@ -1,0 +1,35 @@
+
+/*
+ * CSS relative to the rdvr base module would be intended for this file.
+ * This file will then include all relative partials that are needed for display
+ * utilizing the @import directive.
+ */
+ 
+ 
+/*
+ * Specific partials included here:
+ */ 
+@import "components/my-recordings";
+@import "components/scheduled";
+@import "components/priority";
+@import "components/sub-header";
+@import "components/rdvr-toolbar";
+
+$menuBorderRadius: 6px;
+
+.not-dvr {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.rdvr-list {
+  //add margin for scrolling sub view under header
+  margin-left: $menuBorderRadius;
+  margin-right: $menuBorderRadius;
+}
+
+.rdvr-loading {
+    .quiet-loading-tracker {
+        background: none;
+    }
+}

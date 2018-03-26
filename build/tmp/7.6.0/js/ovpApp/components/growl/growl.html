@@ -1,0 +1,6 @@
+<div ng-if="$ctrl.message">
+    <div id="growlpopup" role="alert" class="loading-tracker processing-status popup rounded-corner-with-close-button-frame background opaque visually-hidden" ng-style="$ctrl.growlTracker.active() ? {'z-index': 100000000} : {'z-index': -1}">
+        <a class="popUp popupCloseClick" ng-click="$ctrl.hide()" href="#" aria-describedby='growlmessage' aria-label="exit" tabindex="0"></a>
+        <div id="growlmessage" class="message" ng-bind="$ctrl.message"></div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+version: '2'
+services:
+  build-image:
+    image: ovp-build-image:dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: ovp-build-image
+    command: rm -rf node_modules && rm -rf bower_components && gulp build-zip --env=sitb --build=1
+    volumes:
+      - ${PWD}:/builds/portals/ovp

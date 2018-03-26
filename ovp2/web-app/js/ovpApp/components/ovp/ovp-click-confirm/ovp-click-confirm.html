@@ -1,0 +1,13 @@
+
+<div ng-controller="OvpClickConfirmController" class="ovp-click-confirm">
+    <h2 class="title" ng-if="clickConfirm.title" ng-bind="clickConfirm.title"></h2>
+    <div ng-if="clickConfirm.view">
+        <div ng-include="clickConfirm.view"></div>
+    </div>
+    <div class="message" ng-if="clickConfirm.message" ng-bind="clickConfirm.message"></div>
+    <div class="subject-emphasis" ng-if="clickConfirm.subjectEmphasis" ng-bind="clickConfirm.subjectEmphasis"></div>
+    <div class="button-row">
+        <ovp-button on-click="cancel()" label="No"></ovp-button>
+        <ovp-button on-click="confirm()" label="Yes"></ovp-button>
+    </div>
+</div>

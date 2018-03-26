@@ -1,0 +1,48 @@
+<div class="edit-scheduled" role="dialog" aria-label="{{$ctrl.model.isNew ? 'record' : 'update recording'}}" aria-describedby="recording-title recording-date recording-network">
+    <div class='status-dialog processing-status' ng-show='$ctrl.dvrTracker.active()'>
+        <div class="spinner"></div>
+    </div>
+    <ovp-channel id="recording-network" channel-id="$ctrl.scheduledRecording.displayChannel" mystro-service-id="$ctrl.scheduledRecording.mystroServiceId"></ovp-channel>
+
+    <div id="recording-title" class="title" ng-bind="$ctrl.scheduledRecording.title"></div>
+    <div id="recording-date" class="date" ng-bind="$ctrl.displayDate"></div>
+
+    <div class="toggle-menu">
+        <ul ng-if="$ctrl.model.showTabs" role="tablist">
+            <li ng-click="$ctrl.model.selectedTab = $ctrl.model.availableTabs.EPISODE" ng-class="{selected: $ctrl.model.selectedTab === $ctrl.model.availableTabs.EPISODE}" aria-selected="{{$ctrl.model.selectedTab === $ctrl.model.availableTabs.EPISODE}}" tabindex="0" role="tab">Episode</li>
+            <li ng-click="$ctrl.model.selectedTab = $ctrl.model.availableTabs.SERIES" ng-class="{selected: $ctrl.model.selectedTab === $ctrl.model.availableTabs.SERIES}" aria-selected="{{$ctrl.model.selectedTab === $ctrl.model.availableTabs.SERIES}}" tabindex="0" role="tab">Series</li>
+        </ul>
+    </div>
+
+    <div ng-form="EditScheduleForm" class="edit-schedule-form">
+        <div ng-show="$ctrl.model.showKeepUntil" class="select-box">
+            <label for="deleteWhenSpaceIsNeeded">Keep Until</label>
+            <ovp-dropdown-list items="$ctrl.options.deleteWhenSpaceIsNeeded" config="{onSelect: $ctrl.onSelect('deleteWhenSpaceIsNeeded'), activeIndex: $ctrl.form.deleteWhenSpaceIsNeeded, buttonLabel: 'keep until'}"></ovp-dropdown-list>
+        </div>
+        <div ng-show="$ctrl.model.showSaveAtMost" class="select-box">
+            <label for="numEpisodesToKeep">Save at Most</label>
+            <ovp-dropdown-list items="$ctrl.options.numEpisodesToKeep" config="{onSelect: $ctrl.onSelect('numEpisodesToKeep'), activeIndex: $ctrl.form.numEpisodesToKeep, buttonLabel: 'save at most'}"></ovp-dropdown-list>
+        </div>
+        <div ng-show="$ctrl.model.showRecord" class="select-box">
+            <label for="recordOnlyNewEpisodes">Record</label>
+            <ovp-dropdown-list items="$ctrl.options.recordOnlyNewEpisodes" config="{onSelect: $ctrl.onSelect('recordOnlyNewEpisodes'), activeIndex: $ctrl.form.recordOnlyNewEpisodes, buttonLabel: 'record'}"></ovp-dropdown-list>
+        </div>
+        <div ng-show="$ctrl.model.showStartTime" class="select-box">
+            <label for="startAdjustMinutes">Start Time</label>
+            <ovp-dropdown-list items="$ctrl.options.startAdjustMinutes" config="{onSelect: $ctrl.onSelect('startAdjustMinutes'), activeIndex: $ctrl.form.startAdjustMinutes, buttonLabel: 'start time'}"></ovp-dropdown-list>
+        </div>
+        <div ng-show="$ctrl.model.showStopTime" class="select-box">
+            <label for="stopAdjustMinutes">Stop Time</label>
+            <ovp-dropdown-list items="$ctrl.options.stopAdjustMinutes" config="{onSelect: $ctrl.onSelect('stopAdjustMinutes'), activeIndex: $ctrl.form.stopAdjustMinutes, buttonLabel: 'stop time'}"></ovp-dropdown-list>
+        </div>
+        <div ng-show="$ctrl.model.showAirTime" class="select-box">
+            <label for="recordOnlyAtThisAirTime">Air Time</label>
+            <ovp-dropdown-list items="$ctrl.options.recordOnlyAtThisAirTime" config="{onSelect: $ctrl.onSelect('recordOnlyAtThisAirTime'), activeIndex: $ctrl.form.recordOnlyAtThisAirTime, buttonLabel: 'air time'}"></ovp-dropdown-list>
+        </div>
+        <div class="button-row">
+            <ovp-button ng-hide="{{$ctrl.model.isNew}}" label="{{$ctrl.cancelLabel}}" class="cancel-btn" on-click="$ctrl.cancelSchedule()" on-click-confirm="$ctrl.getCancelConfirm()"></ovp-button>
+            <ovp-button ng-hide="{{$ctrl.model.isNew}}" label="Update" disabled="{{$ctrl.model.updateDisabled}}" on-click="$ctrl.updateSchedule()"></ovp-button>
+            <ovp-button ng-show="{{$ctrl.model.isNew}}" label="Confirm" disabled="{{$ctrl.model.updateDisabled}}" on-click="$ctrl.updateSchedule()"></ovp-button>
+        </div>
+    </form>
+</div>

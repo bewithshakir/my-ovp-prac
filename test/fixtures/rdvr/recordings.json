@@ -1,0 +1,57 @@
+{
+   "recordings": [{
+      "conflicted": false,
+      "displayChannel": "1174",
+      "recordSeries": true,
+      "mystroServiceId": "11",
+      "programMetadata": {
+         "description": "Littlest Pig is embarrassed; an emperor whose clothes seem invisible.",
+         "imageUrl": "/imageserver/program/EP009488270020",
+         "title": "Super Why!",
+         "tmsProgramId": "EP009488270020",
+         "actors": ["Nicholas Vanderburgh", "Zachary Bloch", "Siera Florindo", "Tajja Isen"],
+         "episodeTitle": "The Emperor's New Clothes",
+         "episodeNumber": 20,
+         "seasonNumber": 1,
+         "tmsSeriesId": "186078"
+      },
+      "startUnixTimestampSeconds": 1391013000,
+      "settings": {
+         "numEpisodesToKeep": 1,
+         "priority": "MIN",
+         "recordOnlyNewEpisodes": false,
+         "recordOnlyAtThisAirtime": false,
+         "deleteWhenSpaceIsNeeded": true,
+         "startAdjustMinutes": 0,
+         "stopAdjustMinutes": 0
+      },
+      "tmsProgramId": "EP009488270020"
+   }, {
+      "conflicted": false,
+      "displayChannel": "1125",
+      "recordSeries": true,
+      "mystroServiceId": "4",
+      "programMetadata": {
+         "description": "Angela Raiola (\"Mob Wives\"); dads take on a dad-photo controversy; race car driver Danica Patrick.",
+         "imageUrl": "/imageserver/program/EP015634330121",
+         "title": "Bethenny",
+         "tmsProgramId": "EP015634330121",
+         "actors": [],
+         "episodeTitle": "Mob Wives Star Big Ang, New Controversy: Do Stay-at-Home Dads Make Better Moms?, Race Car Driver Danica Patrick Faces Off With Bethenny",
+         "episodeNumber": 90,
+         "seasonNumber": 1,
+         "tmsSeriesId": "9233915"
+      },
+      "startUnixTimestampSeconds": 1391014800,
+      "settings": {
+         "numEpisodesToKeep": 1,
+         "priority": "MIN",
+         "recordOnlyNewEpisodes": false,
+         "recordOnlyAtThisAirtime": false,
+         "deleteWhenSpaceIsNeeded": true,
+         "startAdjustMinutes": 0,
+         "stopAdjustMinutes": 0
+      },
+      "tmsProgramId": "EP015634330121"
+   }]
+}

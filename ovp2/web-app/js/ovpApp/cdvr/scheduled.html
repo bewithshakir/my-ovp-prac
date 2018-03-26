@@ -1,0 +1,12 @@
+<div class='cdvr-scheduled'>
+    <h1 class="sr-only">DVR, Scheduled Recordings</h1>
+    <p ng-show='$ctrl.schedule.length==0'>{{$ctrl.message}}</p>
+    <div class='scheduled-day' ng-repeat='day in $ctrl.schedule' aria-labelledby='scheduled-header-{{$index}}'>
+        <h2 id='scheduled-header-{{$index}}' aria-level='2' class='day-label'>{{day.label}}  <small>{{day.date}}</small></h2>
+        <ovp-grid-list items='day.recordings' options='$ctrl.listConfig'>
+            <list-items>
+                <cdvr-schedule-list-item ng-repeat="recording in day.recordings" asset="recording"></cdvr-schedule-list-item>
+            </list-items>
+        </ovp-grid-list>
+    </div>
+</div>

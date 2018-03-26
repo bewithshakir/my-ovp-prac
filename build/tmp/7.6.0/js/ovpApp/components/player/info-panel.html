@@ -1,0 +1,95 @@
+<div tabindex="0"
+    id="info-panel-control"
+    class="info"
+    aria-label="Program Info"
+    ng-click="$ctrl.togglePopup()"
+    ng-mouseover="$ctrl.onMouseOver('icon')"
+    ng-mouseleave="$ctrl.onMouseLeave('icon')"
+    ng-focus="$ctrl.onFocus('icon')"
+    ng-blur="$ctrl.onBlur('icon')"
+    prevent-default>
+    <img alt="Program info" class="control-item-img" ng-src="{{$ctrl.image()}}">
+</div>
+
+
+<div tabindex="-1" class='info-panel backdrop' ng-if="$ctrl.showInfoPanel">
+</div>
+
+<div id="info-panel"
+    role="alertdialog"
+    class='info-panel arrow-down'
+    tabindex="-1"
+    ng-mouseover="$ctrl.onMouseOver('panel')"
+    ng-mouseleave="$ctrl.onMouseLeave('panel')"
+    ng-focus="$ctrl.onFocus('panel')"
+    ng-blur="$ctrl.togglePopup()"
+    ng-if="$ctrl.showInfoPanel"
+    focus-when="$ctrl.showInfoPanel">
+    <div class="info-panel-wrapper">
+
+        <div class='col-md-16 col-sm-16 text-center' ng-if="!$ctrl.asset">
+            Data not available
+        </div>
+
+        <div class="table">
+            <div class="table-cell wd-160">
+                <img ng-src="{{$ctrl.asset.imageUri({ height: 237 }) || $ctrl.asset.networkImage()}}"
+                    fadein-onload
+                    width="160"
+                    alt="{{$ctrl.asset.title}}"
+                    height="237"
+                    fallback-image="display:none">
+            </div>
+            <div class="asset-description table-cell pd-left-20">
+                <div class="small-logo" ng-if="!$ctrl.asset.isEpisode">{{$ctrl.asset.title}}</div>
+                <div class="text-large text-highlight title truncate" ng-if="$ctrl.asset.isEpisode">
+                    {{$ctrl.asset.seriesTitle || $ctrl.asset.title}}
+                </div>
+                <div id="network-image">
+                    <img ng-src="{{$ctrl.asset.networkImage({height:60})}}"
+                        width="60"
+                        height="60"
+                        aria-label='Some network logo!'
+                        alt="{{$ctrl.asset.channel ? $ctrl.asset.channel.networkName : $ctrl.asset.network.name}}"
+                        fadein-onload
+                        fallback-image="display:none">
+                    <span class='sr-only'>
+                        {{$ctrl.asset.channel ? $ctrl.asset.channel.networkName : $ctrl.asset.network.name}}
+                    </span>
+                </div>
+
+                <div ng-if="$ctrl.asset.isEpisode" >
+                    <div class='text-medium text-blue'>{{$ctrl.asset.episodeTitle || $ctrl.asset.title}}</div>
+                    <div>
+                        <span class="text-medium text-highlight season-number" ng-if="$ctrl.asset.seasonNumber">Season {{$ctrl.asset.seasonNumber}}</span>
+                        <span ng-if="$ctrl.asset.episodeNumber" class="text-medium text-normal-gray">Episode {{$ctrl.asset.episodeNumber}}</span>
+                    </div>
+                </div>
+                <div class="text-medium ratingYear">
+                    <ovp-rating rating="$ctrl.asset.rating"></ovp-rating>
+                    <span class="text-normal">{{$ctrl.asset.year}}</span>
+                </div>
+                <div id="description" ng-bind="$ctrl.asset.longDescription" class="text-medium text-normal-gray" data-ellipsis></div>
+                <div class="details">
+                    <div class="table pd-left-20" ng-show="$ctrl.getActors()">
+                        <div class="table-cell">Actors:</div>
+                        <div class="table-cell">{{$ctrl.getActors()}}</div>
+                    </div>
+                    <div class="table pd-left-20" ng-show="$ctrl.getDirectors()">
+                        <div class="table-cell">Director:</div>
+                        <div class="table-cell">{{$ctrl.getDirectors()}}</div>
+                    </div>
+                    <div class="table pd-left-20" ng-show="$ctrl.asset.runtimeDisplay">
+                        <div class="table-cell">Runtime:</div>
+                        <div class="table-cell">{{$ctrl.asset.runtimeDisplay}}</div>
+                    </div>
+                    <div class="table pd-left-20" ng-show="$ctrl.asset.expires">
+                        <div class="table-cell">Expires:</div>
+                        <div class="table-cell">{{$ctrl.asset.expires}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

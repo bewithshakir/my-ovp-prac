@@ -1,0 +1,35 @@
+
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+// Not really Breadcrumbs, but makes sense to put it here,
+// this is the back navigation at the top of some view all templates.
+
+.back-to {
+    color: $text-color;
+    text-decoration: none;
+    line-height: 48px;
+
+    > .icon {
+        display: inline-block;
+        background: url("../images/ondemand-icons.png") 0 -78px;
+        height: 23px;
+        width: 23px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+        color: $link-hover-color;
+        text-decoration: none;
+       
+        > .icon {
+            background-position: -56px -78px;
+        }
+    }
+}

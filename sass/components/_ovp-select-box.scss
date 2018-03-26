@@ -1,0 +1,72 @@
+div.selectbox-head {
+  background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll right -950px black;
+  border-bottom: 1px solid $grey55;
+  border-left: 1px solid $grey55;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  left: 50px;
+  margin-left: 40px;
+  overflow: hidden;
+  padding: 8px 0;
+  position: relative;
+}
+
+div.selectbox-head span{
+  padding-left: 15px;
+}
+
+div.selectbox-head.ovp_selectBox_hover {
+  /*background-position: -207px -580px; */
+}
+
+div.selectbox-head.open {
+  /*background-position: -207px -580px; */
+}
+
+ul.ovp_selectBox{
+  margin:0;
+  padding:0;
+  background-color: $black;
+  border-left: 1px solid $grey55;
+  border-bottom: 1px solid $grey55;
+  border-radius: 0 5px 5px 5px;
+  list-style:none;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey83;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: $grey84;
+  }
+}
+
+.ovp_selectBox li {
+  padding: 8px 15px;
+  /*border: 1px solid #f4f4f4;*/
+  cursor: pointer;
+}
+
+.ovp_selectBox li:hover {
+  background-color: $grey56;
+}
+
+.ovp_selectBox li.selected {
+  background-color: $grey56;
+}
+
+.ovp_selectBox_wrapper {
+  visibility: hidden;
+  position:absolute;
+  left:90px;
+  -moz-box-shadow: -1px 8px 8px $black;
+  -webkit-box-shadow:-1px 8px 8px $black;
+  box-shadow: -1px 8px 8px $black;
+}

@@ -1,0 +1,25 @@
+<div class="rdvr-toolbar">
+    <div class="kite-grid">
+        <div class="kite-cell kite-cell-4 text-left" role="none">
+            <h2 class="dvr-name-caption">DVR Name</h2>
+            <div class="dvr-name">{{$ctrl.stb.name || $ctrl.stb.macAddress}}</div>
+            <div class="si si-edit-f" ng-click="$ctrl.renameStb()">
+                <span class="sr-only">Rename your DVR</span>
+            </div>
+        </div>
+        <div class="kite-cell kite-cell-4 text-center" role="none">
+            <disk-usage stb="$ctrl.stb"></disk-usage>
+        </div>
+        <div class="kite-cell kite-cell-4 text-right" role="none">
+            <div ng-click="$ctrl.showDvrPicker()" class="dvr-picker">
+                <div class="si si-tv"></div>
+                Change DVR
+            </div>
+        </div>
+    </div>
+    <div class="kite-grid">
+        <div class="kite-cell kite-cell-12 text-right" ng-if="$ctrl.options.showToggler">
+            <grid-list-toggler id="$ctrl.options.id"></grid-list-toggler>
+        </div>
+    </div>
+</div>

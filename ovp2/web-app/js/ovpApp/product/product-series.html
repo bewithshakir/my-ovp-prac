@@ -1,0 +1,56 @@
+<div id="productPageSeries" class="container product-page product-series">
+    <div class="row masthead">
+        <div class="col-md-8">
+            <div class="thumbnail thumbnail-static thumbnail-showcard thumbnail-responsive text-center">
+                <img ng-src="{{$ctrl.series.imageUri({orientation:'landscape', height:348})}}" fadein-onload></img>
+                <span class="twcicon-svg twcicon-svg-key" ng-if="!$ctrl.entitled" aria-hidden="true" aria-label="key icon"></span>
+                <span class="twcicon-svg twcicon-svg-lock" ng-if="$ctrl.entitled && $ctrl.blocked" aria-hidden="true" aria-label="lock icon"></span>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row program-header focus-outline-none">
+                <div class="col-md-12" focus-when="true" tabindex="-1">
+                    <p class="h2" role="heading" aria-level="1">{{::$ctrl.series.title}}</p>
+                    <p class="subtitle-container h4">
+                        <span class="subtitle">{{::$ctrl.series.episodesAvailable}} episodes</span>
+                    </p>
+                    <p class="unavailable-message h4"><small>{{ $ctrl.availabilityMessage()}}</small></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img alt="{{::$ctrl.series.network.name}}" class="channel-logo" ng-src="{{::$ctrl.series.networkImage({height:81, default:false})}}" fallback-image="display:none"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-16">
+                    <p class="program-summary" ng-bind-html="$ctrl.series.description.long" data-ellipsis></p>
+                </div>
+            </div>
+
+            <action-menu class="row program-actions" actions="$ctrl.series.actions" asset="$ctrl.series" ng-if="$ctrl.series.actions"></action-menu>
+        </div>
+    </div><!-- /.masthead -->
+
+    <section class="row nav-tab-bar">
+        <div class="col-md-16 nav-center">
+            <ul class="nav nav-tabs" role="tablist">
+                <li ng-class="{'active':$ctrl.isOnTab('episodes'), 'disabled':!($ctrl.series.episodesAvailable > 0)}" ng-click="$ctrl.activateTab('episodes', $event)" aria-selected="{{$ctrl.isOnTab('episodes')}}" role="tab" aria-controls="episodes-pane">
+                    <a href="#" tabindex="-1">Episodes</a>
+                </li>
+                <li ng-class="{'active':$ctrl.isOnTab('info')}" ng-click="$ctrl.activateTab('info', $event)" aria-selected="{{$ctrl.isOnTab('info')}}" role="tab" aria-controls="info-pane">
+                    <a href="#" tabindex="-1">Info</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-md-16">
+            <div class="tab-content">
+                <ui-view></ui-view>
+            </div><!-- /.tab-content -->
+        </div>
+    </section>
+
+</div><!-- /.product-page-series -->
+<site-footer class="site-footer-container"></site-footer>

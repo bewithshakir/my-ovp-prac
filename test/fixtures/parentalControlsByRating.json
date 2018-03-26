@@ -1,0 +1,61 @@
+{
+    "parentalControls": {
+        "TVRatings": [
+            {
+                "rating": "TV-Y",
+                "blocked": false
+            },
+            {
+                "rating": "TV-Y7",
+                "blocked": false
+            },
+            {
+                "rating": "TV-G",
+                "blocked": false
+            },
+            {
+                "rating": "TV-PG",
+                "blocked": false
+            },
+            {
+                "rating": "TV-14",
+                "blocked": true
+            },
+            {
+                "rating": "TV-MA",
+                "blocked": true
+            }
+        ],
+        "MovieRatings": [
+            {
+                "rating": "G",
+                "blocked": false
+            },
+            {
+                "rating": "PG",
+                "blocked": false
+            },
+            {
+                "rating": "PG-13",
+                "blocked": false
+            },
+            {
+                "rating": "R",
+                "blocked": true
+            },
+            {
+                "rating": "NC-17",
+                "blocked": true
+            },
+            {
+                "rating": "ADULT",
+                "blocked": true
+            },
+            {
+                "rating": "NR",
+                "blocked": true
+            }
+        ],
+        "blockUnrated": false
+    }
+}

@@ -1,0 +1,87 @@
+
+
+.scheduled {
+  $rowInfoFontSize: 14px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  color: $grey06;
+  margin-bottom: 3px;
+
+  .day-item + .recording-item {
+      border-top: 1px solid $grey13;
+  }
+
+  .day-item {
+    @include day-item;
+    }
+    .recording-item {
+        @include row-item;
+        &.conflict {
+            padding-top: 0px;
+            background-color: $red04;
+            .conflict-header {
+                background: $red05;
+                margin: auto;
+                margin-bottom: 12px;
+                text-align: center;
+                .conflict-message {
+                    color: $white03;
+                }
+            }
+            &:hover {
+              background-color: $red05 !important;
+            }
+        }
+        .ovp-check-box {
+            @include row-check-box;
+        }
+        &:hover {
+            @include list-row-hover;
+        }
+        .title, .episode-description {
+            font-size: $rowInfoFontSize;
+            float: right;
+        }
+        .row-title {
+            @include row-title;
+            line-height: normal;
+        }
+        .row-series-episode {
+            @include row-series-episode;
+        }
+        .row-genre {
+            @include row-genre;
+        }
+        .row-rating {
+            @include row-rating;
+        }
+        .row-channel {
+            @include row-channel;
+            float: right;
+            margin-right: 20px;
+        }
+        .row-start-time {
+            font-size: $rowInfoFontSize;
+            text-align: left;
+            float: right;
+            width: 70px;
+            margin-right: 10px;
+        }
+    }
+    .col-md-15 {
+        width: 93.75%;
+    }
+    .col-md-1 {
+        width: 6.25%;
+    }
+    .cancel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .svg-icon {
+            height: 22px;
+            width: 22px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="confirm text-center">
+    <p id="labelText" class="sr-only">{{$ctrl.ariaLabel}}</p>
+    <p id="descriptionBlockText" class="sr-only">{{$ctrl.ariaDescription}}</p>
+    <div class="spinner" ng-if="$ctrl.loadingTracker.active()"></div>
+    <p ng-if="$ctrl.inProgressMessage && $ctrl.loadingTracker.active()" class="loading-message">{{$ctrl.inProgressMessage}}</p>
+    <p ng-if="$ctrl.preOkMessage && !$ctrl.success && !$ctrl.loadingTracker.active()">{{$ctrl.preOkMessage}}</p>
+    <div class="button-row" ng-if="!$ctrl.success && !$ctrl.loadingTracker.active()">
+        <ovp-button focus="true" class="floating-right-button" ng-hide="{{!$ctrl.okLabel}}" label="{{$ctrl.okLabel}}" on-click="$ctrl.okHandler()"></ovp-button>
+        <ovp-button ng-hide="{{!$ctrl.cancelLabel}}" label="{{$ctrl.cancelLabel}}" on-click="$ctrl.cancelHandler()"></ovp-button>
+    </div>
+</div>

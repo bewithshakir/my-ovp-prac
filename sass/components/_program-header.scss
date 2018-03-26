@@ -1,0 +1,27 @@
+
+
+//
+// Program header
+// --------------------------------------------------------------------------------
+
+// Used in BOBs and Product Pages, contains the title and subtitle, etc.
+
+.program-header {
+
+    h2,
+    .h2 {
+        margin-top: 0;
+    }
+
+    .release-year,
+    .episode-title,
+    .subtitle {
+        color: $text-color-strong;
+    }
+
+    .actors,
+    .season-episode {
+        color: $text-color-weak;
+    }
+
+}

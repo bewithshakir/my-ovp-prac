@@ -1,0 +1,119 @@
+.remotePlayerWrapper {
+    position: absolute;
+    height: 0;
+    width: 0;
+    background-color: #001019;
+    left: 0;
+
+    &.visible {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hidden {
+        height: 0;
+        width: 0;
+        display: none;
+    }
+}
+
+.remote-screen {
+    width: 100%;
+    height: calc(100% - 110px); // Player controlbar
+    padding: 50px 0;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .remote-player-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .remote-logo, .description, .remote-btn {
+            margin: 25px 0;
+        }
+
+        .title {
+            font-weight: 500;
+            line-height: 1.75;
+            margin-top: 25px;
+        }
+
+        .stb-name {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.29;
+            letter-spacing: -1px;
+            margin-bottom: 25px;
+        }
+
+        .remote-btn {
+            width: 268px;
+            line-height: 42px;
+            border-radius: 4px;
+            background-color: #0073d1;
+            border: none;
+            padding: 0;
+        }
+
+        @media (max-height: 850px) {
+            .remote-logo, .description, .remote-btn {
+                margin: 12px 0;
+            }
+
+            .title {
+                margin-top: 12px;
+            }
+
+            .stb-name {
+                margin-bottom: 12px;
+            }
+
+            .remote-logo {
+                .remote-icon {
+                    width: 281px;
+	                height: 184px;
+                }
+            }
+        }
+    }
+}
+
+.remote-player-controls {
+    .top-controls {
+        .img {
+            height: 17px;
+            width: 17px;
+        }
+        .middle-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scrubber {
+                background: #63738a;
+                height: 2px;
+                width: 100%;
+                margin: 0 20px;
+            }
+        }
+    }
+    .play-icon-wrapper, .volume-icon-wrapper {
+        margin-left: 0;
+    }
+    .enlarge-icons {
+        .top-controls {
+            .img {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        .middle-col {
+            .scrubber {
+                height: 6px;
+            }
+        }
+    }
+}

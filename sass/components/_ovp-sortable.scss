@@ -1,0 +1,44 @@
+/* jquery class added for ui-sortable-helper */
+
+.ovp-sortable {
+    padding: 0px;
+    margin: 0px;
+    counter-reset: row-count;
+    li {
+        counter-increment: row-count;
+        list-style-type: none;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        &.ovp-sortable-placeholder {
+            counter-increment: none;
+        }
+        /* hover and selected state */
+        &:hover .ovp-sortable-handle, &.ui-sortable-helper .ovp-sortable-handle {
+            background-color: $grey15;
+            color: $blue01;
+            .up-arrow {
+                background-position: -67px -338px;
+            }
+            .down-arrow {
+                background-position: 0px -338px;
+            }
+        }
+        .ovp-sortable-handle {
+            width: 12px;
+            height: 20px;
+            float: right;
+            margin-top: 4px;
+            margin-right: 7px;
+            .up-arrow {
+                height: 8px;
+                background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") -67px -352px;
+                margin-bottom: 4px;
+            }
+            .down-arrow {
+                height: 8px;
+                background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0px -352px;
+            }
+        }
+    }
+}

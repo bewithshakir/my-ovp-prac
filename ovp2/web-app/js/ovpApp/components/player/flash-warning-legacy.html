@@ -1,0 +1,24 @@
+<div class="player-install-flash-legacy">
+    <h1>You are almost ready to watch TV.</h1>
+    <div ng-if="!$ctrl.hasFlashInstalled || !$ctrl.playerStateKnown">
+        <p>Your Adobe Flash plugin is either disabled or not installed. Please install or <a target="_blank" href="https://helpx.adobe.com/flash-player.html">Get Flash Help</a></p>
+        <a class="download-plug-in" target="_blank" ng-click="$ctrl.continue('install', $event)" href="https://get.adobe.com/flashplayer/">Install Flash Now</a>
+    </div>
+
+    <div ng-if="$ctrl.hasFlashInstalled && $ctrl.needsFlashUpdate">
+        <p>Upgrade your Adobe Flash plug-in now - it only takes a minute.</p>
+        <a class="download-plug-in" target="_blank" ng-click="$ctrl.continue('upgrade', $event)" href="https://get.adobe.com/flashplayer/">Upgrade Flash Now</a>
+        <div ng-if="$ctrl.isIE" class="ie-update-player-message">
+            <p><b>Note :</b></p>
+            <div class="ie-message">
+                <p>For Windows 10, Windows 10 version 1511, Windows RT, and Windows RT 8.1, Flash Player update is available through Windows Update only. If you need help with updating your windows, click <a target="_blank" href="http://windows.microsoft.com/en-us/windows-10/windows-update-faq">here.</a></p>
+                <p>For Windows 8 and Windows 8.1, you can update Internet Explorer using this <a target="_blank" href="https://support.microsoft.com/en-us/kb/3119147">link.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div ng-if="$ctrl.hasFlashInstalled && !$ctrl.needsFlashUpdate && $ctrl.playerStateKnown">
+        <p>Your device does not support hardware accelerated video. You may have to update your graphics card or software to enabled video playback.</p>
+        <a class="download-plug-in" target="_blank" ng-click="$ctrl.continue('learnMore', $event)" href="https://support.mozilla.org/en-US/kb/upgrade-graphics-drivers-use-hardware-acceleration">Learn More</a>
+    </div>
+</div>

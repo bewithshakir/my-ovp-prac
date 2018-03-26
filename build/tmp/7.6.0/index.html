@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="kite-typography">
+<head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-itunes-app" content="app-id=420455839" />
+    <meta name="appVersion" content="7.6.0"/>
+    <meta content="Watch live and On Demand shows, and manage your DVR, whether you're home or on the go." name="description"/>
+    <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Spectrum TV</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="7.6.0/images/apple-touch-icon.png?v=ebd03425e905eaaad2a09c42eb5c8feedaf24f78" />
+    <link rel="shortcut icon" href="/7.6.0/images/favicon.png?v=ebd03425e905eaaad2a09c42eb5c8feedaf24f78" type="image/gif" />
+    <link rel="stylesheet" href="/7.6.0/css/main.css?v=ebd03425e905eaaad2a09c42eb5c8feedaf24f78" />
+
+    <script src="//unpkg.com/ui-router-visualizer@3"></script>
+
+    <script type="text/javascript">
+        if (window.location.protocol === 'http:') {
+            window.location.href =
+                    'https://' +
+                    window.location.host +
+                    window.location.pathname +
+                    window.location.search +
+                    window.location.hash;
+        }
+        /**
+         * THIS IS DUPLICATED IN auth AND index AND MUST BE KEPT IN SYNC
+         */
+        var require = {
+            baseUrl: '7.6.0/js',
+            waitSeconds: 30,
+            urlArgs: 'version=ebd03425e905eaaad2a09c42eb5c8feedaf24f78',
+            text: {
+                useXhr: function () {
+
+                    //return true if you want to allow this url, given that the
+                    //text plugin thinks the request is coming from protocol,  hostname, port.
+                    return false;
+                }
+            }
+        };
+
+        //legacy
+        var OVP = OVP || {};
+        /*
+            Once the config and the files are loaded via require, then kick off the angular bootstrap process
+         */
+        window.angularBootstrap = function() {
+            var waiting = 2; //RequireLoaded & ConfigLoaded
+            return function() {
+                waiting -= 1;
+                if (waiting === 0) {
+                    angular.bootstrap(document.body, ['ovpApp'], {strictDi: true});
+                }
+            }
+        }();
+
+        /* jscs: disable */
+        window.onload = function () {
+            var environments = 'W3sibmFtZSI6InN0YWdpbmciLCJsYWJlbCI6InByb2R1Y3Rpb24gKEFuYWx5dGljcyBTdGFnaW5nKSIsImFuYWx5dGljcyI6eyJlbmRwb2ludCI6Imh0dHBzOi8vdi1jb2xsZWN0b3IuZHAtYmtwLnByZC1hd3MuY2hhcnRlci5uZXQvYXBpL2NvbGxlY3RvciJ9LCJ2cG5zIjp7ImJhc2VVcmkiOiJodHRwczovL3ZwbnMtZ2VuLnRpbWV3YXJuZXJjYWJsZS5jb20ifSwib0F1dGgiOnsiY29uc3VtZXJLZXkiOiJsN3h4Mjk4MjdkOTgxODIzNGJjYTg1ZDMzZWZlMDY0MWRlYzgiLCJzIjoiV1hwRk1FMVVSbXBhVjBreFdsUlpkMDVFVW1oWmJVa3hUbFJzYWxwRVp6TlpWR04zVG0xU2JVOUVRVDA9In0sImRlZmF1bHQiOnRydWV9LHsibmFtZSI6ImVmdCIsImxhYmVsIjoiZWZ0IChWZW5vbmEgUHJvZCkiLCJhbmFseXRpY3MiOnsiZW5kcG9pbnQiOiJodHRwczovL3YtY29sbGVjdG9yLmRwLmF3cy5jaGFydGVyLmNvbS9hcGkvY29sbGVjdG9yIn0sInZwbnMiOnsiYmFzZVVyaSI6Imh0dHBzOi8vdnBucy1nZW4udGltZXdhcm5lcmNhYmxlLmNvbSJ9LCJvQXV0aCI6eyJjb25zdW1lcktleSI6Imw3eHgyOTgyN2Q5ODE4MjM0YmNhODVkMzNlZmUwNjQxZGVjOCIsInMiOiJXWHBGTUUxVVJtcGFWMGt4V2xSWmQwNUVVbWhaYlVreFRsUnNhbHBFWnpOWlZHTjNUbTFTYlU5RVFUMD0ifX0seyJuYW1lIjoicHJvZCIsImxhYmVsIjoicHJvZHVjdGlvbiIsInNwbHVuayI6eyJkb21haW4iOiIgaHR0cHM6Ly9zcGx1bmsubmdjbG9nZ2luZy5jbG91ZC50d2MubmV0LyJ9LCJhbmFseXRpY3MiOnsiZW5kcG9pbnQiOiJodHRwczovL3YtY29sbGVjdG9yLmRwLmF3cy5jaGFydGVyLmNvbS9hcGkvY29sbGVjdG9yIn0sInZwbnMiOnsiYmFzZVVyaSI6Imh0dHBzOi8vdnBucy1nZW4udGltZXdhcm5lcmNhYmxlLmNvbSJ9LCJvQXV0aCI6eyJjb25zdW1lcktleSI6Imw3eHg2NjAyNWY3ZDRmNDY0NmIwYjFjZGYyNGE4NDZjZTFhOCIsInMiOiJXVEpLYVUweVZYZE9SMGw2VFcxSk0wNUVXVFZOVjBrelRYcG5lRTlFUm0xYVIwMDFUa1JSTUZwVVdUMD0ifSwiZGlzcGxheVJhd1JlbnRFcnJvciI6ZmFsc2V9LHsibmFtZSI6InNpdGEiLCJsYWJlbCI6InNpdC1hIChwaS5lbmdwcm9kLXNwZWN0cnVtLm5ldCkiLCJwaUhvc3QiOiJodHRwczovL3BpLmVuZ3Byb2Qtc3BlY3RydW0ubmV0IiwiYW5hbHl0aWNzIjp7ImVuZHBvaW50IjoiaHR0cHM6Ly92LWNvbGxlY3Rvci5kcC1ia3AucHJkLWF3cy5jaGFydGVyLm5ldC9hcGkvY29sbGVjdG9yIn0sInZwbnMiOnsiYmFzZVVyaSI6Imh0dHBzOi8vdnBucy1zeXMudGltZXdhcm5lcmNhYmxlLmNvbSJ9LCJvQXV0aCI6eyJjb25zdW1lcktleSI6Imw3eHhkZmVlZDY5NTBkMDc0Mzc2OGMzYjE4ZDFiYzc2ZWJjMyIsInMiOiJUVEpTYkU1NlJtaFBSRmw2VG5wQmQwNUhSWHBPYlVsNVQxZFJNMXBVUm1sTlJFWnRUbnByZDA1RVVUMD0ifX0seyJuYW1lIjoic2l0YiIsImxhYmVsIjoic2l0LWIgKHBpLmVuZ25ldy1zcGVjdHJ1bS5uZXQpIiwicGlIb3N0IjoiaHR0cHM6Ly9waS5lbmduZXctc3BlY3RydW0ubmV0IiwiYW5hbHl0aWNzIjp7ImVuZHBvaW50IjoiaHR0cHM6Ly92LWNvbGxlY3Rvci5kcC1ia3AucHJkLWF3cy5jaGFydGVyLm5ldC9hcGkvY29sbGVjdG9yIn0sInZwbnMiOnsiYmFzZVVyaSI6Imh0dHBzOi8vdnBucy1zeXMudGltZXdhcm5lcmNhYmxlLmNvbSJ9LCJvQXV0aCI6eyJjb25zdW1lcktleSI6Imw3eHhkZmVlZDY5NTBkMDc0Mzc2OGMzYjE4ZDFiYzc2ZWJjMyIsInMiOiJUVEpTYkU1NlJtaFBSRmw2VG5wQmQwNUhSWHBPYlVsNVQxZFJNMXBVUm1sTlJFWnRUbnByZDA1RVVUMDoifX0seyJuYW1lIjoicGlkZXYiLCJsYWJlbCI6InBpLWRldiAocGkuZGV2LXNwZWN0cnVtLm5ldCkiLCJhbmFseXRpY3MiOnsiZW5kcG9pbnQiOiJodHRwczovL3YtY29sbGVjdG9yLmRwLWJrcC5wcmQtYXdzLmNoYXJ0ZXIubmV0L2FwaS9jb2xsZWN0b3IifSwicGlIb3N0IjoiaHR0cHM6Ly9waS5kZXYtc3BlY3RydW0ubmV0IiwiaW1hZ2VfYXBpIjoiaHR0cHM6Ly9waS5kZXYtc3BlY3RydW0ubmV0L2ltYWdlc2VydmVyIiwib0F1dGgiOnsiY29uc3VtZXJLZXkiOiJsN3h4ZGZlZWQ2OTUwZDA3NDM3NjhjM2IxOGQxYmM3NmViYzMiLCJzIjoiVFRKU2JFNTZSbWhQUkZsNlRucEJkMDVIUlhwT2JVbDVUMWRSTTFwVVJtbE5SRVp0VG5wcmQwNUVVVDA9In19LHsibmFtZSI6InBpc3RhZ2luZyIsImxhYmVsIjoicGktc3RhZ2luZyIsImFuYWx5dGljcyI6eyJlbmRwb2ludCI6Imh0dHBzOi8vdi1jb2xsZWN0b3IuZHAtYmtwLnByZC1hd3MuY2hhcnRlci5uZXQvYXBpL2NvbGxlY3RvciJ9LCJwaUhvc3QiOiJodHRwczovL3BpLXN0YWdpbmcudGltZXdhcm5lcmNhYmxlLmNvbSIsImltYWdlX2FwaSI6Imh0dHBzOi8vcGktc3RhZ2luZy50aW1ld2FybmVyY2FibGUuY29tL2ltYWdlc2VydmVyIiwib0F1dGgiOnsiY29uc3VtZXJLZXkiOiJsN3h4NjYwMjVmN2Q0ZjQ2NDZiMGIxY2RmMjRhODQ2Y2UxYTgiLCJzIjoiV1RKS2FVMHlWWGRPUjBsNlRXMUpNMDVFV1RWTlYwa3pUWHBuZUU5RVJtMWFSMDAxVGtSUk1GcFVXVDA9In19LHsibmFtZSI6IkZlZEF1dGhNaWRkbGUiLCJsYWJlbCI6IkZlZEF1dGhNaWRkbGUiLCJldmVudGdhdGV3YXlWNCI6eyJsb2dfbGV2ZWwiOjAsInNlcnZlciI6IlNUR19IVFRQUyIsInRhcmdldERhdGFDb25zdW1lcnMiOiJTVEcifSwicGlIb3N0IjoiaHR0cHM6Ly9waS1zdGFnaW5nLnRpbWV3YXJuZXJjYWJsZS5jb20iLCJpbWFnZV9hcGkiOiJodHRwczovL3BpLXN0YWdpbmcudGltZXdhcm5lcmNhYmxlLmNvbS9pbWFnZXNlcnZlciIsIm9BdXRoIjp7ImNvbnN1bWVyS2V5IjoibDd4eDI5ODI3ZDk4MTgyMzRiY2E4NWQzM2VmZTA2NDFkZWM4IiwicyI6ImMxNDExY2ViNWU2MDQ0YWJiNTU5Y2Q4N2E3MDZkZjgwIn19LHsibmFtZSI6ImZpZ2Fyby1wcm9kIiwibGFiZWwiOiJmaWdhcm8tcHJvZHVjdGlvbiIsInBpSG9zdCI6Imh0dHBzOi8vc3R2YS5maWdhcm8uc3BlY3RydW10b29sYm94LmNvbSIsImFuYWx5dGljcyI6eyJlbmRwb2ludCI6Imh0dHBzOi8vdi1jb2xsZWN0b3IuZHAtYmtwLnByZC1hd3MuY2hhcnRlci5uZXQvYXBpL2NvbGxlY3RvciJ9LCJ2cG5zIjp7ImJhc2VVcmkiOiJodHRwczovL3ZwbnMtZ2VuLnRpbWV3YXJuZXJjYWJsZS5jb20ifSwib0F1dGgiOnsiY29uc3VtZXJLZXkiOiJsN3h4NjYwMjVmN2Q0ZjQ2NDZiMGIxY2RmMjRhODQ2Y2UxYTgiLCJzIjoiV1RKS2FVMHlWWGRPUjBsNlRXMUpNMDVFV1RWTlYwa3pUWHBuZUU5RVJtMWFSMDAxVGtSUk1GcFVXVDA9In19LHsibmFtZSI6ImZpZ2Fyby1zaXQtYiIsImxhYmVsIjoiZmlnYXJvLXNpdC1iIiwicGlIb3N0IjoiaHR0cHM6Ly9zdHZhLmZpZ2Fyby5zcGVjdHJ1bXRvb2xib3guY29tIiwiYW5hbHl0aWNzIjp7ImVuZHBvaW50IjoiaHR0cHM6Ly92LWNvbGxlY3Rvci5kcC1ia3AucHJkLWF3cy5jaGFydGVyLm5ldC9hcGkvY29sbGVjdG9yIn0sInZwbnMiOnsiYmFzZVVyaSI6Imh0dHBzOi8vdnBucy1zeXMudGltZXdhcm5lcmNhYmxlLmNvbSJ9LCJvQXV0aCI6eyJjb25zdW1lcktleSI6Imw3eHhkZmVlZDY5NTBkMDc0Mzc2OGMzYjE4ZDFiYzc2ZWJjMyIsInMiOiJUVEpTYkU1NlJtaFBSRmw2VG5wQmQwNUhSWHBPYlVsNVQxZFJNMXBVUm1sTlJFWnRUbnByZDA1RVVUMDoifX0seyJuYW1lIjoiZmlnYXJvLWRldiIsImxhYmVsIjoiZmlnYXJvLWRldiIsInBpSG9zdCI6Imh0dHBzOi8vc3R2YS1kZXYuZmlnYXJvLnNwZWN0cnVtdG9vbGJveC5jb20iLCJhbmFseXRpY3MiOnsiZW5kcG9pbnQiOiJodHRwczovL3YtY29sbGVjdG9yLmRwLWJrcC5wcmQtYXdzLmNoYXJ0ZXIubmV0L2FwaS9jb2xsZWN0b3IifSwidnBucyI6eyJiYXNlVXJpIjoiaHR0cHM6Ly92cG5zLXN5cy50aW1ld2FybmVyY2FibGUuY29tIn0sIm9BdXRoIjp7ImNvbnN1bWVyS2V5IjoibDd4eGRmZWVkNjk1MGQwNzQzNzY4YzNiMThkMWJjNzZlYmMzIiwicyI6IlRUSlNiRTU2Um1oUFJGbDZUbnBCZDA1SFJYcE9iVWw1VDFkUk0xcFVSbWxOUkVadFRucHJkMDVFVVQwOiJ9fV0=';
+            window.currentConfig = new OvpConfig(window.defaultConfig, '7.6.0',  environments);
+            currentConfig.initialize(function(err) {
+                if (err) {
+                    window.alert(currentConfig.messages.needReloadFailure);
+                    window.location.reload();
+                }
+                window.angularBootstrap();
+            }, 'staging');
+        };
+        /* jscs: enable */
+
+    </script>
+</head>
+
+<body class="{{bodyClass}} {{focusClass}} footer-padding kite-theme-dark kite-hide-focus" position-under-header>
+
+<svg class="svg-icon-sprite" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="arrow-right-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#000" stroke-width="2" d="M41 17l14 15-14 15M9 32h46" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="calendar-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#000" stroke-width="2" d="M44 19h3.3a3.7 3.7 0 0 1 3.7 3.7v24.6a3.7 3.7 0 0 1-3.7 3.7H16.7a3.7 3.7 0 0 1-3.7-3.7V22.7a3.7 3.7 0 0 1 3.7-3.7H20M29 19h6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill="none" stroke="#000" stroke-miterlimit="10" d="M13 27.5h38"/>
+        <path fill="none" stroke="#000" stroke-width="2" d="M24.6 13v9M39.9 13v9" stroke-linecap="round" stroke-linejoin="round"/>
+        <text transform="translate(32 45)" font-size="18" font-family="TWC Round" text-anchor="middle">7</text>
+    </symbol>
+
+    <symbol id="cog-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#000" stroke-width="2" d="M51 34v-4l-5.5-1.6a13.9 13.9 0 0 0-1.4-3.4l2.8-5-2.9-2.8-5 2.8a13.9 13.9 0 0 0-3.5-1.4L34 13h-4l-1.6 5.5a13.9 13.9 0 0 0-3.4 1.4l-5-2.8-2.8 2.9 2.8 5a13.9 13.9 0 0 0-1.4 3.5L13 30v4l5.5 1.6a13.9 13.9 0 0 0 1.4 3.4l-2.8 5 2.9 2.8 5-2.8a13.9 13.9 0 0 0 3.5 1.4L30 51h4l1.6-5.5a13.9 13.9 0 0 0 3.4-1.4l5 2.8 2.8-2.9-2.8-5a13.9 13.9 0 0 0 1.4-3.5z" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="32" cy="32" r="7.5" fill="none" stroke="#000"/>
+    </symbol>
+
+    <symbol id="ellipsis-horizontal-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="14" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2"/>
+        <circle cx="32" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2"/>
+        <circle cx="50" cy="32" r="5" fill="none" stroke="#fff" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="exclamation-circle-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="19" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M32 44a2.7 2.7 0 0 1-2.8-2.7A2.8 2.8 0 1 1 32 44zM32 36.8a1.7 1.7 0 0 1-1.7-1.8s-.9-11.3-.9-12.5a2.3 2.3 0 0 1 2.5-2.5h.1a2.3 2.3 0 0 1 2.6 2.6c0 1.2-.9 12.5-.9 12.5a1.7 1.7 0 0 1-1.7 1.7z"/>
+    </symbol>
+
+    <symbol id="flick-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M24 41H14a2 2 0 0 1-2-2V19a2 2 0 0 1 2-2h36a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H40" stroke-linecap="round"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M32 25.5v30M23 33.5l9-8 9 8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="folder-add-icon" role="img" viewBox="0 0 64 64">
+        <rect width="38" height="24" x="13" y="23" fill="none" stroke="#000" stroke-width="2" rx="1.9" ry="1.9"/>
+        <path fill="none" stroke="#000" stroke-width="2" d="M13 24.7v-6.4a1.3 1.3 0 0 1 1.3-1.3h15.4a1.3 1.3 0 0 1 1.3 1.3V23M25 35h14M32 42V28" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="hamburger-solid-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="6" d="M14 14h36M14 32h36M14 50h36" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="key-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#000" stroke-width="2" d="M62.6 30.9l-6.4-6.4a1.5 1.5 0 0 0-1.1-.5H30.8a16 16 0 1 0 0 16h5.6l3.4-3 3.8 3 4-3 2.9 3H55a1.6 1.6 0 0 0 1.1-.5l6.4-6.4a1.6 1.6 0 0 0 .1-2.2z" stroke-linejoin="round"/>
+        <circle cx="12" cy="32" r="5" fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10"/>
+    </symbol>
+
+    <symbol id="lock-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#000" stroke-width="2" d="M49 28h-8V18a9 9 0 0 0-18 0v10h-8a2 2 0 0 0-2 2v21a4 4 0 0 0 4 4h30a4 4 0 0 0 4-4V30a2 2 0 0 0-2-2z" stroke-linejoin="round"/>
+        <path fill="none" stroke="#000" stroke-width="2" d="M35 28v-9.9a3 3 0 0 0-3-3.1 3 3 0 0 0-3 3v10h6z" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="play-large-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M47.8 33.7L17.4 51.3a2 2 0 0 1-3-1.7V14.5a2 2 0 0 1 3-1.7l30.4 17.5a2 2 0 0 1 0 3.4z" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="plus-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M13 32h38M32 51V13" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="record-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="15" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="record-series-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="16" cy="32" r="15" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M44.3 46.5a15 15 0 1 0 0-29M28.3 46.5a15 15 0 1 0 0-29" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="remove-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M18.6 18.6l26.8 26.8M18.6 45.4l26.8-26.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="restart-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M14 18h22a14 14 0 0 1 0 28H24" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M22 27l-8-9 8-9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="search-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="35.2" cy="28.8" r="13" fill="none" stroke="#fff" stroke-width="2" transform="rotate(-45 35.147 28.842)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M26 38l-3.5 3.5" stroke-linecap="round"/>
+        <path fill="none" stroke="#fff" stroke-width="4" d="M22.5 41.5l-5.7 5.7" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="ticket-icon" role="img" viewBox="0 0 64 64">
+        <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square">
+            <path d="M30.2 16.9l.5.8"/>
+            <path d="M32.6 21l10.2 17.6" stroke-dasharray="1.86 3.71"/>
+            <path d="M43.7 40.3l.5.8"/>
+        </g>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M46.7 23.5a6 6 0 0 1 2.2-8.2l-4-6.9-39.8 23 4 6.9a6 6 0 1 1 6 10.4l4 6.9 39.8-23-4-6.9a6 6 0 0 1-8.2-2.2z" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="trash-icon" role="img" viewBox="0 0 64 64">
+        <path fill="none" stroke="#fff" stroke-width="2" d="M19 17h26v33a4 4 0 0 1-4 4H23a4 4 0 0 1-4-4V17z"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M26 10h12M15 17h34M32 26v22M39 26v22M25 26v22" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="wrench-icon" role="img" viewBox="0 0 64 64">
+        <circle cx="46.7" cy="18.8" r="1.5" fill="none" stroke="#fff" transform="rotate(-45 46.794 18.817)" stroke-linejoin="round"/>
+        <path fill="none" stroke="#fff" stroke-width="2" d="M22.4 51l4-6-1.9-4.3-4.7-.2-4.1 6.1a8.7 8.7 0 0 1 .4-9.2 9 9 0 0 1 10.1-3.6L43.9 16a4 4 0 0 1 5.7 5.7L31.9 39.3a9 9 0 0 1-1.1 7.9 8.8 8.8 0 0 1-8.4 3.8z" stroke-linejoin="round"/>
+    </symbol>
+</svg>
+
+
+<div ui-view='' class="wrap kite-grid">
+    <div class="loading-tracker">
+        <div class="spinner"></div>
+    </div>
+</div>
+<div id="product" class="product-page-container" ui-view="productView" autoscroll='false' scroll-reset='productEnter' scrollable='true' position-under-header></div>
+<div id="search" ui-view="searchView" scrollable='true' position-under-header></div>
+<!-- Hide footer on page load -->
+<site-footer ng-if="($state.transition.success || $state.previous) && !$state.current.name.match(hideSiteFooterRegex)"></site-footer>
+
+<script type="text/javascript" src="/7.6.0/js/libs/require-2.0.6/require.js" data-main="index"></script>
+<!--
+    commit number: 'ebd03425e905eaaad2a09c42eb5c8feedaf24f78'
+    appVersion: '7.6.0'
+-->
+</body>
+</html>

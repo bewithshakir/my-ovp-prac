@@ -1,0 +1,72 @@
+/* kite fixes */
+
+.kite-typography ol>li, .kite-typography ul>li {
+    /* margin-bottom: 0.75rem; */
+    /* padding-left: 0.5rem; */
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.kite-typography ol, .kite-typography ul {
+    /* margin-bottom: 1.5rem; */
+    /* padding-left: 1.25rem; */
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ul.nav {
+    padding-left: 0;
+}
+
+.kite-form-group label {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+#password {
+    background-image: none;
+}
+
+.alert.alert-danger {
+    background-color: $kite-white;
+    
+    a {
+        color: $kite-dark-red;
+    }
+}
+
+.kite-theme-dark .kite-card-active {
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.12), 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+// Accessiblity focus outline
+.focus-outline-none [tabindex="-1"]:focus {
+    outline: none !important;
+}
+
+[tabindex="-1"]:focus {
+  outline: 3px solid $blue07 !important;
+}
+
+.kite-grid {
+    .kite-cell {
+        flex-grow: 1;
+        -ms-flex-preferred-size: 0px;
+    }
+}
+
+input.kite-form-control {
+    line-height: initial;
+    padding: 9px 8px;
+
+    &:focus {
+        padding: 8px 8px;
+    }
+}
+
+/* Is the .kyte-typography h1/h2/h3/h4/etc { color: inherit } style necessary?  This requires lots of specificity if it needs to be overridden */
+
+/* end kite fixes */

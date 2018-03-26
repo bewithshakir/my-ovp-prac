@@ -1,0 +1,23 @@
+
+
+//
+// Spinner
+// --------------------------------------------------
+
+// Loading coverage spinner
+
+.spinner {
+    animation: rotation 1s infinite linear;
+    border: 6px solid rgba($strong-color, 0.25);
+    border-radius: 100%;
+    border-top-color: $strong-color;
+    margin: 0 auto;
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+@keyframes rotation {
+    from    { transform: rotate(0deg); }
+    to      { transform: rotate(360deg); }
+}

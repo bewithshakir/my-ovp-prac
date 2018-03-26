@@ -1,0 +1,25 @@
+<div class="site-footer-container">
+    <footer class="site-footer" role="contentinfo">
+        <div class="logo-wrapper">
+            <a href="/" title="Spectrum TV" tabindex="-1">
+                <img alt="home page" class="logo-header" ovp-src="images/charter-logo.svg"/>
+            </a>
+        </div>
+            <ul class="list-inline" ng-if="$ctrl.isSpecUOrBulkMDU()">
+                <li>&copy; {{$ctrl.thisYear}} Charter Communications</li>
+                <li><a href="{{$ctrl.privacyPolicyLink}}" target="_privacy" aria-describedby="opens-in-new-tab">Privacy Policy</a></li>
+                <li><a href="{{$ctrl.privacyRightsLink}}" target="_caprivacy" aria-describedby="opens-in-new-tab">Your California Privacy Rights</a></li>
+                <li><a href="{{$ctrl.termsAndConditionsLink}}" target="_terms" aria-describedby="opens-in-new-tab">Terms and Conditions</a></li>
+                <li ng-if="$ctrl.showDev"><a href="#" accesskey="t" ng-click="$ctrl.showDevTools()">Toggle Dev Tools</a></li>
+            </ul>
+            <ul class="list-inline" ng-if="!$ctrl.isSpecUOrBulkMDU()">
+                <li>&copy; {{$ctrl.thisYear}} Charter Communications</li>
+                <li><a href="{{$ctrl.privacyPolicyLink}}" target="_privacy" aria-describedby="opens-in-new-tab">Privacy Policy</a></li>
+                <li><a href="{{$ctrl.privacyRightsLink}}" target="_caprivacy" aria-describedby="opens-in-new-tab">Your California Privacy Rights</a></li>
+                <li><a href="{{$ctrl.termsAndConditionsLink}}" target="_terms" aria-describedby="opens-in-new-tab">Terms and Conditions</a></li>
+                <li><a href="https://www.surveymonkey.com/r/VPGLN7C" target="_feedback" aria-describedby="opens-in-new-tab">Feedback</a></li>
+                <li ng-if="$ctrl.showDev"><a href="#" accesskey="t" ng-click="$ctrl.showDevTools()">Toggle Dev Tools</a></li>
+            </ul>
+        <p id="opens-in-new-tab" style="display:none">opens in new tab</p>
+    </footer>
+</div>

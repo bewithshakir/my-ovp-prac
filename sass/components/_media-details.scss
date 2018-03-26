@@ -1,0 +1,23 @@
+
+
+//
+// Media details
+// --------------------------------------------------------------------------------
+
+// Used in Product Pages, microdata about the program...
+// director, runtime, genres, etc.
+
+.media-details {
+    margin-top: 10px; // align with `.maturity-ratings`
+
+    > li {
+        margin-bottom: 0.25em;
+    }
+
+    h6,
+    .h6 {
+        display: inline;
+        margin-right: 0.5em;
+    }
+
+}

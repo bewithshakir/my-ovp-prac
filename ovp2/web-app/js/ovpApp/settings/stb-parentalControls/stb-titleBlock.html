@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-8">
+        <div role="heading" aria-level="2" id="parental-controls-label" class="odn-setting-label setting-label">Title Block</div>
+        <p class="help-block">Hide titles from showing that are blocked by parental controls.</p>
+    </div>
+    <div class="col-xs-8 text-right">
+        <ovp-switch id="pc_enabled" role="button" aria-label="Title Blocking is {{$ctrl.titleBlockingEnabledForClient ? 'on' : 'off'}}" ng-click="$ctrl.toggleTitleBlocking($event);" button-enabled="{{$ctrl.titleBlockingEnabledForClient}}" prevent-default></ovp-switch>
+    </div>
+</div>

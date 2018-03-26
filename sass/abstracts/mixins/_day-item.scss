@@ -1,0 +1,14 @@
+@mixin day-item {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  clear: both;
+  .day-label {
+    font-size: 24px;
+    color: $white;
+    margin-right: 5px;
+  }
+  .day-display {
+    font-size: 18px;
+    color: $grey10;
+  }
+}

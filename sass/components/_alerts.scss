@@ -1,0 +1,18 @@
+//
+// Alerts
+// --------------------------------------------------
+
+$alert-critical-bg:             $spec-brand-danger !default;
+$alert-critical-text:           $spec-gray-base !default;
+$alert-critical-border:         darken(adjust-hue($alert-critical-bg, -10), 10%) !default;
+
+.alert {
+    h1 {
+        color: inherit;
+    }
+}
+
+.alert-critical {
+    @include alert-variant($alert-critical-bg, $alert-critical-border, $alert-critical-text);
+    border-width: 0.5rem 0;
+}

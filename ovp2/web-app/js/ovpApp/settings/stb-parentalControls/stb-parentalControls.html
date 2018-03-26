@@ -1,0 +1,27 @@
+<div class="parental-controls" ng-if="$ctrl.preferences !== null" role="application">
+    <h1 class="settings-h1 kite-h3">{{$ctrl.currentStb.name || 'Spectrum Receiver'}} Parental Controls</h1>
+    <stb-parental-controls-toggle stb='$ctrl.currentStb' blocking-enabled="$ctrl.preferences.parentalControls.blockingEnabled"></stb-parental-controls-toggle>
+
+    <stb-change-blocking-pin ng-if="$ctrl.isPrimaryAccount" stb='$ctrl.currentStb'></stb-change-blocking-pin>
+
+    <stb-allowed-ratings stb='$ctrl.currentStb' blocked-ratings='$ctrl.preferences.parentalControls.blockedRatings' ratings='$ctrl.properties.parentalControls.blockedRatings.allowedValues'></stb-allowed-ratings>
+
+    <stb-content-block stb='$ctrl.currentStb' blocked-content='$ctrl.preferences.parentalControls.blockedContent' content-block='$ctrl.properties.parentalControls.blockedContent.allowedValues'></stb-content-block>
+
+    <stb-title-block stb='$ctrl.currentStb'></stb-title-block>
+
+    <stb-time-block ng-if="$ctrl.config.stbSettingsParentalControls.timeBlockEnabled" stb='$ctrl.currentStb'></stb-time-block>
+
+    <div class="row" ng-if="!$ctrl.config.stbSettingsParentalControls.timeBlockEnabled">
+        <h3 class="odn-setting-label setting-label col-xs-16 unavailable">Time Block - Unavailable</h3>
+        <p class="help-block col-xs-16 unavailable" error-codes='WCM-1023'></p>
+    </div>
+
+    <stb-share-in-progress-list stb='$ctrl.currentStb'></stb-share-in-progress-list>
+
+    <!-- Channel Block -->
+    <channel-block channel-cards="$ctrl.channelCards" filtered-cards="$ctrl.filteredCards" on-filter-changed="$ctrl.onFilterChanged"
+        get-card-number="$ctrl.getCardNumber" get-card-name="$ctrl.getCardName" get-card-image="$ctrl.getCardImage" is-channel-blocked="$ctrl.isChannelBlocked"
+        clear-all-channel-blocks="$ctrl.clearAllChannelBlocks" toggle-card-block="$ctrl.toggleCardBlock"></channel-block>
+</div>
+<stb-receiver-unavailable stb="$ctrl.currentStb" ng-if="$ctrl.preferences === null || $ctrl.properties === null" />

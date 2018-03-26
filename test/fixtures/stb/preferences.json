@@ -1,0 +1,103 @@
+{
+   "mockData": "This mocks out the response we are expecting to get from /spp/v1/preferences/{macAddress}",
+   "_id":"41ca100c-ffa6-4f0a-9541-10b58269700e",
+   "clientSettings":[
+      {
+         "description":"Power ON Channel {set to 65535 for -Last Channel-}",
+         "segmentId":1301,
+         "type":"ts_Number",
+         "value":"1000"
+      },
+      {
+         "description":"CC On/Off",
+         "segmentId":1001,
+         "type":"ts_Numeric_List",
+         "value":"2"
+      },
+      {
+         "description":"CC Digital Source",
+         "segmentId":1004,
+         "type":"ts_Numeric_List",
+         "value":"0"
+      },
+      {
+         "description":"Rating Block",
+         "segmentId":1200,
+         "type":"ts_Bitfield",
+         "value":"2560"
+      }
+   ],
+   "closedCaptioning":{
+      "analogSource":"CC1",
+      "backgroundColor":"Magenta",
+      "backgroundStyle":"Translucent",
+      "digitalSource":"CC1",
+      "formatSource":"Set By User",
+      "selection":"On w/Mute",
+      "textColor":"Green",
+      "textFont":"Impress",
+      "textSize":"Small",
+      "textStyle":"Clear"
+   },
+   "display":{
+      "colorSelection":"Classic",
+      "graphics":{
+         "aspectRatio":"16x9"
+      },
+      "language":"English",
+      "powerSaveMode":"On"
+   },
+   "dvr":{
+      "compensation":"More"
+   },
+   "frontPanel":{
+      "displayOptions":"Channel on Tune"
+   },
+   "navigation":{
+      "autotune2HD":true,
+      "ebifEnabled":false,
+      "liveStreamingEnabled":true,
+      "powerOnChannel":1000,
+      "tuneToNearest":true
+   },
+   "output":{
+      "aspectRatio":"16x9",
+      "pictureSize":"Normal",
+      "resolution":[
+         "1080i"
+      ]
+   },
+   "parentalControls":{
+      "blockedContent":[
+         "Sexual Situations",
+         "Violence",
+         "Explicit Language",
+         "Strong Language",
+         "Adult Situation",
+         "Brief Nudity",
+         "Graphic Language",
+         "Graphic Violence",
+         "Nudity",
+         "Rape",
+         "Strong Sexual"
+      ],
+      "blockedRatings":[
+         "TV-MA",
+         "NC-17"
+      ],
+      "blockingEnabled":true,
+      "titleBlock":true
+   },
+   "bookmarks": {
+      "sharingEnabled":true
+   },
+   "purchases":{
+      "blockingEnabled":true
+   },
+   "secondaryAudio":{
+      "language":"Spanish",
+      "selection":"On"
+   },
+   "strTimestamp":"6390519034135970979",
+   "timestamp":6390519034135970979
+}

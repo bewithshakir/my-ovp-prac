@@ -1,0 +1,12 @@
+<section class="tour" ng-if="$ctrl.hasSlides()">
+    <h1 class="explore-prompt" aria-hidden="true" scroll-to-slides>
+        <span class="title">Scroll to explore</span>
+        <img alt="" ovp-src="images/chevron-down-light.png" />
+    </h1>
+
+    <div id="tour-slides" class="slides container-fluid">
+        <div class="slide row" slide-number="{{$index+1}}" ng-repeat="slide in $ctrl.slides track by $index" ng-class="slide.class">
+            <feature-tour-slide slide="slide" image-on-left="$even"></feature-tour-slide>
+        </div>
+    </div>
+</section>

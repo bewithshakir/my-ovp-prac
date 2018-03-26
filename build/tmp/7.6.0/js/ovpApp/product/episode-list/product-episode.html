@@ -1,0 +1,28 @@
+<a href="#"
+    class="row list-group-item list-item-episode"
+    ng-class="{active:$ctrl.selected}"
+    ng-click="$ctrl.onSelected({episode: $ctrl.episode})"
+    ng-focus="$ctrl.onSelected({episode: $ctrl.episode})">
+    <!-- TODO(@dura): abstract this to `list-item-episode.html` template -->
+    <span class="sr-only">{{::season.name}}</span>
+    <div class="col-md-3 ep" aria-label="{{::$ctrl.episode.episodeNumber && 'Episode ' + $ctrl.episode.episodeNumber}}">{{::$ctrl.episode.episodeNumber && 'Ep ' + $ctrl.episode.episodeNumber}}</div>
+    <div class="col-md-7 title-group">
+        <span class="title truncate">{{::$ctrl.episode.title}}</span>
+        <span class="twcicon-svg twcicon-svg-recording" aria-label="Scheduled to record" ng-if="!$ctrl.episode.parentSeries.isSeriesRecording && $ctrl.episode.cdvrHasNotCompleted"></span>
+        <span class="twcicon-svg twcicon-svg-recording-series" aria-label="Scheduled to record" ng-if="$ctrl.episode.parentSeries.isSeriesRecording && $ctrl.episode.cdvrHasNotCompleted"></span>
+    </div>
+    <div class="col-md-4 bookmark" ng-if="$ctrl.isPercent($ctrl.episode.viewStatus)">
+        <!-- TODO(@dura): abstract this to `progress-bar.html` template -->
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{$ctrl.episode.viewStatus}}" aria-valuetext="{{$ctrl.episode.viewStatus | number:0}}% Complete" ng-style="{width: $ctrl.episode.viewStatus + '%'}">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 source" ng-if="!$ctrl.isPercent($ctrl.episode.viewStatus)">{{$ctrl.episode.viewStatus}}</div>
+    <div class="col-md-2 status" ng-switch="$ctrl.episodeStatus()">
+        <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="parental block" ng-switch-when="blocked"></span>
+        <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" aria-label="key icon" ng-switch-when="unentitled"></span>
+        <span class="ooh-icon" aria-hidden="true" aria-label="away from home icon" ng-class="{'weak':!$ctrl.selected}" ng-switch-when="availableOutOfHome"></span>
+    </div>
+    <span class="sr-only">Use arrows to cycle through actions for this program. {{$ctrl.episode.allRatings[0] + ' ' + $ctrl.episode.longDescription}}</span>
+</a>

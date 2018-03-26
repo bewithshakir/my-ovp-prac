@@ -1,0 +1,12 @@
+<div prevent-default
+     tabindex="{{($ctrl.ovpDisabled || $ctrl.seeking) ? -1 : 0}}"
+     aria-label="{{$ctrl.ariaLabel}}"
+     ng-class="{'disabled': $ctrl.ovpDisabled || $ctrl.seeking}"
+     ovp-click="$ctrl.skip();"
+     ng-mouseenter="$ctrl.skipHover=true"
+     ng-mouseleave="$ctrl.skipHover=false"
+     ng-focus="$ctrl.enlargeIcon=true" ng-blur="$ctrl.enlargeIcon=false"
+     accesskey="{{$ctrl.directionText === 'backward' ? 'j' : 'l' }}">
+    <span ng-if="$ctrl.enlargeIcon" class="skip-seconds" ng-class="$ctrl.skipHover ? 'text-hover' : 'text-highlight'">{{$ctrl.seconds}}</span>
+	<img alt="Jump {{$ctrl.directionText}}" ng-src="{{$ctrl.image()}}">
+</div>

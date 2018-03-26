@@ -1,0 +1,46 @@
+<site-header class="site-header-container"></site-header>
+<div class="stream-plus-screen">
+	<div class="content-block-gradient">
+		<div class="content-wrapper">
+			<div class="box">
+                <div role="heading" aria-level="1">
+                    <span class="intro">INTRODUCING</span>
+                    <span class="spec-tv">Spectrum  <span>TV <sup>TM</sup></span> Stream</span>
+                </div>
+                <div class="spec-container">
+                    <div class="list-container">
+                        <ul class="list-bullet" id="streamPackageDescription">
+                            <li class="tick">Stream live TV on any screen using portable devices.</li>
+                            <li class="tick">25+ live channels, including your favorite local channels.</li>
+                            <li class="tick">Watch thousands of free On Demand titles.</li>
+                            <li class="tick">No contracts, equipment or installation fees.</li>
+                        </ul>
+                    </div>
+                    <div class="actions">
+                        <div class="price">
+                            <span class="dollar"><sup>$</sup>19</span>
+                            <span class="cent"> <span>95</span> <hr> <span class="month">MONTH</span></span>
+                        </div>
+                        <button class="btn streamplus-welcome" ng-click="$ctrl.start();" aria-label="Get Started for $19.95 per month" aria-describedby="streamPackageDescription">Get Started</button>
+                    </div>
+                </div>
+                <div class="subscribe-text" aria-hidden="true">Includes 25+ networks* and thousands of top show and movies On Demand.</div>
+                <!-- Used offscreen text because JAWS unable to read aria-label for heading -->
+                <span role="heading" aria-level="2" class="sr-only">
+                    Included network channels are displayed in the next region
+                </span>
+                <div class="image-container" role="region" aria-label="network channels">
+                    <div ng-if="$ctrl.networks" ng-repeat="network in $ctrl.networks" class="network-logo">
+                        <img alt="{{network.name}}" ng-src="{{$ctrl.getNetworkIcons(network)}}"/>
+                    </div>
+                </div>
+			</div>
+            <div class="spec-network-text" aria-hidden="true">*More networks will be included based on your market. Not all markets carry Spectrum News.</div>
+            <!-- Used offscreen text because JAWS unable to read aria-label for heading -->
+            <span role="heading" aria-level="3" class="sr-only">
+                More networks will be included based on your market. Not all markets carry Spectrum News
+            </span>
+		</div>
+	</div>
+  <div class="bottom-gradient"></div>
+</div>

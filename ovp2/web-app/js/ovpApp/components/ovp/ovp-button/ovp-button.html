@@ -1,0 +1,19 @@
+<button ng-if="!$ctrl.hasClickConfirm" 
+    focus-when="{{$ctrl.focus}}" 
+    ng-class="{disabled: $ctrl.disabled==='true'}" 
+    ng-style="$ctrl.wide ? {'max-width': 'initial'} : {}" 
+    tabindex="{{$ctrl.disabled == 'true' ? '-1' : '0'}}" 
+    ng-disabled="{{String($ctrl.disabled) === 'true'}}" 
+    ng-click="$ctrl.disabled !== 'true' && $ctrl.onClick($event)">
+    <b ng-class="$ctrl.iconClass()">{{$ctrl.label}}</b>
+</button>
+<button ng-if="$ctrl.hasClickConfirm" 
+    focus-when="{{$ctrl.focus}}" 
+    ng-class="{disabled: $ctrl.disabled==='true'}" 
+    ng-style="$ctrl.wide ? {'max-width': 'initial'} : {}" 
+    tabindex="{{$ctrl.disabled == 'true' ? '-1' : '0'}}" 
+    ng-disabled="{{String($ctrl.disabled) === 'true'}}" 
+    ng-click="ctrl.disabled !== 'true' && $ctrl.onClick($event)" 
+    ovp-click-confirm="$ctrl.disabled !== 'true' && $ctrl.onClickConfirm()">
+    <b ng-class="$ctrl.iconClass()">{{$ctrl.label}}</b>
+</button>

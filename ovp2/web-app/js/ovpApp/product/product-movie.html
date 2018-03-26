@@ -1,0 +1,49 @@
+<div id="productPageMovie" class="container product-page product-page-movie">
+    <div class="row masthead">
+        <div class="col-md-5">
+            <div class="thumbnail thumbnail-static thumbnail-responsive text-center">
+                <img ng-src="{{::$ctrl.movie.imageUri({width:280})}}" fadein-onload></img>
+                <span class="twcicon-svg twcicon-svg-key" ng-if="!$ctrl.entitled" aria-hidden="true" aria-label="key icon"></span>
+                <div class="progress" ng-if="$ctrl.movie.playedPct > 0">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{$ctrl.movie.playedPct | number:0}}" aria-valuemin="0" aria-valuemax="100" ng-style="{'width':$ctrl.movie.playedPct+'%'}">
+                        <span class="sr-only">{{$ctrl.movie.playedPct | number:0}}% complete</span>
+                    </div>
+                </div>
+                <span class="twcicon-svg twcicon-svg-lock" ng-if="$ctrl.entitled && $ctrl.blocked" aria-hidden="true" aria-label="lock icon"></span>
+            </div>
+
+        </div>
+        <div class="col-md-11">
+            <div class="row program-header focus-outline-none">
+                <div class="col-md-12" focus-when="true" tabindex="-1">
+                    <p class="h2" role="heading" aria-level="1">{{::$ctrl.movie.title}}</p>
+                    <p class="subtitle-container h4">
+                        <ovp-rating rating="$ctrl.movie.rating"></ovp-rating>
+                        <span class="release-year">{{::$ctrl.movie.year}}</span>
+                        <span class="actors">{{::$ctrl.movie.actorsString}}</span>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img alt="{{::$ctrl.movie.network.name}}" class="channel-logo" ng-src="{{::$ctrl.movie.networkImage({height:81, default:false})}}" fallback-image="display:none"/>
+                </div>
+                <div class="col-md-16" ng-if="$ctrl.availabilityMessage()">
+                    <p class="h4"><small>{{ $ctrl.availabilityMessage()}}</small></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-16">
+                    <p class="program-summary" ng-bind-html= "$ctrl.movie.longDescription" data-ellipsis></p>
+                </div>
+            </div>
+
+            <action-menu class="row program-actions" actions="$ctrl.movie.actions" asset="$ctrl.movie" ng-if="$ctrl.movie.actions"></action-menu>
+        </div>
+    </div><!-- /.masthead -->
+
+    <product-info asset="$ctrl.movie"></product-info>
+
+    <other-ways asset="$ctrl.movie" class="other-ways" ng-if="$ctrl.movie.hasOtherWaysToWatch"></other-ways>
+
+</div><!-- /.product-page-movie -->
+<site-footer class="site-footer-container"></site-footer>

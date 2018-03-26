@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Invalid Credentials",
+    "header": "",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "TMP-1000",
+    "full_customer_message": "The username or password you entered is incorrect. Please try again."
+  }
+]

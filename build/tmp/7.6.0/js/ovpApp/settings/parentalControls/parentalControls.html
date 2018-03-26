@@ -1,0 +1,51 @@
+<div id="parentalControls" class="parental-controls" role="tabpanel" ng-controller="ParentalControlsSettingsController as vm">
+<h1 class="settings-h1 kite-h3">Website Parental Controls</h1>
+        <div class="row">
+            <div id="parental-controls-label" class="setting-label col-xs-8">Parental controls</div>
+            <div class="col-xs-8 text-right">
+                <ovp-switch id="pc_enabled" role="button" aria-label="Parental controls is {{vm.parentalControlsEnabledForClient ? 'on' : 'off'}}" ng-click="vm.togglePCEnabled($event);" button-enabled="{{vm.parentalControlsEnabledForClient}}" prevent-default></ovp-switch>
+            </div>
+        </div>
+
+        <div class="row pc-locked" ng-if="!vm.canEdit" ng-click="vm.unlock()" tabindex='-1'></div>
+
+        <div class="blocks-container" ng-class="{disabled: !vm.canEdit}">
+
+            <div class="row">
+                <p class="help-block col-xs-16">Ratings and channels marked with <span class="twcicon-svg twcicon-svg-lock" aria-label="a lock icon"></span> will be blocked</p>
+            </div>
+
+            <div class="row">
+                <h2 id="tv-ratings-label" class="setting-label col-xs-16">Allowed TV ratings</h2>
+                <div class="row">
+                    <div class="col-xs-16">
+                        <ovp-parental-controls-slider class="rating-slider"
+                            ratings="vm.tvRatings"
+                            current-rating="vm.ratings.tvRating"
+                            disabled="!vm.canEdit"
+                            enable-callback="vm.unlock"
+                            label="'Allowed TV Ratings'"></ovp-parental-controls-slider>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2 id="movie-ratings-label" class="setting-label col-xs-16">Allowed movie ratings</h2>
+                <div class="row">
+                    <div class="col-xs-16">
+                        <ovp-parental-controls-slider
+                            class="movie-rating-slider"
+                            ratings="vm.movieRatings"
+                            current-rating="vm.ratings.movieRating"
+                            disabled="!vm.canEdit"
+                            enable-callback="vm.unlock"
+                            label="'Allowed Movie Ratings'"></ovp-parental-controls-slider>
+                    </div>
+                </div>
+            </div>
+            <!-- Channel Block -->
+            <channel-block channel-cards = "vm.channelCards" filtered-cards = "vm.filteredCards" on-filter-changed="vm.onFilterChanged"
+            get-card-number="vm.getCardNumber" get-card-name = "vm.getCardName" get-card-image = "vm.getCardImage" is-channel-blocked="vm.isChannelBlocked"
+            clear-all-channel-blocks="vm.clearAllChannelBlocks" toggle-card-block ="vm.toggleCardBlock"></channel-block>
+        </div><!-- /.blocks-container -->
+</div>

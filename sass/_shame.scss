@@ -1,0 +1,293 @@
+.master-password-message {
+    .headerMessage {
+        color: #00a9e0;
+        font-size: larger;
+    }
+}
+
+.person-card {
+    width: 147px;
+}
+
+.thumbnail-cover {
+    width: 147px;
+    height: 196px;
+}
+
+// TODO(@dura): Using a carousel for the action buttons on a
+// product page causes goofy padding.
+.program-actions {
+    margin: 0;
+}
+
+// IE 10 and 11 insert an X to clear input fields, which clashes with our own X buttons
+::-ms-clear {
+    display: none;
+}
+
+// Using the below code to get around IE 11 scrollbar overlay issue. Scrollbars on elements
+// with the -ms-overflow-style property set to 'scrollbar' always appear on the screen and do
+// not fade out when the element is inactive. Scrollbars do not overlay content, and therefore
+// take up extra layout space along the edges of the element where they appear. Otherwise
+// scrollbars overlap with contents (NGC-5502)
+// Reference:
+// http://stackoverflow.com/questions/17045132/scrollbar-overlay-in-ie10-how-do-you-stop-that
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+.cdvr-scheduled {
+    margin-bottom: 3px;
+    // Duplicating padding from .main-container.
+    padding: 0 ($grid-gutter-width / 2);
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+// STVWEB-951 - Short term fix to differentiate legacy popup code from UIB Modals
+// All of this should be going away when OvpClickConfirm starts using modals
+
+// Kill the scroll on the body
+.popup-open {
+  overflow: hidden;
+}
+
+.popup-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+//
+// Old scss/spa/site
+// --------------------------------------------------
+
+
+img.box-art {
+  width: 100%;
+  vertical-align: middle;
+}
+
+// Accessiblity focus outline
+.focus-outline-none :focus {
+    outline: none !important;
+}
+
+:focus {
+  outline: 3px solid $blue07 !important;
+}
+
+.opaque{
+  opacity:1
+}
+
+//
+// Old scss/spa/Shame
+// --------------------------------------------------
+
+// TODO(@dura): Bootstrap resets the body `line-height` to a more reasonable value. However,
+// the legacy components break a little bit in some cases due to this. So, these rules
+// basically fix the issues caused by using the Bootstrap `line-height`.
+.now,
+#channelBrowser .channel .callSign,
+.clearAll,
+.my-recordings,
+.legal {
+    margin: auto;
+    line-height: 1.62em;
+}
+.header-container {
+  .rectangle-with-gradient {
+    height: 15px;
+    bottom: -15px;
+    background-image: linear-gradient(to bottom, rgba(0, 140, 255, 0.1), rgba(0,33,51,0));
+  }
+}
+.legal {
+    background-color: #001019;
+    margin-top: -30px;
+    padding: 40px 24px;
+    color: #f8f8f8;
+    .mb-15 {
+      margin-bottom: 15px;
+    }
+    .term-nav {
+      margin-bottom: 40px;
+    }
+    .back-to {
+      line-height: 23px;
+      display: inline-block;
+      span {
+        color: #f8f8f8;
+      }
+      .chevron-left {
+        position: relative;
+        top: 3px;
+        vertical-align: inherit;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      margin-top: 28px;
+    }
+    a {
+      color: #0d92ff;
+    }
+    p {
+      line-height: 1.38;
+      margin-bottom: 28px;
+    }
+    > ul, > ol {
+        li {
+          padding-left: 10px;
+        }
+        li + li {
+          margin-top: 15px;
+        }
+    }
+  }
+
+// TODO(@dura): The `#gridHeaderContainer` element is shared between several pages, but
+// needs special styling.
+#guide-header {
+   margin: 0 25px;
+   height: 90px;
+   #gridHeaderContainer {
+      border: 0;
+   }
+
+   .filters {
+      position: absolute;
+      top: 50px;
+   }
+}
+
+// TODO(@dura): The bottom row of boxart captions in
+// On Demand > Networks > ABC is obscured for some reason.
+.main-content.gridPod {
+  padding-bottom: 32px;
+}
+
+// TODO(@dura): Removing the `input` resets from SPA causes
+// inputs to use the Bootstrap styles. We want to keep the
+// old styles intact until the `input` components are replaced
+// with the Bootstrap `inputs`.
+.searchField,
+.stbRenameTextInput {
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 5px $grey68 inset;
+  -moz-box-shadow: 3px 3px 5px $grey68 inset;
+  box-shadow: 3px 3px 5px $grey68 inset;
+  line-height: normal;
+  opacity: 0.85;
+  padding: 7px 7px 7px 12px;
+  text-indent: 5px;
+}
+
+.environment-controls {
+    background-color: $penumbra;
+    padding: 1rem;
+    width: 500px;
+   .ovp-dropdown-list-container {
+       margin-top: -5px;
+       width: 250px;
+       right: 25px;
+       .dropdown-list {
+          max-height: 75px;
+          overflow-x: hidden;
+          overflow-y: auto;
+       }
+   }
+   .control-block {
+       padding: 10px;
+       border-top: 1px solid #555555;
+       &:first-child {
+           border-top: 0px;
+           padding: 0 10px 10px 10px;
+       }
+       &.rowlayout {
+          display: flex;
+          flex-direction: row;
+          &> .btn {
+              flex: auto;
+          }
+       }
+   }
+   
+   .editbox {
+       display: block;
+   }
+
+   .label {
+       flex: 1;
+   }
+   .btn {
+       margin-right: 3px;
+   }
+
+    select {        
+        padding: 3px;
+        border: 1px solid #777777;
+        border-radius: 0;
+        background-color: #313131;
+        line-height: 2.0em;
+        height: 2.0em;
+        width: 100%;
+        font-size: 16px;
+        display: block;
+        flex: 2;
+   }
+
+   .json-edit {
+       flex: 1;
+       min-height: 200px;
+       color: #000;
+       width: 100%;
+       margin-top: 5px;
+   }
+   button {
+       margin: 5px;
+   }
+
+   .error {
+       color: #f00;
+   }
+
+   #overrideConfigLabel {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .accordion {
+        border: solid hsl(0, 0%, 62%);
+        border-width: 0 2px 2px 0;
+        height: .5rem;
+        position: absolute;
+        right: 1.5em;
+        transform: translateY(-60%) rotate(45deg);
+        width: .5rem;
+        margin: 10px 25px 10px 0;
+        &.expanded {
+            transform: translateY(-50%) rotate(-135deg);
+        }
+   }
+}
+
+// STVWEB-1633: Stop Settings page from scrolling on button press.
+// This is an iOS issue, that happens on mac Safari/FF.
+// Reference link - https://stackoverflow.com/questions/29001977/safari-in-ios8-is-scrolling-screen-when-fixed-elements
+ html {
+  overflow: scroll;
+}

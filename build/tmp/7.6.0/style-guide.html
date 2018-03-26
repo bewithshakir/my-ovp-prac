@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=420455839">
+    <title>OVP Style Guide - One Sheet</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style-guide.css">
+
+</head>
+
+<body id="page">
+    <div class="wrap">    
+        <div class="main-content">
+            <section class="contents">
+
+                <div id="type" class="docs-section">
+                    <h1 class="page-header">Typography</h1>
+                    
+                    <h2 id="type-headings">Headings</h2>
+                    <div class="example">
+                        <h1>h1. TWC Heading <small>Secondary text</small></h1>
+                        <h2>h2. TWC Heading <small>Secondary text</small></h2>
+                        <h3>h3. TWC Heading <small>Secondary text</small></h3>
+                        <h4>h4. TWC Heading <small>Secondary text</small></h4>
+                        <h5>h5. TWC Heading <small>Secondary text</small></h5>
+                        <h6>h6. TWC Heading <small>Secondary text</small></h6>
+                    </div>
+                    <h2 id="type-body-copy">Body copy</h2>
+                    <div class="example">
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+                    </div>
+                    <h3>Lead body copy</h3>
+                    <div class="example">
+                        <p class="lead">Maecenas sed diam eget risus varius blandit sit amet non magna, sed posuere consectetur est at lobortis.</p>
+                    </div>
+
+                    <h2 id="type-inline-text">Inline text elements</h2>
+                    <h3>Marked text</h3>
+                    <div class="example">
+                        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                    </div>
+                    <h3>Deleted text</h3>
+                    <div class="example">
+                        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                    </div>
+                    <h3>Strikethrough text</h3>
+                    <div class="example">
+                        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                    </div>
+                    <h3>Inserted text</h3>
+                    <div class="example">
+                        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                    </div>
+                    <h3>Underlined text</h3>
+                    <div class="example">
+                        <p><u>This line of text will render as underlined</u></p>
+                    </div>
+                    <h3>Small text</h3>
+                    <div class="example">
+                        <p><small>This line of text is meant to be treated as fine print.</small></p>
+                    </div>
+                    <h3>Bold</h3>
+                    <div class="example">
+                        <p>The following snippet of text is <strong>rendered as bold text.</strong></p>
+                    </div>
+                    <h3>Italics</h3>
+                    <div class="example">
+                        <p>The following snippet of text is <em>rendered as italics text.</em></p>
+                    </div>
+                    <h3>Links</h3>
+                    <div class="example">
+                        <p>The following snippet of text is <a href="#some-link">a link.</a></p>
+                    </div>
+                </div><!-- /#type -->
+
+                <div id="forms" class="docs-section">
+                    <h1 class="page-header">Forms</h1>
+                    <h2 id="buttons-tags">Basic example</h2>
+                    <div class="example">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+
+                    <h2 id="forms-control-disabled">Disabled state</h2>
+                    <div class="example">
+                        <form>
+                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="">
+                        </form>
+                    </div>
+
+                </div><!-- /#forms -->
+
+
+                <div id="buttons" class="docs-section">
+                    <h1 class="page-header">Buttons</h1>
+                    
+                    <h2 id="buttons-tags">Button tags</h2>
+                    <div class="example">
+                        <a class="btn btn-default" href="#" role="button">Link</a>
+                        <button class="btn btn-default" type="submit">Button</button>
+                        <input class="btn btn-default" type="button" value="Input">
+                        <input class="btn btn-default" type="submit" value="Submit">
+                    </div>
+
+                    <h2 id="buttons-options">Options</h2>
+                    <div class="example">
+                        <!-- Standard button -->
+                        <button type="button" class="btn btn-default">Default</button>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <!-- Indicates a successful or positive action -->
+                        <button type="button" class="btn btn-success">Success</button>
+                        <!-- Contextual button for informational alert messages -->
+                        <button type="button" class="btn btn-info">Info</button>
+                        <!-- Indicates caution should be taken with this action -->
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <!-- Indicates a dangerous or potentially negative action -->
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+
+                    <h2 id="buttons-sizes">Sizes</h2>
+                    <div class="example">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                            <button type="button" class="btn btn-default btn-lg">Large button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary">Default button</button>
+                            <button type="button" class="btn btn-default">Default button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                            <button type="button" class="btn btn-default btn-sm">Small button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                            <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                        </p>
+                    </div>
+                    <div class="example">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+                    </div>
+
+                    <h2 id="buttons-active">Active state</h2>
+                    <h3>Button element</h3>
+                    <div class="example">
+                        <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+                        <button type="button" class="btn btn-default btn-lg active">Button</button>
+                    </div>
+                    <h3>Anchor element</h3>
+                    <div class="example">
+                        <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+                        <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+                    </div>
+
+                    <h2 id="buttons-disabled">Disabled state</h2>
+                    <h3>Button element</h3>
+                    <div class="example">
+                        <button type="button" class="btn btn-lg btn-primary" disabled="disabled">Primary button</button>
+                        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+                    </div>
+                    <h3>Anchor element</h3>
+                    <div class="example">
+                        <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+                        <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+                    </div>
+
+                </div><!-- /#buttons -->
+
+
+                <div id="twcicons" class="docs-section">
+                    <h1 class="page-header">TWC icons</h1>
+                    
+                    <h2 id="twcicons-glyphs">Standard glyphs</h2>
+                    <div class="example">
+                        <ul class="twcicons-list">
+                            <li><span class="twcicon twcicon-version" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-version</span></li>
+                            <li><span class="twcicon twcicon-eye-ear" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-eye-ear</span></li>
+                            <li><span class="twcicon twcicon-rec" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec</span></li>
+                            <li><span class="twcicon twcicon-rec-series" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-series</span></li>
+                            <li><span class="twcicon twcicon-rec-pending" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-pending</span></li>
+                            <li><span class="twcicon twcicon-rec-pending-series" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-pending-series</span></li>
+                            <li><span class="twcicon twcicon-rec-ban-circle" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-ban-circle</span></li>
+                            <li><span class="twcicon twcicon-rec-crescent" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-crescent</span></li>
+                            <li><span class="twcicon twcicon-rec-quarter" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-quarter</span></li>
+                            <li><span class="twcicon twcicon-rec-half" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-half</span></li>
+                            <li><span class="twcicon twcicon-rec-empty-quarter" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-empty-quarter</span></li>
+                            <li><span class="twcicon twcicon-rec-empty-half" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-empty-half</span></li>
+                            <li><span class="twcicon twcicon-rec-empty-three-quarter" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-empty-three-quarter</span></li>
+                            <li><span class="twcicon twcicon-rec-empty" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rec-empty</span></li>
+                            <li><span class="twcicon twcicon-hd" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-hd</span></li>
+                            <li><span class="twcicon twcicon-3d" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-3d</span></li>
+                            <li><span class="twcicon twcicon-sd" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-sd</span></li>
+                            <li><span class="twcicon twcicon-chevron-up" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevron-up</span></li>
+                            <li><span class="twcicon twcicon-chevron-down" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevron-down</span></li>
+                            <li><span class="twcicon twcicon-chevron-left" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevron-left</span></li>
+                            <li><span class="twcicon twcicon-chevron-right" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevron-right</span></li>
+                            <li><span class="twcicon twcicon-chevrons-horizontal" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevrons-horizontal</span></li>
+                            <li><span class="twcicon twcicon-chevrons-vertical" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-chevrons-vertical</span></li>
+                            <li><span class="twcicon twcicon-arrow-left" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-arrow-left</span></li>
+                            <li><span class="twcicon twcicon-arrow-right" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-arrow-right</span></li>
+                            <li><span class="twcicon twcicon-asterisk" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-asterisk</span></li>
+                            <li><span class="twcicon twcicon-plus" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-plus</span></li>
+                            <li><span class="twcicon twcicon-remove" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-remove</span></li>
+                            <li><span class="twcicon twcicon-ok" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-ok</span></li>
+                            <li><span class="twcicon twcicon-start-over" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-start-over</span></li>
+                            <li><span class="twcicon twcicon-ellipsis" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-ellipsis</span></li>
+                            <li><span class="twcicon twcicon-th" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-th</span></li>
+                            <li><span class="twcicon twcicon-list" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-list</span></li>
+                            <li><span class="twcicon twcicon-key" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-key</span></li>
+                            <li><span class="twcicon twcicon-lock" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-lock</span></li>
+                            <li><span class="twcicon twcicon-rewind" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rewind</span></li>
+                            <li><span class="twcicon twcicon-play" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-play</span></li>
+                            <li><span class="twcicon twcicon-pause" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-pause</span></li>
+                            <li><span class="twcicon twcicon-stop" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-stop</span></li>
+                            <li><span class="twcicon twcicon-forward" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-forward</span></li>
+                            <li><span class="twcicon twcicon-play-series" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-play-series</span></li>
+                            <li><span class="twcicon twcicon-star-empty" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-star-empty</span></li>
+                            <li><span class="twcicon twcicon-star-half" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-star-half</span></li>
+                            <li><span class="twcicon twcicon-star" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-star</span></li>
+                            <li><span class="twcicon twcicon-share" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-share</span></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="twcicons-glyphs">Category glyphs</h2>
+                    <div class="example">
+                        <ul class="twcicons-list">
+                            <li><span class="twcicon twcicon-category-home" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-home</span></li>
+                            <li><span class="twcicon twcicon-category-search" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-search</span></li>
+                            <li><span class="twcicon twcicon-category-cog" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-cog</span></li>
+                            <li><span class="twcicon twcicon-category-tv" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-tv</span></li>
+                            <li><span class="twcicon twcicon-category-movie-reel" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-movie-reel</span></li>
+                            <li><span class="twcicon twcicon-category-star-ball" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-star-ball</span></li>
+                            <li><span class="twcicon twcicon-category-baseball" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-baseball</span></li>
+                            <li><span class="twcicon twcicon-category-newspaper" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-newspaper</span></li>
+                            <li><span class="twcicon twcicon-category-th-list" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-category-th-list</span></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="twcicons-glyphs">Rating glyphs</h2>
+                    <div class="example">
+                        <ul class="twcicons-list">
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tvy" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tvy</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tvy7" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tvy7</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tvg" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tvg</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tvpg" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tvpg</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tv14" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tv14</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-tvma" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-tvma</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-g" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-g</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-pg" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-pg</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-pg13" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-pg13</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-r" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-r</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-nc17" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-nc17</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-adult" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-adult</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-unrated" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-unrated</span></li>
+                            <li><span class="twcicon twcicon-rating twcicon-rating-nr" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-rating .twcicon-rating-nr</span></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="twcicons-glyphs">Forecast glyphs</h2>
+                    <div class="example">
+                        <ul class="twcicons-list">
+                            <li><span class="twcicon twcicon-forecast twcicon-forecast-version" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-forecast .twcicon-forecast-version</span></li>
+                            <li><span class="twcicon twcicon-forecast twcicon-forecast-wocka-wocka" aria-hidden="true"></span><span class="twcicon-class">.twcicon .twcicon-forecast .twcicon-forecast-wocka-wocka</span></li>
+                        </ul>
+                    </div>
+
+                </div><!-- /#twcicons -->
+
+
+
+                <div id="components">
+                    <h1 class="page-header">Components</h1>
+
+                    <div id="components-alerts" class="docs-section">
+                        <h2>Alerts</h2>
+                        <h3>Examples</h3>
+                        <div class="example">
+                            <div class="alert alert-success" role="alert">
+                                <strong>Well done!</strong> You successfully read this important alert message.
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                            </div>
+                        </div>
+
+                        <h3>Dismissable alerts</h3>
+                        <div class="example">
+                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                            </div>
+                        </div>
+
+                        <h3>Links in alerts</h3>
+                        <div class="example">
+                            <div class="alert alert-success" role="alert">
+                                <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+                            </div>
+                        </div>
+                    </div><!-- /#components-alerts -->
+
+                </div><!-- /#components -->
+
+
+                <div id="ovp-components">
+                    <h1 class="page-header">OVP Components</h1>
+                    <p>These are components specific to making up specific OVP UI and functionalities, many are <em>not</em> reused very often.</p>
+
+                    <div id="ovp-components-spinner" class="docs-section">
+                        <h2>Spinner</h2>
+                        <div class="example">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+
+                    <div id="ovp-components-critic-ratings" class="docs-section">
+                        <h2>Critic Ratings</h2>
+                        <h3>Common Sense Media</h3>
+                        <div class="example">
+                            <div class="common-sense-media">
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=cs-logo-mini&height=48" alt="" />
+                                <img class="label" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=cs-02&height=48" alt="OK for age 2+" />
+                            </div>
+                            <div class="common-sense-media">
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=cs-logo-mini&height=48" alt="" />
+                                <img class="label" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=cs-12&height=48" alt="OK for age 12+" />
+                            </div>
+                            <div class="common-sense-media">
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=cs-logo-mini&height=48" alt="" />
+                                <img class="label" src="http://services.timewarnercable.com/imageserver/supporting?image=cs-18&height=48" alt="OK for age 18+" />
+                            </div>
+                        </div>
+                        <h3>Metacritic</h3>
+                        <div class="example">
+                            <div class="metacritic">
+                                <img class="label" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-001&height=48" alt="" />
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-logo-mini&height=48" alt="" />
+                            </div>
+                            <div class="metacritic">
+                                <img class="label" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-050&height=48" alt="" />
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-logo-mini&height=48" alt="" />
+                            </div>
+                            <div class="metacritic">
+                                <img class="label" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-100&height=48" alt="" />
+                                <img class="icon" src="http://msb-eng.timewarnercable.com/imageserver/supporting?image=mc-logo-mini&height=48" alt="" />
+                            </div>
+                        </div>
+                    </div><!-- /#ovp-components-critic-ratings -->
+
+                </div><!-- /#ovp-components -->                
+
+            </section><!-- /.contents -->
+            
+        </div><!-- /.main-content -->
+
+        <footer class="site-footer">
+            <ul class="list-inline">
+                <li><a target="_blank" href="/login/terms">Website Terms of Use</a></li>
+                <li><a target="_blank" href="/login/privacy">Privacy Policy</a></li>
+                <li><a target="_blank" href="http://www.timewarnercable.com/Corporate/privacy_ca.html">Your California Privacy Rights</a></li>
+                <li><a target="_blank" href="http://help.twcable.com/html/policies.html">Terms and Conditions</a></li>
+                <li><a href="#" onclick="feedback();return false;">Feedback</a></li>
+            </ul>
+
+            <p>&copy; 2016 Charter Communications. All rights reserved.</p>
+        </footer>
+
+    </div><!-- /.wrap -->
+    </body>
+</html>

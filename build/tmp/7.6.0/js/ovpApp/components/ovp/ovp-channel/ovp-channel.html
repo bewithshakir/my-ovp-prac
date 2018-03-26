@@ -1,0 +1,14 @@
+<div ng-switch on="$ctrl.isList()" class="ovp-channel" ng-class="{'list': $ctrl.isList()}">
+    <div ng-switch-when="false">
+        <img ng-if="$ctrl.networkLogoUrl" ng-src="{{$ctrl.networkLogoUrl}}">
+        <div class="channelIDs">
+            <div class="channelId" ng-bind="$ctrl.channelId"></div>
+            <div class="channelSign" ng-bind="$ctrl.callSign"></div>
+        </div>
+    </div>
+    <div ng-switch-when="true">
+        <span class="channelSign" ng-bind="$ctrl.callSign"></span>
+        <span class="divider">|</span>
+        <span class="channelId" ng-bind="$ctrl.channelId"></span>
+    </div>
+</div>

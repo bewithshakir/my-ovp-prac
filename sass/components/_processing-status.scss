@@ -1,0 +1,22 @@
+.processingStatus {
+    overflow: hidden;
+    background-color: $black;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    margin: 1px;
+    position: absolute;
+    z-index: $zIndexProcessing;
+    top: 0;
+    left: 0;
+
+    .spinner {
+        margin-top: 20px;
+    }
+
+    div.message {
+        color: white;
+        padding: 10px 0 20px;
+        text-align: center;
+    }
+}
+

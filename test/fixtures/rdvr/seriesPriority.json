@@ -1,0 +1,360 @@
+{
+   "series": [
+      {
+         "displayChannel": "1222",
+         "recordSeries": true,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Cookie Monster paints a picture of a cookie.",
+            "shortDescription": "Cookie Monster paints a picture of a cookie.",
+            "longDescription": "Cookie Monster paints a picture of a cookie.",
+            "imageUrl": "/imageserver/program/EP019707190002",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190002",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Still Life With Cookie",
+            "tmsSeriesId": "184032"
+         },
+         "startUnixTimestampSeconds": 1409680800,
+         "tmsProgramId": "EP019707190002",
+         "numRecorded": 2,
+         "numScheduled": 6,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 1,
+            "recordOnlyNewEpisodes": true,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1302",
+         "recordSeries": true,
+         "mystroServiceId": "1449",
+         "programMetadata": {
+            "description": "Innovations and discoveries in space and science.",
+            "shortDescription": "Innovations and discoveries in space and science.",
+            "longDescription": "Innovations and discoveries in space and science.",
+            "imageUrl": "/imageserver/program/SH001969950000",
+            "title": "NASA Select",
+            "tmsProgramId": "SH001969950000",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "815051"
+         },
+         "startUnixTimestampSeconds": 1409850000,
+         "tmsProgramId": "SH001969950000",
+         "numRecorded": 0,
+         "numScheduled": 0,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 2,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 13:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "134",
+         "recordSeries": true,
+         "mystroServiceId": "1054",
+         "programMetadata": {
+            "description": "A Vermont family builds 493 sq. foot Tiny House in their driveway.",
+            "shortDescription": "A Vermont family builds 493 sq. foot Tiny House in their driveway.",
+            "longDescription": "A Vermont family builds 493 sq. foot Tiny House in their driveway, but they need a home that will work for 3 adults.",
+            "imageUrl": "/imageserver/program/EP019366820006",
+            "title": "Tiny House Nation",
+            "tmsProgramId": "EP019366820006",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "493 Sq. Ft. Vermont Chalet",
+            "episodeNumber": 6,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10835641"
+         },
+         "startUnixTimestampSeconds": 1409014800,
+         "tmsProgramId": "EP019366820006",
+         "numRecorded": 3,
+         "numScheduled": 2,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 3,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": true,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 21:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "133",
+         "recordSeries": true,
+         "mystroServiceId": "1372",
+         "programMetadata": {
+            "description": "An ancient mountaintop fortress made with laser-like tools; temples harness cosmic energy.",
+            "shortDescription": "An ancient mountaintop fortress made with laser-like tools; temples harness cosmic energy.",
+            "longDescription": "An ancient mountaintop fortress in Peru constructed with laser-like tools; temples at Vijayanagara India harness cosmic energy; an acoustic chamber in Malta enables interplanetary communication.",
+            "imageUrl": "/imageserver/program/EP012427480026",
+            "title": "Ancient Aliens",
+            "tmsProgramId": "EP012427480026",
+            "genres": [
+               "Sci-Fi/Fantasy",
+               "Documentary",
+               "Reality"
+            ],
+            "actors": [
+               "Jonathan Young"
+            ],
+            "episodeTitle": "Aliens and Ancient Engineers",
+            "episodeNumber": 6,
+            "seasonNumber": 3,
+            "tmsSeriesId": "8039273"
+         },
+         "startUnixTimestampSeconds": 1409014800,
+         "tmsProgramId": "EP012427480026",
+         "numRecorded": 0,
+         "numScheduled": 3,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 4,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": true,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 21:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Amy doesn't know how to feel when Corey and Topanga return from the justice of the peace.",
+            "shortDescription": "Amy doesn't know how to feel when Corey and Topanga return from the justice of the peace.",
+            "longDescription": "Amy can't make up her mind if she's angry or happy when Cory and Topanga return from a secret trip to the justice of the peace.",
+            "imageUrl": "/imageserver/program/EP000838770117",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770117",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Her Answer",
+            "episodeNumber": 2,
+            "seasonNumber": 6,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1409004000,
+         "tmsProgramId": "EP000838770117",
+         "numRecorded": 7,
+         "numScheduled": 16,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 5,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 18:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Doctors cannot pinpoint the source of a businessman's illness.",
+            "shortDescription": "Doctors cannot pinpoint the source of a businessman's illness.",
+            "longDescription": "Doctors cannot pinpoint the source of a businessman's illness.",
+            "imageUrl": "/imageserver/program/EP003915550083",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550083",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "The Metal Business",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1409000400,
+         "tmsProgramId": "EP003915550083",
+         "numRecorded": 7,
+         "numScheduled": 69,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 6,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 17:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "132",
+         "recordSeries": true,
+         "mystroServiceId": "1106",
+         "programMetadata": {
+            "description": "Charlie and Bob rush the river before it melts to trap beaver; Stan and Joe encounter a bear.",
+            "shortDescription": "Charlie and Bob rush the river before it melts to trap beaver; Stan and Joe encounter a bear.",
+            "longDescription": "Charlie and Bob rush the river before it melts in the hopes of trapping beaver; Stan and Joe have a run-in with a bear.",
+            "imageUrl": "/imageserver/program/EP015864410003",
+            "title": "Yukon Men",
+            "tmsProgramId": "EP015864410003",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Going for Broke",
+            "episodeNumber": 3,
+            "seasonNumber": 1,
+            "tmsSeriesId": "9337536"
+         },
+         "startUnixTimestampSeconds": 1409014800,
+         "tmsProgramId": "EP015864410003",
+         "numRecorded": 0,
+         "numScheduled": 0,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 7,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 21:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "170",
+         "recordSeries": true,
+         "mystroServiceId": "2660",
+         "programMetadata": {
+            "description": "A widow hoarder needs help from her daughters; an unhealthy environment for a couple and their kids.",
+            "shortDescription": "A widow hoarder needs help from her daughters; an unhealthy environment for a couple and their kids.",
+            "longDescription": "A widow hoarder needs help from her daughters; an unhealthy environment for a couple and their kids.",
+            "imageUrl": "/imageserver/program/EP011518370029",
+            "title": "Hoarders",
+            "tmsProgramId": "EP011518370029",
+            "genres": [
+               "Reality",
+               "Sports"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Adella; Teri",
+            "episodeNumber": 1,
+            "seasonNumber": 3,
+            "tmsSeriesId": "3536666"
+         },
+         "startUnixTimestampSeconds": 1409000400,
+         "tmsProgramId": "EP011518370029",
+         "numRecorded": 0,
+         "numScheduled": 1,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 8,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 17:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "258",
+         "recordSeries": true,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Freddie tries to prove that Sam's twin sister is just Sam in disguise.",
+            "shortDescription": "Freddie tries to prove that Sam's twin sister is just Sam in disguise.",
+            "longDescription": "Freddie tries to prove that Sam's twin sister is just Sam in disguise; Carly tutors Spencer's nemesis.",
+            "imageUrl": "/imageserver/program/EP009556790048",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790048",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iTwins",
+            "episodeNumber": 23,
+            "seasonNumber": 2,
+            "tmsSeriesId": "185707"
+         },
+         "startUnixTimestampSeconds": 1409002200,
+         "tmsProgramId": "EP009556790048",
+         "numRecorded": 7,
+         "numScheduled": 8,
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "seriesPriority": 9,
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140825 17:30:00 -0400"
+         }
+      }
+   ],
+   "totalCount": 9
+}

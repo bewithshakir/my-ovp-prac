@@ -1,0 +1,24 @@
+<form class="pin-form text-center" name="$ctrl.form" role="form" aria-labelledby="headerMessage">
+    <div class="form-group" id="formInstructions">
+      <p ng-if="$ctrl.headerMessage" id="headerMessage" aria-label="{{$ctrl.headerMessage.toLowerCase().replace($ctrl.tagRegex,' ')}}" ng-bind-html="$ctrl.headerMessage"></p>
+      <p ng-if="$ctrl.secondaryMessage" id="secondaryMessage" ng-bind-html="$ctrl.secondaryMessage" aria-label="{{$ctrl.secondaryMessage.toLowerCase().replace($ctrl.tagRegex,' ')}}"></p>
+    </div>
+    <div class="form-group" ng-class="{'has-error': $ctrl.form.newPIN.$invalid && $ctrl.form.newPIN.$dirty}">
+        <label for="newPin" aria-label="{{$ctrl.pinInstructions.toLowerCase().replace($ctrl.tagRegex,' ')}}">{{$ctrl.pinInstructions}}</label>
+        <input id="newPin" aria-describedby="formInstructions" class="form-control input-lg pin-input" name="newPIN" placeholder="&ndash;&ndash;&ndash;&ndash;" autocomplete="off" minlength="4" maxlength="4" required aria-invalid="false" ng-maxlength="4" ng-model="$ctrl.newPIN" ng-pattern="/^(\d)+$/" ng-change="$ctrl.onInputChange()" ng-model-options="{allowInvalid: true}" focus-once />
+        <p class="help-block" role="alert" ng-class="{'invisible': !$ctrl.showNumbersOnlyErrorMessage}" aria-label="pin must contain only numbers"><span aria-hidden="true">PIN must contain only numbers</span></p>
+    </div>
+    <div class="form-group" ng-class="{'has-error': $ctrl.form.confirmPIN.$invalid && $ctrl.form.confirmPIN.$dirty}">
+        <label for="confirmPin">Confirm new PIN</label>
+        <input id="confirmPin" aria-label="confirm new pin" class="form-control input-lg pin-input" name="confirmPIN" placeholder="&ndash;&ndash;&ndash;&ndash;" autocomplete="off" minlength="4" maxlength="4" required aria-invalid="false" ng-maxlength="4" ng-model="$ctrl.confirmPIN" ng-pattern="/^(\d)+$/" compare-pin="$ctrl.newPIN" ng-attr-focus-next="{{$ctrl.form.$invalid && '.popupCloseClick' || undefined}}"/>
+        <p class="help-block" role="alert" ng-show="$ctrl.form.confirmPIN.$error.comparePin" aria-label="pins must match"><span aria-hidden="true">PINs must match</span></p>
+    </div>
+    <div class="form-group">
+        <div class="spinner" ng-if="$ctrl.loadingTracker.active() || $ctrl.success"></div>
+        <input class="btn btn-lg btn-block btn-primary reset-pin-button" ng-click="$ctrl.resetPIN()" type="submit" disabled value="Create PIN"
+               ng-disabled="$ctrl.form.$invalid"
+               ng-if="!$ctrl.loadingTracker.active() && !$ctrl.success"
+               focus-next=".popupCloseClick"
+               />
+    </div>
+</form>

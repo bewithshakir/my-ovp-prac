@@ -1,0 +1,21 @@
+ <div id='sidebar-wrapper-settings'>
+    <h3 class="settings-tablist-h3">Settings</h3>
+    <ul class='sidebar-nav-settings' role="tablist" ng-repeat="category in $ctrl.menuCategory">
+        <div>{{category === $ctrl.stbCategory ? ($ctrl.stb.name || $ctrl.stb.macAddress) : category}}</div>
+        <li class="list-item" ng-repeat="menu in $ctrl.menuItems" ng-if="category === menu.type && menu.enabled()" role="presentation" ng-keydown="$ctrl.onKeyDown($event)">
+            <a class="list-item-anchor"
+                role="tab"
+                aria-label="{{category + ((category === stbCategory && stb.name) ?  (', ' + stb.name) : '')}}, {{menu.title}}"
+                aria-selected="{{$ctrl.$state.current.name === menu.state}}"
+                ng-focus="$ctrl.menuItemFocussed(menu)"
+                ng-mousedown="$ctrl.menuItemMouseDownHandler(menu, $event)"
+                ng-class="{'active': $ctrl.$state.current.name === menu.state}"
+                data-state="{{menu.state}}"
+                focus-when="{{$ctrl.$state.current.name === menu.state}}"
+                tabindex="{{($ctrl.$state.current.name === menu.state) ? 0 : -1}}"
+                aria-controls="{{setAriaControls(category, menu)}}">
+                {{menu.title}}
+            </a>
+        </li>
+    </ul>
+</div>

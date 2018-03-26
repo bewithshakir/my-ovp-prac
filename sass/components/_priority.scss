@@ -1,0 +1,57 @@
+.priority {
+
+   .instructions {
+     margin-left: 10px;
+     text-align: left;
+   }
+
+    ul.ovp-sortable {
+        li:first-of-type {
+            border-top: 1px solid $grey13;
+        }
+        li {
+            .row-title {
+                float: left;
+                color: $white;
+            }
+            .row-title:before {
+                content: counter(row-count);
+                float: left;
+                width: 45px;
+                color: $white;
+                margin-left: 5px;
+            }
+            &:hover {
+                @include list-row-hover;
+            }
+            &.ui-sortable-helper {
+                /* do not animate for helper */
+                /* take rest of list-row-helper */
+                opacity: 1;
+                background-color: $grey104;
+            }
+            &:hover, &.ui-sortable-helper {
+                .row-title {
+                    color: $blue01;
+                }
+            }
+            border-bottom: 1px solid $grey13;
+            height: 44px + 2px;
+            line-height: 44px;
+            .ovp-channel {
+                float: right;
+                margin-right: 30px;
+                &.list {
+                    clear: none;
+                }
+            }
+            .ovp-sortable-handle {
+                margin-top: 12px;
+            }
+            &:last-child {
+                border-bottom-width: 0px;
+            }
+        }
+    }
+
+}

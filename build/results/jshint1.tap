@@ -1,0 +1,6 @@
+1..3
+ok 2 Test was run
+not ok 0 /Users/shakir/Documents/ovp2/ovp2/web-app/js/ovpApp/components/player/playerControls.js: line 278, col 28, Missing semicolon.
+not ok 1 /Users/shakir/Documents/ovp2/ovp2/web-app/js/ovpApp/components/player/playerControls.js: line 724, col 24, Missing semicolon.
+#TAP meta information
+2 errors

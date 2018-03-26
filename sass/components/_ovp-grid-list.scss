@@ -1,0 +1,211 @@
+.grid-list-header {
+    overflow: visible;
+    height: 50px;
+
+    .title {
+        font-size: 20px;
+        padding: 4px 4px 4px 8px;
+        float: left;
+        margin-top: 10px;
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    .filter-select {
+        float: left;
+        line-height: inherit;
+
+        .ovp-dropdown-list-container {
+            position: relative;
+            line-height: 30px;
+            .btn {
+                font-size: 16px;
+                font-weight: normal;
+                color: #a6adb4;
+                float: none;
+            }
+            .showLabel {
+                margin-right: 10px;
+                color: #fff;
+                pointer-events: none;
+                margin-bottom: 0;
+                vertical-align: text-bottom;
+            }
+            &.btn-group {
+               width: auto;
+               right: 0;
+               margin: 0;
+            }
+            input {
+                width: 150px;
+            }
+            .dropdown-list {
+                width: 150px;
+                right: 0;
+                text-align: left;
+            }
+            .btn-caret {
+                background: url(../images/icons.png?) no-repeat scroll right -950px #000;
+            }
+        }
+    }
+
+    .view-total {
+        color: $grey06;
+        display: inline-block;
+        float: left;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 54px;
+    }
+
+    .gridlist-header-options {
+        float: right;
+    }
+}
+
+.grid {
+    margin-top: 10px;
+    text-align: left;
+
+    .grid-item {
+        display: inline-block;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .channel-card {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+.list {
+    clear: both;
+    .ovp-product-item {
+        .no-logo {
+            padding-left: 2em;
+        }
+    }
+    .list-item {
+        border-top: 1px solid $grey13;
+        &:last-child {
+            border-bottom: 1px solid $grey13;
+        }
+    }
+    .list-template {
+        cursor:pointer;
+        padding: 12px 0;
+        border-bottom: 1px solid $grey13;
+
+        .kite-cell {
+            line-height: 35px;
+        }
+
+        img.network-icon {
+            margin-right: 16px;
+        }
+        
+        div.watch {
+            position: relative;
+
+            .twcicon-svg {
+                vertical-align: middle;
+            }
+        }
+
+        /* Progress bar */
+        div.status {
+            .playStatus {
+                margin: 0;
+                top: 0;
+                width: 100px;
+                background: #555;
+                span {
+                    display: block;
+                    height: 5px;
+                    background: $blue01;
+                    background: linear-gradient(to bottom, $blue01 0%,$blue02 100%);
+                }
+            }
+        }
+        .movie-title, .series-title {
+            font-size: 16px;
+            color: $white;
+        }
+
+        .episode-title {
+            font-size: 14px;
+            color: $blue01;
+        }
+
+        .genre {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .network-call {
+            padding-right: 20px;
+            text-align: right;
+        }
+
+        .cell-border {
+            border-right: 1px solid $grey32;
+            display: inline-block;
+            line-height: 25px;
+            margin-right: -30px;
+        }
+
+        .cell-border::before {
+            content: "\200b"; // unicode zero width space character
+        }
+
+        .network-number {
+            text-align: left;
+        }
+
+
+        /* Network category title */
+        h4 {
+            font-size: 16px;
+            font-weight: normal;
+            padding: 14px 0 0 20px;
+            height: 35px;
+            color: #fff;
+            float: left;
+            width: 46%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 0;
+        }
+    }
+}
+
+.cdvr .twcicon-svg-key {
+    visibility: hidden;
+}
+
+.cdvr .list .list-item {
+    border-top: 1px solid $grey13;
+    &:last-child {
+        border-bottom: 1px solid $grey13;
+    }
+}
+
+.cdvr-list {
+    color: $grey07;
+    font-size: 14px;
+
+    &:hover .series-title,
+    &:hover .movie-title {
+        color: $grey07;
+    }
+
+    .title {
+        padding-left: 2em;
+    }
+
+}

@@ -1,0 +1,26 @@
+<div class="nav-drawer-container hidden-lg slide-out" ng-if="!$ctrl.hidden" ng-class="{'slide-out': $ctrl.hidden}">
+    <div class="backplate" ng-click="$ctrl.hide()"></div>
+    <div class="nav-drawer">
+        <header>
+            <div tabindex="-1" id="exit-mobile-nav" ng-focus="$ctrl.hide()"></div>
+            <a ng-show ="!$ctrl.hidden" class="navbar-brand" href="/" title="Spectrum TV&reg;" ng-click="$ctrl.hide()" focus-when="!$ctrl.hidden" focus-previous="#exit-mobile-nav"><img alt="home page" class="logo-header" ovp-src="/images/logo-horiz.png"></a>
+            <a ng-show ="!$ctrl.hidden" class="close-nav-drawer" href="#" title="Close navigation" ng-click="$ctrl.hide()">
+                <svg class="svg-icon"><use xlink:href="#remove-icon" svg-path /></svg>
+            </a>
+        </header>
+
+        <nav ng-show ="!$ctrl.hidden" class="navbar navbar-default" role="navigation">
+            <ul class="nav navbar-nav">
+                <menu-item ng-repeat="menuItem in $ctrl.menuItemModels | filter : {id : '!search'}" item="menuItem" on-mouseup="$ctrl.hide"></menu-item>
+            </ul>
+            <div class="divider" role="separator"></div>
+            <ul class="nav navbar-nav small">
+                <settings-menu on-click="$ctrl.hide" focus-next-val="#exit-mobile-nav"></settings-menu>
+                <li role="presentation">
+                    <a ng-click="$ctrl.signOut()" href="#" aria-label="Sign Out" role="button" focus-next="#exit-mobile-nav">Sign Out</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,1893 @@
+{
+   "recordings": [
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Police blame a botched robbery when an elderly man is found dead.",
+            "shortDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "longDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "imageUrl": "/imageserver/program/EP003915550397",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550397",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Prints Among Thieves",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410237000,
+         "tmsProgramId": "EP003915550397",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 00:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "shortDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "longDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "imageUrl": "/imageserver/program/EP003915550591",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550591",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Elemental Clue",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410246000,
+         "tmsProgramId": "EP003915550591",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 03:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman claims her husband was gunned down by intruders.",
+            "shortDescription": "A woman claims her husband was gunned down by intruders.",
+            "longDescription": "Investigators unravel a twisted tale of lust, greed and deception after a woman claims her husband was gunned down by intruders.",
+            "imageUrl": "/imageserver/program/EP003915550410",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550410",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Sunday School Ambush",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410247800,
+         "tmsProgramId": "EP003915550410",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 03:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A mother of two young children was found dead in her bedroom.",
+            "shortDescription": "A mother of two young children was found dead in her bedroom.",
+            "longDescription": "A mother of two young children was found dead in her bedroom.",
+            "imageUrl": "/imageserver/program/EP003915550589",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550589",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Army of Evidence",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410249600,
+         "tmsProgramId": "EP003915550589",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 04:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "shortDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "longDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "imageUrl": "/imageserver/program/EP003915550380",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550380",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Shear Luck",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410251400,
+         "tmsProgramId": "EP003915550380",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 04:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "shortDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "longDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550580",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550580",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Crash Course",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410253200,
+         "tmsProgramId": "EP003915550580",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 05:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "The light of day reveals new clues about a nighttime traffic accident.",
+            "shortDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "longDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550385",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550385",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Tight-Fitting Genes",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410255000,
+         "tmsProgramId": "EP003915550385",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 05:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "1222",
+         "recordSeries": true,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Zoe and Abby are frustrated that Leela constantly texts.",
+            "shortDescription": "Zoe and Abby are frustrated that Leela constantly texts.",
+            "longDescription": "Zoe and Abby are frustrated that Leela constantly texts.",
+            "imageUrl": "/imageserver/program/EP019707190007",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190007",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Leela's Cell Addiction",
+            "tmsSeriesId": "184032"
+         },
+         "startUnixTimestampSeconds": 1410285600,
+         "tmsProgramId": "EP019707190007",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": true,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 14:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Eric considers working at his father's wilderness store; Cory believes his health is in jeopardy.",
+            "shortDescription": "Eric considers working at his father's wilderness store; Cory believes his health is in jeopardy.",
+            "longDescription": "Eric believes his future includes working at his father's store; Cory believes that his health is in jeopardy.",
+            "imageUrl": "/imageserver/program/EP000838770152",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770152",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "I'm Gonna Be Like You, Dad",
+            "episodeNumber": 14,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410292800,
+         "tmsProgramId": "EP000838770152",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 16:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "A small dispute results in Cory, Shawn and Topanga taking sides against Rachel, Angela and Jack.",
+            "shortDescription": "A small dispute results in Cory, Shawn and Topanga taking sides against Rachel, Angela and Jack.",
+            "longDescription": "Escalating practical jokes lead to a feud between friends in which Cory, Shawn and Topanga side against Rachel, Angela and Jack.",
+            "imageUrl": "/imageserver/program/EP000838770161",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770161",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "The War",
+            "episodeNumber": 15,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410294600,
+         "tmsProgramId": "EP000838770161",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 16:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An obstetrician finds his wife beaten and strangled to death.",
+            "shortDescription": "An obstetrician finds his wife beaten and strangled to death.",
+            "longDescription": "An obstetrician finds his wife beaten and strangled to death.",
+            "imageUrl": "/imageserver/program/EP003915550388",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550388",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Deadly Valentine",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410296400,
+         "tmsProgramId": "EP003915550388",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "A look into the future shows Cory and Topanga what life would be like without their friends.",
+            "shortDescription": "A look into the future shows Cory and Topanga what life would be like without their friends.",
+            "longDescription": "A look into the future shows Cory and Topanga what life would be like if they ended their relationships with Shawn and the others.",
+            "imageUrl": "/imageserver/program/EP000838770162",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770162",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Seven the Hard Way",
+            "episodeNumber": 16,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410296400,
+         "tmsProgramId": "EP000838770162",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A missing teen is found dead several days later.",
+            "shortDescription": "A missing teen is found dead several days later.",
+            "longDescription": "A missing teen is found dead several days later.",
+            "imageUrl": "/imageserver/program/EP003915550389",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550389",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Picture This",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410298200,
+         "tmsProgramId": "EP003915550389",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 17:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "258",
+         "recordSeries": true,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Carly, Sam and Freddie must foil Nevel's plot to hack iCarly.",
+            "shortDescription": "Carly, Sam and Freddie must foil Nevel's plot to hack iCarly.",
+            "longDescription": "Carly, Sam and Freddie must foil Nevel's plot to hack iCarly; Plain White T's perform \"Our Time Now.\"",
+            "imageUrl": "/imageserver/program/EP009556790011",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790011",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Jennette McCurdy",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iRue the Day",
+            "episodeNumber": 11,
+            "seasonNumber": 1,
+            "tmsSeriesId": "185707"
+         },
+         "startUnixTimestampSeconds": 1410300000,
+         "tmsProgramId": "EP009556790011",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts discover that a fatal car crash was not an accident.",
+            "shortDescription": "Experts discover that a fatal car crash was not an accident.",
+            "longDescription": "Experts discover that a fatal car crash was not an accident.",
+            "imageUrl": "/imageserver/program/EP003915550391",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550391",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Oily in the Morning",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410300000,
+         "tmsProgramId": "EP003915550391",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts seeks answers to a young businesswoman's death.",
+            "shortDescription": "Experts seeks answers to a young businesswoman's death.",
+            "longDescription": "Experts seeks answers to a young businesswoman's death.",
+            "imageUrl": "/imageserver/program/EP003915550394",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550394",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Writers Block",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410301800,
+         "tmsProgramId": "EP003915550394",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 18:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An anonymous caller reports the death of a dry cleaner employee.",
+            "shortDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "longDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "imageUrl": "/imageserver/program/EP003915550395",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550395",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "A Clean Getaway",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410314400,
+         "tmsProgramId": "EP003915550395",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 22:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Police blame a botched robbery when an elderly man is found dead.",
+            "shortDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "longDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "imageUrl": "/imageserver/program/EP003915550397",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550397",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Prints Among Thieves",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410316200,
+         "tmsProgramId": "EP003915550397",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 22:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "shortDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "longDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "imageUrl": "/imageserver/program/EP003915550398",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550398",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unholy Alliance",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410318000,
+         "tmsProgramId": "EP003915550398",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 23:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "shortDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "longDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed, killing his father.",
+            "imageUrl": "/imageserver/program/EP003915550399",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550399",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Signed, Sealed, Delivered",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410319800,
+         "tmsProgramId": "EP003915550399",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140909 23:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "shortDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "longDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "imageUrl": "/imageserver/program/EP003915550591",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550591",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Elemental Clue",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410321600,
+         "tmsProgramId": "EP003915550591",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 00:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman claims her husband was gunned down by intruders.",
+            "shortDescription": "A woman claims her husband was gunned down by intruders.",
+            "longDescription": "Investigators unravel a twisted tale of lust, greed and deception after a woman claims her husband was gunned down by intruders.",
+            "imageUrl": "/imageserver/program/EP003915550410",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550410",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Sunday School Ambush",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410323400,
+         "tmsProgramId": "EP003915550410",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 00:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "shortDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "longDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550580",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550580",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Crash Course",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410332400,
+         "tmsProgramId": "EP003915550580",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 03:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "The light of day reveals new clues about a nighttime traffic accident.",
+            "shortDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "longDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550385",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550385",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Tight-Fitting Genes",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410334200,
+         "tmsProgramId": "EP003915550385",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 03:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An obstetrician finds his wife beaten and strangled to death.",
+            "shortDescription": "An obstetrician finds his wife beaten and strangled to death.",
+            "longDescription": "An obstetrician finds his wife beaten and strangled to death.",
+            "imageUrl": "/imageserver/program/EP003915550388",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550388",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Deadly Valentine",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410336000,
+         "tmsProgramId": "EP003915550388",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 04:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A missing teen is found dead several days later.",
+            "shortDescription": "A missing teen is found dead several days later.",
+            "longDescription": "A missing teen is found dead several days later.",
+            "imageUrl": "/imageserver/program/EP003915550389",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550389",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Picture This",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410337800,
+         "tmsProgramId": "EP003915550389",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 04:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts discover that a fatal car crash was not an accident.",
+            "shortDescription": "Experts discover that a fatal car crash was not an accident.",
+            "longDescription": "Experts discover that a fatal car crash was not an accident.",
+            "imageUrl": "/imageserver/program/EP003915550391",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550391",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Oily in the Morning",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410339600,
+         "tmsProgramId": "EP003915550391",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 05:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts seeks answers to a young businesswoman's death.",
+            "shortDescription": "Experts seeks answers to a young businesswoman's death.",
+            "longDescription": "Experts seeks answers to a young businesswoman's death.",
+            "imageUrl": "/imageserver/program/EP003915550394",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550394",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Writers Block",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410341400,
+         "tmsProgramId": "EP003915550394",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 05:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "1222",
+         "recordSeries": true,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "A hidden camera catches bad manners in action.",
+            "shortDescription": "A hidden camera catches bad manners in action.",
+            "longDescription": "A hidden camera catches bad manners in action.",
+            "imageUrl": "/imageserver/program/EP019707190008",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190008",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Gotcha",
+            "tmsSeriesId": "184032"
+         },
+         "startUnixTimestampSeconds": 1410372000,
+         "tmsProgramId": "EP019707190008",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": true,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 14:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Topanga goes on a secret diet with Eric; Cory wonders if Topanga is pregnant.",
+            "shortDescription": "Topanga goes on a secret diet with Eric; Cory wonders if Topanga is pregnant.",
+            "longDescription": "Topanga goes on a secret diet with Eric; Cory wonders if Topanga is pregnant.",
+            "imageUrl": "/imageserver/program/EP000838770154",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770154",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "She's Having My Baby Back Ribs",
+            "episodeNumber": 17,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410379200,
+         "tmsProgramId": "EP000838770154",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 16:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory and Topanga throw a party to assert that they are fun-loving.",
+            "shortDescription": "Cory and Topanga throw a party to assert that they are fun-loving.",
+            "longDescription": "Cory and Topanga, offended when their friends say they're boring, throw a party to prove they can have fun.",
+            "imageUrl": "/imageserver/program/EP000838770156",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770156",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "How Cory and Topanga Got Their Groove Back",
+            "episodeNumber": 18,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410381000,
+         "tmsProgramId": "EP000838770156",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 16:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An anonymous caller reports the death of a dry cleaner employee.",
+            "shortDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "longDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "imageUrl": "/imageserver/program/EP003915550395",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550395",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "A Clean Getaway",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410382800,
+         "tmsProgramId": "EP003915550395",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "122",
+         "recordSeries": true,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Eric thinks Cory doesn't want him around when Cory doesn't ask for his help to clean out the garage.",
+            "shortDescription": "Eric thinks Cory doesn't want him around when Cory doesn't ask for his help to clean out the garage.",
+            "longDescription": "Eric thinks Cory doesn't want him around when Cory doesn't ask for his help to clean out the garage.",
+            "imageUrl": "/imageserver/program/EP000838770157",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770157",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Ben Savage",
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle"
+            ],
+            "episodeTitle": "Brotherly Shove",
+            "episodeNumber": 19,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144"
+         },
+         "startUnixTimestampSeconds": 1410382800,
+         "tmsProgramId": "EP000838770157",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 17:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Police blame a botched robbery when an elderly man is found dead.",
+            "shortDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "longDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "imageUrl": "/imageserver/program/EP003915550397",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550397",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Prints Among Thieves",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410384600,
+         "tmsProgramId": "EP003915550397",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 17:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "258",
+         "recordSeries": true,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "The gang plans to drive to Las Vegas and pawn their belongings to bail out Sam's mother.",
+            "shortDescription": "The gang plans to drive to Las Vegas and pawn their belongings to bail out Sam's mother.",
+            "longDescription": "When Sam learns that her mother is being held in a Las Vegas jail, the gang plans to drive there and pawn their belongings to bail her out.",
+            "imageUrl": "/imageserver/program/EP009556790120",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790120",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Jennette McCurdy",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iLost My Head in Vegas",
+            "episodeNumber": 12,
+            "seasonNumber": 5,
+            "tmsSeriesId": "185707"
+         },
+         "startUnixTimestampSeconds": 1410386400,
+         "tmsProgramId": "EP009556790120",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "shortDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "longDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "imageUrl": "/imageserver/program/EP003915550398",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550398",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unholy Alliance",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410386400,
+         "tmsProgramId": "EP003915550398",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 18:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "shortDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "longDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed, killing his father.",
+            "imageUrl": "/imageserver/program/EP003915550399",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550399",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Signed, Sealed, Delivered",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410388200,
+         "tmsProgramId": "EP003915550399",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 18:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "133",
+         "recordSeries": true,
+         "mystroServiceId": "1372",
+         "programMetadata": {
+            "description": "Thirteen crystal skulls which are believed to hold a mystical power when brought together.",
+            "shortDescription": "Thirteen crystal skulls which are believed to hold a mystical power when brought together.",
+            "longDescription": "Thirteen crystal skulls which are believed to hold a mystical power whose secrets will be revealed when the skulls come together to form a global grid.",
+            "imageUrl": "/imageserver/program/EP012427480062",
+            "title": "Ancient Aliens",
+            "tmsProgramId": "EP012427480062",
+            "genres": [
+               "Sci-Fi/Fantasy",
+               "Documentary",
+               "Reality"
+            ],
+            "actors": [
+               "Jonathan Young"
+            ],
+            "episodeTitle": "The Crystal Skulls",
+            "episodeNumber": 2,
+            "seasonNumber": 6,
+            "tmsSeriesId": "8039273"
+         },
+         "startUnixTimestampSeconds": 1410397200,
+         "tmsProgramId": "EP012427480062",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": true,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 21:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "134",
+         "recordSeries": true,
+         "mystroServiceId": "1054",
+         "programMetadata": {
+            "description": "A young Tennessee couple with a toddler moves into a tiny house.",
+            "shortDescription": "A young Tennessee couple with a toddler moves into a tiny house.",
+            "longDescription": "John and Zack have to design a 172 sq. foot space that includes a pink castle, full kitchen, and master bedroom with privacy.",
+            "imageUrl": "/imageserver/program/EP019366820001",
+            "title": "Tiny House Nation",
+            "tmsProgramId": "EP019366820001",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "172 Sq. Ft. Dream Castle",
+            "episodeNumber": 1,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10835641"
+         },
+         "startUnixTimestampSeconds": 1410397200,
+         "tmsProgramId": "EP019366820001",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": true,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 21:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "shortDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "longDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "imageUrl": "/imageserver/program/EP003915550591",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550591",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Elemental Clue",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410400800,
+         "tmsProgramId": "EP003915550591",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 22:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman claims her husband was gunned down by intruders.",
+            "shortDescription": "A woman claims her husband was gunned down by intruders.",
+            "longDescription": "Investigators unravel a twisted tale of lust, greed and deception after a woman claims her husband was gunned down by intruders.",
+            "imageUrl": "/imageserver/program/EP003915550410",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550410",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Sunday School Ambush",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410402600,
+         "tmsProgramId": "EP003915550410",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 22:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A mother of two young children was found dead in her bedroom.",
+            "shortDescription": "A mother of two young children was found dead in her bedroom.",
+            "longDescription": "A mother of two young children was found dead in her bedroom.",
+            "imageUrl": "/imageserver/program/EP003915550589",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550589",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Army of Evidence",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410404400,
+         "tmsProgramId": "EP003915550589",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 23:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "shortDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "longDescription": "Reassembling a computer disk cut with pinking shears to find a killer.",
+            "imageUrl": "/imageserver/program/EP003915550380",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550380",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Shear Luck",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410406200,
+         "tmsProgramId": "EP003915550380",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140910 23:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "shortDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "longDescription": "A patrol officer is shocked by so much blood at a traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550580",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550580",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Crash Course",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410408000,
+         "tmsProgramId": "EP003915550580",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 00:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "The light of day reveals new clues about a nighttime traffic accident.",
+            "shortDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "longDescription": "The light of day reveals new clues about a nighttime traffic accident.",
+            "imageUrl": "/imageserver/program/EP003915550385",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550385",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Tight-Fitting Genes",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410409800,
+         "tmsProgramId": "EP003915550385",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 00:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts discover that a fatal car crash was not an accident.",
+            "shortDescription": "Experts discover that a fatal car crash was not an accident.",
+            "longDescription": "Experts discover that a fatal car crash was not an accident.",
+            "imageUrl": "/imageserver/program/EP003915550391",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550391",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Oily in the Morning",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410418800,
+         "tmsProgramId": "EP003915550391",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 03:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts seeks answers to a young businesswoman's death.",
+            "shortDescription": "Experts seeks answers to a young businesswoman's death.",
+            "longDescription": "Experts seeks answers to a young businesswoman's death.",
+            "imageUrl": "/imageserver/program/EP003915550394",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550394",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Writers Block",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410420600,
+         "tmsProgramId": "EP003915550394",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 03:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An anonymous caller reports the death of a dry cleaner employee.",
+            "shortDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "longDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "imageUrl": "/imageserver/program/EP003915550395",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550395",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "A Clean Getaway",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410422400,
+         "tmsProgramId": "EP003915550395",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 04:00:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Police blame a botched robbery when an elderly man is found dead.",
+            "shortDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "longDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "imageUrl": "/imageserver/program/EP003915550397",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550397",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Prints Among Thieves",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410424200,
+         "tmsProgramId": "EP003915550397",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 04:30:00 -0400"
+         }
+      },
+      {
+         "conflicted": false,
+         "displayChannel": "204",
+         "recordSeries": true,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "shortDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "longDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "imageUrl": "/imageserver/program/EP003915550398",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550398",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unholy Alliance",
+            "tmsSeriesId": "185346"
+         },
+         "startUnixTimestampSeconds": 1410426000,
+         "tmsProgramId": "EP003915550398",
+         "settings": {
+            "numEpisodesToKeep": 7,
+            "priority": "MIN",
+            "recordOnlyNewEpisodes": false,
+            "recordOnlyAtThisAirTime": false,
+            "deleteWhenSpaceIsNeeded": true,
+            "startAdjustMinutes": 0,
+            "stopAdjustMinutes": 0
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140911 05:00:00 -0400"
+         }
+      }
+   ],
+   "lastStartTime": 1410426000
+}

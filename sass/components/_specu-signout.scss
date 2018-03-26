@@ -1,0 +1,120 @@
+.specu-signout-container {
+    padding: 40px 16px;
+    position: relative;
+    width: 320px;
+    border-radius: 4px;
+    background-color: #0a2742;
+    color: #ffffff;
+    .info-icon-container {
+        width: 24px;
+        height: 24px;
+        margin: 0 auto;
+        img {
+            width: 24px;
+        }
+    }
+
+    .close-icon-container {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 17px;
+        height: 17px;
+
+        .close-icon {
+            position: absolute;
+            height: 17px;
+            width: 17px;
+        }
+    }
+
+    h1 {
+        margin: 16px auto 0 auto;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .confirmation-text, .footer-message {
+        margin: 28px auto 0 auto;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .buttonHolder {
+        margin: 24px auto 0;
+    }
+
+    .btn {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .signout-button {
+        background-color: #0073d1;
+        border: none;
+        &:hover {
+            background-color: #0d92ff;
+        }
+    }
+
+    .cancel-button {
+        margin-top: 12px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+
+        &:hover {
+            background-color: #11314e;
+        }
+    }
+
+    .line-through {
+        text-align: center;
+        margin: 28px auto 0 auto;
+        height: 1px;
+        span {
+            width: 260px;
+            &:after, &:before {
+                display: inline-block;
+                margin: 0 10px;
+                vertical-align: 20%;
+                content: '';
+                width: 108px;
+                height: 1px;
+                background-color: #d8dde6;
+            }
+            &:after {
+                right: 0;
+            }
+            &:before {
+                left: 0;
+            }
+        }
+    }
+
+    .footer-message {
+        margin: 50px 16px 0 16px;
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.specu-page {
+    .modal-content {
+        background: none;
+        border: none;
+        padding: 0;
+        .close-icon-container {
+            float: right;
+            img {
+                width: 17px;
+                height: 17px;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+<div class="player-controls" ovp-fullscreen-toggle="vm.onFullScreenToggled(isEnabled)">
+    <div id="player-mouse-down-focus" tabindex="{{vm.playerMouseDown ? 0 : -1}}" aria-hidden="true"></div>  <!-- dummy element for trapping focus -->
+    <mini-guide ng-mouseleave="vm.onMouseLeave($event)"
+                ng-mouseover="vm.onMouseOver($event)"
+                player="vm.player"
+                live-tms-id="vm.liveTmsId"
+                ean-url="vm.eanUrl"
+                ng-if="vm.isLiveMode()">
+    </mini-guide>
+    <div ng-if="vm.loading || vm.buffering || vm.seeking" class="video-loading">
+        <div class="spinner"></div>
+        <div aria-hidden="true" class="loading-asset" ng-show="!!vm.loadingMessage()">{{vm.loadingMessage()}}</div>
+    </div>
+    <div class="sr-only" aria-live="assertive">
+        {{vm.asset && vm.loading ? vm.ariaLoadingMessage() : ''}}
+        {{vm.buffering ? 'Buffering' : ''}}
+        {{vm.pcBlockedMessage}}
+    </div>
+
+    <blocking-screen player="vm.player" fullscreen="vm.isVodMode()" asset="vm.asset"></blocking-screen>
+    <div id="video-controls"
+         class="controller-bar"
+         ng-if='!vm.pcBlockedScreen && vm.controllerBarVisible'
+         ng-class="{'slide-down': vm.controllerBarVisible===false,'slide-up': vm.controllerBarVisible===true}"
+         ng-mouseleave="vm.onMouseLeave($event)"
+         ng-mouseover="vm.onMouseOver($event)"
+         ng-keydown="vm.onKeyDown($event)">
+        <h2 class="sr-only">Player Controls</h2>
+        <div class="controls-container" ng-if="vm.player">
+            <div class="top-controls" ng-class="{'enlarge-icons' : vm.enlargeIcon}" ng-mouseenter="vm.enlargeIcon=true" ng-mouseleave="vm.enlargeIcon=false">
+                <div class="left-col">
+                    <toggle-play
+                        player="vm.player"
+                        options="{setBookmarkCallback: vm.prepareToSetBookmark, playbackTime: vm.playbackTime, duration: vm.duration}"
+                        ng-if="vm.isVodMode()" enlarge-icon="vm.enlargeIcon">
+                    </toggle-play>
+                    <skip-button
+                        ovp-disabled="vm.slider.options.isAdPlaying"
+                        ng-if="vm.isVodMode()"
+                        direction="-1"
+                        player="vm.player"
+                        on-skip="vm.skip(direction)"
+                        seconds="vm.skipSeconds"
+                        class="gap" enlarge-icon="vm.enlargeIcon">
+                    </skip-button>
+                    <skip-button
+                        ovp-disabled="vm.slider.options.isAdPlaying || vm.slider.options.ffDisabled"
+                        ff-disabled="vm.slider.options.ffDisabled"
+                        ng-if="vm.isVodMode()"
+                        direction="1"
+                        player="vm.player"
+                        on-skip="vm.skip(direction)"
+                        seconds="vm.skipSeconds"
+                        class="gap" enlarge-icon="vm.enlargeIcon">
+                    </skip-button>
+                </div>
+                <div class="middle-col" ng-class="{'divider': vm.isVodMode()}">
+                    <ovp-scrubber
+                        ng-if="vm.isVodMode()"
+                        max="vm.slider.options.max"
+                        value="vm.slider.options.value"
+                        ff-disabled="vm.slider.options.ffDisabled"
+                        ad-breaks="vm.slider.options.adBreaks"
+                        is-ad-playing="vm.slider.options.isAdPlaying"
+                        show-buffer="vm.slider.options.showBuffer"
+                        player="vm.player" enlarge-icon="vm.enlargeIcon">
+                    </ovp-scrubber>
+                </div>
+                <div class="right-col">
+                    <div class="common-controls control-item pull-right" ng-if="vm.player">
+                        <volume-control player="vm.player" enlarge-icon="vm.enlargeIcon"></volume-control>                                
+                    </div>
+                    <toggle-fullscreen player-element="vm.playerElement" class="gap" enlarge-icon="vm.enlargeIcon"></toggle-fullscreen>
+                </div>
+            </div>
+            <div class="bottom-controls">
+                <div class="left-col asset-metadata control-item">
+                    <div class="network-logo"><img class="vod-icon-image" ng-src="{{vm.asset.networkImage()}}" ng-if="vm.asset.networkImage && vm.asset.networkImage()" fallback-image="display:none"></div>
+                    <div class="title-panel">
+                        <div class="title truncate">{{vm.asset.seriesTitle || vm.asset.title}}</div>
+                        <div class="title-undercard">
+                            <ovp-rating class="rating" rating="vm.asset.rating"></ovp-rating>
+                            <span ng-if="!vm.asset.isEpisode && vm.asset.actorsString" class="actors">{{vm.asset.actorsString}}</span>
+                            <span ng-if="vm.asset.isEpisode" class="episodeTitle truncate">{{vm.asset.episodeTitle || vm.asset.title}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col common-controls">
+                    <toggle-watch-on-tv ng-if="vm.remoteSessionControlEnabled" asset="vm.asset" stream="vm.stream"></toggle-watch-on-tv>
+                    <info-panel asset="vm.asset" ng-class="{'divider': vm.remoteSessionControlEnabled}"></info-panel>
+                    <toggle-cc player="vm.player" class="gap"></toggle-cc>
+                    <toggle-sap player="vm.player" class="gap"></toggle-sap>
+                    <toggle-cc-settings player="vm.player" class="gap"></toggle-cc-settings>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+
+.pagination{
+  min-width:220px;
+  display:block;
+  color:$grey06;
+  font-size:14px;
+  padding-right:14px;
+  text-align:right;
+  line-height:48px;
+}
+.pagination .leftArrow, .pagination .rightArrow{background:url('../images/ondemand-icons.png') 0 -78px;height:23px;width:23px;display:inline-block;position:relative;top:7px;text-align:right;margin-right:5px;cursor:pointer;}
+.pagination .leftArrow:hover{background-position:-56px -78px;}
+.pagination .rightArrow{background-position:0 -111px;margin:0 0 0 5px;}
+.pagination .rightArrow:hover{background-position:-56px -111px;}
+.pagination .leftArrow.deactive, .pagination .leftArrow.deactive:hover{cursor:default;opacity:0.6;background-position:0 -78px;}
+.pagination .rightArrow.deactive, .pagination .rightArrow.deactive:hover{cursor:default;opacity:0.6;background-position:0 -111px;}
+.pagination .page, .pagination label{margin:0 5px 0 5px;display:inline-block;cursor:pointer;text-align:right;}
+.pagination .page:hover{color:$white02;}
+.pagination label{color:$grey07;cursor:default;}
+.pagination .page.active{cursor:default;color:$white;}
+
+/*#paginationContainerBottom {
+    visibility: hidden;
+}*/

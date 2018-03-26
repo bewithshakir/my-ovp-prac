@@ -1,0 +1,175 @@
+{
+    "uri": "/nationalnavigation/V1/symphoni/entrypoint/?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92",
+    "entryPointList": [{
+        "name": "homePage",
+        "ordinal": 0,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/homepage/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "event",
+        "ordinal": 1,
+        "cacheID": 92,
+        "entryPoints": [{
+            "replaceString": "{tmsid}",
+            "replaceType": "tmsProviderProgramID",
+            "uri": "/nationalnavigation/V1/symphoni/event/tmsid/{tmsid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{providerassetid}",
+            "replaceType": "providerAssetID",
+            "uri": "/nationalnavigation/V1/symphoni/event/providerassetid/{providerassetid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{theplatformmediaid}",
+            "replaceType": "thePlatformMediaID",
+            "uri": "/nationalnavigation/V1/symphoni/event/theplatformmediaid/{theplatformmediaid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{offeringid}",
+            "replaceType": "offeringID",
+            "uri": "/nationalnavigation/V1/symphoni/event/offeringid/{offeringid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{preludenationalmetadataid}",
+            "replaceType": "nationalMetadataID",
+            "uri": "/nationalnavigation/V1/symphoni/event/preludenationalmetadataid/{preludenationalmetadataid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{ondemandproviderprogramid}",
+            "replaceType": "ondemandProviderProgramID",
+            "uri": "/nationalnavigation/V1/symphoni/event/ondemandproviderprogramid/{ondemandproviderprogramid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "series",
+        "ordinal": 2,
+        "cacheID": 92,
+        "entryPoints": [{
+            "replaceString": "{tmsproviderseriesid}",
+            "replaceType": "tmsSeriesID",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderseriesid/{tmsproviderseriesid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{tmsproviderprogramid}",
+            "replaceType": "tmsProviderProgramIDForSeries",
+            "uri": "/nationalnavigation/V1/symphoni/series/tmsproviderprogramid/{tmsproviderprogramid}?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "autoComplete",
+        "ordinal": 3,
+        "cacheID": 92,
+        "entryPoints": [{
+            "replaceString": "{searchString}",
+            "replaceType": "searchString",
+            "uri": "/nationalnavigation/V1/symphoni/search/autocomplete?searchString={searchString}&division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "topSearches",
+        "ordinal": 4,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/search/topsearches?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "networksGrid",
+        "ordinal": 5,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/networksgrid/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "vodPortal",
+        "ordinal": 6,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/vodportal/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "vodStore",
+        "ordinal": 7,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/vodstore/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "actor",
+        "ordinal": 8,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/recommendations/tmsid/{tmsid}/actor/{personid}?division=ATGW-SIT02&lineup=8&application=BROWSE&profile=ovp_v4&cacheID=92",
+            "replaceStrings": [{
+                "replaceType": "tmsProviderProgramID",
+                "replaceString": "{tmsid}"
+            }, {
+                "replaceType": "tmsPersonID",
+                "replaceString": "{personid}"
+            }]
+        }]
+    }, {
+        "name": "director",
+        "ordinal": 9,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/recommendations/tmsid/{tmsid}/director/{personid}?division=ATGW-SIT02&lineup=8&application=BROWSE&profile=ovp_v4&cacheID=92",
+            "replaceStrings": [{
+                "replaceType": "tmsProviderProgramID",
+                "replaceString": "{tmsid}"
+            }, {
+                "replaceType": "tmsPersonID",
+                "replaceString": "{personid}"
+            }]
+        }]
+    }, {
+        "name": "similarTo",
+        "ordinal": 10,
+        "cacheID": 92,
+        "entryPoints": [{
+            "replaceString": "{tmsid}",
+            "replaceType": "tmsProviderProgramID",
+            "uri": "/nationalnavigation/V1/symphoni/recommendations/tmsid/{tmsid}/similarto?division=ATGW-SIT02&lineup=8&application=BROWSE&profile=ovp_v4&cacheID=92"
+        }, {
+            "replaceString": "{tmsproviderseriesid}",
+            "replaceType": "tmsSeriesID",
+            "uri": "/nationalnavigation/V1/symphoni/recommendations/tmsproviderseriesid/{tmsproviderseriesid}/similarto?division=ATGW-SIT02&lineup=8&application=BROWSE&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "networksGridMenu",
+        "ordinal": 11,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/networksgrid/menu?path=0&division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "componentSearch",
+        "ordinal": 12,
+        "cacheID": 92,
+        "entryPoints": [{
+            "replaceString": "{searchString}",
+            "replaceType": "searchString",
+            "uri": "/nationalnavigation/V1/symphoni/search/component?searchString={searchString}&division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "appChannel",
+        "ordinal": 13,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/appchannel?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "watchLater",
+        "ordinal": 14,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/watchlater/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "watchAnytime",
+        "ordinal": 15,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/watchanytime/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }, {
+        "name": "cdvr",
+        "ordinal": 16,
+        "cacheID": 92,
+        "entryPoints": [{
+            "uri": "/nationalnavigation/V1/symphoni/dvrmanager/frontdoor?division=ATGW-SIT02&lineup=8&profile=ovp_v4&cacheID=92"
+        }]
+    }]
+}

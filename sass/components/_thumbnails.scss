@@ -1,0 +1,232 @@
+
+
+//
+// Thumbnails
+// --------------------------------------------------------------------------------
+
+// Thumbnails can be box art, as well as channel logos, video stills, and
+// even actor headshots.
+// They can be used as standalone graphic elements, like in product pages.
+// Or, they can be used in grids and carousels as elements of a program "card".
+
+.thumbnail {
+    background-color: $inverse-color;
+    color: $text-color;
+    cursor: pointer; // no `href`
+    display: block;
+    overflow: hidden;
+    position: relative; // child floats
+    width: 192px;
+    height: 288px;
+
+    &.thumbnail-static {
+        cursor: auto;
+    }
+
+    &:hover {
+        color: $text-color;
+
+        .text {
+            color: $text-color-strong;
+        }
+
+        .twcicon,
+        .twcicon-svg,
+        .overlay {
+            opacity: 1;
+        }
+
+        .twcicon-svg-lock,
+        .twcicon-svg-key {
+            opacity: 0.25;
+        }
+
+        .thumbnail-button {
+            transform: translateY(0%);
+        }
+    }
+
+    .fade-in {
+        opacity: 0;
+        transition: opacity 200ms linear;
+    }
+
+    .progress {
+        background-color: rgba($gray-base, 0.25);
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.5rem;
+    }
+
+    .twcicon {
+        font-size: 4em;
+        margin-top: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transition: opacity 250ms $cubic-bezier;
+        width: 100%;
+        // height: 100%;
+    }
+
+    .twcicon-svg {
+        background-size: 25%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 250ms $cubic-bezier;
+        width: 100%;
+        height: 100%;
+    }
+
+    .twcicon-svg-lock,
+    .twcicon-svg-key {
+        background-color: rgba($umbra, 0.85); // darken it because we're setting `opacity` to `0.75`
+        opacity: 0.75;
+    }
+
+    .text {
+        padding: 0 5%;
+        position: absolute;
+        top: 60%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .channel-name {
+        display: table;
+        padding: 5%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        > p {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .overlay {
+        border: 0.5rem solid $link-color;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        transition: opacity 250ms $cubic-bezier;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.thumbnail-button {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 250ms $cubic-bezier;
+    width: 100%;
+}
+
+
+
+//
+// Size variations
+// -------------------------
+
+// Large thumbnail used in Product pages
+.thumbnail-lg {
+    width: 272px;
+    height: 408px;
+}
+
+.thumbnail-responsive {
+    width: auto;
+    height: auto;
+
+    > img {
+        max-width: 100%;
+    }
+}
+
+//
+// Aspect variations
+// -------------------------
+
+// 4:3 series
+.thumbnail-showcard {
+    &.thumbnail-lg {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+// 3:4 person
+.thumbnail-cover {
+    width: 192px;
+    height: 256px;
+}
+
+// 1:1 logo
+.thumbnail-channel {
+    margin: auto;
+    width: 144px;
+    height: 144px;
+
+    .twcicon {
+        margin-top: 25%;
+    }
+
+    .twcicon-svg {
+        background-size: 75%;
+    }
+
+    .twcicon-svg-key {
+        background-color: rgba(0, 0, 0, 0.85);
+        background-size: 40%;
+        display: block;
+        opacity: 0.75;
+        position: absolute;
+        top: 1px; // account for border
+        left: 1px; // account for border
+        z-index: 9;
+        transition: opacity 250ms cubic-bezier(0.17, 0.84, 0.44, 1);
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+    }
+}
+
+//
+// Action tiles
+// -------------------------
+
+// These specialized "thumbnails" are the same size of other
+// thumbnails, but don't actually contain images, and are
+// used to promote an action that relates to the respective grid or carousel.
+
+.thumbnail-tile {
+    background-color: $muted-color;
+
+    .twcicon {
+        opacity: 1;
+    }
+
+    &.thumbnail-channel {
+        .twcicon {
+            margin-top: 5%;
+        }
+    }
+
+    &:hover {
+        .twcicon {
+            color: $text-color-strong;
+        }
+    }
+}

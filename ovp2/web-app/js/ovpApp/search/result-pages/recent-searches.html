@@ -1,0 +1,40 @@
+<div id="recentSearches" class="recentSearches" fadein-immediate>
+    <div ng-if="$ctrl.recentSearches.length > 0" class="search-results-container">
+        <div class="container">
+            <div class="search-results-group col-1">
+                <h4 class="category-header">Recent Searches</h4>
+                <div
+                role="application"
+                aria-label="Recent searches category use arrow keys to review items"
+                class="search-results"
+                ng-keydown="$ctrl.onKey($event)"
+                ><div
+                    role="listitem"
+                    ng-repeat="recent in $ctrl.recentSearches"
+                    ng-class="{active: $ctrl.activeIndex == $index}"
+                    ng-mouseover="$ctrl.selectRecent($index)"
+                    ng-click="$ctrl.click(recent)"
+                    focus-when="$ctrl.isActiveElement($index)"
+                    focus-next=".top-level-nav__logo"
+                    focus-previous=".exit-search"
+                    ng-attr-tabindex="{{$first && '0' || '-1'}}"
+                    class="search-result"
+                    ng-focus="$ctrl.selectRecent($index)"
+                    >
+                        {{recent | titleCase}}
+                    </div>
+
+                    <div
+                    tabindex="-1"
+                    class="search-result search-clear"
+                    ng-click="$ctrl.clear()"
+                    focus-next=".top-level-nav__logo"
+                    focus-previous=".exit-search"
+                    role="button">
+                        Clear recent searches
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

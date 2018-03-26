@@ -1,0 +1,15 @@
+<div focus-when="$ctrl.focusOnLoad" class="frame" ng-click="$ctrl.click()">
+    <span class="sr-only">{{::$ctrl.category}}</span>
+    <div class="col-xs-6 title">
+        {{::$ctrl.asset.title}}
+    </div>
+    <div class="col-xs-4 type">
+        {{::$ctrl.getTypeString()}}
+    </div>
+    <div class="col-xs-4 time">
+        {{::$ctrl.getTimeString()}}
+    </div>
+    <div class="col-xs-2 network">
+        {{::$ctrl.getNetworkString()}}
+    </div>
+</div>

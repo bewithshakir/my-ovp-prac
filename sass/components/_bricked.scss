@@ -1,0 +1,103 @@
+.bricked {
+    -webkit-font-smoothing: antialiased;
+    .bricked-box {
+        text-align: left;
+        margin: 60px auto;
+        padding: 64px;
+        border-radius: 4px;
+        width: 1022px;
+        height: 476px;
+        background: url("../images/grey-texture-1280.png") no-repeat top left;
+        background-size: cover;
+        border: solid 1px #63738a;
+
+        .col-sm-8 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .list-bullet {
+            margin: 25px 0 50px 20px;
+            padding: 0;
+            color: #f7f7f7;
+            li {
+                line-height: 32px;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 0.2rem;
+            }
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 44px;
+            letter-spacing: -0.9px;
+            text-align: left;
+            margin: 0 0 28px;
+        }
+
+        p {
+            width: 400px;
+        	height: 64px;
+        	font-size: 20px;
+        	line-height: 1.6;
+            margin-bottom: 0px;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 4px;
+            width: 210px;
+            height: 42px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 26px;
+            color: $white;
+        }
+
+        .right-image {
+            margin-top: 50px;
+            overflow: hidden;
+
+            img {
+                float: right;
+                transition: all 0.5s;
+            }
+
+            .rectangle {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 100%;
+                border-radius: 3px;
+                background-image: linear-gradient(to right, rgba(0, 33, 51, 0.0), #002133);
+            }
+        }
+    }
+
+
+    .content-wrapper {
+        @media screen and (max-width: 1280px) {
+            .bricked-box {
+                width: 880px;
+                height: 476px;
+                border-radius: 4px;
+                padding-right: 0;
+
+                .right-image {
+                    padding-right: 0;
+
+                    img {
+                        margin-right: -82px;
+                    }
+
+                    .rectangle {
+                        width: 64px;
+                    }
+                }
+            }
+        }
+    }
+}

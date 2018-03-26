@@ -1,0 +1,40 @@
+<div class="buyflow-step" ng-class="{collapsed: $ctrl.collapsed}">
+    <collapsed-step ng-if="$ctrl.collapsed"
+        step-number="$ctrl.stepNumber"
+        step-number-class="'extras-step-number'"
+        item-body-class="'extras-item-body'"
+        step-title="$ctrl.title"
+        regular-caption="$ctrl.regularCaption()"
+        bold-caption="$ctrl.boldCaption()"
+        on-title-click="$ctrl.onTitleClick()"
+        price="$ctrl.price()">
+    </collapsed-step>
+
+    <div ng-if="!$ctrl.collapsed">
+        <h2 class="title"><span class="extras-step-number">{{$ctrl.stepNumber}}.</span>{{$ctrl.title}}</h2>
+        <div class="item-body extras-item-body">
+            <div class="body">
+                <bundle-checkbox ng-repeat="bundle in $ctrl.bundles"
+                    class="flex-100"
+                    bundle="bundle"
+                    checked="bundle.checked"
+                    on-change="$ctrl.bundleToggled(bundle, checked)">
+                </bundle-checkbox>
+
+                <network-checkbox ng-repeat="network in $ctrl.networks"
+                    network="network"
+                    checked="network.checked"
+                    in-bundle="network.inBundle"
+                    on-change="$ctrl.networkToggled(network, checked)">
+                </network-checkbox>
+            </div>
+            <div class="buttons">
+                <button ng-click="$ctrl.onCancel()" class="btn btn-cancel">Cancel</button>
+                <div class="pull-right">
+                    <button ng-click="$ctrl.onBack()" class="btn btn-back">Back</button>
+                    <button ng-click="$ctrl.onContinue()" class="btn btn-primary btn-continue">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

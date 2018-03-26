@@ -1,0 +1,15 @@
+<span class='sr-only' role='status' aria-live='polite' aria-atomic='true' ng-bind="$ctrl.alertmessage"></span></span>
+
+<div class="row">
+    <h2 class="setting-label col-xs-16">Content block</h2>
+    <div class="row">
+        <div class="col-xs-16" role="application" arrow-nav="rating-tile">
+            <div class="rating-tile" ng-class="{blocked: $ctrl.isContentBlocked(content)}" ng-repeat="content in $ctrl.contentBlock" ng-click="$ctrl.contentClicked(content)">
+                <span class="sr-only">{{$index === 0 ? ('Use arrow keys to navigate content block, press enter to block or unblock, press tab to exit') : ''}}</span>
+                <span class="sr-only">{{$ctrl.isContentBlocked(content) ? 'blocked' : ''}}</span>
+                <div class="label-content" aria-label="{{content}} content">{{content}}</div>
+                <span class="twcicon-svg twcicon-svg-lock"></span>
+            </div>
+        </div>
+    </div>
+</div>

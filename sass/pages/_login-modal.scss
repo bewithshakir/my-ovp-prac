@@ -1,0 +1,83 @@
+
+// This modal isn't a real modal, it just plays one on TV.
+
+.login-modal {
+    background-color: $kite-dark-blue-3;
+    margin: 40px auto;
+    max-width: 400px;
+    
+    .kite-card {
+        padding-left: 55px;
+        padding-right: 55px;
+        border: 1px solid $kite-gray-3;
+        border-radius: 4px;
+        background-image: url('../images/grey-texture-600.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $kite-dark-blue-2;
+
+        @media(max-width: 450px) {
+            padding-left: 20px;
+            padding-right: 20px;        
+        }
+        @media(max-width: 320px) {
+            padding-left: 8px;
+            padding-right: 8px;        
+        }
+    }
+
+    header,
+    .create-username,
+    .forgot-username-password,
+    .specu-login {
+        text-align: center;
+    }
+
+
+    p.divider {
+        margin: 20px 0;
+    }
+
+    p.divider span {
+        position:relative
+    }
+
+    p.divider span:before,
+    p.divider span:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        border-top: 1px solid white;
+        top: 50%;
+        width: 100px;
+    }
+
+    p.divider span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    p.divider span:after {
+        left: 100%;
+        margin-left: 15px
+    }
+
+    p.divider {
+        margin: 0;
+
+        span.divider:before,
+        span.divider:after {
+            border-top: 1px solid $kite-blue-3;
+        }
+    }
+
+    &.specu-login-modal {
+        p.divider {
+            margin: 20px 0;
+        }
+    }
+
+    .create-username .kite-btn-link {
+        margin-top: 0;
+    }
+}

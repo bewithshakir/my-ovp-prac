@@ -1,0 +1,31 @@
+<div id="network-category-list" role="list">
+    <div ng-if="!$ctrl.selectedCategory" class="list" ng-repeat="category in $ctrl.categoryList.categories" role="listitem">
+    	<a class="list-template ovp-product-item" ng-click="$ctrl.showCategory(category)" href="#" tabindex="0">
+    		<div class="network-folder-icon" role="presentation"></div>
+    		<h4 class="title" aria-label="{{::category.name}}">{{::category.name}}</h4>
+    	</a>
+    </div>
+
+    <div ng-if="$ctrl.selectedCategory">
+    	<ovp-grid-list items="$ctrl.selectedCategory.media" options="$ctrl.gridListConfig">
+            <grid-items>
+                <ovp-product
+                    dir-paginate="asset in $ctrl.selectedCategory.media | itemsPerPage: $ctrl.pageSize"
+                    asset="asset"
+                    options="{hideNWLogo: true}"
+                    template='boxart'
+                    pagination-id="$ctrl.gridListConfig.id"
+                ></ovp-product>
+            </grid-items>
+            <list-items>
+                <ovp-product
+                    dir-paginate="asset in $ctrl.selectedCategory.media | itemsPerPage: $ctrl.pageSize"
+                    asset="asset"
+                    options="{hideNWLogo: true}"
+                    template='list'
+                    pagination-id="$ctrl.gridListConfig.id"
+                ></ovp-product>
+            </list-items>
+        </ovp-grid-list>
+    </div>
+</div>

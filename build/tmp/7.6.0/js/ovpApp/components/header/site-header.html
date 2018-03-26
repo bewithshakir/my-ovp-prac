@@ -1,0 +1,31 @@
+<header class="site-header" role="banner">
+    <eas ng-if="$ctrl.loggedIn"></eas>
+    <set-top-connection></set-top-connection>
+    <div class="sr-only" aria-live="polite" aria-atomic='true' ng-bind='$root.loadingMessage'></div>
+    <nav class="top-level-nav" role="navigation" aria-label="utility">
+        <div ng-if="$ctrl.isMenuVisible()" class="top-level-nav__canvas-menu-container">
+            <button class="top-level-nav__canvas-menu" ng-click="$ctrl.toggleOffCanvasMenu()" aria-label="menu - opens a new navigation dialog" id="canvas-menu">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </button>
+            <span class="top-level-nav__canvas-menu--label">MENU</span>
+        </div>
+        <div class="top-level-nav__logo" ng-class="{'center-align': $ctrl.isMenuVisible()}">
+            <a href="/" focus-once>
+                <img alt="{{$ctrl.getLogoAltText()}}" class="logo-header" ng-src="{{$ctrl.OvpSrcService.versionPath($ctrl.getLogoPath())}}"/>
+            </a>
+        </div>
+        <ul class="top-level-nav__links">
+            <li>
+                <ooh></ooh>
+            </li>
+            <li><a ng-href="{{$ctrl.isSpecU() ? '#' : $ctrl.config.supportLink}}" ng-click="$ctrl.isSpecU() ? $ctrl.openSupportDialog() : ''" ng-target="{{$ctrl.isSpecU() ? '' : '_self'}}">Support</a></li>
+            <li ng-if="$ctrl.loggedIn" ><a href="#" ng-click="$ctrl.signOut()">{{$ctrl.signOutText()}}</a></li>
+        </ul>
+    </nav>
+    <main-menu ng-hide="$ctrl.$state.current.data.hideMenu"></main-menu>
+    <div class="menu-divider" ng-hide="$ctrl.$state.current.data.hideMenu"></div>
+</header>
+<ui-view name="subMenu" ng-hide="$ctrl.$state.current.data.hideSubMenu"></ui-view>
+<div class="rectangle-with-gradient" ng-hide="$ctrl.$state.current.data.hideHeaderGradient" aria-hidden="true"></div>

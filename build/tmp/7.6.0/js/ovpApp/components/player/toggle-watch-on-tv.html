@@ -1,0 +1,5 @@
+<div tabindex="{{($ctrl.hasWatchOnTvActions) ? 0 : -1}}" class="control-item watch-on-tv-icon-wrapper" ng-click="$ctrl.watchOnTvToggle()" ng-class="{'disabled': !($ctrl.hasWatchOnTvActions)}" aria-disabled="{{(!$ctrl.hasWatchOnTvActions)}}" prevent-default aria-label="Watch on TV">
+   <img class="watch-on-tv-icon" ng-mouseover="$ctrl.hovered = true" ng-mouseleave="$ctrl.hovered = false" ng-src="{{$ctrl.watchOnTvImage()}}">
+
+   <div class="tooltip-watch">Watch on TV</div>
+</div>

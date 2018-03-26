@@ -1,0 +1,19 @@
+<button
+    class="btn btn-default btn-square hoverwatch"
+    ng-class="{'btn-inverse': disabled(item.actionType)}"
+    focus-when="item.focus"
+    ng-focus="item.focus = false"
+    ng-click="productActionClicked(item, asset, $event)"
+    ng-if="isValid(item.actionType)"
+    aria-describedby="{{id(item)}}">
+    <div class="icon">
+        <span class="spinner" aria-label="Loading..." ng-show="productLoading"></span>
+        <svg focusable="false" class="svg-icon" ng-show="!productLoading" aria-hidden="true">
+            <use xlink:href="{{actionTypeToButtonGraphic(item)}}" svg-path />
+        </svg>
+    </div>
+    {{actionTypeToLabel(item)}}
+    <span id="{{id(item)}}" style="display:none">
+        {{actionTypeToHoverText(item)}}
+    </span>
+</button>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+    <script type='text/javascript'>
+    var appVersion = '6.9.0';
+
+    function load() {
+        var fixVersion = appVersion.match(/(\d+|\.){4}/);
+        if (fixVersion.length > 0) {
+            fixVersion = fixVersion[0];
+        }
+        document.getElementById('jiralink')
+            .setAttribute('href', 'https://jira.charter.com/issues/?jql=fixVersion="' + fixVersion + 'x"')
+        document.getElementById('splunklink')
+            .setAttribute('href', 'https://chrcnc-hnav-splunksearchhead-01.os.vap.rr.com:8000/en-US/app/NextGenProd/' +
+                'search?q=search%20index%3Dovp%20%20host%3Ddevnode01%20appVersion%3D%22' + appVersion + '%22');
+
+    }
+    window.onload = load;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 class='page-header'>Ovp Build Stats</h2>
+        <p>Information about this build</p>
+        <hr/>
+        <div class='row'>
+            <ul class='col-md-12'>
+                <li>Branch: <b>develop</b></li>
+                <li>App Version: <a id='jiralink' href=''>6.9.0</a></li>
+                <li><a href='coverage/report/index.html'>Test Coverage</a></li>
+                <li><a href='style-guide.html'>Style Guide</a></li>
+                <li>Commit: 5a0669591fa49544b864d9e363f18b0e90d63926</li>
+                <li>Link: <a href='https://develop.watch.spectrum.net'>https://develop.watch.spectrum.net</a></li>
+                <li><a id='splunklink' href=''>Splunk Dev Logs for appVersion = 6.9.0</a></li>
+                <li><a id='jiralink' href=''>Jira Fix Version: 6.9.0</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

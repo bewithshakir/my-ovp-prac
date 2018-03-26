@@ -1,0 +1,1939 @@
+{
+   "recordings": [
+      {
+         "displayChannel": "1206",
+         "recordSeries": false,
+         "mystroServiceId": "354",
+         "programMetadata": {
+            "description": "Defamation; medical expenses and lost wages.",
+            "shortDescription": "Defamation; medical expenses and lost wages.",
+            "longDescription": "Defamation; medical expenses and lost wages.",
+            "imageUrl": "/imageserver/program/EP017612940054",
+            "title": "Supreme Justice With Judge Karen Mills",
+            "tmsProgramId": "EP017612940054",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "The Parents Who Cried Coach; Lip Wax Wacker",
+            "episodeNumber": 54,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10063870",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409679000,
+         "tmsProgramId": "EP017612940054",
+         "settings": {
+            "durationSeconds": 413,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 5,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 13:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "12",
+         "recordSeries": false,
+         "mystroServiceId": "5321",
+         "programMetadata": {
+            "description": "The death of a Wall Street financial analyst leads detectives into a world of sexual bondage.",
+            "shortDescription": "The death of a Wall Street financial analyst leads detectives into a world of sexual bondage.",
+            "longDescription": "Benson and Stabler investigate a successful woman's suspicious death and find themselves in the world of sadomasochism.",
+            "imageUrl": "/imageserver/program/EP003169780010",
+            "title": "Law & Order: Special Victims Unit",
+            "tmsProgramId": "EP003169780010",
+            "genres": [
+               "Crime"
+            ],
+            "actors": [
+               "Christopher Meloni",
+               "Dean Winters",
+               "Elizabeth Ashley"
+            ],
+            "episodeTitle": "Stocks & Bondage",
+            "episodeNumber": 9,
+            "seasonNumber": 1,
+            "tmsSeriesId": "184536",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409680800,
+         "tmsProgramId": "EP003169780010",
+         "settings": {
+            "durationSeconds": 3591,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 8,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "George wants to buy a pair of red elephant mittens; George wants to perform \"Hansel and Gretel.\"",
+            "shortDescription": "George wants to buy a pair of red elephant mittens; George wants to perform \"Hansel and Gretel.\"",
+            "longDescription": "George wants to buy a pair of red elephant mittens at the Annual Corn Roast and Attic Auction; George wants to perform \"Hansel and Gretel\" for Betsy.",
+            "imageUrl": "/imageserver/program/EP008466780127",
+            "title": "Curious George",
+            "tmsProgramId": "EP008466780127",
+            "genres": [
+               "Animation",
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Auctioneer George; Sock Monkey Opera",
+            "episodeNumber": 3,
+            "seasonNumber": 6,
+            "tmsSeriesId": "186074",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409684400,
+         "tmsProgramId": "EP008466780127",
+         "settings": {
+            "durationSeconds": 1782,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 15,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 15:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1209",
+         "recordSeries": false,
+         "mystroServiceId": "197",
+         "programMetadata": {
+            "description": "Marlon Wayans; Brooklyn Decker; chefs Patrick and Gina Neely; Queen gives away high-end handbags.",
+            "shortDescription": "Marlon Wayans; Brooklyn Decker; chefs Patrick and Gina Neely; Queen gives away high-end handbags.",
+            "longDescription": "Marlon Wayans (\"A Haunted House 2\"); model Brooklyn Decker; chefs Patrick and Gina Neely provide backyard barbecue recipes; Queen gives away high-end handbags.",
+            "imageUrl": "/imageserver/program/EP017612840139",
+            "title": "The Queen Latifah Show",
+            "tmsProgramId": "EP017612840139",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Marlon Wayans, Brooklyn Decker and a Backyard BBQ With Celebrity Chefs the Neelys",
+            "episodeNumber": 139,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10063841",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409684400,
+         "tmsProgramId": "EP017612840139",
+         "settings": {
+            "durationSeconds": 3592,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 5,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 15:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1302",
+         "recordSeries": false,
+         "mystroServiceId": "1449",
+         "programMetadata": {
+            "imageUrl": "/imageserver/program/SH007991800000",
+            "title": "Meet Council Attractions and Events",
+            "tmsProgramId": "SH007991800000",
+            "genres": [
+
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "797690",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409691600,
+         "tmsProgramId": "SH007991800000",
+         "settings": {
+            "durationSeconds": 1794,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 4,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 17:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Judy searches for a new fairy godmother.",
+            "shortDescription": "Judy searches for a new fairy godmother.",
+            "longDescription": "Judy searches for a new fairy godmother.",
+            "imageUrl": "/imageserver/program/EP019707190003",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190003",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Judy & the Beast",
+            "tmsSeriesId": "184032",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409767200,
+         "tmsProgramId": "EP019707190003",
+         "settings": {
+            "durationSeconds": 1793,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 4,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140903 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1206",
+         "recordSeries": false,
+         "mystroServiceId": "354",
+         "programMetadata": {
+            "imageUrl": "/imageserver/program/EP013320550190",
+            "title": "Family Feud",
+            "tmsProgramId": "EP013320550190",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "8314079",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409769000,
+         "tmsProgramId": "EP013320550190",
+         "settings": {
+            "durationSeconds": 1794,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140903 14:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "134",
+         "recordSeries": false,
+         "mystroServiceId": "1054",
+         "programMetadata": {
+            "description": "A Vermont family builds 493 sq. foot Tiny House in their driveway.",
+            "shortDescription": "A Vermont family builds 493 sq. foot Tiny House in their driveway.",
+            "longDescription": "A Vermont family builds 493 sq. foot Tiny House in their driveway, but they need a home that will work for 3 adults.",
+            "imageUrl": "/imageserver/program/EP019366820006",
+            "title": "Tiny House Nation",
+            "tmsProgramId": "EP019366820006",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "493 Sq. Ft. Vermont Chalet",
+            "episodeNumber": 6,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10835641",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409792400,
+         "tmsProgramId": "EP019366820006",
+         "settings": {
+            "durationSeconds": 3594,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140903 21:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "shortDescription": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "longDescription": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "imageUrl": "/imageserver/program/EP019707190004",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190004",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Bears Try to Hibernate",
+            "tmsSeriesId": "184032",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409853600,
+         "tmsProgramId": "EP019707190004",
+         "settings": {
+            "durationSeconds": 1794,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1223",
+         "recordSeries": false,
+         "mystroServiceId": "9",
+         "programMetadata": {
+            "description": "Helen and the gang try to design a quiet doghouse for Martha.",
+            "shortDescription": "Helen and the gang try to design a quiet doghouse for Martha.",
+            "longDescription": "Helen and the gang try to design a quiet doghouse for Martha; Carolina and Helen design dog costumes for Martha and Skits.",
+            "imageUrl": "/imageserver/program/EP010727730027",
+            "title": "Martha Speaks",
+            "tmsProgramId": "EP010727730027",
+            "genres": [
+               "Animation",
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+               "Vanesa Tomasino",
+               "Alex Ferris"
+            ],
+            "episodeTitle": "Martha in the Doghouse; Martha Models",
+            "episodeNumber": 21,
+            "seasonNumber": 1,
+            "tmsSeriesId": "188583",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409859000,
+         "tmsProgramId": "EP010727730027",
+         "settings": {
+            "durationSeconds": 51,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 34,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 15:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Angela deals with her feelings over Shawn when her father comes to campus.",
+            "shortDescription": "Angela deals with her feelings over Shawn when her father comes to campus.",
+            "longDescription": "Angela deals with her feelings over Shawn when her father comes to campus to teach an ROTC course; Cory persists in getting Topanga to renew their engagement.",
+            "imageUrl": "/imageserver/program/EP000838770141",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770141",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "Angela's Men",
+            "episodeNumber": 3,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409862600,
+         "tmsProgramId": "EP000838770141",
+         "settings": {
+            "durationSeconds": 1797,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 16:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory uses Angela and Shawn as an example to show Topanga that true love can survive.",
+            "shortDescription": "Cory uses Angela and Shawn as an example to show Topanga that true love can survive.",
+            "longDescription": "Cory tries to show Topanga that true love can survive; Jack convinces Eric to place a bet against Pennbrook.",
+            "imageUrl": "/imageserver/program/EP000838770142",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770142",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Rider Strong",
+               "Will Friedle"
+            ],
+            "episodeTitle": "No Such Thing as a Sure Thing",
+            "episodeNumber": 4,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409864400,
+         "tmsProgramId": "EP000838770142",
+         "settings": {
+            "durationSeconds": 1799,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 17:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory and Shawn's constant presence at Rachel's apartment is causing stress; Eric and Jack get jobs.",
+            "shortDescription": "Cory and Shawn's constant presence at Rachel's apartment is causing stress; Eric and Jack get jobs.",
+            "longDescription": "Cory and Shawn's constant presence at Rachel's apartment is causing a rift between the girls; Mr. Feeny secures jobs for Eric and Jack at the student union to help prepare them for the work force after college.",
+            "imageUrl": "/imageserver/program/EP000838770143",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770143",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Rider Strong",
+               "Will Friedle",
+               "Matthew Lawrence"
+            ],
+            "episodeTitle": "You Light Up My Union",
+            "episodeNumber": 5,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409866200,
+         "tmsProgramId": "EP000838770143",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 2,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 17:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory and Topanga recall the problems they have had in planning their wedding.",
+            "shortDescription": "Cory and Topanga recall the problems they have had in planning their wedding.",
+            "longDescription": "Cory and Topanga recall the problems they have had in planning their wedding.",
+            "imageUrl": "/imageserver/program/EP000838770144",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770144",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "They're Killing Us",
+            "episodeNumber": 6,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409868000,
+         "tmsProgramId": "EP000838770144",
+         "settings": {
+            "durationSeconds": 1796,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 1,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 18:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "258",
+         "recordSeries": false,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Carly, Sam and Freddie sneak out to go to a mixed martial arts fight.",
+            "shortDescription": "Carly, Sam and Freddie sneak out to go to a mixed martial arts fight.",
+            "longDescription": "Carly, Sam and Freddie sneak out to go to a mixed martial arts fight; Spencer builds a gigantic version of Newton Balls.",
+            "imageUrl": "/imageserver/program/EP009556790038",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790038",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iLook Alike",
+            "episodeNumber": 14,
+            "seasonNumber": 2,
+            "tmsSeriesId": "185707",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409868000,
+         "tmsProgramId": "EP009556790038",
+         "settings": {
+            "durationSeconds": 1791,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 11,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140904 18:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1200",
+         "recordSeries": false,
+         "mystroServiceId": "184",
+         "programMetadata": {
+            "description": "Katie looks back at the show's most powerful moments, celebrity guests and musical acts.",
+            "shortDescription": "Katie looks back at the show's most powerful moments, celebrity guests and musical acts.",
+            "longDescription": "Katie looks back at the show's most powerful moments, celebrity guests and musical acts; laughs from behind the scenes.",
+            "imageUrl": "/imageserver/program/EP015223290276",
+            "title": "Katie",
+            "tmsProgramId": "EP015223290276",
+            "genres": [
+
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Farewell to Katie",
+            "episodeNumber": 195,
+            "seasonNumber": 2,
+            "tmsSeriesId": "9037478",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409925600,
+         "tmsProgramId": "EP015223290276",
+         "settings": {
+            "durationSeconds": 1161,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 2437,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 10:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Cookie Monster paints a picture of a cookie.",
+            "shortDescription": "Cookie Monster paints a picture of a cookie.",
+            "longDescription": "Cookie Monster paints a picture of a cookie.",
+            "imageUrl": "/imageserver/program/EP000037862101",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP000037862101",
+            "genres": [
+               "Reality",
+               "Kids & Family"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Still Life With Cookie",
+            "episodeNumber": 7,
+            "seasonNumber": 44,
+            "tmsSeriesId": "184032",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409925600,
+         "tmsProgramId": "EP000037862101",
+         "settings": {
+            "durationSeconds": 1151,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 2450,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 10:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "13",
+         "recordSeries": false,
+         "mystroServiceId": "12",
+         "programMetadata": {
+            "description": "The kids meet some of the biggest dinosaurs; the family goes on an overnight camping trip.",
+            "shortDescription": "The kids meet some of the biggest dinosaurs; the family goes on an overnight camping trip.",
+            "longDescription": "The kids meet some of the biggest dinosaurs, including Allie Alamosaurus; the family goes on an overnight camping trip.",
+            "imageUrl": "/imageserver/program/EP011702490210",
+            "title": "Dinosaur Train",
+            "tmsProgramId": "EP011702490210",
+            "genres": [
+               "Reality",
+               "Comedy",
+               "Animation",
+               "Kids & Family"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Remember the Alamosaurus; Sunrise, Sunset",
+            "tmsSeriesId": "3607495",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409929200,
+         "tmsProgramId": "EP011702490210",
+         "settings": {
+            "durationSeconds": 1778,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 20,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 11:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "12",
+         "recordSeries": false,
+         "mystroServiceId": "5321",
+         "programMetadata": {
+            "description": "A cheerleader agrees to date Eric as long as he picks her up in the Corvette.",
+            "shortDescription": "A cheerleader agrees to date Eric as long as he picks her up in the Corvette.",
+            "longDescription": "After Red and Kitty go out of town, a cheerleader agrees to date Eric as long as he picks her up in the Corvette.",
+            "imageUrl": "/imageserver/program/EP002775980105",
+            "title": "That '70s Show",
+            "tmsProgramId": "EP002775980105",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Topher Grace",
+               "Mila Kunis",
+               "Danny Masterson",
+               "Laura Prepon"
+            ],
+            "episodeTitle": "Eric's Corvette Caper",
+            "episodeNumber": 22,
+            "seasonNumber": 4,
+            "tmsSeriesId": "184436",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409929200,
+         "tmsProgramId": "EP002775980105",
+         "settings": {
+            "durationSeconds": 1791,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 10,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 11:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "200",
+         "recordSeries": false,
+         "mystroServiceId": "1356",
+         "programMetadata": {
+            "description": "Time Warner Cable News reports on local news, traffic, national stories, health and sports.",
+            "shortDescription": "Time Warner Cable News reports on local news, traffic, national stories, health and sports.",
+            "longDescription": "Time Warner Cable News reports on local news, traffic, national stories, health and sports. Featuring local weather reports every ten minutes with Weather on the 1's.",
+            "imageUrl": "/imageserver/program/SH018374770000",
+            "title": "TWC News All Morning",
+            "tmsProgramId": "SH018374770000",
+            "genres": [
+               "News & Weather"
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "10392173",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409931000,
+         "tmsProgramId": "SH018374770000",
+         "settings": {
+            "durationSeconds": 1782,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 15,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 11:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "12",
+         "recordSeries": false,
+         "mystroServiceId": "5321",
+         "programMetadata": {
+            "description": "The gang throws Hyde a birthday party despite his protests, and searches for the perfect present.",
+            "shortDescription": "The gang throws Hyde a birthday party despite his protests, and searches for the perfect present.",
+            "longDescription": "The gang throws Hyde a birthday party despite his protests; Kelso, Donna and Eric look for the perfect present.",
+            "imageUrl": "/imageserver/program/EP002775980107",
+            "title": "That '70s Show",
+            "tmsProgramId": "EP002775980107",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Topher Grace",
+               "Mila Kunis",
+               "Danny Masterson",
+               "Laura Prepon"
+            ],
+            "episodeTitle": "Hyde's Birthday",
+            "episodeNumber": 23,
+            "seasonNumber": 4,
+            "tmsSeriesId": "184436",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409931000,
+         "tmsProgramId": "EP002775980107",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 11:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1212",
+         "recordSeries": false,
+         "mystroServiceId": "254",
+         "programMetadata": {
+            "description": "Michelle thinks Dwayne has a secret alias and is having an affair with her sister.",
+            "shortDescription": "Michelle thinks Dwayne has a secret alias and is having an affair with her sister.",
+            "longDescription": "Michelle thinks Dwayne has a secret alias and is having an affair with her sister; Jessica believes her baby's daddy had sex with her cousin; Kandi fears that her fiance is living the life of a porn star behind her back.",
+            "imageUrl": "/imageserver/program/EP002830833011",
+            "title": "Maury",
+            "tmsProgramId": "EP002830833011",
+            "genres": [
+
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Did My Fiance Cheat and Make an Adult Movie?",
+            "episodeNumber": 159,
+            "seasonNumber": 15,
+            "tmsSeriesId": "185494",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409932800,
+         "tmsProgramId": "EP002830833011",
+         "settings": {
+            "durationSeconds": 3579,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 19,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 12:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "12",
+         "recordSeries": false,
+         "mystroServiceId": "5321",
+         "programMetadata": {
+            "description": "Doug tries to get Carrie inebriated so he can cheat on his diet.",
+            "shortDescription": "Doug tries to get Carrie inebriated so he can cheat on his diet.",
+            "longDescription": "Doug tries to get Carrie drunk so he can cheat on his diet, but things get out of hand. Lou Ferrigno guest stars.",
+            "imageUrl": "/imageserver/program/EP002776100098",
+            "title": "The King of Queens",
+            "tmsProgramId": "EP002776100098",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Kevin James",
+               "Leah Remini",
+               "Jerry Stiller",
+               "Victor Williams"
+            ],
+            "episodeTitle": "Lush Life",
+            "episodeNumber": 20,
+            "seasonNumber": 4,
+            "tmsSeriesId": "184408",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409932800,
+         "tmsProgramId": "EP002776100098",
+         "settings": {
+            "durationSeconds": 1794,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 12:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "12",
+         "recordSeries": false,
+         "mystroServiceId": "5321",
+         "programMetadata": {
+            "description": "Carrie thinks Doug has lost his romantic side; Arthur is called for jury duty.",
+            "shortDescription": "Carrie thinks Doug has lost his romantic side; Arthur is called for jury duty.",
+            "longDescription": "Carrie gets jealous of a co-worker who received flowers and accuses Doug of losing his sense of romance.",
+            "imageUrl": "/imageserver/program/EP002776100050",
+            "title": "The King of Queens",
+            "tmsProgramId": "EP002776100050",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Kevin James",
+               "Leah Remini",
+               "Jerry Stiller",
+               "Larry Romano"
+            ],
+            "episodeTitle": "Flower Power",
+            "episodeNumber": 24,
+            "seasonNumber": 2,
+            "tmsSeriesId": "184408",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409934600,
+         "tmsProgramId": "EP002776100050",
+         "settings": {
+            "durationSeconds": 1802,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 12:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "13",
+         "recordSeries": false,
+         "mystroServiceId": "12",
+         "programMetadata": {
+            "description": "Princess Pea gets stage fright during her dance recital.",
+            "shortDescription": "Princess Pea gets stage fright during her dance recital.",
+            "longDescription": "Princess Pea gets stage fright during her dance recital.",
+            "imageUrl": "/imageserver/program/EP009488270071",
+            "title": "Super Why!",
+            "tmsProgramId": "EP009488270071",
+            "genres": [
+               "Reality",
+               "Animation",
+               "Kids & Family"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Molly's Dance Show",
+            "episodeNumber": 4,
+            "seasonNumber": 2,
+            "tmsSeriesId": "186078",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409936400,
+         "tmsProgramId": "EP009488270071",
+         "settings": {
+            "durationSeconds": 1779,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 18,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 13:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "200",
+         "recordSeries": false,
+         "mystroServiceId": "1356",
+         "programMetadata": {
+            "description": "Time Warner Cable News reports on local news, traffic, national stories, health and sports.",
+            "shortDescription": "Time Warner Cable News reports on local news, traffic, national stories, health and sports.",
+            "longDescription": "Time Warner Cable News reports on local news, traffic, national stories, health and sports. Featuring local weather reports every ten minutes with Weather on the 1's.",
+            "imageUrl": "/imageserver/program/SH018374780000",
+            "title": "TWC News All Day",
+            "tmsProgramId": "SH018374780000",
+            "genres": [
+               "News & Weather"
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "10392181",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409936400,
+         "tmsProgramId": "SH018374780000",
+         "settings": {
+            "durationSeconds": 1791,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 9,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 13:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "13",
+         "recordSeries": false,
+         "mystroServiceId": "12",
+         "programMetadata": {
+            "description": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "shortDescription": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "longDescription": "The bears call Max Bear, a hibernation consultant, to help them hibernate for the winter.",
+            "imageUrl": "/imageserver/program/EP000037861937",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP000037861937",
+            "genres": [
+               "Reality",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Caroll Spinney",
+               "Kevin Clash",
+               "David Rudman",
+               "Steve Whitmire"
+            ],
+            "episodeTitle": "Bears Try to Hibernate",
+            "episodeNumber": 7,
+            "seasonNumber": 40,
+            "tmsSeriesId": "184032",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409938200,
+         "tmsProgramId": "EP000037861937",
+         "settings": {
+            "durationSeconds": 1780,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 18,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 13:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1206",
+         "recordSeries": false,
+         "mystroServiceId": "354",
+         "programMetadata": {
+            "description": "A ruined fantasy-basketball league; a revoked job offer.",
+            "shortDescription": "A ruined fantasy-basketball league; a revoked job offer.",
+            "longDescription": "A ruined fantasy-basketball league; a revoked job offer.",
+            "imageUrl": "/imageserver/program/EP017612940060",
+            "title": "Supreme Justice With Judge Karen Mills",
+            "tmsProgramId": "EP017612940060",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unwanted Fantasy; Job Offer Revoked",
+            "episodeNumber": 60,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10063870",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409938200,
+         "tmsProgramId": "EP017612940060",
+         "settings": {
+            "durationSeconds": 1792,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 10,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 13:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "13",
+         "recordSeries": false,
+         "mystroServiceId": "12",
+         "programMetadata": {
+            "description": "Chocolate tart; kitchen gadgets; butterscotch pudding.",
+            "shortDescription": "Chocolate tart; kitchen gadgets; butterscotch pudding.",
+            "longDescription": "Chocolate tart; kitchen gadgets; butterscotch pudding.",
+            "imageUrl": "/imageserver/program/EP005502520297",
+            "title": "America's Test Kitchen From Cook's Illustrated",
+            "tmsProgramId": "EP005502520297",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Decadent Desserts",
+            "episodeNumber": 10,
+            "seasonNumber": 14,
+            "tmsSeriesId": "329266",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409940000,
+         "tmsProgramId": "EP005502520297",
+         "settings": {
+            "durationSeconds": 1800,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Snuffy accidentally sells Big Bird's teddy bear while helping him with his nest sale.",
+            "shortDescription": "Snuffy accidentally sells Big Bird's teddy bear while helping him with his nest sale.",
+            "longDescription": "Snuffy accidentally sells Big Bird's teddy bear while helping him with his nest sale.",
+            "imageUrl": "/imageserver/program/EP019707190005",
+            "title": "Sesame Street",
+            "tmsProgramId": "EP019707190005",
+            "genres": [
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Big Bird's Nest Sale",
+            "tmsSeriesId": "184032",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409940000,
+         "tmsProgramId": "EP019707190005",
+         "settings": {
+            "durationSeconds": 1782,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 16,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 14:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "13",
+         "recordSeries": false,
+         "mystroServiceId": "12",
+         "programMetadata": {
+            "description": "Scallop salad; seared sesame chicken breast; mint granita.",
+            "shortDescription": "Scallop salad; seared sesame chicken breast; mint granita.",
+            "longDescription": "Scallop salad; seared sesame chicken breast; mint granita.",
+            "imageUrl": "/imageserver/program/EP017922990019",
+            "title": "Lidia's Kitchen",
+            "tmsProgramId": "EP017922990019",
+            "genres": [
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Summertime Delights",
+            "episodeNumber": 19,
+            "seasonNumber": 1,
+            "tmsSeriesId": "10191920",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409941800,
+         "tmsProgramId": "EP017922990019",
+         "settings": {
+            "durationSeconds": 1793,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 14:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Sally and Nick try to walk across a beam in their backyard; the kids play with glass marbles.",
+            "shortDescription": "Sally and Nick try to walk across a beam in their backyard; the kids play with glass marbles.",
+            "longDescription": "Sally and Nick try to walk across a beam in their backyard; the kids play with glass marbles.",
+            "imageUrl": "/imageserver/program/EP013009920189",
+            "title": "The Cat in the Hat Knows a Lot About That!",
+            "tmsProgramId": "EP013009920189",
+            "genres": [
+               "Comedy",
+               "Animation",
+               "Kids & Family"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Balancing Act; Marvelous Marbles",
+            "episodeNumber": 14,
+            "seasonNumber": 2,
+            "tmsSeriesId": "8192813",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409941800,
+         "tmsProgramId": "EP013009920189",
+         "settings": {
+            "durationSeconds": 1799,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 14:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "George transforms a collection of trash into a masterpiece; winter-proof house for a squirrel.",
+            "shortDescription": "George transforms a collection of trash into a masterpiece; winter-proof house for a squirrel.",
+            "longDescription": "George transforms a collection of trash into a masterpiece; George builds a winter-proof house for a squirrel.",
+            "imageUrl": "/imageserver/program/EP008466780164",
+            "title": "Curious George",
+            "tmsProgramId": "EP008466780164",
+            "genres": [
+               "Animation",
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Junky Monkey; Jumpy Warms Up",
+            "episodeNumber": 10,
+            "seasonNumber": 6,
+            "tmsSeriesId": "186074",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409943600,
+         "tmsProgramId": "EP008466780164",
+         "settings": {
+            "durationSeconds": 1782,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 17,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 15:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1203",
+         "recordSeries": false,
+         "mystroServiceId": "299",
+         "programMetadata": {
+            "description": "A man sues his teen daughter and her fiance for damages they caused to his motor home.",
+            "shortDescription": "A man sues his teen daughter and her fiance for damages they caused to his motor home.",
+            "longDescription": "A beauty salon owner accuses a stylist of assault; a man sues his teen daughter and her fiance for damages they caused to his motor home.",
+            "imageUrl": "/imageserver/program/EP001887105085",
+            "title": "Judge Judy",
+            "tmsProgramId": "EP001887105085",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Hair Stylist Wars; Daddy's Good Deed Punished?",
+            "episodeNumber": 151,
+            "seasonNumber": 18,
+            "tmsSeriesId": "184382",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409943600,
+         "tmsProgramId": "EP001887105085",
+         "settings": {
+            "durationSeconds": 1788,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 10,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 15:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1230",
+         "recordSeries": false,
+         "mystroServiceId": "986",
+         "programMetadata": {
+            "description": "A woman sues for medical bills after she is knocked down in a department store.",
+            "shortDescription": "A woman sues for medical bills after she is knocked down in a department store.",
+            "longDescription": "A woman sues for medical bills after she is knocked down in a department store.",
+            "imageUrl": "/imageserver/program/EP013098930251",
+            "title": "America's Court With Judge Ross",
+            "tmsProgramId": "EP013098930251",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Come Sale Away; Sanford, I'm Done",
+            "tmsSeriesId": "8224483",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409945400,
+         "tmsProgramId": "EP013098930251",
+         "settings": {
+            "durationSeconds": 1784,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 15,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 15:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "George follows Gnocchi to find out why she leaves the house; treasure chest.",
+            "shortDescription": "George follows Gnocchi to find out why she leaves the house; treasure chest.",
+            "longDescription": "George follows Gnocchi to find out why she leaves the house; George and Marco lose the items in their treasure chest.",
+            "imageUrl": "/imageserver/program/EP008466780163",
+            "title": "Curious George",
+            "tmsProgramId": "EP008466780163",
+            "genres": [
+               "Animation",
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "No Knowing Gnocchi; Here Comes the Tide",
+            "episodeNumber": 9,
+            "seasonNumber": 6,
+            "tmsSeriesId": "186074",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409945400,
+         "tmsProgramId": "EP008466780163",
+         "settings": {
+            "durationSeconds": 1797,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 2,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 15:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Eric replaces Shawn as best man in Cory and Topanga's wedding.",
+            "shortDescription": "Eric replaces Shawn as best man in Cory and Topanga's wedding.",
+            "longDescription": "Shawn drops out as Cory's best man and Eric takes over, moving the wedding to the most expensive place in town.",
+            "imageUrl": "/imageserver/program/EP000838770145",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770145",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Rider Strong",
+               "Will Friedle"
+            ],
+            "episodeTitle": "It's About Time",
+            "episodeNumber": 7,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409947200,
+         "tmsProgramId": "EP000838770145",
+         "settings": {
+            "durationSeconds": 1791,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 7,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 16:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "While in Hawaii, Cory and Topanga meet a couple which inspires them to live on the island forever.",
+            "shortDescription": "While in Hawaii, Cory and Topanga meet a couple which inspires them to live on the island forever.",
+            "longDescription": "While in Hawaii, Cory and Topanga meet a couple which inspires them to live on the island forever.",
+            "imageUrl": "/imageserver/program/EP000838770146",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770146",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Rider Strong",
+               "Will Friedle"
+            ],
+            "episodeTitle": "The Honeymooners",
+            "episodeNumber": 8,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409949000,
+         "tmsProgramId": "EP000838770146",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 16:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "122",
+         "recordSeries": false,
+         "mystroServiceId": "999",
+         "programMetadata": {
+            "description": "Cory and Topanga have trouble finding a place to live and end up in the married students dorm.",
+            "shortDescription": "Cory and Topanga have trouble finding a place to live and end up in the married students dorm.",
+            "longDescription": "Cory and Topanga have trouble finding a place to live and end up in the married students dorm.",
+            "imageUrl": "/imageserver/program/EP000838770147",
+            "title": "Boy Meets World",
+            "tmsProgramId": "EP000838770147",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "William Daniels",
+               "Betsy Randle",
+               "Will Friedle",
+               "Rider Strong"
+            ],
+            "episodeTitle": "The Honeymoon Is Over",
+            "episodeNumber": 9,
+            "seasonNumber": 7,
+            "tmsSeriesId": "184144",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409950800,
+         "tmsProgramId": "EP000838770147",
+         "settings": {
+            "durationSeconds": 1797,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 17:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "200",
+         "recordSeries": false,
+         "mystroServiceId": "1356",
+         "programMetadata": {
+            "description": "North Carolina governmental and political news.",
+            "shortDescription": "North Carolina governmental and political news.",
+            "longDescription": "North Carolina governmental and political news.",
+            "imageUrl": "/imageserver/program/SH015790110000",
+            "title": "Capital Tonight",
+            "tmsProgramId": "SH015790110000",
+            "genres": [
+               "News & Weather"
+            ],
+            "actors": [
+
+            ],
+            "tmsSeriesId": "9308596",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409958000,
+         "tmsProgramId": "SH015790110000",
+         "settings": {
+            "durationSeconds": 1795,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 19:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "133",
+         "recordSeries": false,
+         "mystroServiceId": "1372",
+         "programMetadata": {
+            "description": "Photographs of Mars reveal mysteries that could mean life on Mars.",
+            "shortDescription": "Photographs of Mars reveal mysteries that could mean life on Mars.",
+            "longDescription": "Probes have been sending information about Mars back to scientists for nearly 40 years. Photographs of the planet reveal mysteries that could mean life on Mars.",
+            "imageUrl": "/imageserver/program/EP012427480077",
+            "title": "Ancient Aliens",
+            "tmsProgramId": "EP012427480077",
+            "genres": [
+               "Sci-Fi/Fantasy",
+               "Documentary",
+               "Reality"
+            ],
+            "actors": [
+               "Jonathan Young"
+            ],
+            "episodeTitle": "Aliens and the Red Planet",
+            "episodeNumber": 5,
+            "seasonNumber": 7,
+            "tmsSeriesId": "8039273",
+            "rating": "TV-PG",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409965200,
+         "tmsProgramId": "EP012427480077",
+         "settings": {
+            "durationSeconds": 3594,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 3,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 21:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "167",
+         "recordSeries": false,
+         "mystroServiceId": "1124",
+         "programMetadata": {
+            "description": "A man (Steve Martin) must handle the chaos surrounding his 12 children.",
+            "shortDescription": "A man (Steve Martin) must handle the chaos surrounding his 12 children.",
+            "longDescription": "Tom (Steve Martin) and Kate Baker (Bonnie Hunt) have compromised their careers to raise 12 children. Tom coaches a high-school football team, while Kate has retired from journalism to raise the family. Things change when Tom is offered a college coaching job in a new city at the same time a publisher buys Kate's parenting memoir. After moving, Kate goes on a book tour, leaving Tom in charge of the children, who -- already unhappy about relocating -- plunge the household into chaos.",
+            "imageUrl": "/imageserver/program/MV001434230000",
+            "title": "Cheaper by the Dozen",
+            "tmsProgramId": "MV001434230000",
+            "genres": [
+               "Comedy"
+            ],
+            "actors": [
+               "Steve Martin",
+               "Bonnie Hunt",
+               "Piper Perabo",
+               "Tom Welling"
+            ],
+            "releaseYear": "2003",
+            "rating": "PG",
+            "starRating": 2.5
+         },
+         "startUnixTimestampSeconds": 1409967900,
+         "tmsProgramId": "MV001434230000",
+         "settings": {
+            "durationSeconds": 7493,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 5,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140905 21:45:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "258",
+         "recordSeries": false,
+         "mystroServiceId": "2360",
+         "programMetadata": {
+            "description": "Carly catches a contagious illness and accidentally gets a member of the band, One Direction, sick.",
+            "shortDescription": "Carly catches a contagious illness and accidentally gets a member of the band, One Direction, sick.",
+            "longDescription": "Carly catches a contagious illness and accidentally gets a member of the band, One Direction, sick.",
+            "imageUrl": "/imageserver/program/EP009556790110",
+            "title": "iCarly",
+            "tmsProgramId": "EP009556790110",
+            "genres": [
+               "Comedy",
+               "Kids & Family"
+            ],
+            "actors": [
+               "Miranda Cosgrove",
+               "Nathan Kress",
+               "Jerry Trainor"
+            ],
+            "episodeTitle": "iGo One Direction",
+            "episodeNumber": 2,
+            "seasonNumber": 5,
+            "tmsSeriesId": "185707",
+            "rating": "TV-G",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410053400,
+         "tmsProgramId": "EP009556790110",
+         "settings": {
+            "durationSeconds": 1787,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 11,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140906 21:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Experts seeks answers to a young businesswoman's death.",
+            "shortDescription": "Experts seeks answers to a young businesswoman's death.",
+            "longDescription": "Experts seeks answers to a young businesswoman's death.",
+            "imageUrl": "/imageserver/program/EP003915550394",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550394",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Writers Block",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410060600,
+         "tmsProgramId": "EP003915550394",
+         "settings": {
+            "durationSeconds": 1799,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140906 23:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "An anonymous caller reports the death of a dry cleaner employee.",
+            "shortDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "longDescription": "An anonymous caller reports the death of a dry cleaner employee.",
+            "imageUrl": "/imageserver/program/EP003915550395",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550395",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "A Clean Getaway",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410062400,
+         "tmsProgramId": "EP003915550395",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 00:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Police blame a botched robbery when an elderly man is found dead.",
+            "shortDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "longDescription": "Police blame a botched robbery when an elderly man is found dead.",
+            "imageUrl": "/imageserver/program/EP003915550397",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550397",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Prints Among Thieves",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410064200,
+         "tmsProgramId": "EP003915550397",
+         "settings": {
+            "durationSeconds": 1797,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 00:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "shortDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "longDescription": "A woman disappears from a grocery store parking lot in Boulder, Colorado.",
+            "imageUrl": "/imageserver/program/EP003915550398",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550398",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Unholy Alliance",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410066000,
+         "tmsProgramId": "EP003915550398",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 01:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "shortDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed.",
+            "longDescription": "Forensics hopes to determine if this was revenge when the home of a state's witness is bombed, killing his father.",
+            "imageUrl": "/imageserver/program/EP003915550399",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550399",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Signed, Sealed, Delivered",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410067800,
+         "tmsProgramId": "EP003915550399",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 01:30:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "shortDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "longDescription": "Two women are murdered in the same town and police fear a serial killer is on the loose.",
+            "imageUrl": "/imageserver/program/EP003915550591",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550591",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Elemental Clue",
+            "tmsSeriesId": "185346",
+            "rating": "NR",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410069600,
+         "tmsProgramId": "EP003915550591",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 02:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "204",
+         "recordSeries": false,
+         "mystroServiceId": "1315",
+         "programMetadata": {
+            "description": "A woman claims her husband was gunned down by intruders.",
+            "shortDescription": "A woman claims her husband was gunned down by intruders.",
+            "longDescription": "Investigators unravel a twisted tale of lust, greed and deception after a woman claims her husband was gunned down by intruders.",
+            "imageUrl": "/imageserver/program/EP003915550410",
+            "title": "Forensic Files",
+            "tmsProgramId": "EP003915550410",
+            "genres": [
+               "Reality",
+               "Crime"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Sunday School Ambush",
+            "tmsSeriesId": "185346",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1410071400,
+         "tmsProgramId": "EP003915550410",
+         "settings": {
+            "durationSeconds": 1798,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 0,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140907 02:30:00 -0400"
+         }
+      }
+   ],
+   "lastStartTime": 1410071400,
+   "totalCount": 52
+}

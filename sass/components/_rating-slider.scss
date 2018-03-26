@@ -1,0 +1,58 @@
+
+
+//
+// Rating Slider
+// --------------------------------------------------------------------------------
+
+// A custom range-slider-ish control in Parental Controls,
+// used to block various content ratings.
+
+.rating-slider {
+    display: block;
+}
+
+.rating-tile {
+    background-color: $link-color;
+    border: 4px solid transparent;
+    color: inherit;
+    display: inline-block;
+    margin: 1%;
+    padding: 2% 0;
+    text-align: center;
+    width: 12%;
+
+    &:hover, &:focus {
+        background-color: darken($link-color, 10%);
+        border-color: $link-color;
+        color: inherit;
+        cursor: pointer; // no `href`
+    }
+
+    &.blocked {
+        @include twcicon-svg("lock", "inverse");
+        background-color: $muted-color;
+        color: $text-color-inverse;
+        
+        .label {
+            color: black;
+        }
+
+        &:hover, &:focus {
+            @include twcicon-svg("lock", "strong");
+            .label {
+                color: $link-color;
+            }
+        }
+
+        .twcicon-svg-lock {
+            visibility: visible;
+        }
+    }
+
+    .twcicon-svg-lock {
+        visibility: hidden;
+    }
+    .label-content {
+        height: 40px;
+    }
+}

@@ -1,0 +1,83 @@
+<div id="info-pane" class="tab-pane" role="tabpanel">
+    <div class="row episode-list-container">
+        <div class="col-md-10" id="episode-container">
+            <product-episode
+                ng-if="$ctrl.elevated"
+                elevated
+                episode="$ctrl.elevated.episode"
+                description="$ctrl.elevated.description"
+                selected="$ctrl.elevated.episode==$ctrl.selectedEpisode"
+                on-selected="$ctrl.selectEpisode($ctrl.elevated.episode)"
+                role="application">
+            </product-episode>
+            <div class="list-group" ng-repeat="season in $ctrl.seasons">
+                <!-- TODO(@dura): abstract this to `list-item-heading.html` template -->
+                <div class="row list-group-item"><h6 role="heading" aria-level="2" class="list-group-item-heading">{{season.name}}</h6></div>
+                <div role="application">
+                <product-episode
+                    ng-repeat="episode in season.episodes"
+                    episode="episode"
+                    selected="episode==$ctrl.selectedEpisode"
+                    on-selected="$ctrl.selectEpisode(episode)">
+                </product-episode>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" role="application">
+            <aside affix='{scroller : "#product", container: ".episode-list-container", threshold: 160}' id="episode-details">
+                <div class="row program-header">
+                    <div class="col-md-16">
+                        <p class="h2">{{$ctrl.selectedEpisode.title}}</p>
+                        <p class="subtitle h4" aria-level="2" ng-if="$ctrl.selectedEpisode.seasonNumber && $ctrl.selectedEpisode.episodeNumber">Season {{$ctrl.selectedEpisode.seasonNumber}} Ep {{$ctrl.selectedEpisode.episodeNumber}}</p>
+                        <p class="orig-airdate h4"><small>{{ $ctrl.originalAirDateMessage()}}</small></p>
+                        <p class="unavailable-message h4" ng-if="$ctrl.availabilityMessage($ctrl.selectedEpisode)"><small>{{$ctrl.availabilityMessage($ctrl.selectedEpisode)}}</small></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-16">
+                        <p class="program-summary"><ovp-rating rating="$ctrl.selectedEpisode.allRatings"></ovp-rating><span class="synopsis">{{$ctrl.selectedEpisode.longDescription}}</span></p>
+                    </div>
+                </div>
+
+                <div class="row episode-actions">
+                    <div class="col-md-16">
+                        <button class="btn btn-default btn-left btn-block"
+                            ng-class="{'btn-inverse': disabled(item.actionType)}"
+                            type="button"
+                            ng-repeat="action in $ctrl.selectedEpisode.actions | filter:{actionType:'!otherWaysToWatch'}"
+                            action="action"
+                            asset="$ctrl.selectedEpisode"
+                            tabindex="-1"
+                            aria-label="{{actionTypeToLabel(item)}}"
+                            aria-describedby="{{id(item)}}"
+                            selectable
+                            ng-click="productActionClicked(item, asset, $event)"
+                            focus-when="item.focus"
+                            ng-focus="item.focus=false"
+                            product-button-actions>
+                            <span class="spinner" ng-show="productLoading"></span>
+                            <svg class="svg-icon" ng-show="!productLoading" aria-hidden="true">
+                                <use xlink:href="{{actionTypeToButtonGraphic(item)}}" svg-path />
+                            </svg>
+                            {{actionTypeToLabel(item)}}
+                            <span id="{{id(item)}}" class="sr-only">
+                                {{actionTypeToHoverText(item)}}
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <a ng-repeat="action in $ctrl.selectedEpisode.actions | filter: {actionType: 'otherWaysToWatch'}"
+                    href="#"
+                    tabindex="-1"
+                    action="action"
+                    asset="$ctrl.selectedEpisode"
+                    focus-when="item.focus"
+                    ng-click="productActionClicked(item, asset, $event)"
+                    selectable
+                    product-button-actions>Other ways to watch...</a>
+            </aside>
+        </div>
+    </div>
+</div>

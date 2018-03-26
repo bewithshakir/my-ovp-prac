@@ -1,0 +1,149 @@
+.edit-scheduled {
+    width: 474px;
+    top: 15px;
+
+    .title {
+        font-size: 14px;
+        color: $white;
+    }
+
+    .date {
+        font-size: 14px;
+        color: $blue01;
+    }
+
+    .toggle-menu {
+        left: 110px;
+        position: relative;
+        width: 364px;
+        clear: both;
+        top: 10px;
+
+        ul {
+            list-style: none outside none;
+            margin-left: 0;
+            overflow: hidden;
+            padding-left: 0;
+
+            li {
+                float:left;
+                @include gradLightBlue;
+                color: $grey53;
+                display: block;
+                line-height: 28px;
+                text-align: center;
+                text-decoration: none;
+                width: 182px;
+
+                &.selected {
+                    @include gradDarkBlue;
+                    color: $white;
+                }
+
+                &:hover {
+                    @include gradMidBlue;
+                }
+            }
+        }
+    }
+
+    .select-box {
+        position: relative;
+        height: 65px;
+        .dropdownArrow {
+            left: 325px;
+            position: absolute;
+            top: 10px;
+        }
+    }
+
+    .select-box > label {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+    }
+
+    .select-box select {
+        width: 364px;
+    }
+
+    .selectbox-head {
+        left: 70px;
+    }
+
+    .button-row {
+        @include btn-menu-left-align;
+        text-align: right;
+        margin-bottom: 20px;
+        .cancel-btn {
+            margin-right: 10px;
+        }
+    }
+
+    .edit-schedule-form {
+        top: 15px;
+        position: relative;
+    }
+
+    .ovp-dropdown-list-container.btn-group {
+        width: 350px;
+        margin-top: 15px;
+        font-size: 16px;
+
+        .btn {
+            background: url(../images/icons.png?) no-repeat scroll right 50px #000;
+            border-bottom: 1px solid #444;
+            border-left: 1px solid #444;
+            cursor: pointer;
+            font-size: 16px;
+            height: 35px;
+            font-weight: normal;
+            .caret {
+                display: none;
+            }
+        }
+
+        .btn-lg.round {
+           border-radius: 5px;
+        }
+
+        .btn-caret {
+            background: url(../images/icons.png?) no-repeat scroll right -950px #000;
+        }
+    }
+
+    .ovp-dropdown-list-container .dropdown-list {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 100px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        border-left: 1px solid #444;
+        border-bottom: 1px solid #444;
+        border-right: none;
+        border-top: none;
+        border-radius: 0 5px 5px 5px;
+        list-style: none;
+        top: 35px;
+
+        li {
+            padding-top: 15px;
+            font-size: 16px;
+            height: 35px;
+            padding: 8px;
+            background-color: black;
+
+            &:focus,
+            &:hover,
+            &.selected {
+                background-color: $grey56;
+            }
+        }
+    }
+
+    .floating-right-button {
+        float: right;
+    }
+}

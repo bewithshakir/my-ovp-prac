@@ -1,0 +1,43 @@
+<site-header class="site-header-container login"></site-header>
+<div ng-controller="LoginController" class="login-container kite-cell kite-cell-12">
+    <img class="tour-collage" alt="" ovp-src="/images/tour-collage.jpg" width="1600" height="900" />
+    <div id="content" class="main-content" role="main">
+        <section class="kite-grid kite-no-gutters" ng-if="login.subView">
+            <div class="login-modal kite-cell kite-cell-3-gt-sm kite-cell-6-gt-md kite-cell-5-gt-lg kite-cell-6-gt-xl kite-cell-3-gt-xxl" ng-switch on="login.subView">
+                <div class="kite-card kite-card-active">                   
+                    <div class="login-form" ng-switch-when="form">
+                        <header>
+                             <!-- <a href="https://www.twctv.com" title="Spectrum TV&reg;"><img class="logo" alt="login page" ovp-src="/images/grey-texture-600@3x.png" /></a>  -->
+                            <h1 class="kite-h3">Sign In to Get Started</h1>
+                            <h1 class="sr-only">Log In</h1>
+                            <p aria-hidden="true" class="divider">
+                                <span aria-hidden="true" class="divider">or</span>
+                            </p>                     
+                        </header>
+                        <ovp-login-form></ovp-login-form>
+                    </div><!-- /.login-form -->
+                    
+                    <div class="login-fatal-error" ng-switch-when="fatal" role="alert">
+                        <ng-include src="fatalErrorTemplate"></ng-include>
+                    </div>
+                    
+                    <div class="parental-form" ng-switch-when="parental" role="alert">
+                        <header>
+                            <h1>Safety at Your Fingertips</h1>
+                        </header>
+                        <p>Set up Parental Controls to block certain ratings or channels to be accessible only with your 4-digit PIN. You can find Parental Controls in Settings.</p>
+                        <form name="parentalForm" role="form" ng-submit="parentalControlsWarningAccepted()" novalidate>
+                            <div class="form-group">
+                                <div class="spinner" ng-if="parentalControlsSpinner"></div>
+                                <button class="btn btn-success btn-lg btn-block parental-submit" href="#" ng-click="parentalControlsWarningAccepted()" ng-if="!parentalControlsSpinner" focus-once>Got It</button>
+                            </div>
+                        </form>
+                    </div>
+                
+                </div><!-- /.kite-card -->
+            </div><!-- /.login-modal -->
+        </section><!-- /.contents -->
+
+        <feature-tour></feature-tour>
+    </div>
+</div>

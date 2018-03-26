@@ -1,0 +1,23 @@
+<div class="edit-scheduled">
+    <span id="record-cdvr-series-title" class="sr-only">record series</span>
+    <span id="record-cdvr-series-description" class="sr-only">{{$ctrl.asset.title}}, {{$ctrl.channels[0].callSign}}, {{$ctrl.channels[0].chanNum}}</span>
+    <div class="spinner" ng-if="$ctrl.loadingTracker.active()"></div>
+    <div ng-if="!$ctrl.loadingTracker.active()">
+        <ovp-channel channel-id="$ctrl.displayChannel" tms-guide-id="$ctrl.tmsGuideId"></ovp-channel>
+    <div class="title" ng-bind="$ctrl.asset.title"></div>
+        <form class="edit-schedule-form">
+            <div class="select-box">
+                <label for="recordOnlyNew">Record</label>
+                <ovp-dropdown-list items="$ctrl.options.recordOnlyNew" focus-once config="{onSelect: $ctrl.onSelect('recordOnlyNew'), focusOnLoad: true, activeIndex: $ctrl.form.recordOnlyNew, buttonLabel: 'record'}"></ovp-dropdown-list>
+            </div>
+            <div class="select-box">
+                <label for="tmsGuideId">Channel</label>
+                <ovp-dropdown-list items="$ctrl.options.tmsGuideId" config="{onSelect: $ctrl.onSelect('tmsGuideId'), activeIndex: $ctrl.form.tmsGuideId, buttonLabel: 'channel'}"></ovp-dropdown-list>
+            </div>
+            <div class="button-row">
+                <ovp-button class="floating-right-button" label="Confirm" ng-click="$ctrl.confirm()"></ovp-button>
+                <ovp-button label="Cancel" ng-click="$ctrl.cancel()"></ovp-button>
+            </div>
+        </form>
+    </div>
+</div>

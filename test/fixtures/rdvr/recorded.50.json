@@ -1,0 +1,84 @@
+{
+   "recordings": [
+      {
+         "displayChannel": "1203",
+         "recordSeries": false,
+         "mystroServiceId": "299",
+         "programMetadata": {
+            "description": "Kristen's revelation shocks Marlena; Kayla has bad news for John's friends and family.",
+            "shortDescription": "Kristen's revelation shocks Marlena; Kayla has bad news for John's friends and family.",
+            "longDescription": "Kristen's revelation shocks Marlena; Brady kisses Theresa; Kayla has bad news for John's friends and family; Nicole's efforts to manipulate Eric blow up in her face.",
+            "imageUrl": "/imageserver/program/EP000011893769",
+            "title": "Days of our Lives",
+            "tmsProgramId": "EP000011893769",
+            "genres": [
+               "Drama"
+            ],
+            "actors": [
+               "Kristian Alfonso",
+               "John Aniston",
+               "Camila Banus",
+               "Blake Berris"
+            ],
+            "tmsSeriesId": "183909",
+            "rating": "TV-14",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409677200,
+         "tmsProgramId": "EP000011893769",
+         "settings": {
+            "durationSeconds": 2830,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 767,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 13:00:00 -0400"
+         }
+      },
+      {
+         "displayChannel": "1222",
+         "recordSeries": false,
+         "mystroServiceId": "220",
+         "programMetadata": {
+            "description": "Railway inspectors question whether Sir Topham Hatt needs two fire engines.",
+            "shortDescription": "Railway inspectors question whether Sir Topham Hatt needs two fire engines.",
+            "longDescription": "Railway inspectors question whether Sir Topham Hatt needs two fire engines; Gordon loses water after getting hit by a stone.",
+            "imageUrl": "/imageserver/program/EP005236340705",
+            "title": "Thomas & Friends",
+            "tmsProgramId": "EP005236340705",
+            "genres": [
+               "Animation",
+               "Kids & Family",
+               "Reality"
+            ],
+            "actors": [
+
+            ],
+            "episodeTitle": "Fire & Water",
+            "episodeNumber": 2,
+            "seasonNumber": 10,
+            "tmsSeriesId": "186061",
+            "rating": "TV-Y",
+            "starRating": 0.0
+         },
+         "startUnixTimestampSeconds": 1409679000,
+         "tmsProgramId": "EP005236340705",
+         "settings": {
+            "durationSeconds": 1372,
+            "eventFlags": [
+
+            ],
+            "resumeOffsetSeconds": 429,
+            "deleteWhenSpaceIsNeeded": true
+         },
+         "debugDoNotParse": {
+            "startTimeFormattedDoNotParse": "20140902 13:30:00 -0400"
+         }
+      }
+   ],
+   "lastStartTime": 1409679000,
+   "totalCount": 52
+}

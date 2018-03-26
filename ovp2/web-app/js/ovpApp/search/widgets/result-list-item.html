@@ -1,0 +1,16 @@
+<div class="frame" ng-click="$ctrl.click()" focus-when="$ctrl.focusOnLoad" role="listitem">
+    <span class="sr-only">{{::$ctrl.category}}</span>
+    <span class="sr-only">{{$ctrl.getTitlePrefix()}}</span>
+    <div class="col-xs-7 title truncate">
+        {{$ctrl.item.title}}
+    </div>
+    <div class="col-xs-7 type">
+        {{$ctrl.item.resultDisplay}}
+    </div>
+    <div ng-show="!$ctrl.item.isEntitled" class="col-xs-2 status">
+      <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" aria-label="key icon"></span>
+    </div>
+    <div ng-show="$ctrl.item.isEntitled && $ctrl.isBlocked" class="col-xs-2 status">
+      <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="lock icon"></span>
+    </div>
+</div>

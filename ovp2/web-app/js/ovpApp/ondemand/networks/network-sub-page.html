@@ -1,0 +1,24 @@
+<!-- Network pages bloat the size of the subheader, so some extra space is needed -->
+<div ng-if="$ctrl.data.type === 'category_list'" class='network-2-tier-padding'></div>
+<div ng-if="$ctrl.data.type == 'pods_with_assets'" class='network-3-tier-padding'></div>
+
+<ondemand-category 
+    ng-if="$ctrl.data.type === 'media_list'" 
+    category="$ctrl.data" 
+    page="$ctrl.page"
+    hide-logo="true">
+</ondemand-category>
+
+<network-category-list 
+    ng-if="$ctrl.data.type === 'category_list'" 
+    category-list="$ctrl.data" 
+    page="$ctrl.page" 
+    index="$ctrl.index">
+</network-category-list>
+
+<network-three-tier 
+    ng-if="$ctrl.data.type === 'pods_with_assets'" 
+    data="$ctrl.data" 
+    page="$ctrl.page" 
+    index="$ctrl.index">
+</network-three-tier>

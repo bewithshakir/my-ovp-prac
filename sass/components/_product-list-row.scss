@@ -1,0 +1,83 @@
+// TODO(@dura): This has been removed from product pages, but is still
+// used in DVR lists, and probably On Demand lists as well.
+
+$rowInfoFontSize: 14px;
+
+@mixin overflow-row-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin row-item {
+  @extend %clearfix;
+  &:hover {
+    @include list-row-hover;
+    cursor: pointer;
+  }
+  cursor: default;
+  opacity: 0.85;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  line-height: 44px;
+  border-bottom: 1px solid $grey13;
+}
+
+@mixin row-check-box {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  float: left;
+}
+
+@mixin row-title {
+    @include overflow-row-text;
+    width: 40%;
+    float: left;
+    font-size: 16px;
+    .program-title {
+      color: $white;
+      cursor: pointer;
+    }
+    .episode-title {
+      cursor: pointer;
+      margin-left: 3px;
+      font-size: 14px;
+      color: $blue01;
+    }
+}
+
+@mixin row-series-episode {
+  @include overflow-row-text;
+  font-size: $rowInfoFontSize;
+  width: 15%;
+  text-align: left;
+  float: left;
+  margin-left: 2%;
+  min-height: 1px; /* to display empty cells */
+}
+
+@mixin row-genre {
+  @include overflow-row-text;
+  font-size: $rowInfoFontSize;
+  width: 8%;
+  float: left;
+  margin-left: 20px;
+  min-height: 1px; /* to display empty cells */
+}
+
+@mixin row-channel {
+  @include overflow-row-text;
+  float: left;
+  color: $grey06;
+}
+
+@mixin row-rating {
+  @include overflow-row-text;
+  font-size: $rowInfoFontSize;
+  width: 5%;
+  margin-left: 2%;
+  float: left;
+  min-height: 1px; /* to display empty cells */
+}

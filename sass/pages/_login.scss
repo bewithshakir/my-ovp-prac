@@ -1,0 +1,132 @@
+//
+// Login page
+// --------------------------------------------------
+
+// Styling specific to the Login page.
+
+.login-page, .specu-welcome {
+
+    .login-container {
+        padding: 0;
+    }
+
+    .main-content {
+        margin-top: 0;
+        position: relative; // child positions
+    }
+
+    .empty-alert { // For alert without content
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tour-collage {
+        display: none;
+        opacity: 0.5;
+        position: fixed;
+
+        @include breakpoint("sm") {
+            display: block;
+        }
+    }
+
+    .legalise-header {
+        display: none;
+
+        @include breakpoint("sm") {
+            background-image: linear-gradient(to bottom, $penumbra, $antumbra);
+            display: block;
+            margin-top: 0;
+            padding-top: 8px;
+            position: absolute;
+            left: 0;
+            z-index: 1; // Move above `.tour-collage`;
+            width: 100%;
+        }
+
+        @include breakpoint("md") {
+            .tou {
+                text-align: right;
+            }
+        }
+    }
+
+    .tour {
+        position: relative;
+    }
+
+    .explore-prompt {
+        background-image: linear-gradient(to top, $umbra, $antumbra);
+        color: $text-color;
+        cursor: pointer;
+        margin-bottom: 0;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+
+    .site-footer {
+        position: relative; // get above `fixed` image
+    }
+
+    label {
+        color: inherit;
+    }
+
+    .wrap {
+        min-width: auto;
+    }
+
+    .parental-form {
+        h1 {
+            font-size: 34px;
+            font-weight: normal;
+        }
+    }
+
+    .description {
+        margin: 20px 0;
+    }
+
+    .btn-continue {
+        min-width: 300px;
+        height: 40px;
+    }
+
+    .alert.alert-danger {
+        background-color: $kite-white;
+        border: 1px solid $kite-dark-red;
+        color: $kite-dark-red;
+
+    
+        .login-error {
+            display: flex;
+            
+            .error-icon {
+                font-size: 28px;
+                margin-right: 20px;
+            }
+            .error-message {
+                flex-grow: 1;
+                margin-left: 10px;
+                
+                a {
+                    color: $kite-dark-red;
+                    font-weight: normal;
+                    text-decoration: underline;
+                }
+
+                p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.specu-welcome {
+    text-align: center;
+    .title {
+        font-size: 28px;
+    }
+}

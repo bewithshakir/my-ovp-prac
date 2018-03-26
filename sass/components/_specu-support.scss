@@ -1,0 +1,85 @@
+.support-info-message {
+    .modal-content {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+.specu-support-info-container {
+    width: 320px;
+	border-radius: 4px;
+	background-color: #002133;
+	box-shadow: 0 4px 12px 0 rgba(183, 206, 229, 0.3);
+    border: solid 1px #000000;
+
+    .close-icon-container {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 17px;
+        height: 17px;
+
+        .close-icon {
+            position: absolute;
+            height: 17px;
+            width: 17px;
+        }
+    }
+
+    .info-icon-container {
+        margin: 40px auto 0 auto;
+        height: 24px;
+        width: 24px;
+    }
+
+    h1 {
+        margin: 16px auto 0 auto;
+        width: 288px;
+        height: 48px;
+        font-family: Rutledge;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .specu-university-info-container {
+        margin: 28px auto 0 auto;
+        list-style: none;
+        padding: 0;
+        .info {
+            margin: 12px auto 0 auto;
+            width: 256px;
+            font-family: Rutledge;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            color: #ffffff;
+
+            // Override link color
+            a, a:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .buttonHolder {
+        margin: 32px auto 48px auto;
+        width: 288px;
+        height: 42px;
+    }
+
+    .ok-button {
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #0073d1;
+        border: none;
+
+        &:hover {
+            background-color: #0d92ff;
+        }
+    }
+}

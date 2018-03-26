@@ -1,0 +1,86 @@
+
+
+//
+// Dropdown menus
+// --------------------------------------------------------------------------------
+
+.ooh-nav {
+    position: relative;
+    li {
+      &.dropdown-hover {
+        position: static;
+      }  
+    }
+    .dropdown {
+        a {
+           &.divider {
+                height: 14px;
+            }
+        }
+        &:focus .ooh-icon, &:hover .ooh-icon{
+            background: url("../images/ooh-icon-hover.svg?{{CACHE-VERSION}}") top left no-repeat;
+        }
+    }
+}
+.dropdown-container {
+    a {
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        border-width: 1px 0 0;
+        min-width: 304px;
+        &.tooltip-box {
+            position: absolute;
+            left: -143px;
+            top: 29px;
+            padding: 0;
+            margin: 0;
+            &.top:before {
+                height:11px;
+                width:11px;
+                top: -5px ;
+            }
+        }
+        .caption {
+            margin: 0;
+            padding: 18px 20px;
+            p {
+                font-weight: 300;
+                margin: 0;
+                b {
+                    font-weight: 500;
+                }
+            }
+            p + p {
+                margin-top: 10px;
+            }
+        }
+
+        > li {
+            > a {
+                font-weight: $light;
+                padding: 8px 24px;
+            }
+        }
+
+        &.right-align {
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
+// Special dropdown that expands on :hover instead of click.
+.dropdown-hover {
+    &:hover,
+    &:focus {
+        .dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.dropdown-toggle:focus {
+    outline: 3px solid $brand-primary;
+}

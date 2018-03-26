@@ -1,0 +1,14 @@
+<div class="modal-kite" role="modal">
+	<button type="button" class="close-button" aria-label="Close" ng-click="$ctrl.modalInstance.close('closed by user')"><span aria-hidden="true">&times;</span></button>
+	<div class="modal-kite-header">
+	    <h3 class="modal-title" id="modal-title" ng-bind-html="$ctrl.title"></h3>
+	</div>
+	<div class="modal-kite-body" id="modal-body" ng-bind-html="$ctrl.body"></div>
+	<div class="modal-kite-footer">
+		<button class="btn btn-secondary" type="button" ng-if="$ctrl.secondaryButtonText" ng-bind-html="$ctrl.secondaryButtonText" ng-click="$ctrl.onSecondaryButton()">Decline</button>
+	    <button class="btn btn-primary" type="button" ng-if="$ctrl.primaryButtonText" ng-bind-html="$ctrl.primaryButtonText" ng-click="$ctrl.onPrimaryButton()">Agree</button>
+	    <div ng-if="$ctrl.tertiaryButtonText" >
+	    	<a href="#" ng-bind-html="$ctrl.tertiaryButtonText" ng-click="$ctrl.onTertiaryButton()"></a>
+    	</div>
+	</div>
+</div>

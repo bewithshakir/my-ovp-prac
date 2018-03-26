@@ -1,0 +1,48 @@
+<div class="sub-header" style="min-height: 50px" role='navigation' aria-label="{{$ctrl.options.networkName() ? $ctrl.options.networkName() + ' network' : 'on demand'}}">
+    <div class='ondemand-back'>
+        <a ng-show="$ctrl.options.showBack" ng-click="$ctrl.goBack()" class="back-to" focus-on="{event: 'ondemand:setSubheaderOptions', predicate: '$data.showBack'}" href="#" tabindex="0">
+            <span class="icon"></span>
+            Back to {{$ctrl.options.backString}}
+        </a>
+    </div>
+    <div class="sub-header-container" role='presentation'>
+        <div class="sub-menu-center" ng-if="$ctrl.options.showFrontDoor" role='presentation'>
+            <ul class="sub-menu">
+                <li ng-repeat='item in $ctrl.menuItems'>
+                    <a aria-label="{{item.name}}{{$ctrl.isSelected(item) ? ', current page' : ''}}"
+                        ui-sref="{{$ctrl.getState(item)}}"
+                        ui-sref-active="selected"
+                        ng-click="$ctrl.selectSubheading(item);"
+                        ng-class="{'last-submenu-item': $last}">
+                        {{item.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-menu-center" ng-if="$ctrl.options.showNetworkLogo">
+            <h1 class='sr-only'>{{$ctrl.options.networkName()}}</h1>
+            <img class="network-logo" ng-src="{{$ctrl.options.networkLogoUrl()}}" role="presentation"></img>
+        </div>
+        <div ng-if="$ctrl.options.showNetwork3Tier" class="networkLogoSeparator"></div>
+        <div ng-if="$ctrl.options.showNetwork3Tier" class="sub-menu-center network3Tier">
+            <ovp-carousel items="$ctrl.options.childNetworks()" options="{showReturnArrow: false, useArrows: false, supportVariableWidth: true}">
+                <li class="carousel-item" ng-repeat="network in $ctrl.options.childNetworks()">
+                    <div class='carousel-menu-item'>
+                        <a aria-label="{{network.name}}"
+                            ng-click="$ctrl.networkSelected(network)"
+                            ng-class="{selected: $ctrl.index == $index, 'last-submenu-item': $last, 'first-submenu-item': $first}"
+                            aria-selected="{{$ctrl.index == $index}}"
+                            href="#"
+                            tabindex="0">
+                            {{network.name}}
+                        </a>
+                    </div>
+                </li>
+            </ovp-carousel>
+            <p id="showNetwork3TierSRInstructions" class='sr-only'>Use the tab key to move between tabs</p>
+        </div>
+    </div>
+    <div class='ondemand-toggle'>
+        <grid-list-toggler ng-if="$ctrl.options.showToggle" id="'vodMinorCategoryViewMode'"></grid-list-toggler>
+    </div>
+</div>

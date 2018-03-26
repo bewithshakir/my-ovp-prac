@@ -1,0 +1,36 @@
+version: '2'
+services:
+  app:
+    image: ${CONTAINER_RELEASE_IMAGE}
+    container_name: "app-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+    ports:
+      - "80"
+      - "443"
+  selenium-hub:
+    image: selenium/hub
+    container_name: "selenium-hub-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+    expose:
+      - 4444
+  chrome:
+    image: selenium/node-chrome
+    container_name: "node-chrome-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+    volumes:
+      - /dev/shm:/dev/shm
+    environment:
+      HUB_PORT_4444_TCP_ADDR: "selenium-hub-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+      HUB_PORT_4444_TCP_PORT: 4444
+    expose:
+      - 5555
+    depends_on:
+      - selenium-hub
+  # firefox:
+  #   image: selenium/node-firefox
+  #   container_name: "node-firefox-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+  #   shm_size: 2g
+  #   environment:
+  #     HUB_PORT_4444_TCP_ADDR: "selenium-hub-${CI_COMMIT_SHA}-${CI_JOB_ID}"
+  #     HUB_PORT_4444_TCP_PORT: "4444"
+  #   expose:
+  #     - 5555
+  #   depends_on:
+  #     - selenium-hub

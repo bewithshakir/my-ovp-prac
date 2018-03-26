@@ -1,0 +1,51 @@
+
+
+//
+// Forms
+// --------------------------------------------------
+
+
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+
+label {
+    font-weight: bolder;
+}
+
+//
+// Form controls
+// -------------------------
+
+/* stylelint-disable selector-no-vendor-prefix */
+.form-control {
+    &:focus {
+        background-color: $gray-lighter;
+    }
+
+    &::-moz-placeholder {
+        font-style: italic;
+    }
+
+    &:-ms-input-placeholder {
+        font-style: italic;
+    }
+
+    &::-webkit-input-placeholder {
+        font-style: italic;
+    }
+}
+/* stylelint-enable selector-no-vendor-prefix */
+
+.help-block {
+    color: $text-color-weak;
+}
+
+.auth-form {
+    max-width: 336px;
+}
+
+label {
+  color: $grey46;
+  cursor: pointer;
+}

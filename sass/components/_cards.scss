@@ -1,0 +1,45 @@
+
+//
+// Cards
+// --------------------------------------------------------------------------------
+
+// Cards are usually displayed in grids, and usually contains
+// thumbnails of program artwork, but can also display channel
+// logos or video stills.
+
+.card {
+    display: inline-block;
+    // vertical-align: bottom;
+    width: 192px; // needed to keep caption from overflowing
+
+    .caption {
+        padding: 0.5rem;
+
+        > a,
+        > .title {
+            color: $text-color;
+        }
+
+        > .call {
+            float: left;
+            overflow: hidden;
+            text-align: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 75%;
+        }
+
+        > .chan {
+            float: right;
+            width: 25%;
+        }
+
+        > .role {
+            color: $text-color-weak;
+        }
+    }
+}
+
+.channel-card {
+    width: 144px; // keep caption from overflowing
+}

@@ -1,0 +1,24 @@
+
+
+//
+// Program summary
+// --------------------------------------------------
+
+// Used in BOBs and Product Pages, contains the description,
+// ratings, advisories, etc.
+
+.program-summary {
+
+    .twcicon-rating {
+        margin-right: 0.25em;
+    }
+
+}
+
+.product-page {
+	.program-summary {
+		// maximum height after which the buttons will not remain aligned with the image 
+		max-height: 120px;
+		overflow: hidden;
+	}
+}

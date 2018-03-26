@@ -1,0 +1,16 @@
+<div ng-if="$ctrl.hasRdvrVersion2()" class="my-recordings">
+    <rdvr-toolbar options="$ctrl.subheaderOptions"></rdvr-toolbar>
+        
+    <div class='recorded-list'>
+        <div ng-if="!$ctrl.loading && $ctrl.recordingGroups && $ctrl.recordingGroups.length === 0">There are no recordings on this DVR</div>
+        <ovp-grid-list items="$ctrl.recordingGroups" options="{showHeader: false, showPagination: false, id: 'myRecordings', useLocalStorage: true}" on-view-changed="$ctrl.viewChanged(view)">
+            <grid-items>
+                <ovp-product ng-repeat="group in $ctrl.recordingGroups" asset="group.episodes[0]" options="{enableRemove: true}" on-remove="$ctrl.singleDelete(asset, group)"></ovp-product>
+            </grid-items>
+            <list-items>
+                <rdvr-recording-list-item ng-repeat="group in $ctrl.recordingGroups" recording="group" state="group.deleteGroupSelection" on-state-changed="$ctrl.onCheckboxStateChanged(recording, state)"></rdvr-recording-list-item>
+                </div>
+            </list-items>
+        </ovp-grid-list>
+    </div>
+</div>

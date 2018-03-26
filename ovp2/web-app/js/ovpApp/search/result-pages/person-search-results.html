@@ -1,0 +1,13 @@
+<div>
+    <div>
+        Search for person: "{{vm.query}}" ({{vm.results.length}} results)
+    </div>
+    <ovp-grid-list items="vm.results" options="{title: vm.query + ' (' + vm.results.length + ' results)', id: 'personsearch'}">
+        <grid-items>
+            <ovp-product ng-repeat="asset in vm.results" asset="asset" options="{focusOnLoad: $first && vm.focusOnLoad}" category="$first ? (vm.query + ' (' + vm.results.length + ' results)') : ''" index="$index" ></ovp-product>
+        </grid-items>
+        <list-items>
+            <result-list-item ng-repeat="asset in vm.results" item="asset" options="{focusOnLoad: $first && vm.focusOnLoad}" category="$first ? (vm.query + ' (' + vm.results.length + ' results)') : ''" index="$index"></result-list-item>
+        </list-items>
+    </ovp-grid-list>
+</div>

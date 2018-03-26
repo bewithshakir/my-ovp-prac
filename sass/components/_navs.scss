@@ -1,0 +1,75 @@
+
+
+//
+// Navs
+// --------------------------------------------------------------------------------
+
+
+// Tabs
+// -------------------------
+
+.nav-tab-bar {
+    background-color: $gray-dark;
+    // box-shadow: 0 4px 2px 0 $gray-base;
+    box-shadow: 0 1px 3px rgba($gray-base, 0.12), 0 1px 2px rgba($gray-base, 0.24);
+    // box-shadow: 0 3px 6px rgba($gray-base, 0.15), 0 3px 6px rgba($gray-base, 0.25);
+    margin-bottom: $grid-gutter-width / 2;
+    padding: $grid-gutter-width * 0.25;
+}
+
+ul.nav-tabs {
+    border: 0;
+    margin-top: 0.25em; // offset inline descender space
+
+    > li {
+        margin-bottom: 0;
+        padding-left: 0;
+        margin-left: -1px; // overlap the borders
+        min-width: 128px; // consistent size
+
+        &:first-child {
+            margin-left: 0;
+
+            > a {
+                border-top-left-radius: $border-radius-large;
+                border-bottom-left-radius: $border-radius-large;
+            }
+        }
+
+        &:last-child {
+            > a {
+                border-top-right-radius: $border-radius-large;
+                border-bottom-right-radius: $border-radius-large;
+            }
+        }
+        // Legacy - this needs a comment
+        // stylelint-disable selector-no-qualifying-type
+        &.disabled {
+            > a {
+                border-color: transparent;
+                color: $gray;
+            }
+
+            > a:hover {
+                color: $gray;
+            }
+        }
+        // stylelint-enable selector-no-qualifying-type
+
+        > a {
+            border-color: $nav-tabs-border-color;
+            margin-right: 0;
+        }
+    }
+}
+
+// Nav variations
+// -------------------------
+
+.nav-center {
+    text-align: center;
+
+    .nav {
+        display: inline-block;
+    }
+}

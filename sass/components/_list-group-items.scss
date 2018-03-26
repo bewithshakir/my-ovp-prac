@@ -1,0 +1,141 @@
+
+
+//
+// Items
+// --------------------------------------------------
+
+// These are specifically the list items appearing in
+// lists of programs.
+
+.list-group-item {
+    @include twcicon-svg("lock", "weak");
+    @include twcicon-svg("key", "weak");
+
+    // This assumes all `.list-group-item` have been
+    // nested as their own row in a program list, so we need to wipe
+    // out the margins to account for the inner grid columns
+    &.row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+        .ooh {
+            display: none;
+        }
+
+        .action {
+            display: block;
+        }
+    }
+
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+        @include twcicon-svg("lock");
+        @include twcicon-svg("key");
+        color: $list-group-active-color;
+
+        .action {
+            color: $list-group-active-color;
+        }
+    }
+
+    &:hover,
+    &.hover {
+        .action {
+            color: $link-color;
+        }
+    }
+
+    .title,
+    .item-label {
+        color: $text-color;
+    }
+
+    .title-group,
+    .item-label-group {
+        display: flex;
+
+        > .title,
+        > .item-label {
+            flex-grow: 1;
+        }
+
+        > .twcicon-svg {
+            flex-shrink: 0; // keep the record icon from shrinking when there is an ellipsis
+        }
+    }
+
+    .bookmark {
+        padding-top: 0.5em;
+    }
+
+    .progress {
+        margin-bottom: 0;
+    }
+
+    .action {
+        color: $link-color;
+        display: none;
+
+        > .action-label {
+            float: left;
+        }
+
+        > .svg-icon {
+            float: left;
+            margin-left: 0.25em;
+            width: 1.25em;
+            height: 1.25em;
+        }
+    }
+
+    .twcicon-svg {
+        display: block; // remove whitespace for vertical alignment with item text
+    }
+
+    &.elevated {
+        background: $gray-darker;
+        padding: 25px 15px;
+        font-size: 20px;
+
+        .ep {
+            flex-shrink: 0;
+            margin-right: 8px;
+        }
+
+        .title {
+            max-height: 50px;
+            overflow: hidden;
+        }
+
+        .progress {
+            background: white;
+            margin: 15px 0px 5px 0px
+        }
+    }
+    
+    .ooh-icon {
+        transform: scale(0.75);
+        background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1627px;
+        display: inline-block;
+        margin-top: -5px; // hack because icon is too tall.
+        width: 32px;
+        height: 21px;
+    }
+}
+
+// Override the specific :focus bootstrap styles
+// stylelint-disable selector-no-qualifying-type
+a.list-group-item {
+    &:focus,
+    &.focus {
+        color: $list-group-active-color;
+    }
+}
+// stylelint-enable selector-no-qualifying-type

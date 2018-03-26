@@ -1,0 +1,58 @@
+<site-header class="site-header-container"></site-header>
+<div class="stream-plus-screen buy-screen">
+	<img class="bg-collage" alt="" ovp-src="/images/tour-collage.jpg" width="1600" height="900" />
+	<div class="content-block-gradient">
+		<div class="content-wrapper">
+			<h3>Start Your Spectrum TV <sup>TM</sup> Experience Today</h3>
+			<p>Here's an offer we think you'll love</p>
+		<br />
+		<div class="buy-flow">
+		    <h1 class="buy-flow-header">Introducing Spectrum TV Stream</h1>
+		    <div ng-repeat="step in $ctrl.steps" class="step step{{$index+1}}" ng-class="{'step-complete': step.number < $ctrl.activeStep}">
+				<div ng-if="$ctrl.showDivider(step, $index)" class="divider"></div>
+		        <base-offer
+					id="{{step.id}}"
+		        	ng-if="$first"
+					step-number="1"
+		            step-title="step.title"
+		            offerings="step.offerings"
+		            collapsed="step.collapsed"
+		            on-title-click="$ctrl.titleClick(step)"
+		            on-cancel="$ctrl.cancel()"
+		            on-back="$ctrl.previousStep(step)"
+		            on-continue="$ctrl.nextStep(step)">
+		        </base-offer>
+
+		        <extras-and-premiums
+					id="{{step.id}}"
+		            ng-if="$index === 1 || $index === 2"
+					step-number="$index + 1"
+		            step-title="step.title"
+		            offerings="step.offerings"
+		            collapsed="step.collapsed"
+		            on-title-click="$ctrl.titleClick(step)"
+		            on-update-price="$ctrl.updatePrice(price, component)"
+		            on-cancel="$ctrl.cancel()"
+		            on-back="$ctrl.previousStep(step)"
+		            on-continue="$ctrl.nextStep(step)">
+		        </extras-and-premiums>
+
+		        <review-step
+					id="{{step.id}}"
+		            ng-if="$index === 3"
+					step-number="$index + 1"
+		            step-title="step.title"
+					cart="$ctrl.cart"
+		            price="$ctrl.price()"
+		            collapsed="step.collapsed"
+		            on-title-click="$ctrl.titleClick(step)"
+		            on-cancel="$ctrl.cancel()"
+		            on-back="$ctrl.previousStep(step)"
+		            on-purchase="$ctrl.purchase(step, price)">
+		        </review-step>
+				<div ng-if="$index === 3 && step.collapsed" class="divider"></div>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="bottom-gradient"></div>

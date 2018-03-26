@@ -1,0 +1,14 @@
+<div class="collapsed-step">
+    <div>
+        <h2 class="title collapsed-title" ng-click="$ctrl.onTitleClick()"><span class="{{$ctrl.stepNumberClass}}">{{$ctrl.stepNumber}}.</span>{{$ctrl.title}}</h2>
+        <div class="{{$ctrl.itemBodyClass}}">
+            <span>{{$ctrl.regularCaption}}</span>
+            <span><strong>{{$ctrl.boldCaption}}</strong></span>
+        </div>
+    </div>
+    <div ng-if="$ctrl.price" class="info">
+        <div class="month">MONTH</div>
+        <div class="dollar-sign">$</div>
+        <div class="price">{{$ctrl.price | currency : '': 2}}</div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @author Christopher Dura [@dura](https://github.webapps.rr.com/dura)
+////
+
+/// VH and VW units can cause issues on iOS devices.
+/// To overcome this, create media queries that target the width, height, and orientation of iOS devices.
+/// It isn't optimal, but there is really no other way to solve the problem.
+///
+/// @param {String} $property - An unquoted CSS property.
+/// @param {Number} $value - Value in `vw` or `vh` units.
+///
+/// @example scss - Basic Usage Sass
+///     .widget {
+///         @include viewport-units(min-height, 75vh);
+///     }
+///
+/// @example css - Basic Usage CSS Output
+///     .widget {
+///         min-height: 75vh;
+///     }
+///
+///     @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+///         .widget {
+///             min-height: 768px;
+///         }
+///     }
+///
+///     @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+///         .widget {
+///             min-height: 576px;
+///         }
+///     }
+///
+/// @link http://caniuse.com/#feat=viewport-units VH and VW units can cause issues on iOS devices
+/// @link http://www.iosres.com/ iOS Resolution Quick Reference
+/// @link http://stephen.io/mediaqueries/
+@mixin viewport-units($property, $value) {
+    $unitless: strip-unit($value);
+    $factor: $unitless / 100;
+
+    #{$property}: $value;
+
+    @include breakpoint("ipad-portrait") {
+        #{$property}: 1024px * $factor;
+    }
+
+    @include breakpoint("ipad-landscape") {
+        #{$property}: 768px * $factor;
+    }
+}

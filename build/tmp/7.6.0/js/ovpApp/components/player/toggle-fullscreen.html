@@ -1,0 +1,4 @@
+<button tabindex="{{!$ctrl.isAccessibilityEnabled ? 0 : -1}}" ng-class="{'disabled': $ctrl.isAccessibilityEnabled}" aria-disabled="{{!$ctrl.isAccessibilityEnabled}}" id="full-screen-icon" class="fullscreen-button"  ng-click="$ctrl.toggle($event)" aria-label="video full screen" ng-mouseover="$ctrl.hovered = true" ng-mouseleave="$ctrl.hovered = false" prevent-default aria-pressed="{{$ctrl.fullscreenActive}}" ovp-fullscreen-toggle="$ctrl.onFullScreenToggle(isEnabled)" ng-focus="$ctrl.enlargeIcon = true" ng-blur="$ctrl.enlargeIcon = false">
+    <img alt="full screen" ng-src="{{$ctrl.fullScreenIcon()}}" />
+    <span class="sr-only" aria-live="polite">{{$ctrl.fullscreenActive ? 'Exit full screen' : 'Full screen'}}</span>
+</button>

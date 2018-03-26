@@ -1,0 +1,39 @@
+<div class="buyflow-step buyflow-review" ng-class="{collapsed: $ctrl.collapsed}">
+    <collapsed-step ng-if="$ctrl.collapsed"
+        item-body-class="'review-item-body'"
+        step-number="$ctrl.stepNumber"
+        step-number-class="'review-step-number'"
+        step-title="$ctrl.title"
+        on-title-click="$ctrl.onTitleClick()">
+    </collapsed-step>
+
+    <div ng-if="!$ctrl.collapsed">
+        <div class="header">
+            <h2 class="title"><span class="review-step-number">{{$ctrl.stepNumber}}.</span>{{$ctrl.title}}</h2>
+            <div class="purchase">
+                <div class="total">TOTAL</div>
+                <div class="price">{{$ctrl.price | currency: '$&nbsp;'}}</div>
+                <div class="tax">+ taxes and fees</div>
+            </div>
+        </div>
+        <div class="item-body review-item-body">
+            <div class="content">
+                Please accept and agree to the purchase agreement to complete your order.
+            </div>
+
+            <div class="content">
+                <input tabindex="-1" type="checkbox" class="square-checkbox" name="" id="purchaseAgreement" ng-checked="$ctrl.checked" ng-click="$ctrl.check()">
+                <label for="purchaseAgreement">I have read and agree to the purchase agreement.&nbsp;&nbsp;<a ng-click="$ctrl.openTerms()">View the purchase agreement.</a></label>
+            </div>
+
+        <div class="buttons">
+            <button ng-click="$ctrl.onCancel()" class="btn btn-cancel">Cancel</button>
+            <div class="pull-right">
+                <button ng-click="$ctrl.onBack()" class="btn btn-back">Back</button>
+                <button ng-click="$ctrl.purchaseClick()" class="btn btn-primary btn-continue">Purchase</button>
+            </div>
+        </div>
+
+        <div class="footer">Reflected on future Spectrum statements</div>
+    </div>
+</div>

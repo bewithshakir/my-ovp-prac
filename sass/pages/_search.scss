@@ -1,0 +1,252 @@
+// The width of a grid item column
+$grid-item-frame-width: 148;
+
+#searchResultsLoader{
+position:absolute;
+right:0;
+top:-5px
+}
+
+#search-page #gridHeader {
+    background-color: $grey131;
+    padding:0;
+    position: inherit;
+    width: 100%;
+}
+
+#search {
+    position: fixed;
+    display: none;
+    top: 0px;
+    z-index: $zIndexSearch;
+    height: 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    min-width: inherit;
+    max-width: inherit;
+    background-color: rgba(0,0,0,0);
+    overflow: auto;
+}
+
+body.search-active {
+    overflow: hidden;
+}
+
+.search-active #search  {
+    height: 100%;
+    background-color: $dark-blue;
+    display: block;
+}
+
+.search-container {
+    padding-bottom: 50px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.quickResults, .recentSearches, .searchResults {
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.quickResults, .recentSearches {
+    .container {
+        clear: both;
+        display: table;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-results-group {
+        vertical-align: top;
+        padding: 10px 10px;
+        display: inline-block;
+    }
+    .search-results-group.col-1 {
+        width: 25%;
+    }
+
+    .search-results-group.col-2 {
+        width: 50%;
+        .search-results {
+            column-count: 2;
+            column-gap: 6px;
+        }
+    }
+
+    .search-results-group.col-3 {
+        width: 75%;
+        .search-results {
+            column-count: 3;
+            column-gap: 6px;
+        }
+    }
+
+    .search-results-group.col-4 {
+        width: 100%;
+        .search-results {
+            column-count: 4;
+            column-gap: 6px;
+        }
+    }
+
+    .category-header {
+        text-align: center;
+        border-bottom: 2px solid $grey115;
+        margin-bottom: 12px;
+    }
+
+    .search-results {
+        text-align: left;
+    }
+
+    .search-result {
+        width: 100%;
+        display: inline-block;
+        color: $white;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 4px 6% 4px 6%;
+        line-height: 20px;
+        border: 1px solid transparent;
+
+        &:hover {
+            color: $blue01;
+            background-color: $grey104;
+        }
+
+        &.active {
+            color: $blue01;
+            background-color: $grey104;
+            border: 1px solid $blue07
+        }
+
+        &.search-clear {
+            border-top: 2px solid $grey115;
+        }
+
+        em {
+            color: $blue01;
+            font-style: normal;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+// TODO(@dura): Refactor these couple rules to be tied to a
+// `.classname` instead of a custom tag.
+sports-result-list-item {
+    .frame {
+        text-align: left;
+        height: 45px;
+        cursor: pointer;
+        &:hover {
+            color: $blue01;
+            background-color: $grey104;
+        }
+    }
+
+    .network {
+        text-align: right;
+    }
+
+    .type {
+        color: $blue01;
+    }
+}
+
+result-list-item {
+    .frame {
+        text-align: left;
+        height: 45px;
+        cursor: pointer;
+        &:hover {
+            color: $blue01;
+            background-color: $grey104;
+        }
+    }
+    .status {
+        height: 40px;
+        text-align: center;
+        position: relative;
+    }
+    .twcicon-svg-key, .twcicon-svg-lock {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.searchResults {
+        display:block;
+        margin: 0 24px 25px 24px;
+        clear:both;
+        thead tr:hover{ background-color:transparent; cursor: default; }
+        th { padding: 15px 0 22px 20px; text-align:left; font-weight: 300; font-size:1.25em;}
+        tr { background:url("../images/tbl-blk.gif?{{CACHE-VERSION}}") repeat-x 0 bottom transparent;
+                        cursor:pointer; padding-bottom:1px; height:40px; text-align:left;
+                        -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+                -moz-transition: all 0.3s ease-out;  /* FF4+ */
+                 -ms-transition: all 0.3s ease-out;  /* IE10? */
+                  -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+                     transition: all 0.3s ease-out;
+           &:hover{
+                cursor:pointer;
+                background-color:$grey104;
+             -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+                -moz-transition: all 0.3s ease-out;  /* FF4+ */
+                 -ms-transition: all 0.3s ease-out;  /* IE10? */
+                  -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+                     transition: all 0.3s ease-out;
+                        }
+
+                }
+
+        td { padding:12px 20px; text-align:left; line-height: 30px;
+                &.search-title { display:block; }
+
+                }
+
+}
+/*
+ * CHANNEL SEARCH STYLES
+ */
+
+#channelSearch {
+    position: absolute;
+    top: 5px;
+    margin: 0;
+    padding: 0;
+    z-index:3;
+
+    .cancelSearch{
+        background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll right -1358px $grey109;
+        height: 12px;
+        right: 5px;
+        position: absolute;
+        top: 7px;
+        width: 12px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .searchField {
+        @include gradLinearGeneric($grey109, $grey110);
+        border: 0 none;
+        padding: 5px 5px 5px 12px;
+        width: 164px;
+        height: 21px;
+        font-size: 12px;
+        color:$white;
+
+        &:focus {
+          color:$white;
+        }
+    }
+}

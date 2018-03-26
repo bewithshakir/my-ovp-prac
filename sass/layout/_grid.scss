@@ -1,0 +1,18 @@
+//
+// Grid
+// --------------------------------------------------------------------------------
+
+// Container widths
+//
+// Set a new XL container width and breakpoint for mega-monitors.
+
+.grid-container {
+    display: inline-block;
+    width:100%;
+}
+
+.container {
+    @media (min-width: $screen-xl-min) {
+        width: $container-xl;
+    }
+}

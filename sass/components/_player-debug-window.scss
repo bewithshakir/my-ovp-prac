@@ -1,0 +1,15 @@
+.player-debug-window-wrapper {
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    width: 500px;
+
+    .player-debug-window-container > div {
+        border: 1px solid;
+        background-color: black;
+    }
+    
+    button {
+       color: black;
+    }
+}

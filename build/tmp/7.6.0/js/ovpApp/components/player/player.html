@@ -1,0 +1,13 @@
+<div id="playerWrapper" ng-class="{fullscreen: $ctrl.ovpFullscreen.isEnabled()}" ng-style="!$ctrl.isValidPlayRoute() ? {visibility: 'hidden', height: '0', width: '0'} : {}"> <!-- setting the height to 0 fixes safari bug where the player stretches the size of the entire huge page and errors out -->
+    <div ng-if="$ctrl.preloading" class="video-loading">
+        <span class="sr-only" aria-live="assertive">Loading video player</span>
+        <div class="logo"><img width="300" ovp-src="images/logo-horiz-large.png"></div>
+        <div class="spinner"></div>
+    </div>
+
+    <div id="flash-content">
+        <flash-warning aria-hidden="{{$ctrl.playerInitialized || !$ctrl.isValidPlayRoute()}}" player-state-known="$ctrl.playerStateKnown"></flash-warning>
+    </div>
+    <player-controls player="$ctrl.player" ng-if="$ctrl.player && !$ctrl.preloading"></player-controls>
+    <toggle-debug ng-if="$ctrl.player && $ctrl.debug" player="$ctrl.player"></toggle-debug>
+</div>

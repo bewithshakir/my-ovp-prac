@@ -1,0 +1,13 @@
+<div id="quickResults" class="quickResults" fadein-immediate>
+    <div ng-if="$ctrl.layout.categories.length==0">No results matching "{{$ctrl.query}}". Please try another search</div>
+    <div class="search-results-container'">
+        <div class="container">
+            <div ng-class="category.class" ng-repeat="category in $ctrl.layout.categories" aria-label="{{category.title}} category use arrow keys to review items" tabindex="0" ng-keydown="$ctrl.onKeydown($event, category, $index, true)" role="listbox">
+                <h4 class="category-header">{{category.title | titleCase}}</h4>
+                <div class="search-results">
+                    <div class="search-result" ng-repeat="result in category.results | limitTo : $ctrl.limit * category.columns" ng-bind-html="result.titleWithHighlightTags | toTrusted" ng-click="$ctrl.click(result)" ng-keydown="$ctrl.onKeydown($event, category, $index, false)" role="listitem" tabindex="-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

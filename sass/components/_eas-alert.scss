@@ -1,0 +1,36 @@
+
+
+//
+// EAS alert
+// --------------------------------------------------
+
+.alert-eas {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.eas-label {
+    float: left;
+    font-weight: $bold;
+    padding: 0 ($grid-gutter-width / 2) 0 0;
+    text-align: right;
+
+    .svg-icon {
+        margin-top: -0.25em;
+    }
+}
+
+.eas-message {
+    color: $text-color;
+    float: left;
+    overflow: hidden;
+    width: 70%;
+}
+
+.site-alert > .alert {
+    .container-fluid {
+        @media (min-width: $screen-xl-min) {
+            width: $container-xl;
+        }
+    }
+}

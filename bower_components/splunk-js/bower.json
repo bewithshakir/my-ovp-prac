@@ -1,0 +1,20 @@
+{
+  "name": "splunk-js",
+  "authors": [
+    "Mayank Khandelwal <C-Mayank.Khandelwal@charter.com>"
+  ],
+  "description": "Javascript helper library to send messages to splunk",
+  "main": "splunk.dist.js",
+  "keywords": [
+    "splunk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

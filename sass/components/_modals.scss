@@ -1,0 +1,165 @@
+//
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+
+  .popupCloseClick {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: block;
+    cursor: pointer;
+    background: transparent url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0 -291px;
+    z-index: 10;
+  }
+}
+
+// Actual modal
+.modal-open {
+  .modal-content {
+    @extend %clearfix;
+
+    border: 1px solid $modal-content-border-color;
+    border-radius: 6px;
+    box-shadow: 1px 4px 10px #000;
+    background-color: $modal-content-bg;
+    background-image: url("../images/radial-bg2.jpg?{{CACHE-VERSION}}");
+    background-position: 40% 40%;
+    line-height: 1.3em;
+
+    padding: 16px;
+    font-size: 16px;
+    margin:0;
+
+    .error-message {
+      text-align: center;
+      color: #c4c3c3;
+
+      a, .base-button{
+        clear:both;
+        margin:20px auto 10px;
+        cursor:pointer;
+        button {
+          margin:20px auto 10px;
+        }
+        b{
+          background-image: none;
+          text-indent: 0;
+        }
+      }
+      a.msg-popup-link{
+        color:#00B3EF !important;
+      }
+    }
+
+    h2 {
+      color: #FFF;
+      margin-top: 0;
+      font-size: 125%;
+
+      &.alertBox {
+       text-align:center;
+      }
+    }
+  }
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $modal-backdrop-bg;
+  transition: opacity 0.3s ease-out;
+  // Fade for backdrop
+  &.fade { 
+    opacity: 0;
+  }
+  &.in { 
+    opacity: 0.5;
+  }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Scale up the modal
+@media (min-width: $screen-sm-min) {
+  .modal-dialog {
+    margin: 30px auto;
+  }
+  
+  // Modal sizes
+  .modal-sm { width: $modal-sm; }
+}
+
+@media (min-width: $screen-md-min) {
+  .modal-lg { width: $modal-lg; }
+  .modal-xl { width: $modal-xl; }
+}

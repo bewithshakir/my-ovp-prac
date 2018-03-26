@@ -1,0 +1,28 @@
+<a class="ovp-product ovp-product-item" ng-click="$ctrl.click($parent.$index)" href="#" tabindex="{{$ctrl.tabIndex() || 0}}" focus-when="$ctrl.focusOnLoad" ng-attr-focus-previous="{{$first && ($ctrl.hasPagination() && '.page:last-child:not(.active, .deactive)' || '.grid-btn') || undefined}}">
+    <div class="productInnerWrapper">
+        <span class="remove" aria-label="Remove" ng-click="$ctrl.remove($event, $index)" ng-if="$ctrl.options.enableRemove"><span class="twcicon twcicon-remove" aria-hidden="true"></span></span>
+        <div class="imageContainer">
+            <img class="box-art" lazy-src="{{::$ctrl.asset.imageUri({height:288})}}" alt="" fadein-onload>
+        </div>
+        <div class="playStatus" ng-class="$ctrl.statusOptions()">
+            <span class="status"></span>
+            <span class="twcicon-svg twcicon-svg-lock" ng-show="$ctrl.asset.isEntitled !== false && $ctrl.asset.isBlockedByParentalControls"></span>
+            <span class="twcicon-svg twcicon-svg-key" ng-show="$ctrl.asset.isEntitled === false"></span>
+            <div class="out-of-window-overlay"></div>
+            <span class="played" ng-style="{'width':$ctrl.asset.playedPct+'%'}"></span>
+            <span class="badge" ng-if="$ctrl.asset.newEpisodes.length>0">{{$ctrl.asset.newEpisodes.length}}</span>
+            <span class="flag"></span>
+        </div>
+        <div class="caption">
+            <div class="program-title-status" ng-class="{'full-width': $ctrl.options.hideNWLogo}">
+                <span class="sr-only">{{::$ctrl.category}}</span>
+                <span class="sr-only">{{$ctrl.getTitlePrefix()}}</span>
+                <div class="program-title truncate">{{::$ctrl.asset.title}}</div>
+                <div class="program-status truncate" ng-if="$ctrl.showRentalInfo() && !$ctrl.asset.rentalExpiration && $ctrl.isTvod()">{{::$ctrl.asset.price | currency}}</div>
+                <div class="program-status truncate" ng-if="$ctrl.showRentalInfo() && !$ctrl.asset.rentalExpiration && !$ctrl.isTvod()">{{::$ctrl.asset.price}}</div>
+                <div class="program-status truncate" ng-if="$ctrl.showRentalInfo() && $ctrl.asset.rentalExpiration">{{::$ctrl.asset.rentalExpiration}}</div>
+            </div>
+            <img alt="{{$ctrl.asset.network.name}}" ng-hide="$ctrl.options.hideNWLogo" ng-src="{{::$ctrl.asset.networkImage({height:81, default:false})}}" fallback-image="display:none" />
+        </div>
+    </div>
+</a>

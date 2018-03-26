@@ -1,0 +1,15 @@
+<span class='sr-only' role='status' aria-live='polite' aria-atomic='true' ng-bind="$ctrl.alertmessage"></span></span>
+
+<div class="row" ng-repeat="type in $ctrl.ratingTypes">
+    <h2 class="setting-label col-xs-16">Allowed {{type.name}}</h2>
+    <div class="row">
+        <div class="col-xs-16" role="application" arrow-nav="rating-tile">
+            <div class="rating-tile" ng-class="{blocked: $ctrl.isRatingBlocked(rating)}" ng-repeat="rating in $ctrl.separatedRatings[type.id]" ng-click="$ctrl.ratingClicked(rating)">
+                <span class="sr-only">{{$first ? ('Use arrow keys to navigate ' + type.name + ', press enter to block or unblock, press tab to exit') : ''}}</span>
+                <span class="sr-only">{{$ctrl.isRatingBlocked(rating) ? 'blocked' : ''}}</span>
+                <div class="label">{{rating.toUpperCase()}}</div>
+                <span class="twcicon-svg twcicon-svg-lock"></span>
+            </div>
+        </div>
+    </div>
+</div>

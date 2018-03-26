@@ -1,0 +1,658 @@
+
+
+/*
+ * HEADER STYLES
+ */
+
+
+#gridHeader {
+  @extend %clearfix;
+
+  position: absolute;
+  left:0;
+  right: 0;
+  height: 50px;
+
+  .timeControls {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .dateContainer {
+
+      height: 50px;
+      width: 164px;
+
+      z-index: $zIndexFront;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover .calendar {
+        background: url( "../images/icons.png?{{CACHE-VERSION}}" ) no-repeat scroll -28px -313px transparent;
+      }
+
+      .calendar {
+		    height: 21px;
+		    left: 115px;
+		    position: absolute;
+		    top: 13px;
+		    width: 21px;
+        background: url( "../images/icons.png?{{CACHE-VERSION}}" ) no-repeat scroll right -313px transparent;
+      }
+
+      .currentDate {
+
+        position: absolute;
+        top: 8px;
+        left: 13px;
+        color: $white;
+        font-size: 14px;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 19px !important;
+        cursor: pointer;
+
+        span.monthDay {
+          color: $blue01;
+        }
+
+        &:hover span {
+          @include linkStyle();
+        }
+
+      }
+
+    }
+
+  }
+
+
+  .filters {
+
+    //overflow: hidden;
+    /* position: absolute; */
+    /* top: 50px; */
+
+    .channelFilter {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      color:$grey128;
+
+      span {
+        color: $white;
+        font-weight:bold;
+      }
+
+      a {
+      	outline: none;
+        color:$grey128;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.selected {
+          color: $blue18;
+        }
+
+      }
+
+    }
+
+  }
+
+   .now {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 193px;
+    color: $grey107;
+    cursor:pointer;
+    font-size: 14px;
+    padding-left:23px;
+
+    i {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 15px;
+      height: 14px;
+      background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll left -1563px transparent;
+    }
+
+  }
+
+}
+
+/*
+ * TIME NAVIGATION STYLES
+ */
+
+#timeNavigationContainer {
+  position: absolute;
+  top: 0;
+  left: 154px;
+  right: 0;
+  height: 100%;
+  z-index: $zIndexFront;
+}
+
+#timeNavigation {
+
+  position: absolute;
+  left: 0px;
+  right: 20px;
+  font-size: 14px;
+  height: 100%;
+
+  .times {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 10px;
+    height: 100%;
+    overflow: hidden;
+   	display: none;
+
+    li {
+
+      position: relative;
+      float: left;
+      display: block;
+      height: 50px;
+
+      &:first-child a {
+        position: absolute;
+        left: 30px;
+      }
+
+      &.currentTime a {
+        color: $white;
+      }
+
+      a {
+        position: absolute;
+        color: inherit;
+        left: 20px;
+        top: 10px;
+        cursor: default;
+        text-decoration: none;
+        color: $grey07;
+        font-weight: 100;
+      }
+
+    }
+
+    .timeBlock {
+
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      ul {
+        height: 100%;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+  }
+
+  .prev, .next {
+
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 14px;
+    width: 22px;
+    cursor: pointer;
+
+    a {
+      display: block;
+      padding-top: 23px;
+      background: transparent url("../images/icons.png?{{CACHE-VERSION}}" ) no-repeat;
+      height: 0;
+    }
+
+  }
+
+  .prev {
+
+    a {
+
+      background-position: left -1272px;
+      overflow: hidden;
+
+      &:hover {
+        background-position: left -1295px;
+      }
+
+      &:active {
+        background-position: left -1318px;
+      }
+
+    }
+
+  }
+
+  .next {
+
+    right: 0;
+
+    a {
+
+      background-position: right -1272px;
+      overflow: hidden;
+
+      &:hover{
+        background-position: right -1295px;
+      }
+
+      &:active{
+        background-position: right -1318px;
+      }
+
+    }
+
+  }
+
+  div.disable {
+    display: none;
+  }
+
+}
+
+
+/*
+ * DATE PICKER STYLES
+ */
+
+#datePicker {
+
+  position: absolute;
+	font-size: 14px;
+  color: $grey07;
+  display: none;
+  z-index: $zIndexFront;
+	top:0;
+	right: 0;
+	bottom: 0;
+	left: 10px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  li {
+
+    position: relative;
+    height: 100%;
+    float: left;
+    display: block;
+    text-align: center;
+    border-left: 1px solid $grey58;
+    border-left: 1px solid $grey108;
+
+    &:first-child {
+      border: none;
+    }
+
+    .today {
+      color: $grey128;
+    }
+
+    .icon {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 15px;
+      height: 14px;
+      background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll left -1563px transparent;
+    }
+
+    a {
+
+      cursor:pointer;
+    	color: $grey02;
+    	padding-top: 0;
+      display: inline-block;
+      width: 100%;
+      padding-top: 6px;
+      height: 50px;
+
+      &:hover {
+      		background-color: $grey104;
+      }
+
+      &.selected {
+        @include linkStyle();
+        &>span, .today {
+        	color:$blue18 !important;
+  				text-decoration:none;
+        }
+      }
+
+      &.today {
+        color: $grey128;
+      }
+
+    	span {
+
+    		display:block;
+    		text-align:center;
+    		color: $grey128;
+    		font-weight: 100;
+    		line-height: 20px;
+
+        &:first-child {
+    			color: $white;
+    			font-weight: bold;
+    		}
+
+    	}
+
+    }
+
+  }
+
+}
+
+/*
+ * GRID STYLES
+ */
+
+#grid {
+  /* min-width:980px; */
+  position: relative;
+  /* overflow: hidden; */
+  /* padding-left: 20px; */
+  /* margin-bottom:-10px; */
+
+  .group {
+    position: absolute;
+  }
+
+  #channelBrowser {
+
+    padding-right: 20px;
+
+    .group {
+      left: 0px;
+      right: 0px;
+    }
+
+    .channel {
+
+      position: relative;
+      height: 62px;
+      border-top: 1px solid $grey58;
+      border-bottom: 1px solid $black;
+      color: $grey128;
+      //cursor: pointer;
+
+      .container {
+        position: absolute;
+        width: 164px;
+        height: 62px;
+        background: $grey15;
+      }
+
+      .logo {
+        position: absolute;
+        top: 5px;
+        left: 40px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .channelId {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+      }
+
+      .callSign {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        font-weight: 100;
+        font-size: 13px;
+      }
+
+      .favorite {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 16px;
+        height: 14px;
+        cursor: pointer;
+        background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1443px;
+
+        &.favOn {
+          background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat 0 -1463px;
+        }
+      }
+
+      .icon {
+        display: none;
+      }
+
+    }
+
+  }
+
+  #showBrowser {
+
+    position: absolute;
+    top: 0;
+    left: 164px;
+    right: 0px;
+    background-color: none;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid $grey58;
+    border-bottom: 1px solid $grey58;
+
+    .page {
+
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .group {
+        left: 0;
+        right: 0;
+      }
+
+      .guide-row {
+
+        height: 62px;
+        border-top: 1px solid $grey58;
+        border-bottom: 1px solid $black;
+        overflow: hidden;
+        width: 100%;
+
+       /*&:first-child {
+          border: none;
+        }*/
+
+        .showCell {
+
+          float: left;
+          font-size: 14px;
+          cursor: pointer;
+
+          &:first-child {
+           border: none;
+
+            .showContainer {
+              border-left: none;
+              padding-left: 10px;
+            }
+          }
+
+          &:hover {
+            background: $grey104;
+          }
+
+          .showContainer {
+
+            line-height: 1.35em;
+            border-left: 1px solid $grey58;
+            border-right: 1px solid $black;
+            height: 60px;
+            overflow: hidden;
+
+            .showHeader {
+
+              display: inline-block;
+              position:relative;
+
+              .showTitle {
+                display: block;
+                float: left;
+                padding: 9px 10px 0 20px;
+                white-space: nowrap;
+                overflow:hidden;
+              }
+
+              .vodLink {
+                display: block;
+                float: left;
+                background: url( "../images/guide_startover.png?{{CACHE-VERSION}}" ) no-repeat;
+                background-size: contain;
+                height: 20px;
+                width: 20px;
+                vertical-align: bottom;
+                margin-top: 7px;
+              }
+            }
+
+            .episodeTitleHolder {
+
+                line-height: 10px;
+						    margin-top: -3px;
+						    overflow: hidden;
+						    padding-left: 20px;
+
+               .recordIcon {
+                background: url( "../images/icons.png?{{CACHE-VERSION}}" ) no-repeat scroll right -702px transparent;
+                height: 16px;
+                width: 12px;
+                display: none;
+                margin-right: 3px;
+                vertical-align: bottom;
+              }
+
+               .seriesIcon {
+                background-position: left -722px;
+                width: 27px;
+              }
+
+
+              .episodeTitle {
+                color: $blue18;
+                font-size: 12px;
+                line-height: 14px;
+
+                .newShow {
+                  position: relative;
+                  text-align: center;
+                  margin-right: 6px;
+                  display: inline-block;
+                  color: $grey07;
+                  font-size: 11px;
+                  font-weight: bold;
+                  height: 12px;
+                  text-transform:uppercase;
+                  margin-top:1px;
+                }
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/*
+ * Loader for show data
+ */
+#pageLoader {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: $zIndexOverlay;
+  background-color: $black;
+  text-align: center;
+
+  .spinner{
+    display: inline-block;
+    margin-top: 1px;
+  }
+
+  .message{
+    position: absolute;
+    display: inline-block;
+    margin: 1px 15px;
+    line-height: 48px;
+    height: 48px;
+  }
+}
+
+.conflictReplacePopup{
+
+	.title{
+		margin: 0 auto;
+  	width: 73px;
+  }
+
+	#buttons{
+		margin: 10px auto;
+		width: 130px;
+
+		#confrimNo, #confirmYes{
+			float:left;
+			width:60px;
+			text-align: center;
+		}
+
+		#confrimNo{
+			margin-right:10px;
+		}
+	}
+}
+
+.confirmPopup{
+	width: 360px !important;
+	min-width: 300px !important;
+}

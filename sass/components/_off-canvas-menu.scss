@@ -1,0 +1,125 @@
+//
+// Off Canvas Menu
+// --------------------------------------------------------------------------------
+
+.stroke {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  display: block;
+}
+
+.modal-open {
+    .modal {
+        &.off-canvas-menu {
+            text-align: left;
+            margin: auto;
+            max-width: 1600px;
+            .modal-dialog {
+                margin: 0;
+                vertical-align: top;
+                height: 100%;
+                .modal-content {
+                    position: fixed;
+                    left: 0;
+                    background: #0A2742 url("../images/grey-texture-bluedrawer.png") bottom center/400px no-repeat;
+                    border: none;
+                    padding: 0;
+                    box-shadow: none;
+                    height: 100%;
+                    width: 400px;
+                    border-radius: 0;
+                    @media (max-height: 400px) {
+                        height: initial;
+                    }
+                }
+            }
+        }
+    }
+}
+.off-canvas-menu + .modal-backdrop {
+    background-color: $modal-lightbox-bg;
+}
+.off-canvas-scrollbar {
+    overflow: hidden;
+}
+.canvas-menu-wrapper {
+    font-weight: 500;
+
+    .grey-texture {
+        padding: 100px 55px;
+    }
+    .btn-wrapper {
+        margin-top: 45px;
+        .btn-primary {
+            background-color: $sky-blue1;
+        }
+        .btn {
+            width: 100%;
+            border-radius: 3px;
+            font-weight: 500;
+            padding: 0;
+            line-height: 42px;
+        }
+    }
+    .user-name {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 16px;
+        overflow: hidden;
+    }
+    .device-icon {
+        vertical-align: text-top;
+        margin-right: 14px;
+    }
+    .close-icon-container {
+        position: absolute;
+        left: 24px;
+        top: 28px;
+
+        .close-icon {
+            height: 22px;
+            width: 22px;
+        }
+    }
+    .nav {
+        margin-top: 0;
+        margin-left: 15px;
+        > li {
+            height: 42px;
+            object-fit: contain;
+            text-align: left;
+            line-height: 42px;
+            a {
+                color: #ffffff;
+                font-size: 20px;
+                line-height: 2.1;
+                display: inline;
+                padding: 10px 6px;
+                &:hover, &:focus {
+                    background-color: transparent;
+                    background: none;                    
+                }
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                     }
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    @extend .rectangle-border;
+                    height: 3px;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    width: 100%;
+                }
+            }
+        }
+        > li + li {
+            margin-top: 17px;
+        }
+    }
+}

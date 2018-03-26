@@ -1,0 +1,32 @@
+<div class="volume-control"
+    ng-mouseover="$ctrl.onMouseOver()"
+    ng-mouseleave="$ctrl.onMouseLeave()">
+    <div id="volume-control-icon" 
+        tabindex="0" 
+        ng-click="$ctrl.toggleMute()" 
+        ng-focus="$ctrl.onFocus('icon'); $ctrl.enlargeIcon=true"
+        ng-blur="$ctrl.onBlur('icon'); $ctrl.enlargeIcon=false"
+        aria-label="{{$ctrl.isMuted ? 'Unmute' : 'Mute'}}"
+        ng-keydown="$ctrl.onKeyDown($event)"
+        title="{{$ctrl.isMuted ? 'Unmute' : 'Mute'}}"
+        accesskey="m">
+        <img alt="Volume" ng-src="{{$ctrl.image()}}">
+    </div>
+    
+    <div id="volume-control-slider-wrapper" class="volume-control-slider-wrapper" ng-class="{'child-focussed': $ctrl.sliderFocussed, 'no-show': !$ctrl.sliderVisible}">
+        <input id="volume-control-slider" 
+            class="volume-control-slider" 
+            tabindex="0"
+            type="range" 
+            min="0" 
+            max="100" 
+            step="5" 
+            aria-labeledby="volume slider"
+            aria-describedby="use arrow keys to adjust your sound volume"
+            aria-valuetext="{{$ctrl.volume + '%'}}"
+            ng-model="$ctrl.volume" 
+            ng-change="$ctrl.onVolumeChange()"
+            ng-focus="$ctrl.onFocus('slider'); $ctrl.enlargeIcon = true"
+            ng-blur="$ctrl.onBlur('slider'); $ctrl.enlargeIcon = false">
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class='kite-grid list-template ovp-product-$ctrl.asset' ng-class="$ctrl.statusOptions()" focus-when="$ctrl.focusOnLoad" ng-attr-focus-previous="{{$first && ($ctrl.hasPagination() && '.page:last-child:not(.active, .deactive)' || '.grid-btn') || undefined}}" ng-click="$ctrl.click($parent.$index)" tabindex="0" role="{{$ctrl.isChrome ? 'listitem' : 'gridcell'}}">
+    <div class="kite-cell kite-cell-12-gt-xs kite-cell-5-gt-md truncate" ng-class="{'no-logo': $ctrl.options.hideNWLogo}">
+        <img ng-hide="$ctrl.options.hideNWLogo" alt="{{$ctrl.asset.network.name}}" class="network-icon" ng-src="{{::$ctrl.asset.networkImage({height:35, default:false})}}" fallback-image="display:none">
+        <p class="sr-only">
+            {{$ctrl.getTitlePrefix()}}&nbsp;
+        </p>
+        {{::$ctrl.asset.title}}
+        <p class="sr-only">
+            , {{$ctrl.asset.network.name}},
+        </p>
+    </div>
+    <div class="kite-cell kite-cell-1-gt-xs kite-cell-2-gt-md rating">
+        <ovp-rating rating="$ctrl.asset.rating"></ovp-rating>
+    </div>
+    <div class="kite-cell kite-cell-1-gt-xs kite-cell-2-gt-md source truncate" ng-if='$ctrl.asset.rentalExpiration'>{{::$ctrl.asset.rentalExpiration}}</div>
+    <!-- show only first two genres in the list -->
+    <div class="kite-cell kite-cell-1-gt-xs kite-cell-2-gt-md source truncate" ng-if='!$ctrl.asset.rentalExpiration'>{{::($ctrl.asset.genres.slice(0, 2).join(', '))}}</div>
+    <div class="kite-cell kite-cell-3-gt-xs kite-cell-2-gt-md status">
+        <label class="playStatus" ng-if="$ctrl.asset.playedPct > 0">
+            <span ng-style="{'width':$ctrl.asset.playedPct+'%'}"></span>
+        </label>
+    </div>
+     <div class="kite-cell kite-cell-12-gt-xs kite-cell-1-gt-md watch" ng-if="($ctrl.asset.isEntitled && $ctrl.asset.isBlockedByParentalControls) || ($ctrl.asset.isEntitled === false)">
+        <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" ng-show="($ctrl.asset.isEntitled && $ctrl.asset.isBlockedByParentalControls)"></span>
+        <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" ng-show="($ctrl.asset.isEntitled === false)"></span>
+    </div>
+</div>

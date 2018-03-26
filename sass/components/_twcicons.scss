@@ -1,0 +1,178 @@
+
+//
+// TWC SVG Icons
+// --------------------------------------------------
+
+// Icons are SVG images here. To use, create an
+// inline element with the appropriate classes, like so:
+// `<span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="parental block"></span>`
+// and change the CSS accordingly at the appropriate places.
+
+.twcicon-svg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    speak: none; // Not to be trusted, but hey.
+}
+
+// Individual icons
+
+@include twcicon-svg("key");
+@include twcicon-svg("lock");
+@include twcicon-svg("recording");
+@include twcicon-svg("recording-series");
+
+
+// TODO(@dura): Use of the Icon font is being deprecated. Move to SVGs as opportunity allows.
+
+//
+// TWC Icons
+// --------------------------------------------------
+
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+// <a href="#"><span class="twcicon twcicon-rec-series"></span> Record Series</a>
+
+@font-face {
+    font-family: "TWC Icons V2";
+    src: url("../fonts/twciconsv2-webfont.eot?{{CACHE-VERSION}}");
+    src: url("../fonts/twciconsv2-webfont?{{CACHE-VERSION}}#iefix") format("embedded-opentype"),
+        url("../fonts/twciconsv2-webfont.woff?{{CACHE-VERSION}}") format("woff"),
+        url("../fonts/twciconsv2-webfont.ttf?{{CACHE-VERSION}}") format("truetype"),
+        url("../fonts/twciconsv2-webfont.svg?{{CACHE-VERSION}}#twciconsv2-webfont") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TWC Ratings V2";
+    src: url("../fonts/twcratingsv2-webfont.eot?{{CACHE-VERSION}}");
+    src: url("../fonts/twcratingsv2-webfont?{{CACHE-VERSION}}#iefix") format("embedded-opentype"),
+        url("../fonts/twcratingsv2-webfont.woff?{{CACHE-VERSION}}") format("woff"),
+        url("../fonts/twcratingsv2-webfont.ttf?{{CACHE-VERSION}}") format("truetype"),
+        url("../fonts/twcratingsv2-webfont.svg?{{CACHE-VERSION}}#twcratingsv2-webfont") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Catchall baseclass */
+.twcicon {
+    display: inline-block;
+    font-family: $font-family-icons;
+    speak: none; // Not to be trusted, but hey.
+}
+
+/* Other icon sets */
+.twcicon-rating {
+    font-family: "TWC Ratings V2";
+}
+
+
+//
+// Individual icons
+// --------------------------------------------------
+
+//
+// Standard icons
+// -------------------------
+
+.twcicon-version                       { &::before { content: "\e000"; } }
+
+.twcicon-eye-ear                       { &::before { content: "\e001"; } }
+
+.twcicon-rec                           { &::before { content: "\e010"; } }
+.twcicon-rec-series                    { &::before { content: "\e011"; } }
+.twcicon-rec-pending                   { &::before { content: "\e012"; } }
+.twcicon-rec-pending-series            { &::before { content: "\e013"; } }
+.twcicon-rec-ban-circle                { &::before { content: "\e014"; } }
+
+.twcicon-rec-crescent                  { &::before { content: "\e015"; } }
+.twcicon-rec-quarter                   { &::before { content: "\e016"; } }
+.twcicon-rec-half                      { &::before { content: "\e017"; } }
+.twcicon-rec-empty-quarter             { &::before { content: "\e018"; } }
+.twcicon-rec-empty-half                { &::before { content: "\e019"; } }
+.twcicon-rec-empty-three-quarter       { &::before { content: "\e01a"; } }
+.twcicon-rec-empty                     { &::before { content: "\e01b"; } }
+
+.twcicon-hd                            { &::before { content: "\e020"; } }
+.twcicon-3d                            { &::before { content: "\e021"; } }
+.twcicon-sd                            { &::before { content: "\e022"; } }
+
+.twcicon-chevron-up                    { &::before { content: "\e030"; } }
+.twcicon-chevron-down                  { &::before { content: "\e031"; } }
+.twcicon-chevron-left                  { &::before { content: "\e032"; } }
+.twcicon-chevron-right                 { &::before { content: "\e033"; } }
+.twcicon-chevrons-horizontal           { &::before { content: "\e034"; } }
+.twcicon-chevrons-vertical             { &::before { content: "\e035"; } }
+
+.twcicon-arrow-left                    { &::before { content: "\e040"; } }
+.twcicon-arrow-right                   { &::before { content: "\e041"; } }
+
+.twcicon-plus                          { &::before { content: "\e050"; } }
+.twcicon-minus                         { &::before { content: "\e051"; } }
+.twcicon-remove                        { &::before { content: "\e052"; } }
+.twcicon-ok                            { &::before { content: "\e053"; } }
+
+.twcicon-start-over                    { &::before { content: "\e060"; } }
+.twcicon-ellipsis                      { &::before { content: "\e061"; } }
+
+.twcicon-th                            { &::before { content: "\e070"; } }
+.twcicon-list                          { &::before { content: "\e071"; } }
+
+// .twcicon-key                           { &::before { content: "\e080"; } }
+// .twcicon-lock                          { &::before { content: "\e081"; } }
+
+.twcicon-rewind                        { &::before { content: "\e090"; } }
+.twcicon-play                          { &::before { content: "\e091"; } }
+.twcicon-pause                         { &::before { content: "\e092"; } }
+.twcicon-stop                          { &::before { content: "\e093"; } }
+.twcicon-forward                       { &::before { content: "\e094"; } }
+
+.twcicon-play-series                   { &::before { content: "\e0a0"; } }
+
+.twcicon-star-empty                    { &::before { content: "\e0b0"; } }
+.twcicon-star-half                     { &::before { content: "\e0b1"; } }
+.twcicon-star                          { &::before { content: "\e0b2"; } }
+
+.twcicon-share                         { &::before { content: "\e0c0"; } }
+
+.twcicon-asterisk                      { &::before { content: "*"; } }
+
+//
+// Category icons
+// -------------------------
+
+.twcicon-category-home                 { &::before { content: "\e140"; } }
+.twcicon-category-search               { &::before { content: "\e141"; } }
+.twcicon-category-cog                  { &::before { content: "\e142"; } }
+.twcicon-category-tv                   { &::before { content: "\e143"; } }
+.twcicon-category-movie-reel           { &::before { content: "\e144"; } }
+.twcicon-category-star-ball            { &::before { content: "\e145"; } }
+.twcicon-category-baseball             { &::before { content: "\e146"; } }
+.twcicon-category-newspaper            { &::before { content: "\e147"; } }
+.twcicon-category-th-list              { &::before { content: "\e148"; } }
+
+//
+// Rating icons
+// -------------------------
+
+.twcicon-rating-version                { &::before { content: "\e000"; } }
+
+.twcicon-rating-tvy                    { &::before { content: "\e010"; } }
+.twcicon-rating-tvy7                   { &::before { content: "\e011"; } }
+.twcicon-rating-tvg                    { &::before { content: "\e012"; } }
+.twcicon-rating-tvpg                   { &::before { content: "\e013"; } }
+.twcicon-rating-tv14                   { &::before { content: "\e014"; } }
+.twcicon-rating-tvma                   { &::before { content: "\e015"; } }
+.twcicon-rating-g                      { &::before { content: "\e020"; } }
+.twcicon-rating-pg                     { &::before { content: "\e021"; } }
+.twcicon-rating-pg13                   { &::before { content: "\e022"; } }
+.twcicon-rating-r                      { &::before { content: "\e023"; } }
+.twcicon-rating-nc17                   { &::before { content: "\e024"; } }
+.twcicon-rating-adult                  { &::before { content: "\e030"; } }
+.twcicon-rating-unrated                { &::before { content: "\e031"; } }
+.twcicon-rating-nr                     { &::before { content: "\e040"; } }

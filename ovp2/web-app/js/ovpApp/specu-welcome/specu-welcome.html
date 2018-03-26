@@ -1,0 +1,26 @@
+<div class="main-content">
+    <section class="kite-grid kite-no-gutters">  
+        <div class="login-modal specu-login-modal kite-cell kite-cell-3-gt-sm kite-cell-6-gt-md kite-cell-5-gt-lg kite-cell-6-gt-xl kite-cell-3-gt-xxl">
+            <div class="kite-card kite-card-active">
+                <h1 class="title">Welcome to SpectrumU</h1>
+            
+                <p class="description">With SpectrumU, you can watch TV on your favorite devices, anywhere on campus. 
+                Select Continue to agree to our <a href="{{::$ctrl.termsHref}}" class="kite-btn-link" target="_blank">Terms and Conditions</a>
+                and <a href="{{::$ctrl.privacyHref}}" class="kite-btn-link" target="_blank">Privacy Policy</a> to start watching TV.
+                </p>
+            
+                <button role="button" focus-once aria-label="Continue and accept terms and conditions to go to SpectrumU" ng-click="$ctrl.continue()" class="btn btn-primary btn-lg btn-block">
+                    Continue
+                </button>
+            
+                <p class="divider">
+                    <span class="divider">or</span>
+                </p>
+            
+                <p>If you're an existing Spectrum customer, you can also <a href="#" class="kite-btn-link" role="link" aria-label="Login as an existing Spectrum customer" ng-click="$ctrl.signInWithResidential()">sign in</a>
+                to your account to watch TV.
+                </p>
+            </div>
+        </div>  
+    </section>
+</div>

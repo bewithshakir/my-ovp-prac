@@ -1,0 +1,23 @@
+<div class="create-time-block-container" role="form">
+    <div class="create-time-block-title">
+        <h4>Create a New Timeblock</h4>
+    </div>
+    <div class="create-time-block-form">
+        <div class="form-item">
+            <h5>Day</h5>
+            <ovp-dropdown-list items="$ctrl.days" config="$ctrl.dayDropdownConfig" autofocus></ovp-dropdown-list>
+        </div>
+        <div class="form-item">
+            <h5>Start Time</h5>
+            <ovp-dropdown-list items="$ctrl.startTimeList" config="$ctrl.startTimeDropdownConfig"></ovp-dropdown-list>
+        </div>
+        <div class="form-item">
+            <h5>End Time</h5>
+            <ovp-dropdown-list items="$ctrl.endTimeList" config="$ctrl.endTimeDropdownConfig"></ovp-dropdown-list>
+        </div>
+    </div>
+    <div class="create-time-block-footer">
+        <ovp-button label="Save" on-click="$ctrl.onSave()"></ovp-button>
+        <ovp-button label="Close" on-click="$ctrl.onClose()"></ovp-button>
+    </div>
+</div>

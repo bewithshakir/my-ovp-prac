@@ -1,0 +1,14 @@
+{
+    "loggedInUsername": "ovpdevner1",
+    "loggedInAsAdmin": true,
+    "adminUsername": "ovpdevner1",
+    "pinSet": false,
+    "users": [
+        {
+            "guid": "CF0CF91D-6617-6F94-6532-5FFC1F9607EB",
+            "username": "ovpdevner1",
+            "name": "Owen Kinyungu",
+            "admin": true
+        }
+    ]
+}

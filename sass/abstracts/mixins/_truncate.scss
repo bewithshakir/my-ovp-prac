@@ -1,0 +1,19 @@
+
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @author Christopher Dura [@dura](https://github.webapps.rr.com/dura)
+////
+
+/// Uses `text-overflow` to add an ellipsis (...) to a text field.
+///
+/// @access private
+//stylelint-disable property-no-vendor-prefix
+@mixin dot-dot-dot() {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+//stylelint-enable property-no-vendor-prefix

@@ -1,0 +1,19 @@
+<div class="sportsResults">
+    <div>
+        Search for Sports: "{{$ctrl.query}}" ({{$ctrl.results.length}} results)
+    </div>
+    <div class="search-results-container'">
+        <div class="container-fluid">
+            <div ng-class="category.class" ng-repeat="category in $ctrl.layout.categories">
+                <ovp-grid-list items="category.programs" options="{defaultState: 'list', title: category.title, showToggle: category.showToggle, showPagination: false, id: 'sportssearch'}">
+                    <grid-items>
+                        <ovp-product options="{focusOnLoad: ($parent.$first && $first && $ctrl.focusOnLoad)}" ng-repeat="asset in category.programs" asset="asset" category="$first ? category.title : ''"></ovp-product>
+                    </grid-items>
+                    <list-items>
+                        <sports-result-list-item options="{focusOnLoad: ($parent.$first && $first && $ctrl.focusOnLoad)}" ng-repeat="asset in category.programs" asset="asset" category="$first ? category.title : ''" index="$index"></sports-result-list-item>
+                    </list-items>
+                </ovp-grid-list>
+            </div>
+        </div>
+    </div>
+</div>

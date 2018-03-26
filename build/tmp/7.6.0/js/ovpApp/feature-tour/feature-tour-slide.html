@@ -1,0 +1,15 @@
+<div class="col-md-8" ng-if="!$ctrl.imageOnLeft">
+    <img class="slide-image" alt="" ng-src="{{$ctrl.artOrigin + $ctrl.slide.imageUrl}}">
+</div>
+
+<div class="col-md-8">
+    <div class="slide-copy">
+        <h2 ng-bind-html="$ctrl.slide.headerText"></h2>
+        <h2 ng-bind-html="$ctrl.slide.subHeaderText"></h2>
+        <p ng-bind-html="$ctrl.slide.description"></p>
+    </div>
+</div>
+
+<div class="col-md-8" ng-if="$ctrl.imageOnLeft">
+    <img class="slide-image" alt="" ng-src="{{$ctrl.artOrigin + $ctrl.slide.imageUrl}}">
+</div>

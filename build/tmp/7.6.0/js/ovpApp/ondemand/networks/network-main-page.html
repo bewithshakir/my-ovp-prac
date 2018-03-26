@@ -1,0 +1,6 @@
+<h1 class="sr-only">On Demand, Networks</h1>
+<ovp-grid-list items="$ctrl.networks" options="$ctrl.gridListConfig">
+    <grid-items>
+        <channel-card ng-repeat="network in $ctrl.networks" channel="network" options="{showChannelName: true}"></channel-card>
+    </grid-items>
+</ovp-grid-list>

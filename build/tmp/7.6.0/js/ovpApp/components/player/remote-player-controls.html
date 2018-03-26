@@ -1,0 +1,58 @@
+<div class="remote-player-controls" role="application">
+    <div class="controller-bar slide-up">
+        <div class="controls-container">
+            <div class="top-controls enlarge-icons">
+                <div class="left-col">
+                    <div class="gap play-icon-wrapper">
+                        <img class="control-item-img" ovp-src="/images/play-enlarge-disabled.svg">
+                    </div>
+                    <div class="gap">
+                        <img class="control-item-img" ovp-src="/images/skip-backward-enlarge-disabled.svg">
+                    </div>
+                    <div class="gap">
+                        <img class="control-item-img" ovp-src="/images/skip-forward-enlarge-disabled.svg">
+                    </div>
+                </div>
+                <div class="middle-col" ng-class="{'divider': vm.isVodMode()}">
+                    <div class="scrubber"></div>
+                </div>
+                <div class="right-col">
+                    <div class="gap volume-icon-wrapper">
+                        <img class="control-item-img" ovp-src="/images/volume-enlarge-disabled.svg">
+                    </div>
+                    <div class="gap">
+                        <img class="control-item-img" ovp-src="/images/full-screen-enlarge-disabled.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-controls">
+                <div class="left-col asset-metadata control-item">
+                    <div class="network-logo"><img class="vod-icon-image" ng-src="{{$ctrl.asset.networkImage()}}" ng-if="$ctrl.asset.networkImage && $ctrl.asset.networkImage()" fallback-image="display:none"></div>
+                    <div class="title-panel">
+                        <div class="title truncate">{{$ctrl.asset.seriesTitle || $ctrl.asset.title}}</div>
+                        <div class="title-undercard">
+                            <ovp-rating class="rating" rating="$ctrl.asset.rating"></ovp-rating>
+                            <span ng-if="!$ctrl.asset.isEpisode && $ctrl.asset.actorsString" class="actors">{{$ctrl.asset.actorsString}}</span>
+                            <span ng-if="$ctrl.asset.isEpisode" class="episodeTitle truncate">{{$ctrl.asset.episodeTitle || $ctrl.asset.title}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col common-controls">
+                    <div class="watch-on-tv-icon-wrapper">
+                        <img class="watch-on-tv-icon" ovp-src="/images/watch-on-tv-disable.svg">
+                    </div>
+                    <info-panel asset="$ctrl.asset" class="divider"></info-panel>
+                    <div tabindex="0" class="gap closed-caption" ng-click="$ctrl.ccToggle()" prevent-default aria-label="{{($ctrl.isCCEnabled ? 'disable' : 'enable') + ' closed captioning'}}">
+                       <img class="control-item-img" alt="Closed captioning"  ng-mouseover="$ctrl.ccHovered = true" ng-mouseleave="$ctrl.ccHovered = false" ng-src="{{$ctrl.ccToggleImage()}}">
+                    </div>
+                    <button tabindex="{{$ctrl.isSAPAvailable ? 0 : -1}}" class="gap sap" ng-class="{'disabled': !$ctrl.isSAPAvailable}" aria-disabled="{{$ctrl.isSAPAvailable}}" ng-click="$ctrl.sapToggle()" prevent-default aria-label="{{($ctrl.isSapEnabled ? 'disable' : 'enable') + 'SAP / DVS'}}">
+                        <img class="control-item-img" ng-mouseenter="$ctrl.sapIconHovered = true" ng-mouseleave="$ctrl.sapIconHovered = false" ng-src="{{$ctrl.sapToggleImage()}}">
+                    </button>
+                    <div class="gap" ng-click="$ctrl.showStbCcSettings()" tabindex="0" aria-label="stb closed captioning settings">
+                        <img alt="Stb Closed captioning settings" class="control-item-img" ng-mouseover="$ctrl.ccSettingsHovered = true" ng-mouseleave="$ctrl.ccSettingsHovered = false" ng-src="{{$ctrl.ccSettingsImage()}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

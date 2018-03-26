@@ -1,0 +1,12 @@
+<div id="purchasePin" class="parental-controls" ng-if="!stbUnavailable" role="tabpanel">
+    <h1 class="settings-h1 kite-h3">{{$ctrl.stb.name || 'Spectrum Receiver'}} Purchase PIN</h1>
+    <div class="row">
+        <div id="purchase-pin-label" class="setting-label col-xs-8">Purchase PIN</div>
+        <div class="col-xs-8 text-right">
+            <ovp-switch id="purchase_pin_enabled" role="button" aria-label="Purchase Pin is {{purchasePinEnabledForStb ? 'on' : 'off'}}"
+                ng-click="togglePinEnabled($event);" button-enabled="{{purchasePinEnabledForStb}}" prevent-default>
+            </ovp-switch>
+        </div>
+    </div>
+</div>
+<stb-receiver-unavailable stb="currentStb" ng-if="stbUnavailable" />

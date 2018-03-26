@@ -1,0 +1,229 @@
+$carouselArrowHorizOffset:20px;
+
+.ovp-carousel {
+    @extend %clearfix;
+
+    .label {
+        font-size: 30px;
+        font-size: normal;
+        font-weight: $light;
+        margin: 0 0 5px 0;
+
+        .view-all {
+            font-weight: $light;
+            font-size: 14px;
+            color: $grey02;
+        }
+    }
+
+    a.label {
+        cursor:pointer;
+        color: inherit;
+
+        &:hover {
+          text-decoration: none;
+        }
+    }
+
+    a.label:hover, a.label:hover .view-all {
+        color:$blue01;
+    }
+
+    .carousel-container {
+        /*height: 280px;*/
+        overflow: hidden;
+        float: left;
+        width: 100%;
+
+        &:hover {
+            .control-arrow {
+                opacity: 1.0;
+            }
+        }
+
+        .control-arrow {
+            opacity: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transition: transform 1s, left 1s ease-in-out, right 1s ease-in-out, opacity 0.5s;
+        }
+
+        .arrow-left {
+            left: $carouselArrowHorizOffset;
+        }
+
+        .arrow-right, .return-arrow {
+            right: $carouselArrowHorizOffset;
+        }
+
+        .arrow-hidden.return-arrow,
+        .arrow-hidden.arrow-right {
+            right: -100px;
+        }
+        .arrow-hidden.arrow-left {
+            left: -100px;
+        }
+
+        .carousel-items {
+            padding:0;
+            margin-top: 5px;
+            margin-left: 3px;
+
+            > * {
+                margin: 0 4px 0 0;
+            }
+
+            .carousel-item {
+                display: inline-block;
+                vertical-align: top;
+
+                > li.grid-item {
+                  display: inline;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .carousel-empty-message {
+            width:auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+    }
+
+
+    .pages {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        color: #c4c4c4;
+    }
+
+    .carousel-title {
+        font-size: 24px;
+        display: inline;
+        margin-right: 1em;
+    }
+
+    .carousel-all {
+        display:inline;
+        float: right;
+        font-size: 1.1em;
+        color:$steel-dark;
+    }
+
+    &:hover{
+        .carousel-all {
+            color: $white;
+            &:hover {
+                color: $blue07;
+            }
+        }
+
+    }
+
+}
+
+/* Shared layout code, used in #ondemand-page also */
+.carousel-container {
+    position: relative;
+
+    .hide-it {
+        display: none;
+    }
+
+    .default-arrow-icon {
+        height: 43px;
+        width: 43px;
+    }
+
+    .arrow-right.default-arrow-icon {
+        background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0 -241px;
+    }
+
+    .arrow-left.default-arrow-icon {
+        background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") 0 -196px;
+    }
+
+    .return-arrow.default-arrow-icon {
+        background: url("../images/ondemand-icons.png?{{CACHE-VERSION}}") -36px -290px;
+    }
+
+    .small-arrow-icon {
+        width: 22px;
+        height: 23px;
+    }
+
+    .arrow-right.small-arrow-icon {
+        background: url("../images/icons.png?{{CACHE-VERSION}}") right -1272px;
+    }
+
+    .arrow-left.small-arrow-icon {
+        background: url("../images/icons.png?{{CACHE-VERSION}}") left -1272px;
+    }
+
+    .return-arrow.small-arrow-icon {
+        background: url("../images/icons.png?{{CACHE-VERSION}}") left -1272px;
+    }
+
+    .arrow-left, .arrow-right, .return-arrow {
+        position: absolute;
+        z-index:98;
+        cursor: pointer;
+    }
+
+    .arrow-left {
+        left: 5px;
+    }
+
+    .arrow-right {
+        right: 5px;
+    }
+
+    .return-arrow {
+        right: 5px;
+    }
+
+    .default-gradient {
+        position: absolute;
+        top: 0;
+        width: 71px;
+        height: 45px;
+        z-index: 100;
+    }
+
+    .left-gradient {
+        left: 24px;
+        width: 24px;
+        background: url("../images/shadow-sprite.png?{{CACHE-VERSION}}") -24px -169px;
+    }
+
+    .right-gradient {
+        right: 22px;
+        background: url("../images/shadow-sprite.png?{{CACHE-VERSION}}") -71px -169px;
+    }
+
+    .carousel-layout {
+        overflow: hidden;
+
+        .carousel-items {
+            position: relative;
+            white-space: nowrap;
+
+            transition: all 1s cubic-bezier(.34, .85, .54, .9);
+
+            .carousel-item {
+                display: inline-block;
+                list-style-type: none;
+            }
+        }
+    }
+
+}

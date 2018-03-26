@@ -1,0 +1,126 @@
+/************************ Watch on Tv **********************/
+.ovp-watch-on-tv-picker-container {
+    .modal-content {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    .wrapper {
+        width: 352px;
+        border-radius: 4px;
+        padding: 24px;
+        letter-spacing: 0.5px;
+        background-color: #002133 ;
+        box-shadow: 0 4px 12px 0 rgba(183, 206, 229, 0.3);
+        border: solid 1px #000000 ;
+        backdrop-filter: blur(7.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+
+        .header {
+            h1 {    
+              font-size: 28px;
+              font-weight: bold;
+              letter-spacing: -1px;
+              line-height: 1em;
+            }
+        }
+        .content {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        h5 {
+            margin: 0 0 2px 0;
+            font-size: 20px;
+        }
+        .device-name {
+            display:inline-block;
+            width: calc(100% - 50px);
+        }
+        .current-name-caption {
+            font-size: 16px;
+        }
+        .current-name {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        .kite-form-control {
+            margin-bottom: 12px;
+        }
+         .devices-list-container {
+            list-style : none;
+            padding: 0px;
+            margin: 0;
+
+            .device:first-child {
+                border-top: none;
+            }
+            .device:last-child {
+                line-height: 56px;
+                border-bottom: 1px solid #67778f;
+            }
+
+            .device:hover + .device {
+                border-top: 1px solid transparent;
+            }
+
+            .device {
+                line-height: 55px;
+                padding: 0 15px;
+                font-size: 20px;
+                position: relative;
+                box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0);
+                border-top: 1px solid #67778f;
+
+                &:hover {
+                    transition: all 0.3s;
+                    border-radius: 4px;
+                    background-color: #0073d1 ;
+                    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+                    border-color: transparent;
+                }
+                a {
+                    color: #fff;
+                    margin-left: 20px;
+                    vertical-align: bottom;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .close-icon-container {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            width: 17px;
+            height: 17px;
+        }
+        .disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .close-icon {
+            vertical-align: top;
+            height: 17px;
+            width: 17px;
+        }
+
+        .btn-close{
+            text-align: center;
+           .close-button {
+                width: 130px;
+                height: 42px;
+                border-radius: 4px;
+                background-color: #0073d1;
+                border: none;
+            }
+        }
+          
+    }
+
+    .focus-outline:focus {
+        outline: 3px $blue07 solid !important;
+    }
+}

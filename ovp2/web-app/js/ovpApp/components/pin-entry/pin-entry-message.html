@@ -1,0 +1,11 @@
+<form class="pin-form text-center master-password-message" name="$ctrl.form" role="form" aria-labelledby="headerMessage">
+    <div class="form-group" id="formInstructions">
+      <p ng-if="$ctrl.headerMessage" class="headerMessage" id="headerMessage" aria-label="{{$ctrl.headerMessage.toLowerCase().replace($ctrl.tagRegex,' ')}}" ng-bind-html="$ctrl.headerMessage"></p>
+      <br />
+      <p ng-if="$ctrl.secondaryMessage" id="secondaryMessage" aria-label="{{$ctrl.secondaryMessage.toLowerCase().replace($ctrl.tagRegex,' ')}}" ng-bind-html="$ctrl.secondaryMessage"></p>
+    </div>
+    <br />
+    <div class="form-group">
+        <input class="btn btn-lg btn-block btn-primary" focus-once ng-click="$ctrl.modalInstance.dismiss()" type="submit" value="OK" focus-next=".popupCloseClick"/>
+    </div>
+</form>

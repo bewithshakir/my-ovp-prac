@@ -1,0 +1,1 @@
+oauth_verifier=yQV7QWH6UY35&xoauth_device_registration=96eb34385787972ac3f09473aa21c456b021deb2&xoauth_device_verifier=gG6BoVIM.96eb34385787972ac3f09473aa21c456b021deb2

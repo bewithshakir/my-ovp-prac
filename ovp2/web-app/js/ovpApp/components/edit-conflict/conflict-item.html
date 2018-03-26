@@ -1,0 +1,15 @@
+<li ng-click="$ctrl.toggleSelection()"
+    class="recording-item" ng-class="{conflict : $ctrl.state !== 'save'}">
+    <div class="conflict-checkbox"><img class="checkbox-image" ng-src="{{$ctrl.checkboxImage()}}"></div>
+    <div class="row-title">
+        <span class="program-title">{{$ctrl.recording.title}}</span>
+        <span class="episode-title" ng-if="$ctrl.recording.episodeTitle">{{$ctrl.recording.episodeTitle}}</span>
+        <ovp-rating ng-if="$ctrl.isMovie()" rating="$ctrl.recording.rating"></ovp-rating>
+    </div>
+    <div class="row-series-episode"><span ng-if="$ctrl.seasonNumber">Season {{$ctrl.recording.seasonNumber}} Episode {{$ctrl.recording.episodeNumber}}</span></div>
+    <div class="row-genre">{{$ctrl.genre}}</div>
+    <div class="row-start-time">{{$ctrl.startTime}}</div>
+    <div class="row-channel">
+        <ovp-channel display-type="list" mystro-service-id="$ctrl.recording.mystroServiceId" channel-id="$ctrl.recording.displayChannel"></ovp-channel>
+    </div>
+</li>

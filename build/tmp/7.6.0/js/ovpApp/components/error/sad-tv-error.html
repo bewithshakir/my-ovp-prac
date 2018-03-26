@@ -1,0 +1,12 @@
+<div class="sad-tv-error-container">
+    <div aria-hidden="true" class="content-gradient"></div>
+    <div aria-hidden="true" class="content-background"></div>
+    <div class="sad-tv-error">
+        <img alt="Sad TV" class="tv-image" ovp-src="/images/sad-tv.svg"/>
+        <h1 class="kite-h3" id="sad-tv-heading">Service Unavailable</h1>
+        <p class="">We're sorry, something didn't work quite right. Please try again.</p>
+        <p ng-if="$ctrl.errorCode">If you contact us, please provide this error&nbsp;code: {{$ctrl.errorCode}}</p>
+        <div class="kite-btn kite-btn-primary kite-btn-block" aria-label="Retry" aria-describedby="sad-tv-heading" focus-when="$ctrl.focusButton" ng-click="$ctrl.retry()">Retry</div>
+    </div>
+    <div class="bottom-gradient"></div>
+</div>

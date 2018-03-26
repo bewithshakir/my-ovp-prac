@@ -1,0 +1,16 @@
+<div>
+	<div id="popup"
+		 class='popUp popupHolder'
+		 ng-style="{'visibility': isVisible}"
+		 aria-labelledby='{{dialogLabelId}}'
+		 aria-describedby='{{dialogDescriptionId}}'>
+		<div class="background-frame">
+			<div id="alertBox" class="alertBox popup background" ng-class="popupCss" ng-style="{'margin': PopupMargin}">
+				<div class="rounded-corner-with-close-button-frame" ng-show="showCloseIcon"></div>
+				<a aria-label="close" class="popUp popupCloseClick" ng-show="showCloseIcon" ng-click="vm.hide()" tabindex="0" href="#"></a>
+				<div class="content">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

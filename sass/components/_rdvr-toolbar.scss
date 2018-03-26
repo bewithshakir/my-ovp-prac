@@ -1,0 +1,70 @@
+@import "disk-usage";
+
+$sub-header-height: 90px;
+$rdvr-toolbar-height: 50px;
+
+.rdvr-toolbar-container {
+  height: $rdvr-toolbar-height;
+  line-height: $rdvr-toolbar-height;
+  padding: 12px 0;
+}
+
+.rdvr-toolbar {
+  .si {
+    display: inline;
+    padding-right: 5px;
+  }
+  .dvr-name-caption {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0;
+  }
+  .dvr-name {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+  }
+  .dvr-picker {
+    display: inline-block;
+  }
+
+  .buttons-container {
+    float: right;
+    @include btn-menu-left-align;
+    .ovp-button > button {
+      min-width: 130px;
+    }
+
+    .ovp-button {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .refresh-message {
+    text-align: center;
+    margin: auto;
+    width: 450px;
+    .message, .refresh-countdown {
+      display: inline;
+    }
+  }
+
+  .fadeIn {
+    opacity: 1;
+    -webkit-transition: opacity 0.7s ease-in-out; /* Saf3.2+, Chrome */
+    -moz-transition: opacity 0.7s ease-in-out; /* FF4+ */
+    -ms-transition: opacity 0.7s ease-in-out; /* IE10? */
+    -o-transition: opacity 0.7s ease-in-out; /* Opera 10.5+ */
+    transition: opacity 0.7s ease-in-out;
+  }
+  .fadeOut {
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease-in-out; /* Saf3.2+, Chrome */
+    -moz-transition: opacity 0.7s ease-in-out; /* FF4+ */
+    -ms-transition: opacity 0.7s ease-in-out; /* IE10? */
+    -o-transition: opacity 0.7s ease-in-out; /* Opera 10.5+ */
+    transition: opacity 0.7s ease-in-out;
+  }
+}

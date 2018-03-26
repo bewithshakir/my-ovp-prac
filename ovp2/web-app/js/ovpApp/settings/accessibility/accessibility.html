@@ -1,0 +1,10 @@
+<div id="accessibility" class="accessibility" role="tabpanel">
+    <h1 class="settings-h1 kite-h3">Website Accessibility</h1>
+    <div class="row">
+        <div id="accessibility-label" class="setting-label col-xs-8">Accessibility</div>
+        <div class="col-xs-8 text-right">
+            <ovp-switch id="pc_enabled" role="button" aria-label="Accessibility is {{$ctrl.accessibilityEnabledForClient ? 'on' : 'off'}}"
+                ng-click="$ctrl.toggleAccessiblity($event);" button-enabled="{{$ctrl.accessibilityEnabledForClient}}" prevent-default></ovp-switch>
+        </div>
+    </div>
+</div>

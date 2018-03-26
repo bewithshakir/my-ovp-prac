@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledy="key-icon-title key-icon-desc">
+  <title id="key-icon-title">key</title>
+  <desc id="key-icon-desc">an icon representing a door key</desc>
+  <path fill="#fff" d="M62.6 30.9l-6.4-6.4a1.5 1.5 0 0 0-1.1-.5H30.8a16 16 0 1 0 0 16h5.6l3.4-3 3.8 3 4-3 2.9 3H55a1.6 1.6 0 0 0 1.1-.5l6.4-6.4a1.6 1.6 0 0 0 .1-2.2zM12 37a5 5 0 1 1 5-5 5 5 0 0 1-5 5z"/>
+</svg>

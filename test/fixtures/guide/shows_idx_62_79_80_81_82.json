@@ -1,0 +1,222 @@
+{
+    "12504": [
+        {
+            "tmsGuideId": "12504",
+            "tmsProgramId": "MV008208080000",
+            "masServiceId": "190",
+            "advisories": ["Adult Language", "Adult Situations"],
+            "callSign": "PPVE",
+            "ratingsBlocked": false,
+            "shortDesc": "El rescate de 33 mineros chilenos atrapados.",
+            "icons": ["Stereo"],
+            "epgCdvrId": "125041465430400",
+            "rating": "TV-14",
+            "genres": ["Drama", "Movies"],
+            "durationMinutes": 150,
+            "metadata": {
+                "type": "movie",
+                "year": "2015"
+            },
+            "startTimeUtcSeconds": 1465421400,
+            "title": "The 33",
+            "imageUrl": "/imageserver/program/MV008208080000",
+            "channelNumber": 79
+        }, {
+            "tmsGuideId": "12504",
+            "tmsProgramId": "SH023756110000",
+            "masServiceId": "190",
+            "advisories": ["Violence", "Language", "Dialog"],
+            "callSign": "PPVE",
+            "ratingsBlocked": false,
+            "shortDesc": "Desde el Toyota Center en Houston, Texas.",
+            "icons": ["Stereo", "Series"],
+            "epgCdvrId": "125041465432200",
+            "rating": "TV-14",
+            "genres": ["Sports- MMA"],
+            "durationMinutes": 30,
+            "startTimeUtcSeconds": 1465410400,
+            "title": "UFC 192 en Español: Pena vs. Eye",
+            "imageUrl": "/imageserver/program/SH023756110000",
+            "channelNumber": 79
+        }
+    ],
+    "12505": [{
+            "tmsGuideId": "12505",
+            "tmsProgramId": "SH000191120000",
+            "masServiceId": "193",
+            "callSign": "PPV5",
+            "ratingsBlocked": false,
+            "shortDesc": "Sign off.",
+            "icons": ["Series"],
+            "epgCdvrId": "125051465441200",
+            "genres": ["Other", "Special"],
+            "durationMinutes": 480,
+            "startTimeUtcSeconds": 1465412400,
+            "title": "SIGN OFF",
+            "imageUrl": "/imageserver/program/SH000191120000",
+            "channelNumber": 82
+        }, {
+            "tmsGuideId": "12505",
+            "tmsProgramId": "SH000191120000",
+            "masServiceId": "193",
+            "callSign": "PPV5",
+            "ratingsBlocked": false,
+            "shortDesc": "Sign off.",
+            "icons": ["Series"],
+            "epgCdvrId": "125051465441200",
+            "genres": ["Other", "Special"],
+            "durationMinutes": 480,
+            "startTimeUtcSeconds": 1465412400,
+            "title": "SIGN OFF",
+            "imageUrl": "/imageserver/program/SH000191120000",
+            "channelNumber": 82
+        }
+    ],
+    "15461" :[
+        {
+            "tmsGuideId": "15461",
+            "tmsProgramId": "SH000191120000",
+            "masServiceId": "192",
+            "callSign": "PPV4",
+            "ratingsBlocked": false,
+            "shortDesc": "Sign off.",
+            "icons": ["Series"],
+            "epgCdvrId": "154611465441200",
+            "genres": ["Other", "Special"],
+            "durationMinutes": 480,
+            "startTimeUtcSeconds": 1465412400,
+            "title": "SIGN OFF",
+            "imageUrl": "/imageserver/program/SH000191120000",
+            "channelNumber": 81
+        }, {
+            "tmsGuideId": "15461",
+            "tmsProgramId": "SH000191120000",
+            "masServiceId": "192",
+            "callSign": "PPV4",
+            "ratingsBlocked": false,
+            "shortDesc": "Sign off.",
+            "icons": ["Series"],
+            "epgCdvrId": "154611465441200",
+            "genres": ["Other", "Special"],
+            "durationMinutes": 480,
+            "startTimeUtcSeconds": 1465412400,
+            "title": "SIGN OFF",
+            "imageUrl": "/imageserver/program/SH000191120000",
+            "channelNumber": 81
+        }
+    ],
+    "16125": [
+        {
+            "tmsGuideId": "16125",
+            "tmsProgramId": "EP006459520174",
+            "masServiceId": "18995",
+            "callSign": "DLC",
+            "ratingsBlocked": false,
+            "shortDesc": "A woman risks losing her finger after trying on a ring.",
+            "icons": ["CC", "Stereo"],
+            "epgCdvrId": "161251465426800",
+            "rating": "TV-PG",
+            "genres": ["Reality", "Drama", "TV Shows"],
+            "durationMinutes": 60,
+            "metadata": {
+                "tmsSeriesId": "185378",
+                "season": 10,
+                "episode": 3,
+                "title": "Size Matters",
+                "type": "episode"
+            },
+            "startTimeUtcSeconds": 1465423200,
+            "title": "Untold Stories of the E.R.",
+            "imageUrl": "/imageserver/program/EP006459520174",
+            "channelNumber": 62
+        }, {
+            "tmsGuideId": "16125",
+            "tmsProgramId": "EP013641290001",
+            "masServiceId": "18995",
+            "callSign": "DLC",
+            "ratingsBlocked": false,
+            "shortDesc": "Blow dryer on the bed; addicted to eating toilet paper.",
+            "icons": ["CC", "Stereo"],
+            "epgCdvrId": "161251465428600",
+            "rating": "TV-PG",
+            "genres": ["Sports- Exercise", "Documentary", "TV Shows"],
+            "durationMinutes": 30,
+            "metadata": {
+                "tmsSeriesId": "8442670",
+                "season": 1,
+                "episode": 1,
+                "title": "Eats Toilet Paper; Blow Dryer",
+                "type": "episode"
+            },
+            "startTimeUtcSeconds": 1465426800,
+            "title": "My Strange Addiction",
+            "imageUrl": "/imageserver/program/EP013641290001",
+            "channelNumber": 62
+        }, {
+            "tmsGuideId": "16125",
+            "tmsProgramId": "EP013641290052",
+            "masServiceId": "18995",
+            "advisories": ["Dialog"],
+            "callSign": "DLC",
+            "ratingsBlocked": false,
+            "shortDesc": "Linda is married to a 70-foot carnival ride.",
+            "icons": ["CC", "Stereo"],
+            "epgCdvrId": "161251465430400",
+            "rating": "TV-14",
+            "genres": ["Sports- Exercise", "Documentary", "TV Shows"],
+            "durationMinutes": 30,
+            "metadata": {
+                "tmsSeriesId": "8442670",
+                "season": 6,
+                "episode": 2,
+                "title": "Eats Bricks; Married to a Carnival Ride",
+                "type": "episode"
+            },
+            "startTimeUtcSeconds": 1465428600,
+            "title": "My Strange Addiction",
+            "imageUrl": "/imageserver/program/EP013641290052",
+            "channelNumber": 62
+        }, {
+            "tmsGuideId": "16125",
+            "tmsProgramId": "EP013641290009",
+            "masServiceId": "18995",
+            "callSign": "DLC",
+            "ratingsBlocked": false,
+            "shortDesc": "Treating a doll like a wife; picking scabs daily.",
+            "icons": ["CC", "Stereo"],
+            "epgCdvrId": "161251465432200",
+            "rating": "TV-PG",
+            "genres": ["Sports- Exercise", "Documentary", "TV Shows"],
+            "durationMinutes": 30,
+            "metadata": {
+                "tmsSeriesId": "8442670",
+                "season": 1,
+                "episode": 8,
+                "title": "Married to A Doll; Picking My Scabs",
+                "type": "episode"
+            },
+            "startTimeUtcSeconds": 1465430400,
+            "title": "My Strange Addiction",
+            "imageUrl": "/imageserver/program/EP013641290009",
+            "channelNumber": 62
+        }
+    ],
+    "16611": [
+        {
+            "tmsGuideId": "16611",
+            "tmsProgramId": "SH024085760000",
+            "masServiceId": "191",
+            "callSign": "PPV3",
+            "ratingsBlocked": false,
+            "shortDesc": "Luke Rockhold vs. Michael Bisping. From Inglewood, Calif.",
+            "icons": ["CC", "Stereo", "Series"],
+            "epgCdvrId": "166111465434000",
+            "genres": ["Sports- MMA"],
+            "durationMinutes": 240,
+            "startTimeUtcSeconds": 1465419600,
+            "title": "UFC 199: Rockhold vs. Bisping 2",
+            "imageUrl": "/imageserver/program/SH024085760000",
+            "channelNumber": 80
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<div class="guide-header container">
+    <h1 class="sr-only">Guide</h1>
+    <guide-date on-date-toggle='vm.onDateToggle' jump-to-day='vm.jumpToDay' times='::vm.times'></guide-date>
+    <div class="search-row">
+        <div id="channelSearch">
+            <div ng-click="vm.channelSearch = ''" tabindex="-1" class="cancelSearch"></div>
+            <form>
+            <input class="searchField"
+                placeholder="Jump to Channel"
+                autocomplete="off"
+                ng-model="vm.channelSearch"
+                aria-describedby="searchInputInstructions"
+                ng-model-options="{ debounce: {'default': 1000, 'submit':0}, updateOn:'submit' }"
+                maxlength="11"/>
+            <p  id="searchInputInstructions" style="display:none">
+                Type the channel number or network name, then press Enter to proceed to the guide listing.
+            </p>
+            </form>
+        </div>
+        <div class='filter-section row'>
+            <div class="col-md-2 now" tabindex="0" ng-click='vm.goToNow()'><i></i>Go To Now</div>
+            <div class="col-md-14 channel-filter text-right"
+                role='radiogroup'
+                aria-label='Filter channels'
+                >
+                <h2 class="sr-only">Filter options</h2>
+                <span>Show me:</span>
+                <a title="{{filter.title}}"
+                    class='filter'
+                    role='radio'
+                    aria-checked='{{(vm.filters.preset==filter) ? true : false}}'
+                    ng-class='{selected:vm.filters.preset==filter}'
+                    ng-click="vm.setPresetFilter(filter, $event)"
+                    ng-repeat='filter in vm.presets'
+                    href='#'>{{filter.label}}</a>
+            </div>
+        </div>
+    </div>
+</div><!--! end of #gridHeaderContainer -->

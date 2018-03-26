@@ -1,0 +1,64 @@
+
+
+//
+// Living Style Guide
+// --------------------------------------------------
+
+// These are one-off styles for the living style guide.
+
+body {            
+   background: #222;
+}
+
+.main-content {
+   background: #000;
+}
+
+.docs-section {
+   padding: 10px;
+   overflow: hidden;
+}
+
+.twcicons-list {
+   overflow: hidden;
+   padding-left: 0;
+   list-style: none;
+}
+
+.twcicons-list {
+    li {
+        float: left;
+        width: 33%;
+        height: 150px;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.4;
+        text-align: center;
+        background-color: #222;
+        border: 1px solid #000;
+
+        @media (min-width: 992px) {
+            width: 20%;
+        }
+
+        @media (min-width: 1200px) {
+            width: 12.5%;
+        }
+
+        &:hover {
+            background-color: #0088ce;
+        }
+    }
+
+    .twcicon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 32px;        
+    }
+
+    .twcicon-class {
+        display: block;
+        text-align: center;
+        word-wrap: break-word;
+    }
+}

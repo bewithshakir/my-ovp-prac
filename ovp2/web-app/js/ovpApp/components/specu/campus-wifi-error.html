@@ -1,0 +1,22 @@
+<div class="specu-wifi-error-message-container-wrapper">
+    <div aria-hidden="true" class="content-gradient"></div>
+    <div aria-hidden="true" class="content-background"></div>
+    <div class="specu-wifi-error-message-container">
+        <div class="sr-only">
+            <span id="specu-wifi-error-message-title">{{$ctrl.error.title}}</span>
+            <span id="specu-wifi-error-message-description">
+                {{$ctrl.error.message}}
+            </span>
+        </div>
+        <div class="error-icon-container">
+            <img alt="WiFi Connection" ovp-src="/images/icon-40-x-40-wi-fi.svg"/>
+        </div>
+        <h1>{{$ctrl.error.title}}</h1>
+        <p class="error-message">{{$ctrl.error.message}}</p>
+        <p class="line-through"><span>or</span></p>
+        <p class="footer-message">
+            If you're an existing Spectrum customer, you can also <a href="#" focus-once class="kite-btn-link" ng-click="$ctrl.signIn()" aria-label="Login as an existing Spectrum customer">sign in</a> to your account to watch TV.
+        </p>
+    </div>
+    <div class="bottom-gradient"></div>
+</div>

@@ -1,0 +1,10 @@
+<div ng-if="$ctrl.showAlert">
+    <div class="connectivity-alert-box show-hide" ng-keydown="$ctrl.keypress($event)" role="alert" aria-describedby="connectivity-alert-message">
+        <div>
+            <div id="connectivity-alert-message" class="connectivity-alert-message" aria-live="assertive" ng-bind="$ctrl.alertMessage"></div><span ng-show="$ctrl.showCounter">&nbsp;Retrying in {{$ctrl.retryCounter}}</span>
+            <button tabindex="-1" aria-label="enter to retry connection now" ng-show="$ctrl.showButton" id="connectivity-check-button" ng-click="$ctrl.checkNow()" focus-when="$ctrl.showButton">{{$ctrl.retryNowText}}</button>
+        </div>
+    </div>
+    <div class="connectivity-alert-overlay"></div>
+    <div role="alert" aria-live="polite" class="sr-only" aria-relevant="all" aria-atomic="true" ng-bind="$ctrl.srTime"></div>
+</div>

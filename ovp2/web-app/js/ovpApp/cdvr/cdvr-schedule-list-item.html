@@ -1,0 +1,35 @@
+<div class='row list-template cdvr-list' ng-click="$ctrl.click()">
+    <div class="col-md-6 col-sm-8 col-xs-12 title truncate">
+        <p class="sr-only">
+            {{$ctrl.getTitlePrefix()}}&nbsp;
+        </p>
+        <span class='movie-title' ng-show='!$ctrl.asset.episode'>
+            {{::$ctrl.asset.title}}
+        </span>
+        <span class='series-title' ng-show='$ctrl.asset.episode'>
+            {{::$ctrl.asset.seriesTitle}}
+        </span>
+        <span class='episode-title' ng-show='$ctrl.asset.episode'>
+            {{$ctrl.asset.title}}
+        </span>
+    </div>
+
+    <div class="col-md-3 hidden-sm hidden-xs">
+        <div ng-if='$ctrl.asset.episode'>
+            <span class='season' ng-show='$ctrl.asset.season'>Season: {{$ctrl.asset.season}}</span>
+            Episode: {{$ctrl.asset.episode}}
+        </div>
+    </div>
+    <div class="col-md-2 hidden-sm hidden-xs genre truncate">
+        {{$ctrl.asset.genreString}}
+    </div>
+    <div class='col-md-2 col-sm-2 col-xs-4 text-right start-time'>
+        {{$ctrl.asset.cdvrStartTime | date:'h:mm a'}}
+    </div>
+    <div class="col-md-1 col-sm-1 hidden-xs watch">
+        <span class="twcicon-svg twcicon-svg-key" aria-hidden="true" aria-label="key icon" ng-show="($ctrl.asset.isEntitled === false)"></span>
+    </div>
+    <div class="col-md-2 col-sm-5 hidden-xs text-center">
+        {{$ctrl.asset.network.callsign}} | {{$ctrl.channelNumber}}
+    </div>
+</div>

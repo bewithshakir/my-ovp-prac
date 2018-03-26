@@ -1,0 +1,15 @@
+<div role="slider"
+    aria-valuemin="0"
+    aria-valuemax="{{$ctrl.ratings.length}}"
+    aria-valuenow="{{$ctrl.getIndexOfRating(currentRating)}}"
+    aria-valuetext="{{$ctrl.currentDescription()}}"
+    aria-label="{{$ctrl.label}}"
+    tabindex="0"
+    ng-keydown="$ctrl.onKeydown($event)">
+    <a class="rating-tile" ng-class="{blocked: $ctrl.ratingIsBlocked(rating)}" ng-repeat="rating in $ctrl.ratings" ng-click="$ctrl.ratingClicked(rating)" ng-mouseover="$ctrl.hoveredRating = rating; $ctrl.hovered = true;" ng-mouseleave="$ctrl.hoveredRating = ''; $ctrl.hovered = false;">
+        <div class="label">{{rating}}</div>
+        <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="lock-icon"></span>
+        <span class="sr-only" ng-if="!$ctrl.ratingIsBlocked(rating)">block {{rating}}</span>
+        <span class="sr-only" ng-if="$ctrl.ratingIsBlocked(rating)">unblock {{rating}}</span>
+    </a>
+</div>

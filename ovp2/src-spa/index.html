@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="kite-typography">
+<head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-itunes-app" content="app-id=420455839" />
+    <meta name="appVersion" content="<%= appVersion %>"/>
+    <meta content="Watch live and On Demand shows, and manage your DVR, whether you're home or on the go." name="description"/>
+    <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Spectrum TV</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= baseDir %>/images/apple-touch-icon.png?v=<%= commitHash %>" />
+    <link rel="shortcut icon" href="/<%= baseDir %>/images/favicon.png?v=<%= commitHash %>" type="image/gif" />
+    <link rel="stylesheet" href="/<%= baseDir %>/css/main.css?v=<%= commitHash %>" />
+
+    <%= stateVis %>
+
+    <script type="text/javascript">
+        if (window.location.protocol === 'http:') {
+            window.location.href =
+                    'https://' +
+                    window.location.host +
+                    window.location.pathname +
+                    window.location.search +
+                    window.location.hash;
+        }
+        /**
+         * THIS IS DUPLICATED IN auth AND index AND MUST BE KEPT IN SYNC
+         */
+        var require = {
+            baseUrl: '<%= baseDir %>/js',
+            waitSeconds: 30,
+            urlArgs: 'version=<%= commitHash %>',
+            text: {
+                useXhr: function () {
+
+                    //return true if you want to allow this url, given that the
+                    //text plugin thinks the request is coming from protocol,  hostname, port.
+                    return false;
+                }
+            }
+        };
+
+        //legacy
+        var OVP = OVP || {};
+        /*
+            Once the config and the files are loaded via require, then kick off the angular bootstrap process
+         */
+        window.angularBootstrap = function() {
+            var waiting = 2; //RequireLoaded & ConfigLoaded
+            return function() {
+                waiting -= 1;
+                if (waiting === 0) {
+                    angular.bootstrap(document.body, ['ovpApp'], {strictDi: true});
+                }
+            }
+        }();
+
+        /* jscs: disable */
+        window.onload = function () {
+            var environments = '<%= envData %>';
+            window.currentConfig = new OvpConfig(window.defaultConfig, '<%= appVersion %>',  environments);
+            currentConfig.initialize(function(err) {
+                if (err) {
+                    window.alert(currentConfig.messages.needReloadFailure);
+                    window.location.reload();
+                }
+                window.angularBootstrap();
+            }, '<%= env %>');
+        };
+        /* jscs: enable */
+
+    </script>
+</head>
+
+<body class="{{bodyClass}} {{focusClass}} footer-padding kite-theme-dark kite-hide-focus" position-under-header>
+
+<%= svgSprite %>
+
+<div ui-view='' class="wrap kite-grid">
+    <div class="loading-tracker">
+        <div class="spinner"></div>
+    </div>
+</div>
+<div id="product" class="product-page-container" ui-view="productView" autoscroll='false' scroll-reset='productEnter' scrollable='true' position-under-header></div>
+<div id="search" ui-view="searchView" scrollable='true' position-under-header></div>
+<!-- Hide footer on page load -->
+<site-footer ng-if="($state.transition.success || $state.previous) && !$state.current.name.match(hideSiteFooterRegex)"></site-footer>
+
+<script type="text/javascript" src="/<%= baseDir %>/js/libs/require-2.0.6/require.js" data-main="index"></script>
+<!--
+    commit number: '<%= commitHash %>'
+    appVersion: '<%= appVersion %>'
+-->
+</body>
+</html>

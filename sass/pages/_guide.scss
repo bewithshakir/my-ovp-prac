@@ -1,0 +1,693 @@
+$row-height: 76px;
+$row-head-width: 164px;
+$row-head-bg: #161616;
+$border-light: #28292a;
+$border-dark: #000;
+$onnow-color: #282828;
+$header-height: 50px;
+$header-bg-color: #2b002b;
+$focused-bg: $kite-blue-2;
+$date-hover-bg: $kite-black;
+$new-color: $kite-gray-2;
+$channel-content-color: #1c1d1e;
+$day-of-month-color: $kite-blue-2;
+$day-border-color: #4d4f53;
+$day-font-color: $kite-gray-2;
+$white: $kite-white;
+$search-shadow: rgba(0, 0, 0, 0.4);
+
+.event-off {
+    pointer-events: none;
+}
+.guide .main-container {
+    //Required to line header up with the guide cells
+    padding: 0;
+}
+
+.guide .accessibilityhidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.guide-listings {
+
+    > ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+//Channel heading list (static left column)
+.channel-heading {
+    background-color: $row-head-bg;
+    display: inline-block;
+    width: $row-head-width;
+    position: relative;
+    z-index: 1;
+}
+
+//List item
+.channel-header-row {
+    background: $row-head-bg;
+    width: 100%;
+    height: $row-height;
+
+    &:first-child {
+        .channel-header {
+            border-top: 1px solid $gray-dark;
+        }
+    }
+}
+
+//Channel row label
+.channel-header {
+    border-top: 1px solid $border-light;
+    border-bottom: 1px solid $border-dark;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .favorite {
+        background: url("../images/icons.png") no-repeat 0 -1443px;
+        cursor: pointer;
+        display: inline-block;
+        margin: #{$row-height / 2 - 7px} 10px;
+        width: 16px;
+        height: 14px;
+
+        &.favon {
+            background: url("../images/icons.png") no-repeat 0 -1463px;
+        }
+    }
+
+    .logo-box {
+        display: inline-block;
+        line-height: $row-height;
+        text-align: center;
+        vertical-align: top;
+        width: 50px;
+        height: $row-height;
+
+        .channel-logo {
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+
+    .details {
+        /*Button width: 16px;
+        Button margin: 20px;
+        logo-box width: 50px;
+        Total width: 86px;*/        
+        width: calc(100% - 86px);
+        display: inline-block;
+        float: right;
+        font-size: 14px;
+        margin: 0;
+        padding: #{$row-height / 2 - 17px} 10px 0 0;
+        text-align: right;
+        vertical-align: top;
+        height: 100%;
+
+        &.no-channel-number {
+            padding-top: #{$row-height / 2 - 7px};
+
+            .channel-number {
+                display: none;
+            }
+        }
+
+        p {
+            color: $gray-light;
+            margin: 0;
+            padding: 0;
+        }
+
+        .channel-number {
+            font-size: 20px;
+        }
+
+        .callsign {
+            font-size: 13px;
+            font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+
+
+//Wraps the listings to  facilitate horizontal scrolling
+.channel-content-list-container {
+    display: inline-block;
+    overflow-x: auto;
+    transform: translateZ(0);
+    vertical-align: top;
+    width: calc(100% - #{$row-head-width});
+    // overflow-y: hidden;
+}
+
+.hidden-channel-row-header {
+    visibility: hidden;
+    width: 0;
+}
+
+//Common
+.channel-header-row,
+.channel-listings-row {
+    clear: both;
+    display: block;
+    margin: 0;
+    height: $row-height;
+}
+
+.channel-content-list {
+    display: inline-block;
+    margin: 0;
+    min-width: 200%;
+    padding: 0;
+    list-style: none;
+
+    .channel-listings-row {
+        background-image: repeating-linear-gradient(0deg, #{$border-light}, #{$border-light} 1px, transparent 1px, transparent 76px),
+            repeating-linear-gradient(-90deg, #{$border-light}, #{$border-light} 1px, transparent 1px, transparent 76px);
+        background-size: 76px 76px;
+        min-width: 100%;
+        position: relative;
+        white-space: nowrap;
+    }
+}
+
+
+.channel-content {
+    background: $channel-content-color;
+    border-top: 1px solid $border-light;
+    border-right: 1px solid $border-dark;
+    border-bottom: 1px solid $border-dark;
+    border-left: 1px solid $border-light;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 15px 5px 5px 20px;
+    position: absolute;
+    transition: padding 0.25s ease;
+    width: 0;//Width must be overridden by the ng-style
+    height: $row-height;
+
+    &:focus,
+    &.focus {
+        @include twcicon-svg("recording", "default");
+        @include twcicon-svg("recording-series", "default");
+
+        background: $focused-bg;
+        color: $white;
+        z-index: 1000;
+        text-decoration: none;
+        transition: 0.2s all ease-out;
+        outline-offset: -5px;
+        outline: 3px solid $brand-primary;
+
+        .title,
+        .show-details,
+        .subtitle {
+            color: $white;
+        }
+    }
+
+    &:hover,
+    &.onnow:hover {
+        background: $date-hover-bg;
+        text-decoration: none;
+    }
+
+    &:focus:hover {
+        background: $focused-bg;
+    }
+
+    // Legacy
+    // stylelint-disable declaration-no-important
+    &.normal-pos {
+        //Important used for performance reasons
+        padding-left: 20px !important;
+    }
+    // stylelint-enable declaration-no-important
+
+    .title-line {
+        margin-bottom: 0.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        &.flex-box {
+            justify-content: flex-start;
+            .restart {
+                flex: 0 0 20px;
+            }
+        }
+    }
+
+    .title {
+        color: $gray-lighter;
+        font-size: 0.9em;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .restart {
+        background: url("../images/guide_startover.png") no-repeat;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+    .show-details {
+        color: $brand-primary;
+        font-size: 0.75em;
+    }
+
+    &.onnow {
+        background: $onnow-color;
+
+        &:focus {
+            background: $focused-bg;
+        }
+    }
+
+    .recording-status {
+        float: left;
+        margin-right: 0.5rem;
+    }
+
+    .twcicon-svg {
+        vertical-align: bottom; // Align with text
+    }
+
+    .new-status {
+        color: $new-color;
+        display: none;
+        font-weight: $bold;
+        margin-right: 0.25rem;
+        text-transform: uppercase;
+    }
+
+    &.new {
+        .new-status {
+            display: inline-block;
+        }
+    }
+}
+
+.time-row {
+    background: $header-bg-color;
+    border-bottom: 1px solid $gray-dark;
+    white-space: nowrap;
+    height: 20px;
+
+    .time-block {
+        background: $header-bg-color;
+        border-top: 1px solid $gray-dark;
+        border-bottom: 1px solid $gray-dark;
+        display: inline-block;
+        font-size: 12px;
+        overflow: hidden;
+        padding: 0 5px;
+        width: 25%;
+        height: 20px;
+
+        .time-position {
+            border-right: 1px solid $gray;
+            line-height: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.time-row-spacer {
+    background: $header-bg-color;
+    border: 1px solid $gray-dark;
+    height: 20px;
+}
+
+
+.guide-loading {
+    display: inline-block;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 100;
+    width: auto;
+}
+
+
+.guide-header {
+    background: $dark-blue;
+    min-height: 50px;
+
+    .guide-date {
+        cursor: pointer;
+        display: inline-block;
+        line-height: 19px;
+        padding: 0;
+        text-decoration: none;
+        width: 100%;
+        height: 50px;
+    }
+
+    .small {
+        width: $row-head-width;
+    }
+}
+
+.date-times {
+    position: relative;
+
+    .day-box-holder:focus .current-date {
+        background: $day-border-color;
+    }
+
+    .day-box:focus {
+        background: $day-border-color;
+    }
+
+    .day-box .day {
+        display: block;
+    }
+
+    .current-date {
+        border-top: 0;
+        border-bottom: 0;
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        line-height: 19px;
+        padding: 0 50px 0 5px;
+        text-align: center;
+        text-decoration: none;
+        width: $row-head-width;
+        height: 50px;
+
+        .calendar {
+            background: url("../images/icons.png") no-repeat scroll right -313px transparent;
+            float: right;
+            margin-top: 10px;
+            margin-right: 0;
+            width: 21px;
+            height: 21px;
+        }
+
+        .date {
+            float: left;
+        }
+
+        .dom {
+            color: $day-of-month-color;
+        }
+    }
+
+    .current-date:hover {
+        cursor: pointer;
+
+        .calendar {
+            background: url("../images/icons.png") no-repeat scroll -28px -313px transparent;
+        }
+
+        .day {
+            color: $white;
+        }
+    }
+}
+
+.guide .times {
+    display: inline-block;
+    font-weight: 300;
+    margin-left: -25px;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 0 0 0 25px;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+    width: calc(100% - #{$row-head-width - 20px});
+
+    .time-scroll-container {
+        overflow: hidden;
+        position: relative;
+        width: calc(100% + 5px);
+    }
+
+    .time-container {
+        transform: translateZ(0);
+        width: 100%;
+    }
+
+    .col {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 50px;
+        width: 25%;
+
+        &:first-child {
+            font-weight: 500;
+        }
+    }
+
+    .time-position {
+        border-left: 1px dotted $gray-dark;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+}
+
+.date-carousel {
+    .carousel-wrapper {
+        margin-left: 164px;
+        width: calc(100% - 164px);
+
+        .carousel-layout {
+            margin: 0 45px;
+        }
+
+        .arrow-left {
+            top: 7px;
+            left: 7px;
+            transform: scale(0.8);
+        }
+
+        .arrow-right {
+            top: 7px;
+            right: 7px;
+            transform: scale(0.8);
+        }
+
+        .carousel-items {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        // Legacy
+        // stylelint-disable selector-max-compound-selectors
+        .carousel-container .carousel-items {
+            margin-top: 0;
+        }
+        // stylelint-enable selector-max-compound-selectors
+
+        .carousel-item {
+            min-width: 50px;
+            width: 12.5%;
+        }
+    }
+}
+
+
+.day-box-container {
+    overflow: hidden;
+    height: 50px;
+
+    .day-box-wrapper {
+        display: block;
+        color: inherit;
+    }
+    .day-box-holder {
+        @extend %clearfix;
+
+        position: relative;
+        top: 0;
+        width: 200px;
+
+        &.expanded {
+            width: auto;
+        }
+
+        .day-box {
+            border-left: 1px dotted $day-border-color;
+            color: $day-font-color;
+            display: block;
+            padding-top: 0;
+            padding-bottom: 5px;
+            position: relative;
+            text-align: center;
+            height: 50px;
+        }
+
+        .day {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .icon {
+            background: url("../images/icons.png") no-repeat scroll left -1563px transparent;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            width: 15px;
+            height: 14px;
+        }
+    }
+
+    .day-box:hover {
+        background: $date-hover-bg;
+        cursor: pointer;
+
+        .day {
+            text-decoration: underline;
+        }
+    }
+
+    .day-box :first-child {
+        color: $white;
+        font-weight: bold;
+    }
+}
+
+.time-nav {
+    background: transparent url("../images/icons.png") no-repeat;
+    border: 0;
+    display: block;
+    line-height: 10000px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 23px;
+
+
+    &.prev {
+        background-position: left -1272px;
+        overflow: hidden;
+        left: 3px; //Add room for border
+
+        &:hover {
+            background-position: left -1295px;
+        }
+
+        &:active {
+            background-position: left -1318px;
+        }
+    }
+
+    &.next {
+        background-position: right -1272px;
+        overflow: hidden;
+        right: 3px; //Add room for border
+
+        &:hover {
+            background-position: right -1295px;
+        }
+
+        &:active {
+            background-position: right -1318px;
+        }
+    }
+}
+
+
+.filter-section {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    width: calc(100% - 164px);
+
+    .now {
+        color: $gray-light; //#9EA1A7
+        cursor: pointer;
+        display: inline-block;
+        line-height: 24px;
+        padding-left: 10px;
+
+        i {
+            background: url("../images/icons.png?v=4.0.16") no-repeat scroll left -1563px transparent;
+            display: inline-block;
+            margin-top: -3px;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 15px;
+            height: 14px;
+        }
+
+    }
+
+    .channel-filter {
+        line-height: 24px;
+        padding-right: 0;
+
+        a {
+            border-right: 1px solid $gray-light;
+            color: $gray-light;
+            margin-left: 5px;
+            padding-right: 5px;
+        }
+
+        a:last-child {
+            border-right: 0;
+        }
+
+        .selected {
+            color: $brand-primary;
+        }
+
+        span {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+}
+
+.search-row {
+    #channelSearch {
+        display: inline-block;
+        font-size: 14px;
+        overflow: hidden;
+        position: relative;
+        width: 164px;
+        padding: 3px;
+
+        .cancelSearch {
+            background: url("../images/icons.png?{{CACHE-VERSION}}") no-repeat scroll right -1358px transparent;
+            top: 9px;
+            right: 9px;
+        }
+
+        .searchField {
+            background: $gray-dark;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px $search-shadow inset;
+            color: $text-color;
+            line-height: normal;
+            opacity: 0.85;
+            width: 100%;
+            text-indent: 5px;
+            height: 24px;
+        }
+
+        .search-field:focus {
+            border-color: $input-border-focus;
+        }
+    }
+}

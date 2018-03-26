@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="recording-icon-default-title recording-icon-default-desc">
+  <title id="recording-icon-default-title">recording</title>
+  <desc id="recording-icon-default-desc">a recording icon</desc>
+  <circle cx="32" cy="32" r="15" fill="#fff"/>
+</svg>

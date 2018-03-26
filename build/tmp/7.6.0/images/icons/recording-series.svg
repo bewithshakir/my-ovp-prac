@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="recording-series-icon-title recording-series-icon-desc">
+  <title id="recording-series-icon-title">series recording</title>
+  <desc id="recording-series-icon-desc">a series recording icon</desc>
+  <ellipse cx="14.5" cy="32" fill="#f00" rx="14.5" ry="14.5"/>
+  <path fill="#f00" d="M49.5 17.5a14.4 14.4 0 0 0-4.7.8l.6.5a18.7 18.7 0 0 1 0 26.4l-.6.5a14.5 14.5 0 1 0 4.7-28.2z"/>
+  <path fill="#f00" d="M32 17.5a14.4 14.4 0 0 0-4.7.8l.6.5a18.7 18.7 0 0 1 0 26.4l-.6.5A14.5 14.5 0 1 0 32 17.5z"/>
+</svg>

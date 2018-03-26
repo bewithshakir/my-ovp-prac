@@ -1,0 +1,106 @@
+flash-warning {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.player-install-flash {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        height: 31px;
+        font-family: Rutledge;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.29;
+        letter-spacing: -1px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    h2 {
+        height: 28px;
+        font-family: Rutledge;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: center;
+        color: #f8f8f8;
+        margin: 48px 0 0 0;
+    }
+
+    .message {
+        text-align: justify;
+        margin: 32px 0 0 0;
+        padding: 0 20px 0 40px;
+        .item {
+            margin-bottom: 20px;
+            width: 419px;
+            font-family: Rutledge;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #f8f8f8;
+        }
+    }
+
+    .download-plug-in {
+        margin-top: 20px;
+        width: 130px;
+        height: 42px;
+        border-radius: 4px;
+        background-color: #0073d1;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .link-text {
+            font-family: Rutledge;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            text-align: center;
+            color: #f8f8f8;
+        }
+    }
+}
+
+.player-install-flash-legacy {
+    margin-top: 30px;
+    text-align: center;
+    height: 100%;
+    background-color: black;
+    .download-plug-in {
+        padding: 20px 0;
+        font-size: 22px;
+        color: $white;
+        text-shadow: 0 1px 1px $black;
+        display: block;
+        width: 280px;
+        text-align: center;
+        margin: 40px auto 0;
+
+        @include gradBlue;
+        @include rounded(5px);
+        &:hover{
+            @include gradGrn;
+        }
+    }
+
+    .ie-update-player-message {
+        margin: 0 auto;
+        padding: 100px 0 0 52px;
+        text-align: left;
+        width: 668px;
+
+        .ie-message {
+            padding-left: 40px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+$grid-gutter-margin-bottom: 32px !default;
+
+.watch-later {
+    .category-title {
+        display: inline;
+        margin-right: 1em;
+        margin-bottom: 2rem;
+        font-size: 24px;
+    }
+
+    .category {
+        &:hover {
+            .clearall {
+                color: $grey02;
+                &:hover {
+                    color: $blue01;
+                }
+            }
+        }
+    }
+
+    .clearall {
+        float:right;
+        color: $steel-dark;
+        cursor: pointer;
+        background: transparent;
+        color: #fff;
+        border: none;
+    }
+
+    .playStatus.new-episodes .flag {
+        //display: block;
+        &::before {
+            content: "New Episodes"
+        }
+    }
+
+    .empty-message {
+        width:auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .category-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list {
+        margin-bottom: $grid-gutter-margin-bottom;
+    }
+}

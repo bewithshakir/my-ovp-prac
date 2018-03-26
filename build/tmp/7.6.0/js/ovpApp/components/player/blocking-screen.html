@@ -1,0 +1,20 @@
+<div ng-if="$ctrl.visible && $ctrl.blockType === 'parentalControls'" class='blocking-banner' role="presentation" ng-class="{'fill': $ctrl.fullscreen}" ng-click="$ctrl.onClick($event)" tabindex="-1">
+    <div class="overlay"></div>
+    <div class="parentally-blocked-screen">
+    	<div class="network-logo" ><img class="vod-icon-image" ng-src="{{$ctrl.asset.networkImage({height:100})}}" alt="{{$ctrl.asset.network.name}}"></div>
+        <div class="twcicon-svg twcicon-svg-lock"></div>
+        <div role="heading" aria-level="2" class="parental-blocked-text">This show is blocked by Parental Controls</div>
+        <div class="separator"></div>
+        <div class="unblocking-text">Click below to unblock and turn off all Parental Controls</div>
+        <a tabindex="0" id="unblock-parental-controls-button" class="unblock base-button" role="button" ng-click="$ctrl.unlockParentalControls()" ng-keydown="$ctrl.unblockOnKeyDown($event)">Unblock</a>
+    </div>
+</div>
+
+<div ng-if="$ctrl.visible && $ctrl.blockType === 'adBlocker'" class='blocking-banner' role="presentation" ng-class="{'fill': $ctrl.fullscreen}" ng-click="$ctrl.onClick($event)" tabindex="-1" role="alert">
+    <div class="overlay"></div>
+    <div class="parentally-blocked-screen">
+        <div class="ad-blocker-blocked-text">It looks like you're using an ad blocker.</div>
+        <div class="separator"></div>
+        <div class="unblocking-text">To watch TV, please turn off your ad blocker and reload the page.</div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="remote-cc-settings-container">
+    <div ng-click="$ctrl.hide()" aria-label="close" role="button" tabindex="-1" style="float: right">
+        <a class="popupCloseClick" tabindex="0" aria-label="close">
+            <span class="twcicon twcicon-remove"></span>
+        </a>
+    </div>
+    <div class="cc-settings-header">
+        <img class="cc-icon" style="float: left" ng-src="{{$ctrl.appVersion}}/images/icon-cc.png" />
+        <h5>Settings</h5>
+    </div>
+
+    <div> 
+        <div style="display:none">
+            <!-- Aria element description -->
+            <div id="cc-text-color-button">
+                Text color
+            </div>
+            <div id="cc-background-color-button">
+                Background color
+            </div>
+            <div id="cc-window-color-button">
+                Window color
+            </div>
+        </div>
+        <div class="cc-text-option-container-wrapper">
+            <h5 id="cc-text-label">Text</h5>
+            <div class="cc-text-option-container">
+                <div role="listbox" aria-live="polite" aria-label="text color {{$ctrl.textColorOptions[$ctrl.ccSettings.textColor].text}} selected" class="color-options-container" arrow-nav="div-color" arrow-nav-options="{noShiftTabExit: true}">
+                    <div role="option" aria-label="{{color.text}}" aria-describedby="cc-text-color-button" class="div-color" focus-when="$first" ng-class="{'selected-color': $ctrl.ccSettings.textColor === color.index}" ng-repeat="color in $ctrl.textColorOptions"
+                        ng-click="$ctrl.setTextColor(color)" focus-previous=".popupCloseClick" ng-style="{'background-color': color.text}"></div>
+                </div>
+                <ovp-dropdown-list items="$ctrl.textOpacityOptions" config="{activeIndex: $ctrl.ccSettings.textOpacity, onSelect: $ctrl.setTextOpacity, buttonLabel: 'text'}" class="cc-text-dropdown"></ovp-dropdown-list>
+            </div>
+        </div>
+        <div class="cc-font-option-container">
+            <div class="font-container">
+                <h5 id="cc-font-label">Font</h5>
+                <ovp-dropdown-list items="$ctrl.fontOptions" config="{activeIndex: $ctrl.ccSettings.font, onSelect: $ctrl.setFont, buttonLabel: 'font'}"></ovp-dropdown-list>
+            </div>
+            <div class="font-size-container">
+                <h5 id="cc-font-size-label">Size</h5>
+                <ovp-dropdown-list items="$ctrl.fontSizeOptions" config="{activeIndex: $ctrl.ccSettings.fontSize, onSelect: $ctrl.setFontSize, buttonLabel: 'font size'}"></ovp-dropdown-list>
+            </div>
+        </div>
+        <div class="cc-background-option-container">
+            <h5 id="cc-background-label">Background</h5>
+            <div role="listbox" aria-live="polite" aria-label="background color {{$ctrl.backgroundColorOptions[$ctrl.ccSettings.backgroundColor].text}} selected" class="color-options-container" arrow-nav="div-color" arrow-nav-options="{noShiftTabExit: true}">
+                <div role="option" aria-label="{{color.text}}" aria-describedby="cc-background-color-button" class="div-color" ng-class="{'selected-color': $ctrl.ccSettings.backgroundColor === color.index}" ng-repeat="color in $ctrl.backgroundColorOptions" ng-click="$ctrl.setBackgroundColor(color)" ng-style="{'background-color': color.text}"></div>
+            </div>
+            <ovp-dropdown-list items="$ctrl.backgroundOpacityOptions" config="{activeIndex: $ctrl.ccSettings.backgroundOpacity, onSelect: $ctrl.setBackgroundOpacity, buttonLabel: 'background'}" class="cc-text-dropdown"></ovp-dropdown-list>
+        </div>
+        <div class="cc-source-option-container">
+            <div class="digital-source-container">
+                <h5 id="cc-source-label">Digital source</h5>
+                <ovp-dropdown-list items="$ctrl.digitalSourceOptions" config="{activeIndex: $ctrl.ccSettings.digitalSource, onSelect: $ctrl.setDigitalSource, buttonLabel: 'digital source'}"></ovp-dropdown-list>
+            </div>
+            <div class="format-source-container">
+                <h5 id="format-source-label">Format source</h5>
+                <ovp-dropdown-list items="$ctrl.formatSourceOptions" config="{activeIndex: $ctrl.ccSettings.formatSource, onSelect: $ctrl.setFormatSource, buttonLabel: 'format source'}"></ovp-dropdown-list>
+            </div>
+        </div>
+        <div class="cc-footer-container">
+            <button tabindex="0" type="button" class="btn btn-default restore-default-btn" ng-click="$ctrl.restoreDefault()">Restore Defaults</button>
+        </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+@mixin icon($height, $width: null) {
+	height: $height;
+	@if ($width) {
+		width: $width;
+	} @else {
+		width: $height;
+	}
+}

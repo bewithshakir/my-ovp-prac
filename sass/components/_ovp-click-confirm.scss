@@ -1,0 +1,19 @@
+.ovp-click-confirm {
+    width: 400px;
+    .title {
+        text-align: center;
+    }
+    .message {
+        text-align: center;
+    }
+    .subject-emphasis {
+        text-align: center;
+    }
+    .button-row {
+        text-align: center;
+        margin-top: 10px;
+        .ovp-button:first-child {
+            margin-right: 20px;
+        }
+    }
+}

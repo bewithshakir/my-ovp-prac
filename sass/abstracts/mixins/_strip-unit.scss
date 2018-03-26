@@ -1,0 +1,24 @@
+
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @author Christopher Dura [@dura](https://github.webapps.rr.com/dura)
+////
+
+/// Strips the unit off a value and returns the value.
+///
+/// @param {Number} $number - A `Number` (typically not unitless), e.g. `5rem`, `5px`, `5em`, or `5%`
+/// @return {Number}
+///
+/// @example scss - Basic Usage Sass
+///    .widget {
+///        width: strip-unit(52rem) * 2px;
+///    }
+///
+/// @example scss - Basic Usage CSS Output
+///    .widget {
+///        width: 104px;
+///    }
+@function strip-unit($number) {
+    @return $number / ($number * 0 + 1);
+}

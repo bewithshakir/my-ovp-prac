@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    image: ovp-dev
+    build:
+      context: .
+      dockerfile: ./.docker/deploy-files/Dockerfile
+    container_name: ovp-dev
+    ports:
+      - "8090:80"
+      - "8443:443"

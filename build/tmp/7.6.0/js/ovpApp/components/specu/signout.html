@@ -1,0 +1,22 @@
+<div class="specu-signout-container-wrapper">
+    <p class="sr-only" id="descriptionBlockText"> Are you sure you want to sign out? or Login as an existing Spectrum customer</p>
+    <div class="specu-signout-container">
+        <div class="info-icon-container">
+            <img alt="attention" ovp-src="/images/icon-40-x-40-information.svg"/>
+        </div>
+        <div ng-click="$ctrl.modalInstance.dismiss()" role="button" aria-label="close dialog" class="close-icon-container" ng-mouseover="$ctrl.activeCloseIcon=true" ng-mouseleave="$ctrl.activeCloseIcon=false" focus-once>
+            <img class="close-icon" ng-src="{{$ctrl.closeIcon()}}"></img>
+        </div>
+
+        <h1 id="labelText">Sign Out of SpectrumU?</h1>
+        <p class="confirmation-text">Are you sure you want to leave the app?</p>
+        <div class="buttonHolder">
+            <div role="button" aria-label="Sign Out of SpectrumU" class="btn signout-button" ng-click="$ctrl.signOut()">Sign Out</div>
+            <div role="button" aria-label="Cancel and Return to SpectrumU" class="btn cancel-button" ng-click="$ctrl.modalInstance.dismiss()">Cancel</div>
+        </div>
+        <p class="line-through"><span>or</span></p>
+        <p class="footer-message">
+            If you're an existing Spectrum customer, you can also <a class="link" href="#" role="link" aria-label="Login as an existing Spectrum customer" ng-click="$ctrl.signOut()">sign in</a> to your account to watch TV.
+        </p>
+    </div>
+</div>

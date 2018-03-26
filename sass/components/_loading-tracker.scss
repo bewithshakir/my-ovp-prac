@@ -1,0 +1,73 @@
+.search-active .loading-tracker {
+    background: none;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -mox-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+
+    &.background {
+      background: none;
+    }
+}
+
+.status-dialog.processing-status {
+    background: $black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    .spinner {
+        position: absolute;
+        top: calc(50% - 24px);
+        left: calc(50% - 24px);
+    }
+}
+
+.loading-tracker.processing-status {
+    position: fixed;
+    background-color: $black;
+    top: 40%;
+    z-index: $zIndexPopup+1;
+    min-width: 217px;
+    max-width: 400px;
+
+  .spinner{
+    margin-top: 20px;
+  }
+
+  .message{
+    color: $white;
+    padding: 15px 50px;
+    text-align: center;
+  }
+}
+
+.loading-tracker.background {
+  background: #000000 url("../images/radial-bg2.jpg?{{CACHE-VERSION}}") 40% 40%;
+}
+
+.loading-tracker.small {
+  margin-right: -50px;
+  .message {
+    width: 100px;
+  }
+}
+
+.loading-tracker.large {
+  margin-right: -100px;
+  .message {
+    width: 200px;
+  }
+}
+
+.loading-tracker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

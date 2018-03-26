@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <span class="sr-only" id="rename-label">Rename This DVR</span>
+    <div ng-click="$ctrl.modalInstance.dismiss()" aria-label="close dialog" role="button" class="close-icon-container" ng-mouseover="$ctrl.activeCloseIcon=true" ng-mouseleave="$ctrl.activeCloseIcon=false">
+        <img class="close-icon" ng-src="{{$ctrl.closeIcon()}}"></img>
+    </div>
+    <div class="header text-center">
+        <h1>Rename This DVR</h1>
+    </div>
+    <div class="content">
+        <h2 class="current-name-caption">Current Name</h2>
+        <div class="current-name truncate">{{$ctrl.stb.name || $ctrl.stb.macAddress}}</div>
+        <label for="newStbName">Type a New Name</label><br/>
+        <input focus-once ng-model="$ctrl.newName" ng-change="$ctrl.inputChanged()" type="text" id="newStbName" class="kite-form-control"/>
+    </div>
+    <button class="kite-btn kite-btn-primary kite-btn-xl" ng-click="$ctrl.save()" aria-label="save" aria-describedby="Save your new DVR name">Save</button>
+    <button class="kite-btn kite-btn-secondary kite-btn-xl" ng-click="$ctrl.modalInstance.dismiss()" aria-label="cancel" aria-describedby="cancel any DVR name changes">Cancel</button>
+</div>

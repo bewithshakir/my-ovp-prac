@@ -1,0 +1,20 @@
+.error-box {
+    width: 520px;
+    padding: 15px 20px 15px 20px;
+    border: solid 1px #f8f8f8;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #ffffff;
+    }
+
+    .icon-24-x-24 {
+    	width: 24px;
+    	height: 24px;
+    	object-fit: contain;
+        float: left;
+        margin-right: 20px
+    }
+}

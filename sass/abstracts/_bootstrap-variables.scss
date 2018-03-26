@@ -1,0 +1,145 @@
+
+//== Colors
+
+$black:					     $spec-black;				    
+$gray-base:                  $spec-gray-base;
+$gray-darker:                $spec-gray-darker;
+$gray-dark:                  $spec-gray-dark;
+$gray:                       $spec-gray;
+$gray-light:                 $spec-gray-light;
+$gray-lighter:               $spec-gray-lighter;
+$brand-primary:              $spec-brand-primary;
+$brand-danger:               $spec-brand-danger;
+$modal-content-border-color: $grey34;
+
+//== Scaffolding
+
+$body-bg:                    $kite-dark-blue-3;
+$text-color:                 $gray-lighter;
+$link-color:                 $brand-primary;
+$link-hover-color:           $sky;
+
+//== Typography
+
+$font-family-sans-serif:     "Rutledge", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base:             16px;
+$font-size-h1:               floor(($font-size-base * 2.25));
+$font-size-h2:               floor(($font-size-base * 2));
+$font-size-h3:               ceil(($font-size-base * 1.5));
+$font-size-h6:               $font-size-base;
+
+$line-height-base:           1.25;
+
+$headings-font-weight:       400;
+
+//== Components
+
+$padding-base-vertical:      8px;
+$padding-base-horizontal:    16px;
+
+$padding-large-vertical:     12px;
+$padding-large-horizontal:   20px;
+
+$padding-small-vertical:     4px;
+$padding-small-horizontal:   8px;
+
+$padding-xs-vertical:        2px;
+$padding-xs-horizontal:      4px;
+
+$border-radius-base:         0;
+$border-radius-large:        4px;
+$border-radius-small:        2px;
+
+//== Buttons
+
+$btn-default-color:              $text-color;
+$btn-default-bg:                 $gray-dark;
+$btn-default-border:             darken($btn-default-bg, 5%);
+
+$btn-primary-color:              $text-color;
+$btn-primary-bg:                 $brand-primary;
+$btn-success-color:              $text-color;
+$btn-info-color:                 $text-color;
+$btn-warning-color:              $text-color;
+$btn-danger-color:               $text-color;
+
+//== Forms
+
+$input-bg:                       darken($gray-lighter, 15%);
+$input-color:                    $gray-base;
+$input-border:                   $gray;
+$input-border-radius-large:      $border-radius-base;
+$input-border-radius-small:      $border-radius-base;
+$input-border-focus:             $brand-primary;
+$input-color-placeholder:        $gray;
+
+//== Dropdowns
+
+$dropdown-bg:                    $gray-base;
+$dropdown-border:                $gray-base;
+$dropdown-link-color:            $gray;
+$dropdown-link-hover-color:      $text-color;
+$dropdown-link-hover-bg:         $gray-dark;
+
+//== Media queries breakpoints
+
+$screen-lg:                      1200px;
+$screen-lg-min:                  $screen-lg;
+
+//== Grid system
+
+$grid-columns:                   16; // 12
+$grid-gutter-width:              floor($font-size-base * 2);
+$grid-float-breakpoint:          $screen-lg-min;
+
+//== Navbar
+
+$navbar-default-bg:                        $gray-base;
+$navbar-default-link-color:                $text-color;
+$navbar-default-link-hover-color:          $text-color;
+$navbar-default-link-hover-bg:             $gray-dark;
+$navbar-default-link-active-color:         $link-color;
+$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-disabled-color:       $gray-dark;
+$navbar-default-toggle-hover-bg:           $navbar-default-link-hover-bg;
+
+//== Navs
+
+$nav-link-padding:                          10px ($grid-gutter-width / 2);
+$nav-link-hover-bg:                         $gray-base;
+$nav-disabled-link-color:                   $gray-dark;
+$nav-disabled-link-hover-color:             $nav-disabled-link-color;
+
+//== Tabs
+
+$nav-tabs-border-color:                     $link-color;
+$nav-tabs-link-hover-border-color:          $nav-tabs-border-color;
+$nav-tabs-active-link-hover-bg:             $link-color;
+$nav-tabs-active-link-hover-color:          $text-color;
+$nav-tabs-active-link-hover-border-color:   $nav-tabs-border-color;
+
+//== Alerts
+
+$alert-padding:               16px;
+
+//== Progress bars
+
+$progress-bg:                 $gray-base;
+
+//== List group
+
+$list-group-bg:               transparent;
+$list-group-border:           transparent;
+$list-group-hover-bg:         $gray-darker;
+$list-group-active-bg:        $gray-darker;
+$list-group-active-border:    $link-color;
+$list-group-link-color:       $gray;
+
+//== Badges
+
+$badge-color:                 $gray-base;
+$badge-bg:                    $gray-lighter;
+$badge-font-weight:           bolder;
+
+// xl modal
+$modal-xl:                    1140px !default;

@@ -1,0 +1,3 @@
+<button class="sap" ng-class="{'disabled': !$ctrl.isSAPAvailable}" ng-click="$ctrl.isSAPAvailable ? $ctrl.sapToggle() : '' " aria-label="{{!$ctrl.isSAPAvailable ? 'S A P DVS' : $ctrl.isSapEnabled ? 'Disable S A P DVS' : 'Enable S A P DVS'}}" aria-disabled="{{!$ctrl.isSAPAvailable}}">
+    <img class="control-item-img" ng-mouseenter="$ctrl.sapIconHovered = true" ng-mouseleave="$ctrl.sapIconHovered = false" ng-src="{{$ctrl.sapToggleImage()}}">
+</button>

@@ -1,0 +1,77 @@
+/* Device Module Styles */
+
+.dropdown-menu.device-list li a {
+  padding-left: 56px;
+  background-image: url('../images/icons.png?{{CACHE-VERSION}}');
+  background-repeat: no-repeat;
+  background-position: -4px -758px;
+  &:hover, &:focus {
+    // background-position-y: -911px;
+  }
+}
+
+.dropdown-menu.device-list li a.isDvr{
+  background-position: -4px -806px;
+
+  &:hover,
+  &:focus {
+    // background-position-y: -855px;
+  }
+}
+
+.dropdown-menu.device-list li.selectedStb a.isDvr{
+  background-position: -4px -855px;
+  color: $blue01;
+}
+
+.dropdown-menu.device-list li.selectedStb a.isStb{
+  background-position: -4px -911px;
+  color: $blue01;
+}
+
+.dropdown-menu.device-list li.isDisabled {
+    opacity: 0.5;
+}
+
+.dropdown-menu.device-list li a.no-icon {
+  background-image: none;
+  padding: 8px 24px;
+}
+
+// Dropdowns in mobile nav drawer
+
+.nav-drawer {
+  .dropdown-menu.device-list li a {
+    background-position: -4px -761px;
+    padding-left: 56px;
+  }
+
+
+  .dropdown-menu.device-list li.selectedStb a.isStb{
+    background-position: -4px -914px;
+  }
+
+  .dropdown-menu.device-list li a.isDvr {
+    background-position: -4px -810px;
+  }
+
+  .dropdown-menu.device-list li.selectedStb a.isDvr {
+    background-position: -4px -859px;
+  }
+}
+
+// Stupid Bootstrap applies a `background-image: none`
+.nav-drawer {
+  .open {
+    .device-list {
+      > li {
+        > a {
+          &:focus,
+          &:hover {
+            background-image: url('../images/icons.png?{{CACHE-VERSION}}');
+          }
+        }
+      }
+    }
+  }
+}

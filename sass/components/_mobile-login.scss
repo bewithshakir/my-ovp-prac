@@ -1,0 +1,44 @@
+.mobile-login {
+    background-color: $kite-dark-blue-3;
+    margin: 40px auto;
+    max-width: 400px;
+    text-align: center;
+
+    header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        span,
+        img {
+            margin-top: 32px;
+        }
+
+        span.si {
+            font-size: 40px;
+        }
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .store-links {
+        margin: 50px 0;
+        overflow: hidden;
+        
+        .link {
+            display: inline-block;
+    
+            > img {
+                width: 185px;
+                height: 60px;
+            }
+        }
+    }
+
+    .kite-btn-link {
+        margin-bottom: 48px;
+    }
+}

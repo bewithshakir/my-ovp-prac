@@ -1,0 +1,17 @@
+[
+    {
+        "name": "toddDev",
+        "label": "Todd's CDVR",
+        "cdvrDeviceId": "YY00C0747364"
+    },
+    {
+        "name": "carissaDev",
+        "label": "Carissa's CDVR",
+        "cdvrDeviceId": "4E756E033373"
+    },
+    {
+        "name": "chrispichonDev",
+        "label": "Chris P's CDVR",
+        "cdvrDeviceId": "chrispichon"
+    }
+]

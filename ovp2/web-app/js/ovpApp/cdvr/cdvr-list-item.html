@@ -1,0 +1,28 @@
+<div class='row list-template cdvr-list' ng-click="$ctrl.click()">
+    <div class="col-md-8 col-sm-8 col-xs-8 title truncate">
+        <img ng-show="false" ng-src="{{::$ctrl.asset.networkImage({height:35, default:false})}}" fallback-image="display:none">
+         <p class="sr-only">
+            {{$ctrl.getTitlePrefix()}}&nbsp;
+        </p>
+        <span class='movie-title' ng-show='!$ctrl.asset.isEpisode'>
+            {{::$ctrl.asset.title}}
+        </span>
+        <span class='episode-title' ng-show='$ctrl.asset.isEpisode'>
+            {{::$ctrl.asset.title}}
+        </span>
+    </div>
+    <div class="col-md-2 hidden-sm hidden-xs genre">
+        {{::$ctrl.asset.genreString}}
+    </div>
+    <div class="col-md-2 hidden-sm hidden-xs status">
+        <label ng-if="$ctrl.asset.playedPct > 0" class="playStatus">
+            <span ng-style="{'width':$ctrl.asset.playedPct+'%'}"></span>
+        </label>
+    </div>
+    <div class="col-md-1 col-sm-1 hidden-xs watch">
+        <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="lock icon" ng-show="($ctrl.asset.isEntitled && $ctrl.asset.isBlockedByParentalControls)"></span>
+    </div>
+    <div class="col-md-3 col-sm-7 col-xs-8 text-center">
+        {{::$ctrl.asset.network.callsign}} | {{$ctrl.channelNumber}}
+    </div>
+</div>

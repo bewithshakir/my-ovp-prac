@@ -1,0 +1,18 @@
+<div class="remotePlayerWrapper" ng-if="$ctrl.visible" ng-class="{visible: $ctrl.visible}">
+    <div class="remote-screen">
+        <div class="remote-player-container" role="region">
+            <span class="sr-only" aria-live="assertive" aria-atomic="true" ng-bind="$ctrl.ariaLiveMessage"></span>
+            <div class="title">This title has been sent to play on TV named:</div>
+            <div class="stb-name"> {{$ctrl.selectedStb.name || $ctrl.selectedStb.macAddress}} </div>
+            <div class="remote-logo">
+                <img class="remote-icon" ovp-src="images/remote-player.svg">
+            </div>
+            <div class="description">
+                Use your TV remote or device for player controls.
+            </div>
+            <button class="remote-btn" focus-when="$ctrl.visible" ng-click="$ctrl.switchPlayBack()" ng-bind="$ctrl.buttonText"></button>
+        </div>
+    </div>
+
+    <remote-player-controls ng-if="$ctrl.asset && $ctrl.selectedStb" asset="$ctrl.asset" stb="$ctrl.selectedStb"></remote-player-controls>
+</div>

@@ -1,0 +1,90 @@
+.square-checkbox,
+.circle-checkbox{
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+}
+
+.square-checkbox[type="checkbox"]:not(:checked) + label:before,
+.square-checkbox[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0px;
+  width: 20px; height: 20px;
+  background: url('../images/icon-20-x-20-checkbox-unselected.svg?{{CACHE-VERSION}}') top left no-repeat;
+  display: inline-block;
+  background-size: contain;
+
+}
+
+/* checked mark aspect */
+.square-checkbox[type="checkbox"]:not(:checked) + label:after,
+.square-checkbox[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0px;
+  width: 20px; height: 20px;
+  background: url('../images/icon-20-x-20-checkbox-selected.svg?{{CACHE-VERSION}}') top left no-repeat;
+  display: inline-block;
+  background-size: contain;
+}
+
+
+/* checkbox aspect */
+
+.circle-checkbox[type="checkbox"]:not(:checked) + label:before,
+.circle-checkbox[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0px;
+  width: 20px; height: 20px;
+  background: url('../images/radio-btn-default.svg?{{CACHE-VERSION}}') top left no-repeat;
+  display: inline-block;
+  background-size: contain;
+
+}
+
+/* checked mark aspect */
+.circle-checkbox[type="checkbox"]:not(:checked) + label:after,
+.circle-checkbox[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0px;
+  width: 20px; height: 20px;
+  background: url('../images/radio-btn-active.svg?{{CACHE-VERSION}}') top left no-repeat;
+  display: inline-block;
+  background-size: contain;
+}
+
+/*/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted gray;
+  position: absolute;
+}

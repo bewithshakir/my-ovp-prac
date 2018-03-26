@@ -1,0 +1,47 @@
+<div role="listbox" class="channel-blocks-container" aria-labelledby="channel-blocks-label">
+    <div class="row">
+        <div id="channel-blocks-label" class="setting-label col-xs-8">Channel blocks</div>
+    </div>
+
+    <div class="row" id="parentalSearch">
+        <div class="filters" >
+            <div id="channelSearch">
+            <div tabindex="-1" class="cancelSearch" ng-click="$ctrl.cancelSearch()"></div>
+                <form class="search" ng-submit="$ctrl.searchInput()">
+                    <div>
+                        <input class="searchField" placeholder="Jump to Channel" autocomplete="off" ng-model="$ctrl.parentalSearchValue" aria-label="Type a channel number or network name, then press Enter" maxlength="11" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row channels-container text-center" ng-if="$ctrl.channelBlockingEnabled" arrow-nav="card" ng-model="$ctrl.filteredCards" role="application">
+        <div class="col-xs-5 col-md-4">
+            <div class="card channel-card action-card" ng-click="$ctrl.clearAllChannelBlocks($event)" aria-labelledby="unblock-channel-instruction" role="button" aria-describedby="channel-blocks-instruction">
+                <span class="sr-only" id="channel-blocks-instruction">Use arrow keys to navigate channels, enter to block or unblock, tab to exit</span>
+                <div class="thumbnail thumbnail-channel thumbnail-tile">
+                    <span class="twcicon twcicon-remove" aria-hidden="true" aria-label="remove icon"></span>
+                    <div class="text" id="unblock-channel-instruction">Unblock all channels</div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-md-4"
+            ng-repeat="card in $ctrl.filteredCards">
+            <div class="card channel-card"
+                role="checkbox"
+                id="channel{{card.channelNumber}}"
+                aria-label="{{$ctrl.getCardAriaLabel(card)}}"
+                ng-click="$ctrl.toggleCardBlock($event, card)"
+                aria-checked="{{$ctrl.isChannelBlocked(card)}}">
+                <div class="thumbnail thumbnail-channel" ng-class="{blocked: $ctrl.isChannelBlocked(card)}">
+                    <img alt="" ng-src="{{$ctrl.getCardImage(card)}}" class="card-image"/>
+                    <span class="twcicon-svg twcicon-svg-lock" aria-hidden="true" aria-label="parental block" ng-if="$ctrl.isChannelBlocked(card)"></span>
+                    <div class="overlay"></div>
+                </div>
+                <div class="network-name" aria-hidden="true">{{$ctrl.getCardName(card)}}</div>
+                <div class="channel-number">{{$ctrl.getCardNumber(card)}}</div>
+            </div>
+        </div>
+    </div>
+</div>

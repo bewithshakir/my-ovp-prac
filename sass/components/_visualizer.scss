@@ -1,0 +1,27 @@
+.transitionHistory {
+    color: black;
+    z-index: 1000 !important;
+}
+
+.uirStateVisContainer{
+    color: black;
+    z-index: 1001 !important;
+    transition: transform 0.3s;
+}
+
+
+#uirTransitionVisualizer {
+    // Want it to be hidden by default, so it doesn't flicker before we hide it
+    display: none;
+    &.show {
+        display: block
+    }
+}
+
+#uirStateVisualizer {
+    // Want it to be hidden by default, so it doesn't flicker before we hide it
+    display: none;
+    &.show {
+        display: block
+    }
+}

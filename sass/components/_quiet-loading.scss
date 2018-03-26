@@ -1,0 +1,25 @@
+.quiet-loading-tracker {
+    background: $gray;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px;
+
+    .spinner {
+        border-width: 2px;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+    }
+
+    &.ng-hide-add,
+    &.ng-hide-remove {
+        transition: 1s linear all;
+    }
+
+    &.ng-hide-add-active,
+    &.ng-hide-remove-active {
+        transition: 2s linear all;
+    }
+}

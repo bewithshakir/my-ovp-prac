@@ -1,0 +1,51 @@
+{
+    "dvroperations": {
+        "authorized": true,
+        "msg": "success",
+        "code": 0
+    },
+    "viewguide": {
+        "authorized": true,
+        "msg": "success",
+        "code": 0
+    },
+    "watchondemand": {
+        "authorized": false,
+        "msg": "failure",
+        "code": 0
+    },
+    "tunetochannel": {
+        "authorized": true,
+        "msg": "success",
+        "code": 0
+    },
+    "watchlive": {
+        "authorized": false,
+        "msg": "success",
+        "code": 102
+    },
+    "accessibility": {
+        "authorized": true,
+        "msg": "accessibility.notEnabled",
+        "hide": false,
+        "code": 118
+    },
+    "tvod": {
+        "authorized": false,
+        "msg": "success",
+        "hide": false,
+        "code": 0
+    },
+    "iptvpackage": {
+        "authorized": false,
+        "msg": "nope",
+        "hide": false,
+        "code": 10
+    },
+    "cdvr": {
+        "authorized": false,
+        "msg": "nope",
+        "hide": false,
+        "code": 10        
+    }
+}

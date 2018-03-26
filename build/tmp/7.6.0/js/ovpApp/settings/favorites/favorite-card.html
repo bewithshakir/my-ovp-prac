@@ -1,0 +1,9 @@
+<div id="channel{{$ctrl.channel.channelNumber}}" class="channel-block channel
+{{$ctrl.isFavorite($ctrl.channel) ? 'favOn' : 'favOff'}} {{$ctrl.channel.col}}" ng-click="$ctrl.toggleFavorite($ctrl.channel, $event)" role="option" aria-checked='{{$ctrl.isFavorite($ctrl.channel)}}' tabindex="-1">
+	<img ng-src='{{$ctrl.getLogoUrl($ctrl.channel)}}' alt='{{$ctrl.channel.callsign}}' />
+    <span class="fav-span" ng-class="{'favIsSpec': $ctrl.isSpecU }">
+		    <span class="favChanId" ng-if="!$ctrl.isSpecU">{{$ctrl.channel.channelNumber}}</span>
+		    <span id="sett-channel-name_{{$ctrl.channel.tmsId}}" class="favCallSign">{{$ctrl.channel.callSign}}</span>
+    </span>
+    <div id="heart" class ="favBtn"></div>
+</div>

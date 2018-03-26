@@ -1,0 +1,74 @@
+<section class="row">
+    <div class="col-md-16">
+        <div class="row other-ways-header">
+            <div class="col-md-6">
+                <h2 role="heading" aria-level="1" id='other-ways-dialog-label'>Other ways to watch</h2>
+            </div>
+            <!-- STVWEB-930: SPECU OVP: Remove Watch on TV -->
+            <div class="col-md-6 nav-center" ng-show="!$ctrl.isCdvrEnabled && !$ctrl.profileService.isSpecUOrBulkMDU()">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li ng-class="{'active':($ctrl.activeTab=='watchHere'), 'disabled':!($ctrl.watchHereActions && $ctrl.watchHereActions.length > 0)}">
+                        <a role="tab"
+                            aria-controls="watch-here-pane"
+                            aria-selected="{{($ctrl.activeTab=='watchHere')}}"
+                            ng-click="$ctrl.setActiveTab('watchHere')"
+                            href
+                            focus-when="$ctrl.inPopup === true"
+                            ng-attr-tabindex="{{!($ctrl.watchHereActions && $ctrl.watchHereActions.length > 0) && '-1' || '0'}}"
+                            tabindex="0">Watch Here</a>
+                    </li>
+                    <li ng-class="{'active':($ctrl.activeTab=='watchOnTv'), 'disabled':!($ctrl.watchOnTvActions && $ctrl.watchOnTvActions.length > 0)}">
+                        <a role="tab"
+                            aria-controls="watch-on-tv-pane"
+                            aria-selected="{{($ctrl.activeTab=='watchOnTv')}}"
+                            ng-click="$ctrl.setActiveTab('watchOnTv')"
+                            href
+                            ng-attr-tabindex="{{!($ctrl.watchOnTvActions && $ctrl.watchOnTvActions.length > 0) && '-1' || '0'}}"
+                            tabindex="0">Watch On TV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row other-ways-content" tabindex="-1">
+            <div class="col-md-16">
+
+                <div class="tab-content">
+                    <div id="watch-here-pane" class="tab-pane" ng-class="{'active':($ctrl.activeTab=='watchHere')}">
+                        <div class="list-group">
+                            <a class="row list-group-item list-item-variation"
+                                href="#"
+                                product-button-actions
+                                action='item'
+                                asset='$ctrl.asset'
+                                ng-click="productActionClicked(item, $ctrl.asset, $event)"
+                                ng-include="'/js/ovpApp/product/other-ways/list-item-variation.html'"
+                                ng-repeat="item in $ctrl.watchHereActions"
+                                focus-when="$ctrl.inPopup === true && $first"
+                                ng-attr-focus-next="{{$ctrl.inPopup && $last && '.popupCloseClick' || undefined}}"
+                                >
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="watch-on-tv-pane" class="tab-pane" ng-class='{"active":($ctrl.activeTab=="watchOnTv")}'>
+                        <div class="list-group">
+                            <a class="row list-group-item list-item-variation"
+                                href="#"
+                                product-button-actions
+                                action='item'
+                                asset='$ctrl.asset'
+                                ng-click="productActionClicked(item, $ctrl.asset, $event)"
+                                ng-include="'/js/ovpApp/product/other-ways/list-item-variation.html'"
+                                ng-repeat="item in $ctrl.watchOnTvActions"
+                                ng-attr-focus-next="{{$ctrl.inPopup && $last && '.popupCloseClick' || undefined}}"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.tab-content -->
+
+            </div>
+        </div>
+    </div>
+</section>

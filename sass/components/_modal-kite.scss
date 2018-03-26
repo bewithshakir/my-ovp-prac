@@ -1,0 +1,65 @@
+.modal-kite-open {
+	overflow: hidden;
+
+	.modal-md {
+		width: 552px;
+	}
+
+	.modal-sm {
+		width: 320px;
+	}
+}
+
+.modal-kite {
+	padding: 24px;
+	border-radius: 4px;
+	background-color: $modal-lightbox-bg;
+	box-shadow: 0 -2px 20px 3px rgba(183, 206, 229, 0.3);
+	border: 1px solid #000;
+
+	.modal-kite-header,
+	.modal-kite-body,
+	.modal-kite-footer {
+		text-align: center;
+		margin-top: 32px;
+	}
+
+	.modal-kite-header {
+		margin-top: 24px;
+	}
+
+	.modal-kite-body {
+		max-height: 800px;
+		overflow-y: auto;
+	}
+
+	.btn {
+		min-width: 100px;
+		border-radius: 3px;
+	}
+
+	.btn-primary {
+		margin-left: 12px;
+	}
+
+	.btn-secondary {
+		margin-right: 12px;
+		color: $black;
+	}
+
+	.close-button {
+		font-size: 28px;
+		color: #fff;
+		float: right;
+		line-height: 18px;
+		padding: 0;
+	    background: transparent;
+		border: none;
+
+		@extend %clearfix;
+	}
+
+	.modal-kite-warning {
+		@include icon(34px);
+	}
+}

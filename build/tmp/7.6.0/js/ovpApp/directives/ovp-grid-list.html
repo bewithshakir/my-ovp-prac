@@ -1,0 +1,36 @@
+<h1 class="sr-only" ng-if="!$ctrl.viewallPage && $ctrl.options.title">On Demand, {{$ctrl.options.title}}</h1>
+<div class="grid-list-header" ng-if='$ctrl.options.showHeader'>
+    <h1 class="title" ng-if="$ctrl.viewallPage">
+        {{$ctrl.options.title}}
+    </h1>
+    <h2 class="title" ng-if="!$ctrl.viewallPage">
+        {{$ctrl.options.title}}
+    </h2>
+    <div class='view-total' ng-if='$ctrl.options.showTotal'>
+        ({{$ctrl.options.totalItems}} items)
+    </div>
+    <dir-pagination-controls ng-if="$ctrl.hasPagination()"
+        position="top"
+        on-page-change="$ctrl.pageChanged({page: newPageNumber})"
+        pagination-id="$ctrl.options.id">
+    </dir-pagination-controls>
+    <div class="gridlist-header-options" ng-if="$ctrl.items.length > 0">
+        <!-- <ovp-dropdown class="filter-select" ng-if='$ctrl.options.showFilter' items='$ctrl.options.filters' config='$ctrl.filterConfig'></ovp-dropdown> -->
+        <ovp-dropdown-list class="filter-select" ng-if='$ctrl.options.showFilter' items='$ctrl.options.filters' config='$ctrl.filterConfig'></ovp-dropdown-list>
+        <grid-list-toggler ng-if="$ctrl.options.showToggle"
+            id="$ctrl.options.id" tab-index="$ctrl.options.tabIndex">
+        </grid-list-toggler>
+    </div>
+</div>
+
+<div ng-class="{grid: $ctrl.state === 'grid', list: $ctrl.state === 'list'}">
+    <div ng-if="$ctrl.state === 'grid'" ng-transclude="grid" class="grid-container" ng-style="!$ctrl.gridCalculationComplete && {visibility: 'hidden'}"></div>
+
+     <div ng-if="$ctrl.state === 'list'" ng-transclude="list"></div>
+</div>
+<div class="grid-list-footer">
+    <dir-pagination-controls ng-if="$ctrl.hasPagination()"
+        position="bottom"
+        pagination-id="$ctrl.options.id">
+    </dir-pagination-controls>
+</div>

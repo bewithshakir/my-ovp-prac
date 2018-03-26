@@ -1,0 +1,84 @@
+<div class="environment-controls" role="document">
+    <div class="sr-only">
+        <span id="environment-controls-title">User is on Dev Tools</span>
+        <span id="environment-controls-description">Application version {{$ctrl.version.appVersion}}, NNS version {{$ctrl.nnsVersion}}</span>
+    </div>
+    <div class='control-block rowlayout'>
+        <a target="_BLANK" class="btn btn-default btn-xs" href="{{$ctrl.buildInfo}}" focus-once aria-label="Application version {{$ctrl.version.appVersion}}">v{{$ctrl.version.appVersion}}</a>
+        <a target="_BLANK" class="btn btn-default btn-xs" href='{{$ctrl.tdcsLink}}'>Device TDCS</a>
+        <div class="btn btn-default btn-xs">
+            <input aria-label="visualizer" type="checkbox" autocomplete="off" ng-model='$ctrl.visualizerEnabled' ng-change='$ctrl.updateVisualizer()'> 
+            Visualizer
+        </div>
+        <span class="btn btn-default btn-xs" tabindex="-1">nns: v{{$ctrl.nnsVersion}}</span>
+    </div>
+    <div class='control-block rowlayout'>
+        <div id="environmentLabel" class="label">
+            Environment: 
+        </div>
+        <select aria-labelledby="environmentLabel" ng-model='$ctrl.currentEnvironmentKey' ng-change='$ctrl.updateEnvironment()'
+                ng-options="value.name as value.label for (key , value) in $ctrl.environments">
+        </select>
+    </div>
+    <div class='control-block rowlayout'>
+        <div id="enableFeatureLabel" class='label' aria-label="Enable Feature">Enable Feature:</div>
+        <select ng-model='$ctrl.selectedFeature' ng-change="$ctrl.applyFeature();$ctrl.localOverrideEnabled=true"
+            ng-options="feature as feature.label for feature in $ctrl.features"
+            aria-labelledby="enableFeatureLabel">
+            <option value="">-Select Feature-</option>
+        </select>
+    </div>
+    <div class='control-block'>
+        <div id="overrideConfigLabel" style="cursor: pointer" aria-label="Local Override Config" role="link" aria-expanded="{{!!$ctrl.localOverrideEnabled}}" ng-click="$ctrl.localOverrideEnabled = !$ctrl.localOverrideEnabled">Local Override Config<span class="accordion" ng-class="{expanded: $ctrl.localOverrideEnabled}"></span></div>
+        <div ng-if="$ctrl.localOverrideEnabled">
+            <br/>
+            <input type="text" placeholder="Search config" style="color: black;" size="30" ng-model="$ctrl.configSearchText" ng-change="$ctrl.searchConfig()">
+            <textarea aria-labelledby="overrideConfigLabel" class='json-edit' ng-change="$ctrl.updateConfig()" ng-model='$ctrl.configValueString'></textarea>
+            <div role="alert" class='error' ng-show="$ctrl.configError">{{$ctrl.configError}}</div>
+        </div>
+        <div ng-if="$ctrl.localOverrideEnabled" class="control-block">
+            <input aria-label="cdvr override" type="checkbox" autocomplete="off" ng-model='$ctrl.bulkMDUOverrideEnabled' ng-change='$ctrl.updateBulkMDUOverride()'>
+            Change SpecU to Bulk MDU
+        </div>
+    </div>
+    <div class='control-block' ng-if="$ctrl.localOverrideEnabled">
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.updateConfigValue()" aria-live="off" aria-describedby="overrideConfigLabel">Apply and Restart</button>
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.clearConfigValues()" aria-live="off" aria-describedby="overrideConfigLabel">Reset and Restart</button>
+    </div>
+
+    <div class='control-block'>
+        <div id="figaroConfigLabel" class='label' style="cursor: pointer" aria-label="Figaro Config" role="link" aria-expanded="{{!!$ctrl.figaroOverrideEnabled}}" ng-click="$ctrl.figaroOverrideEnabled = !$ctrl.figaroOverrideEnabled">Figaro Config<span class="accordion" ng-class="{expanded: $ctrl.figaroOverrideEnabled}"></span></div>
+        <div ng-if="$ctrl.figaroOverrideEnabled">
+            <br/>
+            <select ng-model='$ctrl.selectedFigaroConfig' ng-change="$ctrl.applyFigaroConfig()"
+                ng-options="config as config.label for config in $ctrl.figaroConfigs"
+                aria-labelledby="figaroConfigLabel">
+                <option value="">-Select Config-</option>
+            </select>
+        </div>
+    </div>
+    <div class='control-block' ng-if="$ctrl.figaroOverrideEnabled">
+        <div id="overrideFigaroConfigLabel">Figaro Override Config</div>
+        <textarea aria-labelledby="overrideFigaroConfigLabel" class='json-edit' ng-change="$ctrl.updateFigaroConfig()" ng-model='$ctrl.figaroConfigValueString'></textarea>
+        <div role="alert" class='error' ng-show="$ctrl.figaroConfigError">{{$ctrl.figaroConfigError}}</div>
+    </div>
+    <div class='control-block' ng-if="$ctrl.figaroOverrideEnabled">
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.registerDeviceWithFigaroAndRestart()" aria-live="off" aria-describedby="overrideFigaroConfigLabel">Register device with figaro and Restart</button>
+    </div>
+    <div class='control-block'>
+        <div id="overrideHTTP" style="cursor: pointer" role="link" aria-expanded="{{!!$ctrl.httpOverrideEnabled}}" ng-click="$ctrl.httpOverrideEnabled = !$ctrl.httpOverrideEnabled">HTTP Response Override<span class="accordion" ng-class="{expanded: $ctrl.httpOverrideEnabled}"></span></div>
+        <div ng-if="$ctrl.httpOverrideEnabled">
+            <br/>
+            <textarea aria-labelledby="overrideHTTP" class='json-edit' ng-change="$ctrl.updateHttpOverride()" ng-model='$ctrl.httpOverrideValueString'></textarea>
+            <div role="alert" class='error' ng-show="$ctrl.httpOverrideError">{{$ctrl.httpOverrideError}}</div>
+        </div>
+    </div>
+    <div class='control-block' ng-if="$ctrl.httpOverrideEnabled">
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.applyHttpOverride()" aria-live="off" aria-describedby="overrideHTTP">Apply</button>
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.resetHttpOverride()" aria-live="off" aria-describedby="overrideHTTP">Reset</button>
+    </div>
+    <div class='control-block'>
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.clearStorageAndReload()" aria-live="off">Clear storage and Restart</button>
+        <button class="btn btn-warning btn-xs" type="button" ng-click="$ctrl.clearAuthAndReload()" aria-live="off">Clear auth and Restart</button>
+    </div>
+</div><!-- /.environment-controls -->

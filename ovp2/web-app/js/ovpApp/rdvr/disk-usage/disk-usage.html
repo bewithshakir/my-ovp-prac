@@ -1,0 +1,7 @@
+<div class="disk-usage" ng-if="$ctrl.hasRdvrVersion2()">
+    <h2 class="sr-only">My Recordings storage {{$ctrl.usedPercent}}% Full</h2>
+    <div class="meter">
+        <div ng-style="{ width: $ctrl.usedPercent + '%' }"></div>
+    </div>
+    <span class="space-used">{{$ctrl.usedPercent}}% Full</span>
+</div>

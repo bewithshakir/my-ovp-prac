@@ -1,0 +1,27 @@
+<div role="tabpanel">
+    <h1 class="settings-h1 kite-h3">Global Favorites</h1>
+    <div role="application">
+        <p class="settingsHeader">Select your favorite Networks and create a custom channel lineup by filtering your Guide!</p>
+        <div class="settingsHeaderContainer" tabindex="-1">
+            <div class="filters">
+                <div id="channelSearch">
+                    <form class="search">
+                        <div>
+                            <input class="searchField" placeholder="Jump to Channel" autocomplete="off" ng-model="$ctrl.searchValue" ng-model-options="{ debounce: {'default': 1000, 'submit':0}, updateOn:'submit'}" aria-label="Type a channel number then hit enter" maxlength="11" />
+                        </div>
+                    </form>
+                    <div tabindex="0" aria-label="clear entry" class="cancelSearch" ng-click="$ctrl.cancelSearch()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="settingsSubnavWrapper">
+            <div id="favoritesListContent" class="favorite-container" role="listbox" arrow-nav="channel-block" ng-model="$ctrl.filteredChannels" aria-describedby="favorite-instruction">
+                <span class="sr-only" id="favorite-instruction">Use arrow keys to navigate channels, enter to select or unselect your favorite network, tab to exit</span>
+                <favorite-card ng-repeat="channel in $ctrl.filteredChannels" is-spec-u="$ctrl.isSpecU" channel="channel" ng-keydown="$ctrl.onKeyDown($event, $index)" role="presentation"></favorite-card>
+            </div>
+        </div>
+    </div>
+</div>
